@@ -1,0 +1,256 @@
+/* CSS với kích thước chữ chuẩn SEO */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+/* Tiêu đề chính - H1 */
+.main-title {
+  text-align: center;
+  font-size: 28px; /* Tăng từ 24px lên 28px cho chuẩn SEO H1 */
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  line-height: 1.4;
+}
+
+.loan-list {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Giữ 280px để có 3 cột */
+  gap: 20px;
+}
+
+.loan-card {
+  border: 1px solid #ccc;
+  padding: 20px; /* Tăng từ 15px để có không gian thoải mái hơn */
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Thêm shadow nhẹ */
+  transition: transform 0.2s ease;
+}
+
+.loan-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.top-label {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: #e74c3c;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.logo {
+  max-width: 80px;
+  display: block;
+  margin: 15px auto 10px auto;
+  border-radius: 8px;
+}
+
+/* Tiêu đề card - H3 */
+.card-header h3 {
+  font-size: 20px; /* Chuẩn SEO H3 */
+  font-weight: bold;
+  margin: 10px 0 8px 0;
+  color: #2c3e50;
+}
+
+.duyet {
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 8px 0;
+  background: #e8f5e8;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.amount {
+  font-size: 18px; /* Giữ nguyên vì đây là thông tin quan trọng */
+  color: #27ae60;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-body {
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.info-list {
+  font-size: 14px; /* Tăng từ 14px lên 16px cho chuẩn SEO */
+  padding-left: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.info-list li {
+  margin-bottom: 8px; /* Tăng khoảng cách giữa các dòng */
+}
+
+.btn {
+  background: #27ae60;
+  color: white;
+  padding: 12px 24px; /* Tăng kích thước button */
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Tăng font size button */
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover {
+  background: #229954;
+  transform: translateY(-1px);
+}
+
+/* Phần highlight posts */
+.highlight-posts {
+  margin-top: 30px;
+}
+
+.highlight-posts li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #f8f9fa;
+}
+
+.highlight-posts img {
+  width: 60px; /* Tăng từ 50px */
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.highlight-posts a {
+  font-size: 16px; /* Tăng từ 14px */
+  color: #007bff;
+  text-decoration: none;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.highlight-posts a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive cho 3 cột */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 24px; /* Giảm trên mobile */
+  }
+  
+  .loan-list {
+    grid-template-columns: 1fr; /* 1 cột trên mobile */
+  }
+  
+  .loan-card {
+    padding: 15px;
+  }
+  
+  .info-list {
+    font-size: 15px; /* Giảm nhẹ trên mobile */
+  }
+}
+
+/* Responsive cho tablet - 2 cột */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .loan-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 cột trên tablet */
+  }
+}
+
+/* Desktop - 3 cột */
+@media (min-width: 1025px) {
+  .loan-list {
+    grid-template-columns: repeat(3, 1fr); /* 3 cột rõ ràng trên desktop */
+  }
+}
+
+/* Style cho các thẻ HTML trong nội dung chính (không áp dụng cho footer và slogan) */
+.container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
+  color: #2c3e50;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.container h1 { font-size: 28px; }
+.container h2 { font-size: 24px; }
+.container h3 { font-size: 20px; }
+.container h4 { font-size: 18px; }
+
+.container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.container a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container a:hover {
+  text-decoration: underline;
+}
+
+/* Style riêng cho footer - màu trắng */
+footer, .footer {
+  color: white !important;
+}
+
+footer p, .footer p {
+  color: white !important;
+}
+
+footer a, .footer a {
+  color: white !important;
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
+  color: white !important;
+}
+
+/* Style riêng cho slogan - màu trắng */
+.slogan, .slogan p, .slogan a, .slogan span {
+  color: white !important;
+}
+
+/* Các class khác có thể dùng cho chân trang và slogan */
+.white-text, .white-text p, .white-text a, .white-text span {
+  color: white !important;
+}
+
+.white-text a:hover {
+  color: #f0f0f0 !important;
+}
