@@ -1,5 +1,6 @@
 "use client";
 import './style.css'; // nếu bạn vẫn cần dùng CSS riêng
+import Image from 'next/image';
 
 export default function TheTinDungPage() {
   return (
@@ -10,7 +11,7 @@ export default function TheTinDungPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #1</span>
           <div className="card-header">
-            <img loading="lazy" src="/the/cake.webp" alt="CAKE" className="logo" />
+            <Image loading="lazy" src="/the/cake.webp" width={80} height={80} alt="CAKE" className="logo" />
             <h3>CAKE</h3>
     	    <p className="duyet">📌 MIỄN PHÍ MỞ THẺ ONLINE</p>
           </div>
@@ -31,7 +32,7 @@ export default function TheTinDungPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #2</span>
           <div className="card-header">
-            <img loading="lazy" src="/the/vib.webp" alt="VIB Bank" className="logo" />
+            <Image loading="lazy" src="/the/vib.webp" width={80} height={80} alt="VIB Bank" className="logo" />
             <h3>VIB Bank</h3>
     	    <p className="duyet">📌 MIỄN PHÍ MỞ THẺ ONLINE</p>
           </div>
@@ -52,7 +53,7 @@ export default function TheTinDungPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #3</span>
           <div className="card-header">
-            <img loading="lazy" src="/the/vp.webp" alt="VPBank" className="logo" />
+            <Image  loading="lazy" src="/the/vp.webp" width={80} height={80} alt="VPBank" className="logo" />
             <h3>VPBank</h3>
     	    <p className="duyet">📌 MIỄN PHÍ MỞ THẺ ONLINE</p>
           </div>
@@ -73,7 +74,7 @@ export default function TheTinDungPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #4</span>
           <div className="card-header">
-            <img loading="lazy" src="/the/tp.webp" alt="TPBank" className="logo" />
+            <Image loading="lazy" src="/the/tp.webp" width={80} height={80} alt="TPBank" className="logo" />
             <h3>TPBank</h3>
     	    <p className="duyet">📌 MIỄN PHÍ MỞ THẺ ONLINE</p>
           </div>

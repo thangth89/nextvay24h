@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { FeaturedArticle } from '../types/article';
+import Image from 'next/image';
 
 interface ArticleItemProps {
   article: FeaturedArticle;
@@ -18,18 +19,17 @@ export default function ArticleItem({ article }: ArticleItemProps) {
           color: "inherit"
         }}
       >
-        <img
-          src={article.thumbnail}
-          alt={article.alt}
-          style={{ 
-            width: "60px", 
-            height: "60px", 
-            objectFit: "cover",
-            borderRadius: "4px",
-            transition: "opacity 0.2s"
-          }}
-          loading="lazy"
-        />
+        <Image
+  src={article.thumbnail}
+  alt={article.alt}
+  width={60}
+  height={60}
+  style={{ 
+    objectFit: "cover",
+    borderRadius: "4px",
+    transition: "opacity 0.2s"
+  }}
+/>
         <span
           style={{ 
             fontSize: "14px", 

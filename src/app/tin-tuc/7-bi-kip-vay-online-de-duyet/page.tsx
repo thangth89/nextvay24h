@@ -1,6 +1,7 @@
 // app/tin-tuc/7-bi-kip-vay-online-de-duyet/page.tsx
 import Head from "next/head";
-import Sidebar from "../../../components/Sidebar";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function BiKipVayOnlinePage() {
   return (
@@ -36,11 +37,13 @@ export default function BiKipVayOnlinePage() {
                 biết cách tăng tỷ lệ duyệt vay. Dưới đây là 7 bí kíp giúp bạn vay online dễ dàng hơn.
               </p>
 
-              <img
+              <Image
                 loading="lazy"
                 src="/news/7-bi-kip-vay-online-de-duyet.webp"
                 alt="7 Bí Kíp Vay Online Dễ Duyệt 2025"
-                style={{ width: "100%", height: "auto", margin: "20px 0" }}
+           	width={800}
+          	height={450}
+          	style={{ width: '100%', height: 'auto', margin: '20px 0' }}
               />
 
               <h2><strong>1. Chuẩn bị hồ sơ đầy đủ và chính xác</strong></h2>
@@ -95,9 +98,9 @@ export default function BiKipVayOnlinePage() {
                 Hãy nhớ rằng vay tiền là trách nhiệm, hãy vay đúng mục đích và có kế hoạch trả nợ rõ ràng.
               </p>
           <p>
-            <a href="\vay-tien-nhanh" style={{ color: "blue" }}>
+            <Link href="\vay-tien-nhanh" style={{ color: "blue" }}>
              Tổng hợp Top các đơn vị cho Vay Online uy tín
-            </a>
+            </Link>
           </p>
             </div>
           </div>

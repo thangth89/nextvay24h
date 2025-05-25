@@ -2,6 +2,8 @@
 
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
+
 
 export default function Page() {
   return (
@@ -77,7 +79,7 @@ export default function Page() {
           giản.
         </p>
 
-        <img
+        <Image
           loading="lazy"
           src="/news/vayvnd-danh-gia-2025.webp"
           alt="Thẻ Tín Dụng CAKE by VPBank – Tiện Lợi, Nhanh Chóng, Nhiều Ưu Đãi"
@@ -172,8 +174,8 @@ export default function Page() {
         </p>
         <ul className="list-disc list-inside">
           <li>
-            <a href="/vay-tien-nhanh"className="text-blue-600 underline">Top 10+ đơn vị cho vay tiền online uy tín 2025
-            </a>
+            <Link href="/vay-tien-nhanh"className="text-blue-600 underline">Top 10+ đơn vị cho vay tiền online uy tín 2025
+            </Link>
           </li>
         </ul>
       </article>

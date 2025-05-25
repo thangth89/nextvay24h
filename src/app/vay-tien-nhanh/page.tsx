@@ -1,5 +1,6 @@
 "use client";
 import './style.css'; // nếu bạn vẫn cần dùng CSS riêng
+import Image from 'next/image';
 
 export default function VayTienNhanhPage() {
   return (
@@ -10,7 +11,7 @@ export default function VayTienNhanhPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #1</span>
           <div className="card-header">
-            <img loading="lazy" src="/vay/jeff.webp" alt="Jeff Web" className="logo" />
+            <Image loading="lazy" src="/vay/jeff.webp" width={80} height={80} alt="Jeff Web" className="logo" />
             <h3>Jeff Web</h3>
     	    <p className="duyet">📌 DUYỆT VAY NHANH</p>
             <p className="amount">1.000.000 – 30.000.000</p>
@@ -32,7 +33,7 @@ export default function VayTienNhanhPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #2</span>
           <div className="card-header">
-            <img loading="lazy" src="/vay/vayvnd.webp" alt="vayvnd" className="logo" />
+            <Image loading="lazy" src="/vay/vayvnd.webp" width={80} height={80} alt="vayvnd" className="logo" />
             <h3>VAYVND</h3>
     	    <p className="duyet">📌 DUYỆT VAY NHANH</p>
             <p className="amount">500.000 – 15.000.000</p>
@@ -54,7 +55,7 @@ export default function VayTienNhanhPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #3</span>
           <div className="card-header">
-            <img loading="lazy" src="/vay/meocat.webp" alt="MEONEYCAT" className="logo" />
+            <Image loading="lazy" src="/vay/meocat.webp" width={80} height={80} alt="MEONEYCAT" className="logo" />
             <h3>MEONEYCAT</h3>
     	    <p className="duyet">📌 DUYỆT VAY NHANH</p>
             <p className="amount">500.000 – 10.000.000</p>
@@ -76,7 +77,7 @@ export default function VayTienNhanhPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #4</span>
           <div className="card-header">
-            <img loading="lazy" src="/vay/moneyveo.webp" alt="MEONEYVEO" className="logo" />
+            <Image loading="lazy" src="/vay/moneyveo.webp" width={80} height={80} alt="MEONEYVEO" className="logo" />
             <h3>MEONEYVEO</h3>
     	    <p className="duyet">📌 TỰ ĐỘNG XEM XÉT HỒ SƠ</p>
             <p className="amount">500.000 – 25.000.000</p>
@@ -98,7 +99,7 @@ export default function VayTienNhanhPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #5</span>
           <div className="card-header">
-            <img loading="lazy" src="/vay/cayvang.webp" alt="CAYVANG" className="logo" />
+            <Image loading="lazy" src="/vay/cayvang.webp" width={80} height={80} alt="CAYVANG" className="logo" />
             <h3>CAYVANG</h3>
     	    <p className="duyet">📌 DUYỆT VAY NHANH</p>
             <p className="amount">500.000 – 10.000.000</p>
@@ -120,7 +121,7 @@ export default function VayTienNhanhPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #6</span>
           <div className="card-header">
-            <img loading="lazy" src="/vay/tinvay.webp" alt="TINVAY" className="logo" />
+            <Image loading="lazy" src="/vay/tinvay.webp" width={80} height={80} alt="TINVAY" className="logo" />
             <h3>TINVAY</h3>
     	    <p className="duyet">📌 DUYỆT VAY NHANH</p>
             <p className="amount">5.000.000– 90.000.000</p>
@@ -143,7 +144,7 @@ export default function VayTienNhanhPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #7</span>
           <div className="card-header">
-            <img loading="lazy" src="/vay/vimayman.webp" alt="Ví May Mắn" className="logo" />
+            <Image loading="lazy" src="/vay/vimayman.webp" width={80} height={80} alt="Ví May Mắn" className="logo" />
             <h3>Ví May Mắn</h3>
     	    <p className="duyet">📌 DUYỆT VAY NHANH</p>
             <p className="amount">1.000.000– 30.000.000</p>
@@ -165,7 +166,7 @@ export default function VayTienNhanhPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #8</span>
           <div className="card-header">
-            <img loading="lazy" src="/vay/dong247.webp" alt="dong247" className="logo" />
+            <Image loading="lazy" src="/vay/dong247.webp" width={80} height={80} alt="dong247" className="logo" />
             <h3>dong247</h3>
     	    <p className="duyet">📌 DUYỆT VAY NHANH</p>
             <p className="amount">500.000 – 30.000.000</p>
@@ -187,7 +188,7 @@ export default function VayTienNhanhPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #9</span>
           <div className="card-header">
-            <img loading="lazy" src="/vay/finapps.webp" alt="FinApps" className="logo" />
+            <Image loading="lazy" src="/vay/finapps.webp" width={80} height={80} alt="FinApps" className="logo" />
             <h3>FinApps</h3>
     	    <p className="duyet">📌 DUYỆT VAY NHANH</p>
             <p className="amount">300.000 – 20.000.000</p>
@@ -210,7 +211,7 @@ export default function VayTienNhanhPage() {
         <div className="loan-card">
   	  <span className="top-label">TOP #10</span>
           <div className="card-header">
-            <img loading="lazy" src="/vay/visame.webp" alt="VISAME" className="logo" />
+            <Image loading="lazy" src="/vay/visame.webp" width={80} height={80} alt="VISAME" className="logo" />
             <h3>VISAME</h3>
     	    <p className="duyet">📌 DUYỆT VAY NHANH</p>
             <p className="amount">1.000.000 – 15.000.000</p>
@@ -232,7 +233,7 @@ export default function VayTienNhanhPage() {
         <div className="loan-card">
   	  <span className="top-label">NEW</span>
           <div className="card-header">
-            <img loading="lazy" src="/vay/finami.webp" alt="Finami" className="logo" />
+            <Image loading="lazy" src="/vay/finami.webp"  width={80} height={80} alt="Finami" className="logo" />
             <h3>Finami</h3>
     	    <p className="duyet">📌 BAO NỢ XẤU</p>
             <p className="amount">500.000 – 10.000.000</p>

@@ -91,7 +91,7 @@ export default function Page() {
           Thẻ tín dụng CAKE là sản phẩm nổi bật của <strong>Ngân hàng số Cake by VPBank</strong>, mang đến sự tiện lợi và nhiều ưu đãi hấp dẫn cho người dùng. Với khả năng mở thẻ hoàn toàn trực tuyến, khách hàng có thể sở hữu thẻ ảo để giao dịch chỉ sau 2 phút đăng ký. Không cần chứng minh thu nhập, không cần thủ tục phức tạp – mọi thứ đều diễn ra nhanh chóng qua ứng dụng Cake.
         </p>
 
-        <img
+        <Image
           loading="lazy"
           src="/news/the-tin-dung-CAKE-by-VPBank.webp"
           alt="Thẻ Tín Dụng CAKE by VPBank"
@@ -118,8 +118,8 @@ export default function Page() {
         <p>- Không cần chứng minh thu nhập hay bảng lương.</p>
 
         <h2 className="font-semibold text-lg mt-6">Hướng Dẫn Mở Thẻ Tín Dụng CAKE Nhanh Chóng, Đơn Giản</h2>
-        <p><strong>B1:</strong> Truy cập vào menu "Thẻ Tín Dụng" hoặc <a href="https://riofin.asia/Erk2010" rel="nofollow sponsored" target="_blank" className="text-blue-600 underline">đăng ký tại đây</a>.</p>
-        <p><strong>B2:</strong> Nhập họ tên và số điện thoại → Chọn "Đăng ký ngay".</p>
+        <p><strong>B1:</strong> Truy cập vào menu &quot;Thẻ Tín Dụng&quot; hoặc <a href="https://riofin.asia/Erk2010" rel="nofollow sponsored" target="_blank" className="text-blue-600 underline">đăng ký tại đây</a>.</p>
+        <p><strong>B2:</strong> Nhập họ tên và số điện thoại → Chọn &quot;Đăng ký ngay&quot;.</p>
         <p><strong>B3:</strong> Nhập số điện thoại và xác nhận OTP.</p>
         <p><strong>B4:</strong> Tiến hành định danh eKYC theo hướng dẫn.</p>
         <p><strong>B5:</strong> Bổ sung và xác nhận thông tin cá nhân.</p>

@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Finami - Ứng dụng vay tiền nhanh, tiện lợi và minh bạch',
@@ -68,7 +69,7 @@ export default function Page() {
           Trong thời buổi công nghệ phát triển, các ứng dụng vay tiền trực tuyến như <strong>Finami</strong> ngày càng được nhiều người tin tưởng và sử dụng. Với quy trình đăng ký đơn giản, duyệt vay nhanh và giải ngân siêu tốc, Finami là giải pháp tài chính linh hoạt cho mọi người.
         </p>
 
-        <img
+        <Image
           loading="lazy"
           src="/news/finami-vay-tien-online.webp"
           alt="Finami - Ứng dụng vay tiền nhanh, tiện lợi và minh bạch"
@@ -119,9 +120,9 @@ export default function Page() {
 
         <p className="mt-4">
           Xem thêm:{' '}
-          <a href="/vay-tien-nhanh" className="text-blue-600 underline">
+          <Link href="/vay-tien-nhanh" className="text-blue-600 underline">
             Top 10+ ứng dụng vay tiền online uy tín hiện nay
-          </a>
+          </Link>
         </p>
       </article>
     </>

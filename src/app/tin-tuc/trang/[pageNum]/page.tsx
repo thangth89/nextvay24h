@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Image from 'next/image'
 
 type Article = {
   title: string;
@@ -20,19 +21,27 @@ const pageButton = {
   fontSize: "14px"
 };
 
-// 🟩 Tạo metadata động cho SEO
-export async function generateMetadata({ params }: { params: { pageNum: string } }): Promise<Metadata> {
-  const pageNum = parseInt(params.pageNum);
+// ✅ Sửa type Props cho Next.js 15+
+type Props = {
+  params: Promise<{
+    pageNum: string;
+  }>;
+};
+
+// ✅ Sửa generateMetadata với await params
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { pageNum } = await params; // Thêm await
+  const pageNumber = parseInt(pageNum);
   return {
-    title: `Tin tức vay online- thẻ tín dụng - Trang ${pageNum}`,
-    description: `Tổng hợp bài viết tài chính, vay tiền online uy tín, hướng dẫn mở thẻ tín dụng - Trang ${pageNum}`,
+    title: `Tin tức vay online- thẻ tín dụng - Trang ${pageNumber}`,
+    description: `Tổng hợp bài viết tài chính, vay tiền online uy tín, hướng dẫn mở thẻ tín dụng - Trang ${pageNumber}`,
     alternates: {
-      canonical: `https://vay24h.pro.vn/tin-tuc/trang/${pageNum}`,
+      canonical: `https://vay24h.pro.vn/tin-tuc/trang/${pageNumber}`,
     },
   };
 }
 
-// 🟩 Tạo static path để SEO tốt hơn
+// ✅ Tạo static params cho từng trang
 export async function generateStaticParams() {
   const filePath = path.join(process.cwd(), "src", "data", "news.json");
   const raw = fs.readFileSync(filePath, "utf8");
@@ -45,8 +54,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function TinTucPage({ params }: { params: { pageNum: string } }) {
-  const page = parseInt(params.pageNum);
+// ✅ Sửa component chính với async và await params
+export default async function TinTucPage({ params }: Props) {
+  const { pageNum } = await params; // Thêm await
+  const page = parseInt(pageNum);
   if (isNaN(page) || page < 1) return notFound();
 
   const filePath = path.join(process.cwd(), "src/data/news.json");
@@ -78,16 +89,21 @@ export default function TinTucPage({ params }: { params: { pageNum: string } }) 
               display: "flex",
               flexDirection: "column"
             }}>
-              <img 
-                src={post.image} 
-                alt={post.title} 
-                style={{ 
-                  width: "100%", 
-                  height: 140, 
-                  objectFit: "cover",
-                  flexShrink: 0
-                }} 
-              />
+              <div style={{ 
+                position: 'relative', 
+                width: '100%', 
+                height: 140,
+                flexShrink: 0
+              }}>
+                <Image 
+                  src={post.image} 
+                  alt={post.title} 
+                  fill
+                  style={{ 
+                    objectFit: "cover"
+                  }} 
+                />
+              </div>
               <div style={{ 
                 padding: 10,
                 flex: 1,

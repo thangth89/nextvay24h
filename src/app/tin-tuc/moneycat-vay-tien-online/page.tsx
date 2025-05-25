@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'MoneyCat - Vay tiền online nhanh chóng, không thế chấp',
@@ -69,7 +70,7 @@ export default function Page() {
           Trong số các ứng dụng vay tiền online phổ biến hiện nay, <strong>MoneyCat</strong> là cái tên được nhiều khách hàng lựa chọn nhờ quy trình đăng ký đơn giản, giải ngân nhanh và điều kiện linh hoạt.
         </p>
 
-        <img
+        <Image
           loading="lazy"
           src="/news/moneycat-vay-tien-online.webp"
           alt="MoneyCat - Vay tiền online nhanh chóng, không thế chấp"
@@ -120,10 +121,10 @@ export default function Page() {
 
         <p className="mt-4">
           Xem thêm:{' '}
-          <a
+          <Link
             href="/vay-tien-nhanh" className="text-blue-600 underline">
             Top 10+ ứng dụng vay tiền online uy tín nhất hiện nay
-          </a>
+          </Link>
         </p>
       </article>
     </>

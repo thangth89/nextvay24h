@@ -1,6 +1,8 @@
 
 
 import Head from "next/head";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Page() {
   return (
@@ -65,12 +67,14 @@ export default function Page() {
             ứng dụng vay tiền uy tín, được người dùng đánh giá cao tại Việt Nam.
           </p>
 
-          <img
-            loading="lazy"
-            src="/news/top-5-vay-uy-tin.webp"
-            alt="Top 5 Ứng Dụng Vay Tiền Uy Tín Tránh App Đen – Giải Pháp An Toàn Cho Người Dùng"
-            style={{ width: "100%", height: "auto", margin: "20px 0" }}
-          />
+        <Image
+          loading="lazy"
+          src="/news/top-5-vay-uy-tin.webp"
+          alt="Finami - Ứng dụng vay tiền nhanh, tiện lợi và minh bạch"
+          width={800}
+          height={450}
+          style={{ width: '100%', height: 'auto', margin: '20px 0' }}
+        />
 
           <h2>
             <strong>1. Jeff</strong>
@@ -86,9 +90,9 @@ export default function Page() {
             <li>Gợi ý các khoản vay phù hợp dựa trên thông tin cá nhân</li>
           </ul>
           <p>
-            <a href="\vay-tien-nhanh" style={{ color: "blue" }}>
+            <Link href="\vay-tien-nhanh" style={{ color: "blue" }}>
               Tổng hợp Top các đơn vị cho Vay Online uy tín
-            </a>
+            </Link>
           </p>
 
           <h2>
@@ -104,9 +108,9 @@ export default function Page() {
             <li>Hỗ trợ 24/7 kể cả cuối tuần</li>
           </ul>
           <p>
-            <a href="\vay-tien-nhanh" style={{ color: "blue" }}>
+            <Link href="\vay-tien-nhanh" style={{ color: "blue" }}>
               Tổng hợp Top các đơn vị cho Vay Online uy tín
-            </a>
+            </Link>
           </p>
 
           <h2>
@@ -122,9 +126,9 @@ export default function Page() {
             <li>Không gọi người thân xác minh</li>
           </ul>
           <p>
-            <a href="\vay-tien-nhanh" style={{ color: "blue" }}>
+            <Link href="\vay-tien-nhanh" style={{ color: "blue" }}>
               Tổng hợp Top các đơn vị cho Vay Online uy tín
-            </a>
+            </Link>
           </p>
 
           <h2>
@@ -140,9 +144,9 @@ export default function Page() {
             <li>Lãi suất cạnh tranh, minh bạch</li>
           </ul>
           <p>
-            <a href="\vay-tien-nhanh" style={{ color: "blue" }}>
+            <Link href="\vay-tien-nhanh" style={{ color: "blue" }}>
               Tổng hợp Top các đơn vị cho Vay Online uy tín
-            </a>
+            </Link>
           </p>
 
           <h2>
@@ -158,9 +162,9 @@ export default function Page() {
             <li>Giải ngân nhanh, hỗ trợ tốt</li>
           </ul>
           <p>
-            <a href="\vay-tien-nhanh" style={{ color: "blue" }}>
+            <Link href="\vay-tien-nhanh" style={{ color: "blue" }}>
              Tổng hợp Top các đơn vị cho Vay Online uy tín
-            </a>
+            </Link>
           </p>
 
           <h2>

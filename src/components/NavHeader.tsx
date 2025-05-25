@@ -1,6 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 const navLink = {
   color: "#fff",
@@ -14,7 +15,7 @@ export default function NavHeader() {
 
   return (
     <nav>
-      <a
+      <Link
         href="/"
         style={{
           ...navLink,
@@ -23,8 +24,8 @@ export default function NavHeader() {
         }}
       >
         Trang chủ
-      </a>
-      <a
+      </Link>
+      <Link
         href="/vay-tien-nhanh"
         style={{
           ...navLink,
@@ -33,8 +34,8 @@ export default function NavHeader() {
         }}
       >
         Vay tiền nhanh
-      </a>
-      <a
+      </Link>
+      <Link
         href="/the-tin-dung"
         style={{
           ...navLink,
@@ -43,8 +44,8 @@ export default function NavHeader() {
         }}
       >
         Thẻ tín dụng
-      </a>
-      <a
+      </Link>
+      <Link
         href="/tin-tuc"
         style={{
           ...navLink,
@@ -53,7 +54,7 @@ export default function NavHeader() {
         }}
       >
         Tin tức
-      </a>
+      </Link>
     </nav>
   );
 }

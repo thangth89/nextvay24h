@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút',
@@ -68,7 +69,7 @@ export default function Page() {
           Trong thời đại công nghệ số, các ứng dụng vay tiền online đang ngày càng phổ biến và tiện lợi. Trong đó, <strong>Jeff</strong> nổi bật là một trong những nền tảng vay tiền nhanh, uy tín được nhiều người tin dùng tại Việt Nam.
         </p>
 
-        <img
+        <Image
           loading="lazy"
           src="/news/jeff-vay-tien-uy-tin.webp"
           alt="Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút"
@@ -120,9 +121,9 @@ export default function Page() {
 
         <p className="mt-4">
           Xem thêm:{' '}
-          <a href="/vay-tien-nhanh" className="text-blue-600 underline">
+          <Link href="/vay-tien-nhanh" className="text-blue-600 underline">
             Top 10+ đơn vị cho vay tiền online uy tín
-          </a>
+          </Link>
         </p>
       </article>
     </>

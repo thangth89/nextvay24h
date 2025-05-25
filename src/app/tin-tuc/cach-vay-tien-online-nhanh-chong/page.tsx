@@ -1,5 +1,8 @@
 // app/tin-tuc/cach-vay-tien-online-nhanh-chong/page.tsx
 import { Metadata } from "next";
+import Image from 'next/image';
+import Link from 'next/link';
+
 
 // Metadata chuẩn SEO + mạng xã hội
 export const metadata: Metadata = {
@@ -97,7 +100,7 @@ export default function NewsPage() {
           nếu không thể vay người thân, bạn bè thì làm sao để có tiền ngay trong ngày?
         </p>
 
-        <img
+        <Image
           loading="lazy"
           src="/news/cach-vay-tien-online-nhanh-chong.webp"
           alt="Cần tiền cấp? Đây là cách vay tiền online nhanh chóng, uy tín"
@@ -156,9 +159,9 @@ export default function NewsPage() {
             vay24h.pro.vn
           </a>{" "}
           đã tổng hợp{" "}
-          <a href="/vay-tien-nhanh">
+          <Link href="/vay-tien-nhanh">
             Top 10+ đơn vị vay tiền online uy tín
-          </a>, được nhiều khách hàng lựa chọn và đánh giá cao.
+          </Link>, được nhiều khách hàng lựa chọn và đánh giá cao.
         </p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">

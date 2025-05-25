@@ -1,6 +1,6 @@
 import Accordion from "@/components/Accordion";
-
-
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -31,10 +31,11 @@ export default function Home() {
 
   {/* Cột phải: ảnh */}
   <div style={{ flex: 1, minWidth: "280px", textAlign: "center" }}>
-    <img
+    <Image loading="lazy"
       src="/vay.webp"
       alt="Vay tiền"
-      style={{ width: "100%", maxWidth: "360px", borderRadius: "10px" }}
+      width={500} height={300}
+      style={{ width: "100%", height: "auto", margin: "20px 0" }}
     />
   </div>
         </section>
@@ -53,7 +54,7 @@ export default function Home() {
 			<h2><strong>✅ 2. Không làm công ty? Bạn vẫn đăng ký vay được</strong></h2>
 			<p>Nếu bạn là freelancer, kinh doanh online hoặc làm việc tự do, vẫn có thể điền thông tin như sau:</p>
 			<ul>
-  			 <li>Nhập tên công ty bất kỳ (nhưng đừng quá “giả tạo”).</li>
+  			 <li>Nhập tên công ty bất kỳ (nhưng đừng quá &quot;giả tạo&quot;).</li>
   			 <li>Dùng số điện thoại giả định, như tổng đài công ty.</li>
 			</ul>
 			<p><em><strong>Mẹo:</strong> Hãy chọn thông tin trông hợp lý và có logic để hồ sơ không bị nghi ngờ.</em></p>
@@ -80,9 +81,9 @@ export default function Home() {
                          <p>👉 Cách này giúp website hoạt động đầy đủ tính năng, dễ đăng ký vay tiền hơn.</p>
 	
           		 <p><strong>📸 Hướng dẫn mở bằng hình ảnh (áp dụng khi vào từ TikTok, Zalo...):</strong></p>
-                         <img loading="lazy" src="/huongdan.webp" alt="Logo" style={{ height: "360px"}}/>
+                         <Image loading="lazy" src="/huongdan.webp" width={800} height={500} style={{ width: "100%", height: "auto", margin: "20px 0" }} alt="Logo"/>
 			<p><strong>✅ Mẹo cuối cùng:</strong> Luôn kiểm tra kỹ thông tin trước khi gửi. Ưu tiên chọn <strong>đơn vị cho vay online uy tín</strong> có đánh giá tốt từ cộng đồng!</p>
-        		<a href="/vay-tien-nhanh">💰 Vay Online Ngay</a>
+        		<Link href="/vay-tien-nhanh">💰 Vay Online Ngay</Link>
           		 
 			
 	  </Accordion>
@@ -138,7 +139,7 @@ export default function Home() {
     			<li>Trả góp 0% tại đối tác</li>
     			<li>Ưu đãi khi thanh toán online, ăn uống, du lịch</li>
   		    </ul>
-    		    <a href="/the-tin-dung">✨ Mở Thẻ Tín Dụng Miễn Phí Ngay</a>
+    		    <Link href="/the-tin-dung">✨ Mở Thẻ Tín Dụng Miễn Phí Ngay</Link>
           </Accordion>
         </section>
        
@@ -173,10 +174,3 @@ export default function Home() {
   );
 }
 
-const guideBox = {
-  background: "#fff",
-  border: "1px solid #ccc",
-  padding: "10px",
-  marginTop: "10px",
-  borderRadius: "6px",
-};

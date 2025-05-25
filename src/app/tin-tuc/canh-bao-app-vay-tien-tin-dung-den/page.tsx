@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 
+
 export const metadata: Metadata = {
   title: 'Cảnh Báo Tín Dụng Đen Núp Bóng App Vay Tiền - Người Dân Cần Cảnh Giác',
   description: 'Nhiều app vay tiền online ẩn chứa bẫy tín dụng đen với lãi suất cắt cổ, đe dọa, khủng bố người vay. Xem ngay cách phòng tránh và bảo vệ bản thân.',
@@ -62,9 +63,9 @@ export default function Page() {
       <article className="text-sm text-gray-700 leading-relaxed mt-2" style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
         <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>Cảnh Báo Tín Dụng Đen Ẩn Mình Trong App Vay Tiền: Người Dân Cần Cảnh Giác</h1>
 
-        <p>Trong thời đại công nghệ số, vay tiền qua app đang trở thành xu hướng phổ biến. Tuy nhiên, đằng sau sự tiện lợi đó là hàng loạt rủi ro tiềm ẩn từ các ứng dụng cho vay nặng lãi hoạt động dưới dạng tín dụng đen. Người dân cần đặc biệt cẩn trọng và chủ động bảo vệ mình trước những “chiếc bẫy” tài chính ngày càng tinh vi.</p>
+        <p>Trong thời đại công nghệ số, vay tiền qua app đang trở thành xu hướng phổ biến. Tuy nhiên, đằng sau sự tiện lợi đó là hàng loạt rủi ro tiềm ẩn từ các ứng dụng cho vay nặng lãi hoạt động dưới dạng tín dụng đen. Người dân cần đặc biệt cẩn trọng và chủ động bảo vệ mình trước những &quot;chiếc bẫy&quot; tài chính ngày càng tinh vi.</p>
 
-        <img
+        <Image
           loading="lazy"
           src="/news/canh-bao-app-vay-tien-tin-dung-den.webp"
           alt="Cảnh báo tín dụng đen trong app vay tiền"
@@ -74,14 +75,14 @@ export default function Page() {
         />
 
         <h2 className="text-xl font-semibold mt-6 mb-2">App vay tiền: Nhanh – Gọn – Nhưng tiềm ẩn bẫy nợ</h2>
-        <p>Chỉ cần tìm kiếm từ khóa “vay tiền online” hoặc “app vay tiền nhanh”, bạn sẽ thấy hàng chục triệu kết quả hiển thị. Nhiều ứng dụng quảng cáo vay không cần gặp mặt, không cần thế chấp, chỉ cần CCCD là có thể nhận tiền trong vài phút. Tuy nhiên, đây cũng là lúc người dùng vô tình bước vào vòng xoáy nợ nần với mức lãi suất có thể vượt quá 1.000%/năm.</p>
+        <p>Chỉ cần tìm kiếm từ khóa &quot;vay tiền online&quot; hoặc &quot;app vay tiền nhanh&quot;, bạn sẽ thấy hàng chục triệu kết quả hiển thị. Nhiều ứng dụng quảng cáo vay không cần gặp mặt, không cần thế chấp, chỉ cần CCCD là có thể nhận tiền trong vài phút. Tuy nhiên, đây cũng là lúc người dùng vô tình bước vào vòng xoáy nợ nần với mức lãi suất có thể vượt quá 1.000%/năm.</p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">Hình thức hoạt động của các app tín dụng đen</h2>
         <p>Khi người dùng cài đặt app vay và cung cấp thông tin cá nhân, các đối tượng đứng sau sẽ chủ động liên hệ, mời chào tiếp tục vay hoặc cài đặt thêm các ứng dụng tương tự. Mục đích là để dẫn dụ người vay tiếp tục rơi sâu vào bẫy tín dụng.</p>
         <p>Nhiều ứng dụng không rõ nguồn gốc còn âm thầm thu thập dữ liệu người dùng như danh bạ, tin nhắn, lịch sử cuộc gọi, mạng xã hội… để sử dụng vào việc đòi nợ, gây áp lực, thậm chí là đe dọa hoặc bôi nhọ danh dự.</p>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">Chiêu trò “lách luật” để siết người vay</h2>
-        <p>Các đối tượng thường lập công ty trá hình, núp bóng doanh nghiệp tài chính, công ty bảo vệ hoặc tư vấn pháp luật để hợp thức hóa hoạt động cho vay. Họ cũng sử dụng hợp đồng khống, phí ẩn, điều khoản mập mờ khiến người vay không kịp nhận ra mình đang bị áp lãi suất "cắt cổ".</p>
+        <h2 className="text-xl font-semibold mt-6 mb-2">Chiêu trò &quot;lách luật&quot; để siết người vay</h2>
+        <p>Các đối tượng thường lập công ty trá hình, núp bóng doanh nghiệp tài chính, công ty bảo vệ hoặc tư vấn pháp luật để hợp thức hóa hoạt động cho vay. Họ cũng sử dụng hợp đồng khống, phí ẩn, điều khoản mập mờ khiến người vay không kịp nhận ra mình đang bị áp lãi suất &quot;cắt cổ&quot;.</p>
         <p>Trong nhiều trường hợp, khoản vay ban đầu chỉ vài triệu đồng, nhưng sau một thời gian ngắn, con số phải trả gấp 3-4 lần vì lãi chồng lãi, tiền phạt, và các chi phí không minh bạch.</p>
 
         <h2 className="text-xl font-semibold mt-6 mb-2">Hệ lụy nghiêm trọng từ vay app tín dụng đen</h2>

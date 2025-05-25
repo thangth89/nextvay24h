@@ -1,5 +1,7 @@
 // app/news/vay-app-den-la-gi/page.tsx
 import { Metadata } from "next";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: "Vay App Đen Là Gì? Vì Sao Nên Tránh Xa Các App Vay Tiền Đen?",
@@ -87,7 +89,7 @@ export default function VayAppDenPage() {
         rủi ro nghiêm trọng cho cả tài chính lẫn danh dự.
       </p>
 
-        <img
+        <Image
           loading="lazy"
           src="/news/vay-app-den-la-gi.webp"
           alt="Vay App Đen Là Gì? Vì Sao Nên Tránh Xa Các App Vay Tiền Đen?"
@@ -176,9 +178,9 @@ export default function VayAppDenPage() {
         kỹ lưỡng từ các nguồn đáng tin cậy.
       </p>
       <p className="mt-2">
-        <a href="/vay-tien-nhanh" className="text-blue-600 underline">
+        <Link href="/vay-tien-nhanh" className="text-blue-600 underline">
           👉 Xem ngay danh sách đơn vị cho vay tiền online uy tín
-        </a>
+        </Link>
       </p>
       </article>
     </main>
