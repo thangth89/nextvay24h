@@ -30,7 +30,7 @@ export default function BiKipVayOnlinePage() {
             
             <div
               className="text-sm text-gray-700 leading-relaxed mt-2"
-              style={{ fontSize: 16, color: "#4a4a4a", lineHeight: 1.6 }}
+              style={{ fontSize: 16, color: "#4a4a4a", lineHeight: 1.6, backgroundColor: "#fff", borderRadius: "8px" }} 
             >
               <p>
                 Vay tiền online đã trở thành giải pháp tài chính phổ biến, nhưng không phải ai cũng 
@@ -38,7 +38,6 @@ export default function BiKipVayOnlinePage() {
               </p>
 
               <Image
-                loading="lazy"
                 src="/news/7-bi-kip-vay-online-de-duyet.webp"
                 alt="7 Bí Kíp Vay Online Dễ Duyệt 2025"
            	width={800}
