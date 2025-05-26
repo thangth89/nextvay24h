@@ -19,7 +19,7 @@ export default function BiKipVayOnlinePage() {
       <div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px" }}>
         {/* Nội dung bài viết */}
         <main style={{ flex: 3 }}>
-          <div className="news-content"  style={{backgroundColor: "#fff", borderRadius: "8px", padding: "16px" }} > 
+          <div className="news-content"  style={{backgroundColor: "#fff", borderRadius: "8px", padding: "16px", flex: 1, minWidth: "280px" }} > 
             <div
           style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}
            >
