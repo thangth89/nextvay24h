@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Vay24hPage() {
   return (
- <div className="text-sm text-gray-700 leading-relaxed mt-2" style={{ fontSize: 14, color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
+ <div style={{ fontSize: 14, color: "#4a4a4a", lineHeight: 1.6, marginTop: 8, backgroundColor: "#fff", borderRadius: "8px" }}>
     <article className="max-w-3xl mx-auto px-4 py-8 text-gray-800">
       <h1 className="text-2xl md:text-3xl font-bold text-center text-green-700 mb-6">
         vay24h.pro.vn – Cổng thông tin vay online & mở thẻ tín dụng miễn phí uy tín
