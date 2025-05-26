@@ -19,16 +19,15 @@ export default function BiKipVayOnlinePage() {
       <div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px" }}>
         {/* Nội dung bài viết */}
         <main style={{ flex: 3 }}>
-          <div className="news-content"> 
+          <div className="news-content"  style={{backgroundColor: "#fff", borderRadius: "8px" }} > 
             <div
-          style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8, backgroundColor: "#fff", borderRadius: "8px"  }}
+          style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}
            >
             <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>
               7 Bí Kíp Vay Online Dễ Duyệt 2025
             </h1>
             
             <div
-              className="text-sm text-gray-700 leading-relaxed mt-2"
               style={{ fontSize: 16, color: "#4a4a4a", lineHeight: 1.6 }} 
             >
               <p>
