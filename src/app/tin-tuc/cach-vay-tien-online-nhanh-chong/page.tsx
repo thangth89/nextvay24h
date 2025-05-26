@@ -85,9 +85,8 @@ export default function NewsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
+<div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px",backgroundColor: "#fff", borderRadius: "8px" }}>
       <article
-        className="text-sm text-gray-700 leading-relaxed mt-2"
         style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}
       >
         <h1 style={{ fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>
@@ -183,6 +182,7 @@ export default function NewsPage() {
           để so sánh, lựa chọn và đăng ký khoản vay phù hợp với bạn.
         </p>
       </article>
+    </div>
     </>
   );
 }
