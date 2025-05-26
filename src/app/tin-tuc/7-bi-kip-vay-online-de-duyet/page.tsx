@@ -101,7 +101,6 @@ export default function BiKipVayOnlinePage() {
             </div>
           </div>
 	 </div>
-        </main>
       </div>
     </>
   );
