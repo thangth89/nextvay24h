@@ -30,12 +30,11 @@ export default function Home() {
   </div>
 
   {/* Cột phải: ảnh */}
-  <div style={{ flex: 1, minWidth: "280px", textAlign: "center" }}>
-    <Image loading="lazy"
+  <div style={{ overflow: "hidden", borderRadius: "12px" }}>
       src="/vay.webp"
       alt="Vay tiền"
       width={500} height={300}
-      style={{ width: "100%", height: "auto", margin: "20px 0" }}
+      style={{ width: "100%", height: "auto", margin: "5px 0" }}
     />
   </div>
         </section>
