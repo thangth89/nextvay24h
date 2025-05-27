@@ -36,7 +36,7 @@ export default function Home() {
     alt="Vay tiền"
     width={500}
     height={300}
-    style={{ width: "100%", height: "auto", margin: "5px 0" }}
+    style={{ width: 800, height: 450, margin: "5px 0" }}
   />
 </div>
         </section>
