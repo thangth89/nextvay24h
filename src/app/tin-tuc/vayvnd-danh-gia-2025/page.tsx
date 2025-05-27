@@ -62,10 +62,8 @@ export default function Page() {
           }}
         />
       </Head>
-      <article className="text-sm text-gray-700 leading-relaxed mt-2"
-          style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}
-           >
-          
+      
+      <article style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}> 
         <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>
         VayVND là gì? Đánh giá chi tiết ứng dụng vay tiền online VayVND 2025
         </h1>
@@ -80,7 +78,6 @@ export default function Page() {
         </p>
 
         <Image
-          loading="lazy"
           src="/news/vayvnd-danh-gia-2025.webp"
           alt="Thẻ Tín Dụng CAKE by VPBank – Tiện Lợi, Nhanh Chóng, Nhiều Ưu Đãi"
           width={800}
