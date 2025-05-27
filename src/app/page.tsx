@@ -30,7 +30,7 @@ export default function Home() {
   </div>
 
 {/* Cột phải: ảnh */}
-<div style={{ overflow: "hidden", borderRadius: "12px" }}>
+<div style={{ flex: 1, minWidth: "280px", textAlign: "center", overflow: "hidden", borderRadius: "12px" }}>
   <Image
     src="/vay.webp"
     alt="Vay tiền"
