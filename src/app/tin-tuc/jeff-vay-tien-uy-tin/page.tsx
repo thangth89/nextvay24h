@@ -59,8 +59,8 @@ export default function Page() {
           }),
         }}
       />
-
-      <article className="text-sm text-gray-700 leading-relaxed mt-2" style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
+     
+      <article style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
         <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>
           Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút
         </h1>
@@ -70,7 +70,6 @@ export default function Page() {
         </p>
 
         <Image
-          loading="lazy"
           src="/news/jeff-vay-tien-uy-tin.webp"
           alt="Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút"
           width={800}
