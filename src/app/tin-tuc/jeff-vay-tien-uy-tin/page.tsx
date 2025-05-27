@@ -59,7 +59,7 @@ export default function Page() {
           }),
         }}
       />
-     
+      <div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px",backgroundColor: "#fff", borderRadius: "8px" }}>
       <article style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
         <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>
           Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút
@@ -125,6 +125,7 @@ export default function Page() {
           </Link>
         </p>
       </article>
+    </div>
     </>
   );
 }
