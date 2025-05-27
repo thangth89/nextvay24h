@@ -29,9 +29,6 @@ export default function Home() {
     </ul>
   </div>
 
-  {/* Cột phải: ảnh */}
-  import Image from 'next/image';
-
 {/* Cột phải: ảnh */}
 <div style={{ overflow: "hidden", borderRadius: "12px" }}>
   <Image
