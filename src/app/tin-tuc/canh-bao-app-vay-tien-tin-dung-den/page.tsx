@@ -66,7 +66,6 @@ export default function Page() {
         <p>Trong thời đại công nghệ số, vay tiền qua app đang trở thành xu hướng phổ biến. Tuy nhiên, đằng sau sự tiện lợi đó là hàng loạt rủi ro tiềm ẩn từ các ứng dụng cho vay nặng lãi hoạt động dưới dạng tín dụng đen. Người dân cần đặc biệt cẩn trọng và chủ động bảo vệ mình trước những &quot;chiếc bẫy&quot; tài chính ngày càng tinh vi.</p>
 
         <Image
-          loading="lazy"
           src="/news/canh-bao-app-vay-tien-tin-dung-den.webp"
           alt="Cảnh báo tín dụng đen trong app vay tiền"
           width={800}
