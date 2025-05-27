@@ -59,8 +59,8 @@ export default function Page() {
           })
         }}
       />
-
-      <article className="text-sm text-gray-700 leading-relaxed mt-2" style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
+     <div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px",backgroundColor: "#fff", borderRadius: "8px" }}>
+      <article style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
         <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>Cảnh Báo Tín Dụng Đen Ẩn Mình Trong App Vay Tiền: Người Dân Cần Cảnh Giác</h1>
 
         <p>Trong thời đại công nghệ số, vay tiền qua app đang trở thành xu hướng phổ biến. Tuy nhiên, đằng sau sự tiện lợi đó là hàng loạt rủi ro tiềm ẩn từ các ứng dụng cho vay nặng lãi hoạt động dưới dạng tín dụng đen. Người dân cần đặc biệt cẩn trọng và chủ động bảo vệ mình trước những &quot;chiếc bẫy&quot; tài chính ngày càng tinh vi.</p>
@@ -109,6 +109,7 @@ export default function Page() {
           <a href="https://vay24h.pro.vn" target="_blank" className="text-blue-600 underline">vay24h.pro.vn</a> – chuyên trang thông tin tài chính đáng tin cậy dành cho người dân Việt Nam.
         </p>
       </article>
+    </div>
     </>
   );
 }
