@@ -52,11 +52,8 @@ export default function Page() {
         />
       </Head>
 
-      <div className="news-content" style={{ padding: 20 }}>
-        <div
-          className="text-sm text-gray-700 leading-relaxed mt-2"
-          style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}
-        >
+      <div className="news-content" style={{ padding: 20 }}> <div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px",backgroundColor: "#fff", borderRadius: "8px" }}>
+        <div style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
          <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>
               Top 5 Ứng Dụng Vay Tiền Uy Tín Tránh App Đen – Giải Pháp An Toàn Cho Người Dùng
          </h1>
@@ -68,7 +65,6 @@ export default function Page() {
           </p>
 
         <Image
-          loading="lazy"
           src="/news/top-5-vay-uy-tin.webp"
           alt="Finami - Ứng dụng vay tiền nhanh, tiện lợi và minh bạch"
           width={800}
