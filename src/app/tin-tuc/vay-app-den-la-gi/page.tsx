@@ -76,9 +76,8 @@ export default function VayAppDenPage() {
           }),
         }}
       />
-    <article className="text-sm text-gray-700 leading-relaxed mt-2"
-          style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}
-           >
+    <div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px",backgroundColor: "#fff", borderRadius: "8px" }}>
+      <article style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
       <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>
         Vay App Đen Là Gì? Vì Sao Nên Tránh Xa Các App Vay Tiền Đen?
       </h1>
@@ -90,7 +89,6 @@ export default function VayAppDenPage() {
       </p>
 
         <Image
-          loading="lazy"
           src="/news/vay-app-den-la-gi.webp"
           alt="Vay App Đen Là Gì? Vì Sao Nên Tránh Xa Các App Vay Tiền Đen?"
           width={800}
@@ -183,6 +181,7 @@ export default function VayAppDenPage() {
         </Link>
       </p>
       </article>
+      </div>
     </main>
   );
 }
