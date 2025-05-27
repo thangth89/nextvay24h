@@ -30,15 +30,14 @@ export default function Home() {
   </div>
 
 {/* Cột phải: ảnh */}
-<div style={{ flex: 1, minWidth: "280px", textAlign: "center", overflow: "hidden", borderRadius: "12px" }}>
-  <Image
-    src="/vay.webp"
-    alt="Vay tiền"
-    width={500}
-    height={300}
-   style={{ width: "100%", height: "auto", display: "block" }}
-  />
-</div>
+          <div style={{ flex: 1, minWidth: "280px", textAlign: "center", overflow: "hidden", borderRadius: "12px", position: "relative", aspectRatio: "16/9" }}>
+  		<Image
+    		src="/vay.webp"
+    		alt="Vay tiền online"
+    		fill
+    		style={{ objectFit: "cover" }}
+  		/>
+	  </div>
         </section>
 
         <section style={{ marginTop: 30}}>
