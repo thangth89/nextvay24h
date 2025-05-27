@@ -30,13 +30,18 @@ export default function Home() {
   </div>
 
   {/* Cột phải: ảnh */}
-  <div style={{ overflow: "hidden", borderRadius: "12px" }}>
-      src="/vay.webp"
-      alt="Vay tiền"
-      width={500} height={300}
-      style={{ width: "100%", height: "auto", margin: "5px 0" }}
-    />
-  </div>
+  import Image from 'next/image';
+
+{/* Cột phải: ảnh */}
+<div style={{ overflow: "hidden", borderRadius: "12px" }}>
+  <Image
+    src="/vay.webp"
+    alt="Vay tiền"
+    width={500}
+    height={300}
+    style={{ width: "100%", height: "auto", margin: "5px 0" }}
+  />
+</div>
         </section>
 
         <section style={{ marginTop: 30}}>
