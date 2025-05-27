@@ -59,8 +59,8 @@ export default function Page() {
           }),
         }}
       />
-
-      <article className="text-sm text-gray-700 leading-relaxed mt-2" style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
+    <div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px",backgroundColor: "#fff", borderRadius: "8px" }}>
+      <article style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
         <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>
           Finami - Ứng dụng vay tiền nhanh, tiện lợi và minh bạch
         </h1>
@@ -70,7 +70,6 @@ export default function Page() {
         </p>
 
         <Image
-          loading="lazy"
           src="/news/finami-vay-tien-online.webp"
           alt="Finami - Ứng dụng vay tiền nhanh, tiện lợi và minh bạch"
           width={800}
@@ -125,6 +124,7 @@ export default function Page() {
           </Link>
         </p>
       </article>
+     </div>
     </>
   );
 }
