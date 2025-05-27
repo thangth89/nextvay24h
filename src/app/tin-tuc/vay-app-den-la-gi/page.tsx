@@ -42,6 +42,7 @@ export const metadata: Metadata = {
 
 export default function VayAppDenPage() {
   return (
+    <div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px",backgroundColor: "#fff", borderRadius: "8px" }}>
     <main className="max-w-3xl mx-auto px-4 py-6 text-gray-800 leading-relaxed">
       <script
         type="application/ld+json"
@@ -76,7 +77,6 @@ export default function VayAppDenPage() {
           }),
         }}
       />
-    <div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px",backgroundColor: "#fff", borderRadius: "8px" }}>
       <article style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
       <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>
         Vay App Đen Là Gì? Vì Sao Nên Tránh Xa Các App Vay Tiền Đen?
@@ -181,7 +181,7 @@ export default function VayAppDenPage() {
         </Link>
       </p>
       </article>
-      </div>
     </main>
+  </div>
   );
 }
