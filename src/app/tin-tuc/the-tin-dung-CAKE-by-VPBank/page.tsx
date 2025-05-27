@@ -82,8 +82,8 @@ export default function Page() {
           }),
         }} />
       </Head>
-
-      <main className="text-sm text-gray-700 leading-relaxed mt-2" style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
+     <div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px",backgroundColor: "#fff", borderRadius: "8px" }}>
+      <main style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
         <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>Thẻ Tín Dụng CAKE by VPBank – Tiện Lợi, Nhanh Chóng, Nhiều Ưu Đãi</h1>
 
         <h2 className="font-semibold text-lg mt-6">Giới Thiệu Thẻ Tín Dụng CAKE</h2>
@@ -92,7 +92,6 @@ export default function Page() {
         </p>
 
         <Image
-          loading="lazy"
           src="/news/the-tin-dung-CAKE-by-VPBank.webp"
           alt="Thẻ Tín Dụng CAKE by VPBank"
           width={800}
@@ -131,6 +130,7 @@ export default function Page() {
         <p>Thẻ tín dụng CAKE mang đến sự tiện lợi tối đa với thủ tục nhanh chóng, không cần chứng minh thu nhập và nhiều ưu đãi hấp dẫn. Nếu bạn đang tìm kiếm một chiếc thẻ tín dụng thông minh, tiện lợi và dễ dàng mở thẻ, <strong>CAKE by VPBank</strong> là lựa chọn tuyệt vời dành cho bạn.</p>
         <p><strong>Hãy trải nghiệm sự khác biệt cùng thẻ tín dụng CAKE ngay hôm nay!</strong></p>
       </main>
+    </div>
     </>
   );
 }
