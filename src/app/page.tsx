@@ -20,7 +20,7 @@ export default function Home() {
          > 
   {/* Cột trái: nội dung chữ */}
   <div style={{ flex: 1, minWidth: "280px" }}>
-    <h2 style={{ color: "#007000", fontSize: "36px" }}>VAY TIỀN ONLINE NHANH 24/7<br />CHỈ CẦN CMND</h2>
+    <h2 style={{ color: "#007000", fontSize: "28px" }}>VAY TIỀN ONLINE NHANH 24/7<br />CHỈ CẦN CMND</h2>
     <ul style={{ color: "#000000" }}>
       <li>✅ Vay tiền online 24/7 tại nhà với thủ tục đơn giản.</li>
       <li>✅ Lãi suất 0% cho khoản vay đầu.</li>
