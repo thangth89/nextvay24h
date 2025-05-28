@@ -5,6 +5,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import './globals.css';
 
+import Head from 'next/head';
+import Analytics from '../lib/Analytics';
+import { GA_TRACKING_ID } from '../lib/gtag';
+
 export const metadata = {
   title: "Vay tiền online 24/7 - Uy tín",
   description: "Vay nhanh, đơn giản, không thẩm định.",
@@ -19,7 +23,24 @@ const roboto = Roboto({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="vi" className={roboto.className}>
+      <Head>
+        {/* Google Analytics Script */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${GA_TRACKING_ID}', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+      </Head>
       <body style={{ margin: 0 }}>
+        <Analytics />
         <header className="header">
           <div className="header-container">
             <div className="logo-section">
@@ -41,7 +62,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <footer className="footer">
           <div className="footer-content">
-            {/* Cột 1 */}
             <div className="footer-column">
               <h4>Về vay24h.pro.vn</h4>
               <p>
@@ -49,7 +69,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </p>
             </div>
 
-            {/* Cột 2 */}
             <div className="footer-column">
               <h4>Trang thông tin</h4>
               <ul>
@@ -60,7 +79,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </ul>
             </div>
 
-            {/* Cột 3 */}
             <div className="footer-column">
               <h4>Danh mục bài viết</h4>
               <ul>
@@ -73,7 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
 
           <div className="footer-bottom">
-            © 2025 vay24h.pro.vn. All rights reserved.
+            © 2025 vay24h.pro.vn All rights reserved.
           </div>
         </footer>
       </body>
