@@ -1,22 +1,22 @@
 // src/lib/gtag.ts
 
-// 🟢 BẮT BUỘC: Khai báo cho TypeScript biết window.gtag tồn tại
+// Khai báo window.gtag cho TypeScript (dùng kiểu cụ thể, không dùng any)
 declare global {
   interface Window {
-    gtag: (...args: any[]) => void;
+    gtag: (...args: [string, string, Record<string, unknown>?]) => void;
   }
 }
 
 export const GA_TRACKING_ID = 'G-0K7KQX479V';
 
-// Gửi pageview khi chuyển trang
+// Gửi pageview
 export const pageview = (url: string) => {
   window.gtag('config', GA_TRACKING_ID, {
     page_path: url,
   });
 };
 
-// Gửi sự kiện tùy chỉnh (nếu dùng thêm sau này)
+// Gửi sự kiện tùy chỉnh
 export const event = ({
   action,
   category,
