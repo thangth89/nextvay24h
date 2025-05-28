@@ -1,5 +1,12 @@
 export const GA_TRACKING_ID = 'G-0K7KQX479V'; // Mã theo dõi của bạn
 
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
+
+
 // Gửi pageview
 export const pageview = (url: string) => {
   window.gtag('config', GA_TRACKING_ID, {
