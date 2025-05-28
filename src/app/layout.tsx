@@ -24,6 +24,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="vi" className={roboto.className}>
       <body style={{ margin: 0 }}>
+       {/* AdSense Verification Script */}
+  <Script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1987409798165796"
+    crossOrigin="anonymous"
+  />
+    
         {/* Google Analytics Script */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
