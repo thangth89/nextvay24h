@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import './globals.css';
 
-import Head from 'next/head';
+import Script from 'next/script';
 import Analytics from '../lib/Analytics';
 import { GA_TRACKING_ID } from '../lib/gtag';
 
@@ -23,10 +23,15 @@ const roboto = Roboto({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="vi" className={roboto.className}>
-      <Head>
+      <body style={{ margin: 0 }}>
         {/* Google Analytics Script */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`} />
-        <script
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
@@ -38,9 +43,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `,
           }}
         />
-      </Head>
-      <body style={{ margin: 0 }}>
+
         <Analytics />
+
         <header className="header">
           <div className="header-container">
             <div className="logo-section">
