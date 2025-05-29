@@ -12,6 +12,9 @@ import { GA_TRACKING_ID } from '../lib/gtag';
 export const metadata = {
   title: "Vay tiền online 24/7 - Uy tín",
   description: "Vay nhanh, đơn giản, không thẩm định.",
+  icons: {
+    icon: "/favicon.svg", // Khai báo favicon để Google và các trình duyệt nhận diện
+  },
 };
 
 const roboto = Roboto({
