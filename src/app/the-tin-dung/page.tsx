@@ -88,7 +88,7 @@ export default function TheTinDungPage() {
     	    </ul>
   	 </div>
          <div className="card-header">
-    	     <a href="https://go.clickbuy.asia/click?a=11826&o=1081" rel="nofollow sponsored" target="_blank" className="btn">MỞ THẺ TÍN DỤNG NGAY</a>
+    	     <a href="https://go.dinos.click/click?a=11826&o=1081" rel="nofollow sponsored" target="_blank" className="btn">MỞ THẺ TÍN DỤNG NGAY</a>
   	 </div>
         </div>
 
