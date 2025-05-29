@@ -137,7 +137,7 @@ export default function VayTienNhanhPage() {
     	    </ul>
   	 </div>
          <div className="card-header">
-    	     <a href="https://di.trackingtik.com/click?a=11826&o=935" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
+    	     <a href="https://go.dinos.click/click?a=11826&o=935" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
   	 </div>
         </div>
 
