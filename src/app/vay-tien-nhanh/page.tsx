@@ -8,6 +8,29 @@ export default function VayTienNhanhPage() {
       <h1 className="main-title">TOP 10 VAY TIỀN ONLINE 24/7 UY TÍN CHỈ CẦN CMND</h1>
 
       <div className="loan-list">
+
+                <div className="loan-card">
+  	  <span className="top-label">HOT NEW</span>
+          <div className="card-header">
+            <Image loading="lazy" src="/vay/credityes.webp" width={80} height={80} alt="credityes" className="logo" />
+            <h3>CREDITYES</h3>
+    	    <p className="duyet">📌 DUYỆT VAY NHANH</p>
+            <p className="amount">100.000 – 20.000.000</p>
+          </div>
+          <div className="card-body">
+    	    <ul className="info-list">
+      		<li>Không chứng minh thu nhập.</li>
+      		<li>Thời hạn vay: 1 – 365 ngày.</li>
+      		<li>Lãi suất: 0.01%/tháng.</li>
+      		<li>Độ tuổi: 18 -70 tuổi.</li>
+      		<li>Hồ sơ chỉ cần CMND.</li>
+    		</ul>
+  	 </div>
+         <div className="card-header">
+    	     <a href="https://go.dinos.click/click?a=11826&o=1085" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
+  	 </div>
+        </div>
+        
         <div className="loan-card">
   	  <span className="top-label">TOP #1</span>
           <div className="card-header">
@@ -26,7 +49,7 @@ export default function VayTienNhanhPage() {
     		</ul>
   	 </div>
          <div className="card-header">
-    	     <a href="https://di.trackingtik.com/click?a=11826&o=161" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
+    	     <a href="https://go.dinos.click/click?a=11826&o=161" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
   	 </div>
         </div>
 
@@ -48,7 +71,7 @@ export default function VayTienNhanhPage() {
     	    </ul>
   	 </div>
          <div className="card-header">
-    	     <a href="https://di.trackingtik.com/click?a=11826&o=277" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
+    	     <a href="https://go.dinos.click/click?a=11826&o=277" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
   	 </div>
         </div>
 
@@ -70,7 +93,7 @@ export default function VayTienNhanhPage() {
     	    </ul>
   	 </div>
          <div className="card-header">
-    	     <a href="https://di.trackingtik.com/click?a=11826&o=762" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
+    	     <a href="https://go.dinos.click/click?a=11826&o=762" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
   	 </div>
         </div>
 
@@ -92,7 +115,7 @@ export default function VayTienNhanhPage() {
     	    </ul>
   	 </div>
          <div className="card-header">
-    	     <a href="https://di.trackingtik.com/click?a=11826&o=663" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
+    	     <a href="https://go.dinos.click/click?a=11826&o=663" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
   	 </div>
         </div>
 
@@ -181,7 +204,7 @@ export default function VayTienNhanhPage() {
     	    </ul>
   	 </div>
          <div className="card-header">
-    	     <a href="https://ladipage.dinos.click/click?a=11826&o=302" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
+    	     <a href="https://go.dinos.click/click?a=11826&o=302" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
   	 </div>
         </div>
 
@@ -203,7 +226,7 @@ export default function VayTienNhanhPage() {
     	    </ul>
   	 </div>
          <div className="card-header">
-    	     <a href="https://go.clickbuy.asia/click?a=11826&o=744" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
+    	     <a href="https://go.dinos.click/click?a=11826&o=821" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
   	 </div>
         </div>
 
@@ -248,7 +271,7 @@ export default function VayTienNhanhPage() {
     	    </ul>
   	 </div>
          <div className="card-header">
-    	     <a href="https://di.trackingtik.com/click?a=11826&o=683" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
+    	     <a href="https://go.dinos.click/click?a=11826&o=683" rel="nofollow sponsored" target="_blank" className="btn">VAY ONLINE NGAY</a>
   	 </div>
         </div>
 
