@@ -1,4 +1,4 @@
-"use client";
+
 import './style.css';
 import Image from 'next/image';
 import { Metadata } from 'next';
