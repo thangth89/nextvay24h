@@ -496,7 +496,7 @@ export default function VayTienNhanhPage() {
             </a>
           </footer>
         </article>
-
+      </main>
         {/* Call-to-action cuối trang */}
         <section className="page-cta">
           <h2>Lựa Chọn App Vay Tiền Phù Hợp</h2>
@@ -508,8 +508,6 @@ export default function VayTienNhanhPage() {
             💡 <em>Lưu ý: Vay tiền cần cân nhắc khả năng trả nợ. Chỉ vay khi thật sự cần thiết.</em>
           </p>
         </section>
-
-      </main>
     </>
   );
 }
