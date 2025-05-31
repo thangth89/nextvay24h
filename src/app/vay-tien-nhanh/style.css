@@ -253,3 +253,6 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
 .white-text a:hover {
   color: #f0f0f0 !important;
 }
+.page-header {
+  margin-bottom: 2rem; /* hoặc 32px */
+}
