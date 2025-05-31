@@ -345,7 +345,7 @@ export default function Home() {
           <h2 style={{ color: "#007000", marginBottom: "15px" }}>
             SẴN SÀNG VAY TIỀN ONLINE NGAY HÔM NAY?
           </h2>
-          <p style={{ fontSize: "18px", marginBottom: "25px" }}>
+          <p style={{ fontSize: "18px", marginBottom: "25px", color: "#000000" }}>
             Hàng nghìn khách hàng đã tin tưởng và sử dụng dịch vụ qua vay24h.pro.vn
           </p>
           <div style={{ display: "flex", gap: "15px", justifyContent: "center", flexWrap: "wrap" }}>
