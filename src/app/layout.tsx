@@ -10,29 +10,130 @@ import Analytics from '../lib/Analytics';
 import { GA_TRACKING_ID } from '../lib/gtag';
 
 export const metadata = {
-  title: "Vay tiền online 24/7 - Uy tín",
-  description: "Vay nhanh, đơn giản, không thẩm định.",
-  icons: {
-    icon: "/favicon.webp", // Khai báo favicon để Google và các trình duyệt nhận diện
+  title: {
+    default: "Vay Tiền Online 24/7 - Lãi Suất 0% Khoản Đầu | vay24h.pro.vn",
+    template: "%s | vay24h.pro.vn"
   },
+  description: "⭐ Vay tiền online nhanh 24/7 chỉ cần CMND. Lãi suất 0% khoản đầu, hạn mức 1-500 triệu. Mở thẻ tín dụng miễn phí. Uy tín - An toàn - Duyệt nhanh.",
+  keywords: "vay tiền online, vay nhanh 24/7, vay tiền uy tín, mở thẻ tín dụng, lãi suất 0%, vay không thế chấp, vay online nhanh, vay tiền chỉ cần cmnd",
+  authors: [{ name: "vay24h.pro.vn" }],
+  creator: "vay24h.pro.vn",
+  publisher: "vay24h.pro.vn",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'vi_VN',
+    url: 'https://vay24h.pro.vn',
+    title: 'Vay Tiền Online 24/7 - Lãi Suất 0% Khoản Đầu | vay24h.pro.vn',
+    description: 'Vay tiền online nhanh 24/7 chỉ cần CMND. Lãi suất 0% khoản đầu, hạn mức 1-500 triệu. Mở thẻ tín dụng miễn phí. Uy tín - An toàn - Duyệt nhanh.',
+    images: [
+      {
+        url: 'https://vay24h.pro.vn/vay.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Vay tiền online 24/7 - vay24h.pro.vn',
+      }
+    ],
+    siteName: 'vay24h.pro.vn',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vay Tiền Online 24/7 - Lãi Suất 0% Khoản Đầu',
+    description: 'Vay tiền online nhanh 24/7 chỉ cần CMND. Lãi suất 0% khoản đầu, hạn mức 1-500 triệu.',
+    images: ['https://vay24h.pro.vn/vay.webp'],
+  },
+  alternates: {
+    canonical: 'https://vay24h.pro.vn',
+  },
+
+  icons: {
+    icon: [
+      { url: '/favicon.webp', sizes: '32x32', type: 'image/webp' },
+      { url: '/favicon.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: '/favicon.png',
+    shortcut: '/favicon.webp',
+  },
+  manifest: '/site.webmanifest',
+  category: 'finance',
 };
 
 const roboto = Roboto({
-  subsets: ['latin'],
-  weight: ['400', '700'],
+  subsets: ['latin', 'vietnamese'], // Thêm vietnamese support
+  weight: ['400', '500', '700'],
   display: 'swap',
+  preload: true, // Preload font cho performance tốt hơn
 });
+
+// Structured Data JSON-LD
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "vay24h.pro.vn",
+  "description": "Website tư vấn tài chính, cung cấp thông tin và đánh giá dịch vụ vay tiền online, mở thẻ tín dụng uy tín tại Việt Nam",
+  "url": "https://vay24h.pro.vn",
+  "logo": "https://vay24h.pro.vn/logovay.webp",
+  "image": "https://vay24h.pro.vn/vay.webp",
+  "telephone": "+84-332-071-189", // Thay số điện thoại thực tế
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "VN",
+    "addressLocality": "Phú Hộ, Thị xã Phú Thọ, Phú Thọ", // Thay địa chỉ thực tế
+  },
+  "sameAs": [
+    "https://www.facebook.com/giaiphaptaichinhlinhhoat", // Thay link social thực tế
+  ],
+  "foundingDate": "2025",
+  "areaServed": "VN",
+  "serviceType": "Tư vấn tài chính",
+  "offers": {
+    "@type": "Offer",
+    "description": "Tư vấn vay tiền online và mở thẻ tín dụng",
+    "areaServed": "VN"
+  }
+};
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="vi" className={roboto.className}>
+      <head>
+        {/* Structured Data */}
+        <Script
+          id="structured-data"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(structuredData),
+          }}
+        />
+        
+        {/* Preconnect to external domains */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        
+        {/* Additional meta tags */}
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="theme-color" content="#007000" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+      </head>
+      
       <body style={{ margin: 0 }}>
-       {/* AdSense Verification Script */}
-         <Script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1987409798165796"
-            crossOrigin="anonymous"
-            strategy="afterInteractive"
+        {/* AdSense Verification Script */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1987409798165796"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
         />
     
         {/* Google Analytics Script */}
@@ -57,10 +158,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <Analytics />
 
-        <header className="header">
+        <header className="header" role="banner">
           <div className="header-container">
             <div className="logo-section">
-              <Image src="/logovay.webp" alt="Logo" width={120} height={40} />
+              <Image 
+                src="/logovay.webp" 
+                alt="Vay24h.pro.vn - Vay tiền online uy tín 24/7" 
+                width={120} 
+                height={40}
+                priority // Priority loading cho logo
+              />
               <h1>
                 <strong>Giải pháp tài chính linh hoạt</strong>
               </h1>
@@ -69,14 +176,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
 
-        <main className="main-content">
+        <main className="main-content" role="main">
           <div className="content-area">
             {children}
           </div>
           <Sidebar />
         </main>
 
-        <footer className="footer">
+        <footer className="footer" role="contentinfo">
           <div className="footer-content">
             <div className="footer-column">
               <h4>Về vay24h.pro.vn</h4>
