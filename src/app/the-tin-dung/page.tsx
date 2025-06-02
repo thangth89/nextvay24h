@@ -101,11 +101,11 @@ export default function TheTinDungPage() {
             <div className="card-body">
               <h3>Ưu đãi nổi bật:</h3>
               <ul className="info-list" itemProp="description">
-                <li>🎁 <strong>Hoàn tiền 20%</strong> cho mọi giao dịch</li>
-                <li>⚡ Mở online <strong>2 phút có thẻ ảo</strong> ngay lập tức</li>
-                <li>💰 <strong>Miễn phí phát hành</strong> và chuyển đổi ngoại tệ</li>
-                <li>👥 Độ tuổi: <strong>18 - 60 tuổi</strong></li>
-                <li>📄 <strong>Không cần bảng lương</strong>, thủ tục đơn giản</li>
+                <li><strong>Hoàn tiền 20%</strong> cho mọi giao dịch</li>
+                <li>Mở online <strong>2 phút có thẻ ảo</strong> ngay lập tức</li>
+                <li><strong>Miễn phí phát hành</strong> và chuyển đổi ngoại tệ</li>
+                <li>Độ tuổi: <strong>18 - 60 tuổi</strong></li>
+                <li><strong>Không cần bảng lương</strong>, thủ tục đơn giản</li>
               </ul>
             </div>
             <div className="card-footer">
@@ -137,11 +137,11 @@ export default function TheTinDungPage() {
             <div className="card-body">
               <h3>Ưu đãi nổi bật:</h3>
               <ul className="info-list" itemProp="description">
-                <li>💳 <strong>Hoàn tiền đến 6%</strong> cho mọi chi tiêu</li>
-                <li>🎯 <strong>Miễn phí thường niên trọn đời</strong></li>
-                <li>🛒 Ưu đãi <strong>trả góp 0% lãi suất</strong></li>
-                <li>👥 Độ tuổi: <strong>22 - 65 tuổi</strong></li>
-                <li>💰 Thu nhập tối thiểu: <strong>≥ 7 triệu VNĐ/tháng</strong></li>
+                <li><strong>Hoàn tiền đến 6%</strong> cho mọi chi tiêu</li>
+                <li><strong>Miễn phí thường niên trọn đời</strong></li>
+                <li>Ưu đãi <strong>trả góp 0% lãi suất</strong></li>
+                <li>Độ tuổi: <strong>22 - 65 tuổi</strong></li>
+                <li>Thu nhập tối thiểu: <strong>≥ 7 triệu VNĐ/tháng</strong></li>
               </ul>
             </div>
             <div className="card-footer">
@@ -173,11 +173,11 @@ export default function TheTinDungPage() {
             <div className="card-body">
               <h3>Ưu đãi nổi bật:</h3>
               <ul className="info-list" itemProp="description">
-                <li>💰 <strong>Hoàn tiền đến 5%</strong> mọi giao dịch</li>
-                <li>🆓 <strong>Miễn phí phát hành thẻ</strong></li>
-                <li>🛍️ Ưu đãi <strong>trả góp 0% lãi suất</strong></li>
-                <li>👥 Độ tuổi: <strong>22 - 60 tuổi</strong></li>
-                <li>💵 Thu nhập tối thiểu chỉ: <strong>≥ 4.5 triệu VNĐ/tháng</strong></li>
+                <li><strong>Hoàn tiền đến 5%</strong> mọi giao dịch</li>
+                <li><strong>Miễn phí phát hành thẻ</strong></li>
+                <li>Ưu đãi <strong>trả góp 0% lãi suất</strong></li>
+                <li>Độ tuổi: <strong>22 - 60 tuổi</strong></li>
+                <li>Thu nhập tối thiểu chỉ: <strong>≥ 4.5 triệu VNĐ/tháng</strong></li>
               </ul>
             </div>
             <div className="card-footer">
@@ -209,11 +209,11 @@ export default function TheTinDungPage() {
             <div className="card-body">
               <h3>Ưu đãi nổi bật:</h3>
               <ul className="info-list" itemProp="description">
-                <li>🎁 <strong>Hoàn tiền đến 8%</strong> - cao nhất thị trường</li>
-                <li>🎯 <strong>Miễn phí thường niên năm đầu</strong></li>
-                <li>🛒 Ưu đãi <strong>trả góp 0% lãi suất</strong></li>
-                <li>👥 Độ tuổi: <strong>22 - 60 tuổi</strong></li>
-                <li>💰 Thu nhập tối thiểu: <strong>≥ 7 triệu VNĐ/tháng</strong></li>
+                <li><strong>Hoàn tiền đến 8%</strong> - cao nhất thị trường</li>
+                <li><strong>Miễn phí thường niên năm đầu</strong></li>
+                <li>Ưu đãi <strong>trả góp 0% lãi suất</strong></li>
+                <li>Độ tuổi: <strong>22 - 60 tuổi</strong></li>
+                <li>Thu nhập tối thiểu: <strong>≥ 7 triệu VNĐ/tháng</strong></li>
               </ul>
             </div>
             <div className="card-footer">
