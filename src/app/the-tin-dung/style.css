@@ -15,8 +15,8 @@
   margin-bottom: 15px;
   line-height: 1.4;
 }
-.intro-text {
-   margin-top: 2rem; /* hoặc 32px */
+.page-header {
+  margin-bottom: 2rem; /* hoặc 32px */
 }
 .comparison-section {
   margin-bottom: 2rem; /* hoặc 32px */
