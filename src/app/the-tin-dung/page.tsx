@@ -1,4 +1,4 @@
-"use client";
+
 import './style.css';
 import Image from 'next/image';
 import { Metadata } from 'next';
@@ -89,7 +89,6 @@ export default function TheTinDungPage() {
             <span className="top-label" aria-label="Xếp hạng số 1">TOP #1</span>
             <div className="card-header">
               <Image 
-                loading="lazy" 
                 src="/the/cake.webp" 
                 width={80} 
                 height={80} 
@@ -126,7 +125,6 @@ export default function TheTinDungPage() {
             <span className="top-label" aria-label="Xếp hạng số 2">TOP #2</span>
             <div className="card-header">
               <Image 
-                loading="lazy" 
                 src="/the/vib.webp" 
                 width={80} 
                 height={80} 
@@ -162,8 +160,7 @@ export default function TheTinDungPage() {
           <div className="loan-card" itemScope itemType="https://schema.org/FinancialProduct">
             <span className="top-label" aria-label="Xếp hạng số 3">TOP #3</span>
             <div className="card-header">
-              <Image 
-                loading="lazy" 
+              <Image  
                 src="/the/vp.webp" 
                 width={80} 
                 height={80} 
@@ -200,7 +197,6 @@ export default function TheTinDungPage() {
             <span className="top-label" aria-label="Xếp hạng số 4">TOP #4</span>
             <div className="card-header">
               <Image 
-                loading="lazy" 
                 src="/the/tp.webp" 
                 width={80} 
                 height={80} 
