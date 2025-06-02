@@ -116,7 +116,7 @@ export default function TheTinDungPage() {
                 className="btn"
                 aria-label="Mở thẻ tín dụng CAKE ngay"
               >
-                MỞ THẺ CAKE NGAY
+                MỞ THẺ TÍN DỤNG NGAY
               </a>
             </div>
           </div>
@@ -152,7 +152,7 @@ export default function TheTinDungPage() {
                 className="btn"
                 aria-label="Mở thẻ tín dụng VIB Bank ngay"
               >
-                MỞ THẺ VIBBank NGAY
+                MỞ THẺ TÍN DỤNG NGAY
               </a>
             </div>
           </div>
@@ -188,7 +188,7 @@ export default function TheTinDungPage() {
                 className="btn"
                 aria-label="Mở thẻ tín dụng VPBank ngay"
               >
-                MỞ THẺ VPBANK NGAY
+                MỞ THẺ TÍN DỤNG NGAY
               </a>
             </div>
           </div>
@@ -224,7 +224,7 @@ export default function TheTinDungPage() {
                 className="btn"
                 aria-label="Mở thẻ tín dụng TPBank ngay"
               >
-                MỞ THẺ TPBANK NGAY
+               MỞ THẺ TÍN DỤNG NGAY
               </a>
             </div>
           </div>
