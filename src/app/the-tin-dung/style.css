@@ -253,3 +253,33 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
 .white-text a:hover {
   color: #f0f0f0 !important;
 }
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #dee2e6;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.comparison-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #495057;
+}
+
+.comparison-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.comparison-table tr:nth-child(odd) {
+  background-color: #fff;
+}
