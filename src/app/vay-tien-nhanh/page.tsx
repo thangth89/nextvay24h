@@ -262,7 +262,7 @@ export default function VayTienNhanhPage() {
           <div className="card-body">
             <ul className="info-list">
               <li>Thời hạn vay: theo từng gói vay</li>
-              <li><strong>Lãi suất: 0%</strong></li>
+              <li><strong>Lãi suất: 0% khoản vay đầu</strong></li>
               <li>Phí xử lý hồ sơ: 50.000-1.000.000</li>
               <li>Độ tuổi: 18 tuổi trở lên</li>
               <li>Hồ sơ: chỉ cần CMND</li>
