@@ -73,7 +73,7 @@ export default function TheTinDungPage() {
         <span> Thẻ tín dụng</span>
       </nav>
 
-        <header>
+        <header className="page-header">
           <h1 className="main-title">
             Top 4 Mở Thẻ Tín Dụng Online Miễn Phí 2025 - Duyệt Nhanh, Hoàn Tiền Cao
           </h1>
