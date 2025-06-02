@@ -90,7 +90,7 @@ export default function CICArticlePage() {
               <strong>CIC (Credit Information Center)</strong> là viết tắt của Trung tâm Thông tin Tín dụng, một tổ chức được Ngân hàng Nhà nước Việt Nam thành lập để thu thập, xử lý và cung cấp thông tin tín dụng của các cá nhân và tổ chức tại Việt Nam.
             </p>
             <p className="text-gray-700">
-              CIC hoạt động như một "hồ sơ tín dụng" trung tâm, lưu trữ toàn bộ lịch sử vay nợ, thanh toán và các hoạt động tài chính khác của mỗi cá nhân và doanh nghiệp.
+              CIC hoạt động như một &quot;hồ sơ tín dụng&quot; trung tâm, lưu trữ toàn bộ lịch sử vay nợ, thanh toán và các hoạt động tài chính khác của mỗi cá nhân và doanh nghiệp.
             </p>
           </div>
 
