@@ -287,7 +287,9 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
   font-weight: bold;
   color: #495057;
 }
-
+.comparison-table td {
+ color: #000000;
+}
 .comparison-table tr:nth-child(even) {
   background-color: #f8f9fa;
 }
