@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'CIC là gì? Cách kiểm tra CIC miễn phí và mẹo cải thiện điểm tín dụng 2024',
+  title: 'CIC là gì? Cách kiểm tra CIC miễn phí và mẹo cải thiện điểm tín dụng 2025',
   description: 'Tìm hiểu CIC là gì, cách kiểm tra CIC miễn phí online, ý nghĩa các mức điểm CIC và mẹo cải thiện điểm tín dụng để vay vốn dễ dàng hơn.',
   keywords: 'CIC, kiểm tra CIC, điểm tín dụng, CIC miễn phí, cách kiểm tra CIC, điểm CIC, báo cáo tín dụng',
   openGraph: {
