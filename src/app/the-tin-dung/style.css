@@ -12,10 +12,19 @@
   text-align: center;
   font-size: 28px; /* Tăng từ 24px lên 28px cho chuẩn SEO H1 */
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   line-height: 1.4;
 }
-
+.intro-text {
+   margin-top: 2rem; /* hoặc 32px */
+}
+.comparison-section {
+  margin-bottom: 2rem; /* hoặc 32px */
+  margin-top: 2rem; /* hoặc 32px */
+}
+.breadcrumb-nav {
+   margin-bottom: 15px 
+}
 .loan-list {
   flex: 3;
   display: grid;
