@@ -264,3 +264,15 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
 .breadcrumb-nav {
    margin-bottom: 15px 
 }
+/* Hiển thị dấu chấm cho danh sách */
+.info-list {
+  list-style-type: disc; /* Dấu chấm tròn */
+  padding-left: 20px; /* Khoảng cách từ lề trái */
+  margin: 15px 0; /* Khoảng cách trên dưới */
+}
+
+.info-list li {
+  list-style-type: disc; /* Đảm bảo mỗi item có dấu chấm */
+  margin-bottom: 8px; /* Khoảng cách giữa các dòng */
+  padding-left: 2px; /* Khoảng cách từ dấu chấm đến nội dung */
+}
