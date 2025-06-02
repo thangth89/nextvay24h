@@ -67,7 +67,6 @@
 }
 .card-footer {
  text-align: center;
- font-size: 20px;
 }
 
 .logo {
@@ -127,7 +126,7 @@
   border-radius: 6px;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px; /* Tăng font size button */
+  font-size: 12px; /* Tăng font size button */
   font-weight: 600;
   transition: background-color 0.3s ease;
   text-transform: uppercase;
