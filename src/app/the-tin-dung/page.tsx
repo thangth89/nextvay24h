@@ -95,11 +95,11 @@ export default function TheTinDungPage() {
                 alt="Logo thẻ tín dụng CAKE - Mở thẻ online miễn phí" 
                 className="logo" 
               />
-              <h2 itemProp="name">Thẻ Tín Dụng CAKE</h2>
+              <h2 itemProp="name" style={{ color: "#000000"}}>Thẻ Tín Dụng CAKE</h2>
               <p className="duyet">📌 MIỄN PHÍ MỞ THẺ ONLINE - DUYỆT NHANH</p>
             </div>
             <div className="card-body">
-              <h3>Ưu đãi nổi bật:</h3>
+              <h3 style={{ color: "#000000"}}>Ưu đãi nổi bật:</h3>
               <ul className="info-list" itemProp="description">
                 <li><strong>Hoàn tiền 20%</strong> cho mọi giao dịch</li>
                 <li>Mở online <strong>2 phút có thẻ ảo</strong> ngay lập tức</li>
@@ -131,11 +131,11 @@ export default function TheTinDungPage() {
                 alt="Logo thẻ tín dụng VIB Bank - Hoàn tiền 6%" 
                 className="logo" 
               />
-              <h2 itemProp="name">Thẻ Tín Dung VIB Bank</h2>
+              <h2 itemProp="name" style={{ color: "#000000"}}>Thẻ Tín Dung VIB Bank</h2>
               <p className="duyet">📌 MIỄN PHÍ THƯỜNG NIÊN TRỌN ĐỜI</p>
             </div>
             <div className="card-body">
-              <h3>Ưu đãi nổi bật:</h3>
+              <h3 style={{ color: "#000000"}}>Ưu đãi nổi bật:</h3>
               <ul className="info-list" itemProp="description">
                 <li><strong>Hoàn tiền đến 6%</strong> cho mọi chi tiêu</li>
                 <li><strong>Miễn phí thường niên trọn đời</strong></li>
@@ -167,11 +167,11 @@ export default function TheTinDungPage() {
                 alt="Logo thẻ tín dụng VPBank - Thu nhập 4.5 triệu" 
                 className="logo" 
               />
-              <h2 itemProp="name">Thẻ Tín Dung VPBank</h2>
+              <h2 itemProp="name" style={{ color: "#000000"}}>Thẻ Tín Dung VPBank</h2>
               <p className="duyet">📌 THU NHẬP THẤP NHẤT - 4.5 TRIỆU</p>
             </div>
             <div className="card-body">
-              <h3>Ưu đãi nổi bật:</h3>
+              <h3 style={{ color: "#000000"}}>Ưu đãi nổi bật:</h3>
               <ul className="info-list" itemProp="description">
                 <li><strong>Hoàn tiền đến 5%</strong> mọi giao dịch</li>
                 <li><strong>Miễn phí phát hành thẻ</strong></li>
@@ -203,11 +203,11 @@ export default function TheTinDungPage() {
                 alt="Logo thẻ tín dụng TPBank - Hoàn tiền 8%" 
                 className="logo" 
               />
-              <h2 itemProp="name">Thẻ Tín Dung TPBank</h2>
+              <h2 itemProp="name" style={{ color: "#000000"}}>Thẻ Tín Dung TPBank</h2>
               <p className="duyet">📌 HOÀN TIỀN CAO NHẤT - 8%</p>
             </div>
             <div className="card-body">
-              <h3>Ưu đãi nổi bật:</h3>
+              <h3 style={{ color: "#000000"}}>Ưu đãi nổi bật:</h3>
               <ul className="info-list" itemProp="description">
                 <li><strong>Hoàn tiền đến 8%</strong> - cao nhất thị trường</li>
                 <li><strong>Miễn phí thường niên năm đầu</strong></li>
