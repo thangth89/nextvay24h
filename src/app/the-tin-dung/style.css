@@ -126,7 +126,7 @@
   border-radius: 6px;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px; /* Tăng font size button */
+  font-size: 14px; /* Tăng font size button */
   font-weight: 600;
   transition: background-color 0.3s ease;
   text-transform: uppercase;
