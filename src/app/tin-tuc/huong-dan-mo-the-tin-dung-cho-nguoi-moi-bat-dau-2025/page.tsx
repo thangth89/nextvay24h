@@ -199,7 +199,7 @@ export default function CreditCardGuidePage() {
           </ul>
 	  </section>
 
-          <section id="ngan-hang" className="mb-8">
+          <section id="ket-luan" className="mb-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">8. Kết luận</h2>
           <p>
             Việc sở hữu một chiếc thẻ tín dụng không chỉ giúp bạn chủ động tài
@@ -210,5 +210,6 @@ export default function CreditCardGuidePage() {
 	 </section>
       </article>
     </main>
-  );
+   </>
+  )
 }
