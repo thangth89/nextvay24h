@@ -197,6 +197,12 @@ export default function CreditCardGuidePage() {
             <li>VPBank - Nhiều ưu đãi tích điểm, hoàn tiền.</li>
             <li>TPBank - Hoàn tiền lên đến 8%.</li>
           </ul>
+          <p className="mt-4">
+          Xem thêm:{' '}
+          <Link href="/the-tin-dung" className="text-blue-600 underline">
+            Top 4+ mở thẻ tín dụng online uy tín hiện nay
+          </Link>
+	  </p>
 	  </section>
 
           <section id="ket-luan" className="mb-8">
