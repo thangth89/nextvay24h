@@ -48,6 +48,11 @@ export default function CICArticlePage() {
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             CIC là gì? Hướng dẫn chi tiết kiểm tra CIC miễn phí và cải thiện điểm tín dụng 2025
           </h1>
+          <div className="text-gray-600 text-sm mb-4">
+            <time dateTime={new Date().toISOString()}>
+              Cập nhật: {new Date().toLocaleDateString('vi-VN')}
+            </time>
+          </div>
 
 	<Image
           src="/news/CIC-la-gi.webp"
@@ -56,11 +61,7 @@ export default function CICArticlePage() {
           height={450}
           style={{ width: "100%", height: "auto", margin: "20px 0" }}
         />
-          <div className="text-gray-600 text-sm mb-4">
-            <time dateTime={new Date().toISOString()}>
-              Cập nhật: {new Date().toLocaleDateString('vi-VN')}
-            </time>
-          </div>
+		
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6">
             <p className="text-gray-700">
               <strong>Tóm tắt:</strong> CIC (Credit Information Center) là hệ thống quan trọng giúp các tổ chức tài chính đánh giá khả năng tín dụng của khách hàng. Bài viết này sẽ hướng dẫn chi tiết cách kiểm tra CIC miễn phí và các mẹo cải thiện điểm tín dụng hiệu quả.
