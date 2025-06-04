@@ -76,6 +76,7 @@ const roboto = Roboto({
 });
 
 // Structured Data JSON-LD
+const structuredData = {
   "@context": "https://schema.org",
   "@type": "FinancialService",
   "@id": "https://vay24h.pro.vn/#organization",
