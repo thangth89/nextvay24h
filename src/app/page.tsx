@@ -2,7 +2,6 @@ import Accordion from "@/components/Accordion";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import Head from 'next/head';
 
 // SEO Metadata cho trang chủ
 export const metadata: Metadata = {
@@ -29,57 +28,6 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-<Head>
-  <script type="application/ld+json" dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Vay online có an toàn không?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Vay tiền online là hình thức vay an toàn và tiện lợi, bạn không cần thế chấp tài sản nhưng vẫn có thể vay được tiền ngay trong ngày. Tuy nhiên bạn cần chọn những đơn vị cho vay uy tín mà chúng tôi đã giúp bạn sàng lọc để tránh mắc bẫy tín dụng đen với lãi suất cắt cổ."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Tôi nhận tiền vay online bằng cách nào?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Tiền sẽ được chuyển khoản trực tiếp vào tài khoản ngân hàng của bạn sau khi hồ sơ được duyệt thành công. Thời gian nhận tiền thường từ 5-15 phút sau khi được phê duyệt."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Tôi thanh toán trả nợ gốc, lãi khi vay tiền online bằng cách nào?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Bạn có thể thanh toán qua Internet Banking, ví điện tử hoặc ra trực tiếp ngân hàng theo hướng dẫn của bên cho vay. Hầu hết các đơn vị đều hỗ trợ nhiều hình thức thanh toán tiện lợi."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Vay tiền online lãi suất 0% là có thật hay không?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Đúng vậy, nhiều đơn vị hỗ trợ khoản vay đầu tiên với lãi suất 0% dành cho khách hàng mới. Đây là chương trình khuyến mãi để thu hút khách hàng, bạn nên tận dụng cơ hội này."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Tôi có thể vay cùng lúc nhiều đơn vị cho vay online được không?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Bạn hoàn toàn có thể đăng ký vay ở nhiều đơn vị khác nhau để tăng cơ hội được giải ngân nhanh chóng. Tuy nhiên, hãy cân nhắc khả năng trả nợ của mình trước khi vay nhiều nơi."
-          }
-        }
-      ]
-    })
-  }} />
-</Head>
-
     <div style={{ display: "flex", gap: "20px" }}>
       {/* Cột bên trái */}
       <div style={{ flex: 2 }}>
@@ -313,76 +261,76 @@ export default function Home() {
         </section>
        
         {/* FAQ Section */}
-        <section style={{ marginTop: 30 }}>
-          <h2 style={{ textAlign: "center", color: "#007000", fontSize: "24px" }}>
-            VAY TIỀN ONLINE CHUYỂN KHOẢN 24/7 CẦN LƯU Ý GÌ?
-          </h2>
-          <p style={{ textAlign: "center", marginBottom: "25px" }}>
-            Dưới đây là các câu hỏi thường gặp của khách hàng khi sử dụng dịch vụ vay tiền online
+<section style={{ marginTop: 30 }}>
+  <h2 style={{ textAlign: "center", color: "#007000", fontSize: "24px" }}>
+    VAY TIỀN ONLINE CHUYỂN KHOẢN 24/7 CẦN LƯU Ý GÌ?
+  </h2>
+  <p style={{ textAlign: "center", marginBottom: "25px" }}>
+    Dưới đây là các câu hỏi thường gặp của khách hàng khi sử dụng dịch vụ vay tiền online
+  </p>
+
+  <div itemScope itemType="https://schema.org/FAQPage">
+    <Accordion title="📌 Vay online có an toàn không?">
+      <div itemScope itemType="https://schema.org/Question">
+        <h3 itemProp="name">Vay online có an toàn không?</h3>
+        <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
+          <p itemProp="text">
+            <strong>Vay tiền online</strong> là hình thức vay an toàn và tiện lợi, bạn không cần thế chấp tài sản nhưng vẫn có thể vay được tiền ngay trong ngày. 
+            Tuy nhiên bạn cần chọn những <strong>đơn vị cho vay uy tín</strong> mà chúng tôi đã giúp bạn sàng lọc để tránh mắc bẫy tín dụng đen với lãi suất cắt cổ.
           </p>
+        </div>
+      </div>
+    </Accordion>
 
-          <div itemScope itemType="https://schema.org/FAQPage">
-            <Accordion title="📌 Vay online có an toàn không?">
-              <div itemScope itemType="https://schema.org/Question">
-                <h3 itemProp="name" style={{ display: "none" }}>Vay online có an toàn không?</h3>
-                <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
-                  <p itemProp="text">
-                    <strong>Vay tiền online</strong> là hình thức vay an toàn và tiện lợi, bạn không cần thế chấp tài sản nhưng vẫn có thể vay được tiền ngay trong ngày. 
-                    Tuy nhiên bạn cần chọn những <strong>đơn vị cho vay uy tín</strong> mà chúng tôi đã giúp bạn sàng lọc để tránh mắc bẫy tín dụng đen với lãi suất cắt cổ.
-                  </p>
-                </div>
-              </div>
-            </Accordion>
+    <Accordion title="📌 Tôi nhận tiền vay online bằng cách nào?">
+      <div itemScope itemType="https://schema.org/Question">
+        <h3 itemProp="name">Tôi nhận tiền vay online bằng cách nào?</h3>
+        <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
+          <p itemProp="text">
+            Tiền sẽ được <strong>chuyển khoản trực tiếp</strong> vào tài khoản ngân hàng của bạn sau khi hồ sơ được duyệt thành công. 
+            Thời gian nhận tiền thường từ 5-15 phút sau khi được phê duyệt.
+          </p>
+        </div>
+      </div>
+    </Accordion>
 
-            <Accordion title="📌 Tôi nhận tiền vay online bằng cách nào?">
-              <div itemScope itemType="https://schema.org/Question">
-                <h3 itemProp="name" style={{ display: "none" }}>Tôi nhận tiền vay online bằng cách nào?</h3>
-                <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
-                  <p itemProp="text">
-                    Tiền sẽ được <strong>chuyển khoản trực tiếp</strong> vào tài khoản ngân hàng của bạn sau khi hồ sơ được duyệt thành công. 
-                    Thời gian nhận tiền thường từ 5-15 phút sau khi được phê duyệt.
-                  </p>
-                </div>
-              </div>
-            </Accordion>
+    <Accordion title="📌 Tôi thanh toán trả nợ gốc, lãi khi vay tiền online bằng cách nào?">
+      <div itemScope itemType="https://schema.org/Question">
+        <h3 itemProp="name">Tôi thanh toán trả nợ gốc, lãi khi vay tiền online bằng cách nào?</h3>
+        <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
+          <p itemProp="text">
+            Bạn có thể thanh toán qua <strong>Internet Banking</strong>, <strong>ví điện tử</strong> hoặc ra trực tiếp ngân hàng theo hướng dẫn của bên cho vay. 
+            Hầu hết các đơn vị đều hỗ trợ nhiều hình thức thanh toán tiện lợi.
+          </p>
+        </div>
+      </div>
+    </Accordion>
 
-            <Accordion title="📌 Tôi thanh toán trả nợ gốc, lãi khi vay tiền online bằng cách nào?">
-              <div itemScope itemType="https://schema.org/Question">
-                <h3 itemProp="name" style={{ display: "none" }}>Thanh toán trả nợ vay online như thế nào?</h3>
-                <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
-                  <p itemProp="text">
-                    Bạn có thể thanh toán qua <strong>Internet Banking</strong>, <strong>ví điện tử</strong> hoặc ra trực tiếp ngân hàng theo hướng dẫn của bên cho vay. 
-                    Hầu hết các đơn vị đều hỗ trợ nhiều hình thức thanh toán tiện lợi.
-                  </p>
-                </div>
-              </div>
-            </Accordion>
+    <Accordion title="📌 Vay tiền online lãi suất 0% là có thật hay không?">
+      <div itemScope itemType="https://schema.org/Question">
+        <h3 itemProp="name">Vay tiền online lãi suất 0% là có thật hay không?</h3>
+        <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
+          <p itemProp="text">
+            Đúng vậy, nhiều đơn vị hỗ trợ <strong>khoản vay đầu tiên với lãi suất 0%</strong> dành cho khách hàng mới. 
+            Đây là chương trình khuyến mãi để thu hút khách hàng, bạn nên tận dụng cơ hội này.
+          </p>
+        </div>
+      </div>
+    </Accordion>
 
-            <Accordion title="📌 Vay tiền online lãi suất 0% là có thật hay không?">
-              <div itemScope itemType="https://schema.org/Question">
-                <h3 itemProp="name" style={{ display: "none" }}>Vay tiền online lãi suất 0% có thật không?</h3>
-                <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
-                  <p itemProp="text">
-                    Đúng vậy, nhiều đơn vị hỗ trợ <strong>khoản vay đầu tiên với lãi suất 0%</strong> dành cho khách hàng mới. 
-                    Đây là chương trình khuyến mãi để thu hút khách hàng, bạn nên tận dụng cơ hội này.
-                  </p>
-                </div>
-              </div>
-            </Accordion>
-
-            <Accordion title="📌 Tôi có thể vay cùng lúc nhiều đơn vị cho vay online được không?">
-              <div itemScope itemType="https://schema.org/Question">
-                <h3 itemProp="name" style={{ display: "none" }}>Có thể vay nhiều đơn vị cùng lúc không?</h3>
-                <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
-                  <p itemProp="text">
-                    Bạn hoàn toàn có thể <strong>đăng ký vay ở nhiều đơn vị khác nhau</strong> để tăng cơ hội được giải ngân nhanh chóng. 
-                    Tuy nhiên, hãy cân nhắc khả năng trả nợ của mình trước khi vay nhiều nơi.
-                  </p>
-                </div>
-              </div>
-            </Accordion>
-          </div>
-        </section>
+    <Accordion title="📌 Tôi có thể vay cùng lúc nhiều đơn vị cho vay online được không?">
+      <div itemScope itemType="https://schema.org/Question">
+        <h3 itemProp="name">Tôi có thể vay cùng lúc nhiều đơn vị cho vay online được không?</h3>
+        <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
+          <p itemProp="text">
+            Bạn hoàn toàn có thể <strong>đăng ký vay ở nhiều đơn vị khác nhau</strong> để tăng cơ hội được giải ngân nhanh chóng. 
+            Tuy nhiên, hãy cân nhắc khả năng trả nợ của mình trước khi vay nhiều nơi.
+          </p>
+        </div>
+      </div>
+    </Accordion>
+  </div>
+</section>
 
         {/* Call to Action Section */}
         <section 
