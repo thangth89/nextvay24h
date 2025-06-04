@@ -91,7 +91,8 @@ const structuredData = {
     "addressCountry": "VN",
     "addressRegion": "Phú Thọ",
     "addressLocality": "Thị xã Phú Thọ",
-    "streetAddress": "Phú Hộ"
+    "streetAddress": "Phú Hộ",
+    "postalCode": "290000"
   },
   "sameAs": [
     "https://www.facebook.com/giaiphaptaichinhlinhhoat"
