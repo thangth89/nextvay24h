@@ -110,7 +110,12 @@ const structuredData = {
     "url": "https://www.vay24h.pro.vn/",
     "price": "0",
     "priceCurrency": "VND",
-    "availability": "https://schema.org/InStock"
+    "availability": "https://schema.org/InStock",
+      "seller": {
+    "@type": "Organization",
+    "name": "Vay24h.pro.vn",
+    "url": "https://www.vay24h.pro.vn/"
+  }
   },
 "hasOfferCatalog": {
   "@type": "OfferCatalog",
