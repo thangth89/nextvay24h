@@ -104,31 +104,37 @@ const structuredData = {
   "Credit Card Comparison"
   ],
   "offers": {
-    "@type": "AggregateOffer",
+    "@type": "Offer",
     "name": "Dịch vụ tư vấn vay tiền online và mở thẻ tín dụng",
     "description": "Tổng hợp các gói vay và thẻ tín dụng uy tín",
     "url": "https://www.vay24h.pro.vn/",
-    "lowPrice": "0",
-    "highPrice": "500000000", 
+    "price": "0",
     "priceCurrency": "VND",
     "availability": "https://schema.org/InStock"
   },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Danh mục sản phẩm tài chính",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "Vay tiền online",
-        "category": "Personal Loan"
-      },
-      {
-        "@type": "Offer", 
-        "name": "Thẻ tín dụng",
-        "category": "Credit Card"
-      }
-    ]
-  }
+"hasOfferCatalog": {
+  "@type": "OfferCatalog",
+  "name": "Danh mục sản phẩm tài chính",
+  "numberOfItems": 2,
+  "itemListElement": [
+    {
+      "@type": "Offer",
+      "name": "Vay tiền online",
+      "description": "Các gói vay tiền từ ngân hàng và tổ chức tài chính",
+      "category": "Personal Loan",
+      "url": "https://www.vay24h.pro.vn/vay-tien-nhanh",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer", 
+      "name": "Thẻ tín dụng",
+      "description": "Các loại thẻ tín dụng từ các ngân hàng",
+      "category": "Credit Card",
+      "url": "https://www.vay24h.pro.vn/the-tin-dung",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
