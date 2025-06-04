@@ -86,6 +86,7 @@ const structuredData = {
   "logo": "https://vay24h.pro.vn/logovay.webp",
   "image": "https://vay24h.pro.vn/vay.webp",
   "telephone": "+84-332-071-189",
+  "priceRange": "Tùy theo khoản vay",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "VN",
