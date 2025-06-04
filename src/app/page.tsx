@@ -269,7 +269,7 @@ export default function Home() {
     Dưới đây là các câu hỏi thường gặp của khách hàng khi sử dụng dịch vụ vay tiền online
   </p>
 
-  <div itemScope itemType="https://schema.org/FAQPage">
+  <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
     <Accordion title="📌 Vay online có an toàn không?">
       <div itemScope itemType="https://schema.org/Question">
         <h3 itemProp="name">Vay online có an toàn không?</h3>
@@ -283,7 +283,7 @@ export default function Home() {
     </Accordion>
 
     <Accordion title="📌 Tôi nhận tiền vay online bằng cách nào?">
-      <div itemScope itemType="https://schema.org/Question">
+      <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
         <h3 itemProp="name">Tôi nhận tiền vay online bằng cách nào?</h3>
         <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
           <p itemProp="text">
@@ -295,7 +295,7 @@ export default function Home() {
     </Accordion>
 
     <Accordion title="📌 Tôi thanh toán trả nợ gốc, lãi khi vay tiền online bằng cách nào?">
-      <div itemScope itemType="https://schema.org/Question">
+      <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
         <h3 itemProp="name">Tôi thanh toán trả nợ gốc, lãi khi vay tiền online bằng cách nào?</h3>
         <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
           <p itemProp="text">
@@ -307,7 +307,7 @@ export default function Home() {
     </Accordion>
 
     <Accordion title="📌 Vay tiền online lãi suất 0% là có thật hay không?">
-      <div itemScope itemType="https://schema.org/Question">
+      <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
         <h3 itemProp="name">Vay tiền online lãi suất 0% là có thật hay không?</h3>
         <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
           <p itemProp="text">
@@ -319,7 +319,7 @@ export default function Home() {
     </Accordion>
 
     <Accordion title="📌 Tôi có thể vay cùng lúc nhiều đơn vị cho vay online được không?">
-      <div itemScope itemType="https://schema.org/Question">
+      <div itemProp="mainEntity" itemScope itemType="https://schema.org/Question">
         <h3 itemProp="name">Tôi có thể vay cùng lúc nhiều đơn vị cho vay online được không?</h3>
         <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
           <p itemProp="text">
