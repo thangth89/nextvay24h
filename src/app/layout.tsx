@@ -94,12 +94,44 @@ const structuredData = {
     "https://www.facebook.com/giaiphaptaichinhlinhhoat", // Thay link social thực tế
   ],
   "foundingDate": "2025",
-  "areaServed": "VN",
-  "serviceType": "Tư vấn tài chính",
+  "areaServed": {
+    "@type": "Country", 
+    "name": "Vietnam"
+  },
+  "serviceType": [
+  "Financial Services Comparison",
+  "Loan Brokerage", 
+  "Credit Card Comparison"
+  ],
+  "additionalType": [
+  "So sánh dịch vụ tài chính",
+  "Môi giới vay tiền",
+  "So sánh thẻ tín dụng"
+  ],
   "offers": {
-    "@type": "Offer",
-    "description": "Tư vấn vay tiền online và mở thẻ tín dụng",
-    "areaServed": "VN"
+    "@type": "AggregateOffer",
+    "name": "Dịch vụ tư vấn vay tiền online và mở thẻ tín dụng",
+    "description": "Tổng hợp các gói vay và thẻ tín dụng uy tín",
+    "lowPrice": "0",
+    "highPrice": "500000000", 
+    "priceCurrency": "VND",
+    "availability": "https://schema.org/InStock"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Danh mục sản phẩm tài chính",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Vay tiền online",
+        "category": "Personal Loan"
+      },
+      {
+        "@type": "Offer", 
+        "name": "Thẻ tín dụng",
+        "category": "Credit Card"
+      }
+    ]
   }
 };
 
