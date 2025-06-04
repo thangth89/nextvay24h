@@ -2,6 +2,7 @@ import Accordion from "@/components/Accordion";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
+import Head from 'next/head';
 
 // SEO Metadata cho trang chủ
 export const metadata: Metadata = {
@@ -28,6 +29,58 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
+<>
+<Head>
+  <script type="application/ld+json" dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Vay online có an toàn không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vay tiền online là hình thức vay an toàn và tiện lợi, bạn không cần thế chấp tài sản nhưng vẫn có thể vay được tiền ngay trong ngày. Tuy nhiên bạn cần chọn những đơn vị cho vay uy tín mà chúng tôi đã giúp bạn sàng lọc để tránh mắc bẫy tín dụng đen với lãi suất cắt cổ."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Tôi nhận tiền vay online bằng cách nào?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tiền sẽ được chuyển khoản trực tiếp vào tài khoản ngân hàng của bạn sau khi hồ sơ được duyệt thành công. Thời gian nhận tiền thường từ 5-15 phút sau khi được phê duyệt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Tôi thanh toán trả nợ gốc, lãi khi vay tiền online bằng cách nào?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bạn có thể thanh toán qua Internet Banking, ví điện tử hoặc ra trực tiếp ngân hàng theo hướng dẫn của bên cho vay. Hầu hết các đơn vị đều hỗ trợ nhiều hình thức thanh toán tiện lợi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vay tiền online lãi suất 0% là có thật hay không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Đúng vậy, nhiều đơn vị hỗ trợ khoản vay đầu tiên với lãi suất 0% dành cho khách hàng mới. Đây là chương trình khuyến mãi để thu hút khách hàng, bạn nên tận dụng cơ hội này."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Tôi có thể vay cùng lúc nhiều đơn vị cho vay online được không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bạn hoàn toàn có thể đăng ký vay ở nhiều đơn vị khác nhau để tăng cơ hội được giải ngân nhanh chóng. Tuy nhiên, hãy cân nhắc khả năng trả nợ của mình trước khi vay nhiều nơi."
+          }
+        }
+      ]
+    })
+  }} />
+</Head>
+
     <div style={{ display: "flex", gap: "20px" }}>
       {/* Cột bên trái */}
       <div style={{ flex: 2 }}>
