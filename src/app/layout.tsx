@@ -76,29 +76,30 @@ const roboto = Roboto({
 });
 
 // Structured Data JSON-LD
-const structuredData = {
   "@context": "https://schema.org",
   "@type": "FinancialService",
+  "@id": "https://vay24h.pro.vn/#organization",
   "name": "vay24h.pro.vn",
   "description": "Website tư vấn tài chính, cung cấp thông tin và đánh giá dịch vụ vay tiền online, mở thẻ tín dụng uy tín tại Việt Nam",
   "url": "https://vay24h.pro.vn",
   "logo": "https://vay24h.pro.vn/logovay.webp",
   "image": "https://vay24h.pro.vn/vay.webp",
-  "telephone": "+84-332-071-189", // Thay số điện thoại thực tế
+  "telephone": "+84-332-071-189",
   "address": {
     "@type": "PostalAddress",
     "addressCountry": "VN",
-    "addressLocality": "Phú Hộ, Thị xã Phú Thọ, Phú Thọ", // Thay địa chỉ thực tế
+    "addressRegion": "Phú Thọ",
+    "addressLocality": "Thị xã Phú Thọ",
+    "streetAddress": "Phú Hộ"
   },
   "sameAs": [
-    "https://www.facebook.com/giaiphaptaichinhlinhhoat", // Thay link social thực tế
+    "https://www.facebook.com/giaiphaptaichinhlinhhoat"
   ],
   "foundingDate": "2025",
   "areaServed": {
     "@type": "Country", 
     "name": "Vietnam"
   },
-  "serviceType": "FinancialService",
   "offers": {
     "@type": "Offer",
     "name": "Dịch vụ tư vấn vay tiền online và mở thẻ tín dụng",
@@ -107,35 +108,41 @@ const structuredData = {
     "price": "0",
     "priceCurrency": "VND",
     "availability": "https://schema.org/InStock",
-      "seller": {
-    "@type": "Organization",
-    "name": "Vay24h.pro.vn",
-    "url": "https://www.vay24h.pro.vn/"
-  }
-  },
-"hasOfferCatalog": {
-  "@type": "OfferCatalog",
-  "name": "Danh mục sản phẩm tài chính",
-  "numberOfItems": 2,
-  "itemListElement": [
-    {
-      "@type": "Offer",
-      "name": "Vay tiền online",
-      "description": "Các gói vay tiền từ ngân hàng và tổ chức tài chính",
-      "category": "Personal Loan",
-      "url": "https://www.vay24h.pro.vn/vay-tien-nhanh",
-      "availability": "https://schema.org/InStock"
-    },
-    {
-      "@type": "Offer", 
-      "name": "Thẻ tín dụng",
-      "description": "Các loại thẻ tín dụng từ các ngân hàng",
-      "category": "Credit Card",
-      "url": "https://www.vay24h.pro.vn/the-tin-dung",
-      "availability": "https://schema.org/InStock"
+    "seller": {
+      "@type": "Organization",
+      "name": "Vay24h.pro.vn",
+      "url": "https://www.vay24h.pro.vn/"
     }
-  ]
-}
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Danh mục sản phẩm tài chính",
+    "numberOfItems": 2,
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "url": "https://www.vay24h.pro.vn/vay-tien-nhanh",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Vay tiền online",
+          "description": "Các gói vay tiền từ ngân hàng và tổ chức tài chính",
+          "category": "Personal Loan"
+        }
+      },
+      {
+        "@type": "Offer",
+        "url": "https://www.vay24h.pro.vn/the-tin-dung",
+        "availability": "https://schema.org/InStock",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Thẻ tín dụng",
+          "description": "Các loại thẻ tín dụng từ các ngân hàng",
+          "category": "Credit Card"
+        }
+      }
+    ]
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
