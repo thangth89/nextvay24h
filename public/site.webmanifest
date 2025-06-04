@@ -1,0 +1,22 @@
+{
+  "name": "vay24h - Vay tiền online uy tín 24/7",
+  "short_name": "vay24h",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007000",
+  "orientation": "portrait",
+  "description": "Website tư vấn tài chính, so sánh vay tiền online và mở thẻ tín dụng miễn phí tại Việt Nam.",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
