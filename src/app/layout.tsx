@@ -103,15 +103,11 @@ const structuredData = {
   "Loan Brokerage", 
   "Credit Card Comparison"
   ],
-  "additionalType": [
-  "So sánh dịch vụ tài chính",
-  "Môi giới vay tiền",
-  "So sánh thẻ tín dụng"
-  ],
   "offers": {
     "@type": "AggregateOffer",
     "name": "Dịch vụ tư vấn vay tiền online và mở thẻ tín dụng",
     "description": "Tổng hợp các gói vay và thẻ tín dụng uy tín",
+    "url": "https://www.vay24h.pro.vn/",
     "lowPrice": "0",
     "highPrice": "500000000", 
     "priceCurrency": "VND",
