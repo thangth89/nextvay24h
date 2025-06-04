@@ -101,20 +101,6 @@ const structuredData = {
     "@type": "Country", 
     "name": "Vietnam"
   },
-  "offers": {
-    "@type": "Offer",
-    "name": "Dịch vụ tư vấn vay tiền online và mở thẻ tín dụng",
-    "description": "Tổng hợp các gói vay và thẻ tín dụng uy tín",
-    "url": "https://www.vay24h.pro.vn/",
-    "price": "0",
-    "priceCurrency": "VND",
-    "availability": "https://schema.org/InStock",
-    "seller": {
-      "@type": "Organization",
-      "name": "Vay24h.pro.vn",
-      "url": "https://www.vay24h.pro.vn/"
-    }
-  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Danh mục sản phẩm tài chính",
