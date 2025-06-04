@@ -98,11 +98,7 @@ const structuredData = {
     "@type": "Country", 
     "name": "Vietnam"
   },
-  "serviceType": [
-  "Financial Services Comparison",
-  "Loan Brokerage", 
-  "Credit Card Comparison"
-  ],
+  "serviceType": "FinancialService",
   "offers": {
     "@type": "Offer",
     "name": "Dịch vụ tư vấn vay tiền online và mở thẻ tín dụng",
