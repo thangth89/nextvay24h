@@ -134,21 +134,21 @@ export default function VayH5Page() {
             <div>
               <h3 className="font-semibold text-blue-700 mb-2">Nền tảng uy tín:</h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                <li>Doctor Đồng – doctordong.vn</li>
-                <li>OnCredit – oncredit.vn</li>
-                <li>Robocash – robocash.vn</li>
-                <li>MoneyCat – moneycat.vn</li>
-                <li>Tamo – tamo.vn</li>
+                <li>Jeff Web</li>
+                <li>VayVND</li>
+                <li>MoneyCat</li>
+                <li>CreditYes</li>
+                <li>Finami</li>
               </ul>
             </div>
             <div>
               <h3 className="font-semibold text-red-700 mb-2">Nền tảng cần cảnh giác:</h3>
               <ul className="list-disc pl-5 space-y-2 text-gray-700">
-                <li>Tinvay</li>
-                <li>Cây Vàng</li>
-                <li>Dong247</li>
-                <li>VayVND</li>
-                <li>Jeff</li>
+                <li>Doctor Đồng</li>
+                <li>Vdong</li>
+                <li>Ơi vay</li>
+                <li>Yoloan</li>
+                <li> Oncredit</li>
               </ul>
               <p className="text-sm text-red-600 italic">(Dựa trên phản ánh của người dùng về phí cao và đòi nợ không minh bạch)</p>
             </div>
