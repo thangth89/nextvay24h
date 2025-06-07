@@ -60,7 +60,7 @@ export default function VayH5Page() {
             className="w-full h-auto my-6"
           />
           <p className="text-gray-700">
-            Trong bối cảnh tài chính cá nhân phát triển nhanh, vay H5 nổi lên như một hình thức vay tiền online nhanh gọn, tiện lợi – nhưng cũng đi kèm nhiều rủi ro. Bài viết này sẽ giúp bạn hiểu rõ bản chất vay H5, nhận diện nền tảng uy tín và lưu ý quan trọng trước khi vay.
+            Vay H5 là hình thức vay tiền trực tuyến không cần tải ứng dụng, thực hiện qua trình duyệt web trên điện thoại hoặc máy tính. Bài viết này sẽ giúp bạn hiểu rõ hình thức vay H5 là gì, có hợp pháp không, rủi ro và cách lựa chọn nền tảng uy tín trong năm 2025.
           </p>
         </header>
 
@@ -68,10 +68,14 @@ export default function VayH5Page() {
           <h2 className="text-lg font-semibold mb-2">Mục lục bài viết</h2>
           <ol className="list-decimal pl-5 space-y-1 text-blue-700">
             <li><Link href="#khai-niem">Vay H5 là gì?</Link></li>
+            <li><Link href="#hop-phap">Vay H5 có hợp pháp không?</Link></li>
             <li><Link href="#so-sanh">So sánh vay H5 với app tài chính truyền thống</Link></li>
             <li><Link href="#uu-diem">Ưu & Nhược điểm</Link></li>
             <li><Link href="#rui-ro">Rủi ro thường gặp</Link></li>
             <li><Link href="#lua-dao">Cách nhận diện lừa đảo</Link></li>
+            <li><Link href="#vi-du">Ví dụ thực tế</Link></li>
+            <li><Link href="#nen-tang">Đánh giá một số nền tảng phổ biến</Link></li>
+            <li><Link href="#faq">Câu hỏi thường gặp</Link></li>
             <li><Link href="#loi-khuyen">Lưu ý & lời khuyên</Link></li>
             <li><Link href="#ket">Kết luận</Link></li>
           </ol>
@@ -79,13 +83,20 @@ export default function VayH5Page() {
 
         <section id="khai-niem" className="mb-10">
           <h2 className="text-2xl font-bold mb-4">1. Vay H5 là gì?</h2>
-          <p className="text-gray-700 mb-3">
-            Vay H5 là hình thức vay online qua trình duyệt web, không cần cài app. Người vay chỉ cần truy cập website, điền thông tin cá nhân và chờ xét duyệt tự động. Các nền tảng này sử dụng công nghệ HTML5 để xử lý quy trình đăng ký – giải ngân trực tuyến.
+          <p className="text-gray-700">
+            Vay H5 là hình thức vay tiền online qua nền tảng web sử dụng công nghệ HTML5. Người dùng chỉ cần truy cập vào đường link trang vay, điền thông tin cá nhân và chờ xét duyệt. Toàn bộ quá trình diễn ra trên trình duyệt mà không cần tải ứng dụng. Hình thức này rất phổ biến với người cần vay nhanh số tiền nhỏ từ 1–10 triệu đồng.
+          </p>
+        </section>
+
+        <section id="hop-phap" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">2. Vay H5 có hợp pháp không?</h2>
+          <p className="text-gray-700">
+            Các nền tảng H5 không bị cấm tại Việt Nam nếu thuộc sở hữu của công ty có đăng ký kinh doanh hợp pháp, hoạt động minh bạch và có hợp đồng vay rõ ràng. Tuy nhiên, nhiều nền tảng H5 hoạt động không rõ pháp lý, không minh bạch về phí và dễ vi phạm quyền riêng tư người dùng. Do đó, cần cảnh giác khi lựa chọn.
           </p>
         </section>
 
         <section id="so-sanh" className="mb-10">
-          <h2 className="text-2xl font-bold mb-4">2. So sánh với hình thức vay qua app</h2>
+          <h2 className="text-2xl font-bold mb-4">3. So sánh với hình thức vay qua app</h2>
           <table className="table-auto w-full text-left border border-gray-200">
             <thead className="bg-gray-50">
               <tr>
@@ -96,87 +107,110 @@ export default function VayH5Page() {
             </thead>
             <tbody>
               <tr>
-                <td className="border px-4 py-2">Yêu cầu cài app</td>
-                <td className="border px-4 py-2">Không</td>
-                <td className="border px-4 py-2">Có</td>
-              </tr>
-              <tr>
-                <td className="border px-4 py-2">Thời gian duyệt hồ sơ</td>
-                <td className="border px-4 py-2">Vài phút – vài giờ</td>
-                <td className="border px-4 py-2">1 – 2 ngày</td>
+                <td className="border px-4 py-2">Cài ứng dụng</td>
+                <td className="border px-4 py-2">Không cần</td>
+                <td className="border px-4 py-2">Cần tải app</td>
               </tr>
               <tr>
                 <td className="border px-4 py-2">Tính minh bạch</td>
-                <td className="border px-4 py-2">Thấp</td>
+                <td className="border px-4 py-2">Thường kém</td>
                 <td className="border px-4 py-2">Cao hơn</td>
+              </tr>
+              <tr>
+                <td className="border px-4 py-2">Thời gian duyệt vay</td>
+                <td className="border px-4 py-2">1–3 giờ</td>
+                <td className="border px-4 py-2">1–2 ngày</td>
               </tr>
             </tbody>
           </table>
         </section>
 
         <section id="uu-diem" className="mb-10">
-          <h2 className="text-2xl font-bold mb-4">3. Ưu và nhược điểm</h2>
+          <h2 className="text-2xl font-bold mb-4">4. Ưu điểm và nhược điểm</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-semibold mb-2 text-green-700">Ưu điểm</h3>
+              <h3 className="font-semibold text-green-700 mb-2">Ưu điểm</h3>
               <ul className="list-disc pl-5 text-gray-700">
-                <li>Không cần gặp mặt, ký giấy tờ</li>
-                <li>Giải ngân siêu nhanh</li>
-                <li>Tiện lợi, thao tác trên trình duyệt</li>
+                <li>Không cần gặp mặt trực tiếp</li>
+                <li>Đăng ký online, thao tác nhanh</li>
+                <li>Phù hợp người không có lịch sử tín dụng</li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-2 text-red-700">Nhược điểm</h3>
+              <h3 className="font-semibold text-red-700 mb-2">Nhược điểm</h3>
               <ul className="list-disc pl-5 text-gray-700">
-                <li>Lãi suất thực tế cao</li>
-                <li>Thông tin cá nhân dễ bị rò rỉ</li>
-                <li>Ít nền tảng có pháp lý rõ ràng</li>
+                <li>Lãi suất ẩn cao</li>
+                <li>Dễ bị làm phiền nếu chậm trả</li>
+                <li>Nhiều nền tảng giả mạo, không rõ ràng</li>
               </ul>
             </div>
           </div>
         </section>
 
         <section id="rui-ro" className="mb-10">
-          <h2 className="text-2xl font-bold mb-4">4. Rủi ro thường gặp</h2>
+          <h2 className="text-2xl font-bold mb-4">5. Rủi ro thường gặp</h2>
           <ul className="list-disc pl-5 text-gray-700 space-y-2">
-            <li>Ghi lãi suất 0% nhưng thu phí cao</li>
-            <li>Lạm dụng truy cập danh bạ, vị trí</li>
-            <li>Gọi điện đòi nợ người thân</li>
-            <li>Không có địa chỉ trụ sở rõ ràng</li>
+            <li>Đòi nợ qua danh bạ, gọi điện cho người thân</li>
+            <li>Không minh bạch về khoản phí</li>
+            <li>Lừa đảo qua link giả mạo</li>
+            <li>Không thể khiếu nại do không có pháp nhân</li>
           </ul>
         </section>
 
         <section id="lua-dao" className="mb-10">
-          <h2 className="text-2xl font-bold mb-4">5. Nhận diện nền tảng lừa đảo</h2>
+          <h2 className="text-2xl font-bold mb-4">6. Dấu hiệu nền tảng vay H5 lừa đảo</h2>
           <ul className="list-disc pl-5 text-gray-700">
-            <li>Dùng link rút gọn hoặc không rõ nguồn gốc</li>
-            <li>Không có thông tin pháp nhân, chính sách bảo mật</li>
-            <li>Cam kết quá mức như &quot;vay 100% không điều kiện&quot;</li>
+            <li>Sử dụng link rút gọn không rõ nguồn gốc</li>
+            <li>Không có tên công ty, không có thông tin pháp lý</li>
+            <li>Cam kết &quot;duyệt 100%&quot;, &quot;lãi 0%&quot; phi thực tế</li>
           </ul>
         </section>
 
-        <section id="loi-khuyen" className="mb-10">
-          <h2 className="text-2xl font-bold mb-4">6. Lưu ý khi vay H5</h2>
-          <ul className="list-disc pl-5 text-gray-700">
-            <li>Chỉ vay khi thật sự cần thiết</li>
-            <li>Đọc kỹ điều khoản trước khi đồng ý</li>
-            <li>Ưu tiên nền tảng có thông tin rõ ràng</li>
-          </ul>
-          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-4">
+        <section id="vi-du" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">7. Ví dụ thực tế</h2>
+          <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
             <p className="text-gray-700">
-              <strong>Lời khuyên:</strong> Nên tìm hiểu các nền tảng được người dùng đánh giá tốt, có thông tin pháp lý rõ ràng và hỗ trợ minh bạch trước – trong – sau khi vay.
+              Anh M. (TP.HCM) vay 2 triệu trên một trang H5 được quảng cáo miễn phí. Tuy nhiên, sau 7 ngày anh phải trả hơn 3,4 triệu do các khoản phí xử lý và phí quản lý. Khi chậm 1 ngày, anh bị gọi điện, nhắn tin liên tục và bị đe dọa qua Zalo.
             </p>
           </div>
         </section>
 
+        <section id="nen-tang" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">8. Đánh giá một số nền tảng phổ biến</h2>
+          <ul className="list-disc pl-5 text-gray-700">
+            <li><strong>Jeff:</strong> Phê duyệt nhanh, minh bạch, có pháp lý rõ</li>
+            <li><strong>MoneyCat:</strong> Lãi suất cao, nhưng rõ ràng điều khoản</li>
+            <li><strong>Finami:</strong> Hợp tác với bên thứ 3, cần đọc kỹ thông tin</li>
+            <li><strong>Ơi Vay:</strong> Bị phản ánh nhiều về gọi làm phiền</li>
+          </ul>
+        </section>
+
+        <section id="faq" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">9. Câu hỏi thường gặp</h2>
+          <div className="space-y-4">
+            <p><strong>✔ Vay H5 có bị đòi nợ không?</strong><br/>Có, và thường bị làm phiền nếu chậm trả.</p>
+            <p><strong>✔ Có nên vay H5 không?</strong><br/>Chỉ khi bạn hiểu rõ điều khoản và biết rõ nền tảng cung cấp dịch vụ.</p>
+            <p><strong>✔ Vay xong có thể trả trước không?</strong><br/>Có, nhưng cần đọc kỹ xem có phí trả trước hay không.</p>
+          </div>
+        </section>
+
+        <section id="loi-khuyen" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">10. Lưu ý & lời khuyên</h2>
+          <ul className="list-disc pl-5 text-gray-700">
+            <li>Không vay nếu không thực sự cần thiết</li>
+            <li>Đọc kỹ điều khoản hợp đồng, lưu lại thông tin giao dịch</li>
+            <li>Chọn nền tảng có tên tuổi, có mã số thuế, địa chỉ rõ ràng</li>
+          </ul>
+        </section>
+
         <section id="ket" className="mb-10">
-          <h2 className="text-2xl font-bold mb-4">7. Kết luận</h2>
-          <p className="text-gray-700">
-            Vay H5 là hình thức mới, tiện lợi nhưng tiềm ẩn nhiều rủi ro. Bạn nên cân nhắc kỹ và ưu tiên nền tảng minh bạch, có pháp lý rõ ràng. Đừng để sự tiện lợi đánh đổi bằng thông tin cá nhân và an toàn tài chính.
+          <h2 className="text-2xl font-bold mb-4">11. Kết luận</h2>
+          <p className="text-gray-700 mb-4">
+            Vay H5 là xu hướng phát triển nhanh nhưng cũng tiềm ẩn rủi ro cao nếu không chọn đúng nền tảng. Bạn hãy tỉnh táo, đọc kỹ thông tin và chỉ vay từ những đơn vị có pháp lý rõ ràng để bảo vệ tài chính cá nhân.
           </p>
-          <div className="mt-4 p-4 bg-blue-50 border-l-4 border-blue-400">
-            <p className="text-blue-800 font-medium">
-              🔗 Tham khảo thêm: <Link href="/vay-tien-nhanh" className="underline text-blue-700">TOP nền tảng vay tiền uy tín</Link>
+          <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
+            <p className="text-blue-700 font-semibold">
+              Tham khảo thêm: <Link href="/vay-tien-nhanh" className="underline">Danh sách nền tảng vay nhanh uy tín 2025</Link>
             </p>
           </div>
         </section>
