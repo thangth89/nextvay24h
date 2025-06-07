@@ -151,7 +151,7 @@ export default function VayH5Page() {
           <ul className="list-disc pl-5 text-gray-700">
             <li>Dùng link rút gọn hoặc không rõ nguồn gốc</li>
             <li>Không có thông tin pháp nhân, chính sách bảo mật</li>
-            <li>Cam kết quá mức như "vay 100% không điều kiện"</li>
+            <li>Cam kết quá mức như &quot;vay 100% không điều kiện&quot;</li>
           </ul>
         </section>
 
