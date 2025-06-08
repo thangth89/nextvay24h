@@ -69,11 +69,11 @@ export default function Page() {
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             Finami là gì? Đánh giá ứng dụng vay tiền online minh bạch và tiện lợi năm 2025
           </h1>
-      <div className="text-gray-600 text-sm mb-4">
-      <time dateTime={new Date().toISOString()}>
-        Cập nhật: {new Date().toLocaleDateString('vi-VN')}
-      </time>
-      </div>
+          <div className="text-gray-600 text-sm mb-4">
+            <time dateTime={new Date().toISOString()}>
+              Cập nhật: {new Date().toLocaleDateString('vi-VN')}
+            </time>
+         </div>
           <Image
             src="/news/finami-vay-tien-online.webp"
             alt="Finami - Ứng dụng vay tiền online minh bạch"
