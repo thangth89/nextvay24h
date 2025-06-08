@@ -73,7 +73,7 @@ export default function Page() {
             <time dateTime={new Date().toISOString()}>
               Cập nhật: {new Date().toLocaleDateString('vi-VN')}
             </time>
-
+          </div>
           <Image
             src="/news/finami-vay-tien-online.webp"
             alt="Finami - Ứng dụng vay tiền online minh bạch"
