@@ -197,4 +197,8 @@ export default function Page() {
       👉 Tham khảo thêm: <Link href="/vay-tien-nhanh" className="underline">Top các nền tảng vay uy tín khác</Link>
     </p>
   </div>
-</section>
+   </section>
+  </article>
+ </>
+ );
+}
