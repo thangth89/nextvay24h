@@ -185,7 +185,7 @@ export default function VayKhongLaiSuatPage() {
           <ul className="list-disc pl-5 text-gray-700">
             <li><strong>MoneyCat:</strong> Miễn lãi cho khoản vay đầu tiên, thời hạn dưới 14 ngày</li>
             <li><strong>Jeff:</strong> Có chương trình ưu đãi 0% nếu trả đúng hạn</li>
-            <li><strong>Tiền Ơi:</strong> Một số thời điểm có ưu đãi lãi 0% trong 7 ngày</li>
+            <li><strong>Finami:</strong> Có ưu đãi 0% nếu trả đúng kỳ hạn đầu tiên (thường 7–14 ngày) </li>
           </ul>
           <p className="mt-4">
             👉 Tham khảo thêm: <Link href="/vay-tien-nhanh" className="underline text-blue-700">Danh sách các app vay uy tín tại Việt Nam</Link>
