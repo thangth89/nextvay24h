@@ -58,12 +58,12 @@ export const metadata = {
 
   icons: {
     icon: [
-      { url: '/favicon.webp', sizes: '32x32', type: 'image/webp' },
+      { url: '/favicon.png', sizes: '32x32', type: 'image/webp' },
       { url: '/favicon-192.png', sizes: '192x192', type: 'image/png' },
       { url: '/favicon-512.png', sizes: '512x512', type: 'image/png' },
     ],
     apple: '/favicon-192.png',
-    shortcut: '/favicon.webp',
+    shortcut: '/favicon.png',
   },
   manifest: '/site.webmanifest',
   category: 'finance',
