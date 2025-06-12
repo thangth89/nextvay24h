@@ -71,6 +71,7 @@ export default function HomeClient() {
               height={300}
               style={{ width: "100%", height: "auto", display: "block" }}
               priority
+              fetchPriority="high"
               itemProp="image"
             />
           </div>
