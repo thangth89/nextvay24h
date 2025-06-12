@@ -1,15 +1,18 @@
+// app/tin-tuc/jeff-vay-tien-online/page.tsx
+
 import { Metadata } from 'next';
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút',
-  description: 'Jeff là ứng dụng vay tiền nhanh online, hỗ trợ khoản vay từ 500.000đ đến 10.000.000đ, thủ tục đơn giản, giải ngân chỉ trong vài phút. Tìm hiểu ngay về Jeff.',
-  keywords: ['Jeff', 'vay tiền Jeff', 'ứng dụng Jeff', 'vay tiền online', 'vay nhanh', 'vay tiền uy tín'],
+  title: 'Jeff - Vay tiền online uy tín, minh bạch, xét duyệt nhanh',
+  description: 'Jeff là nền tảng kết nối người vay và các tổ chức tài chính đáng tin cậy. Đăng ký đơn giản, không thế chấp, nhận tiền trong 24 giờ.',
+  keywords: ['Jeff', 'vay tiền Jeff', 'ứng dụng Jeff', 'vay tiền online', 'vay nhanh không thế chấp'],
   robots: 'index, follow',
   openGraph: {
-    title: 'Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút',
-    description: 'Jeff là ứng dụng kết nối vay tiền online, hỗ trợ nhanh chóng, minh bạch và tiện lợi.',
+    title: 'Jeff - Vay tiền online uy tín, minh bạch, xét duyệt nhanh',
+    description: 'Tìm hiểu cách vay tiền online an toàn qua Jeff. Hỗ trợ vay tiền minh bạch, bảo mật và không cần gặp mặt trực tiếp.',
     url: 'https://vay24h.pro.vn/tin-tuc/jeff-vay-tien-uy-tin',
     type: 'article',
     images: [
@@ -17,115 +20,190 @@ export const metadata: Metadata = {
         url: 'https://vay24h.pro.vn/news/jeff-vay-tien-uy-tin.webp',
         width: 1200,
         height: 630,
-        alt: 'Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút',
+        alt: 'Jeff - Vay tiền online uy tín, minh bạch, xét duyệt nhanh',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút',
-    description: 'Jeff là ứng dụng vay tiền nhanh online, hỗ trợ giải ngân chỉ trong vài phút. Đơn giản, minh bạch và uy tín.',
+    title: 'Jeff - Vay tiền online uy tín, minh bạch, xét duyệt nhanh',
+    description: 'Jeff giúp bạn tiếp cận khoản vay online nhanh chóng, minh bạch và an toàn.',
     images: ['https://vay24h.pro.vn/news/jeff-vay-tien-uy-tin.webp'],
   },
 };
 
-export default function Page() {
+export default function JeffPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Jeff - Vay tiền online uy tín, minh bạch, xét duyệt nhanh',
+    description: 'Tìm hiểu cách vay tiền online an toàn qua Jeff. Hỗ trợ vay tiền minh bạch, bảo mật và không cần gặp mặt trực tiếp.',
+    image: 'https://vay24h.pro.vn/news/jeff-vay-tien-uy-tin.webp',
+    author: {
+      '@type': 'Organization',
+      name: 'Vay24h Pro',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Vay24h Pro',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://vay24h.pro.vn/logovay.webp',
+      },
+    },
+    datePublished: new Date().toISOString(),
+    dateModified: new Date().toISOString(),
+  };
+
   return (
     <>
-      {/* JSON-LD Schema.org */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Article',
-            headline: 'Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút',
-            description: 'Jeff là ứng dụng kết nối vay tiền online, hỗ trợ nhanh chóng, minh bạch và tiện lợi.',
-            image: 'https://vay24h.pro.vn/news/jeff-vay-tien-uy-tin.webp',
-            author: {
-              '@type': 'Organization',
-              name: 'Vay24h Pro',
-            },
-            publisher: {
-              '@type': 'Organization',
-              name: 'Vay24h Pro',
-              logo: {
-                '@type': 'ImageObject',
-                url: 'https://vay24h.pro.vn/logovay.webp',
-              },
-            },
-            datePublished: '2025-05-21',
-            dateModified: '2025-05-21',
-          }),
-        }}
-      />
-      <div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px",backgroundColor: "#fff", borderRadius: "8px" }}>
-      <article style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}>
-        <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>
-          Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút
-        </h1>
+      <Head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      </Head>
+      <article className="max-w-4xl mx-auto px-4 py-8">
+        <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+            Jeff - Vay tiền online uy tín, minh bạch, xét duyệt nhanh
+          </h1>
+          <div className="text-gray-600 text-sm mb-4">
+            <time dateTime={new Date().toISOString()}>
+              Cập nhật: {new Date().toLocaleDateString('vi-VN')}
+            </time>
+          </div>
+          <Image
+            src="/news/jeff-vay-tien-uy-tin.webp"
+            alt="Jeff - Vay tiền online uy tín, minh bạch, xét duyệt nhanh"
+            width={800}
+            height={450}
+            className="w-full h-auto my-6"
+          />
+          <p className="text-gray-700">
+            Nền tảng Jeff là một trong những lựa chọn hàng đầu khi người dùng tìm kiếm giải pháp vay tiền online nhanh chóng và minh bạch. Không chỉ mang lại trải nghiệm đăng ký đơn giản, Jeff còn giúp người vay tiếp cận được các khoản vay phù hợp với điều kiện tài chính cá nhân, từ các đơn vị uy tín.
+          </p>
+        </header>
 
-        <p>
-          Trong thời đại công nghệ số, các ứng dụng vay tiền online đang ngày càng phổ biến và tiện lợi. Trong đó, <strong>Jeff</strong> nổi bật là một trong những nền tảng vay tiền nhanh, uy tín được nhiều người tin dùng tại Việt Nam.
-        </p>
+        <nav className="bg-gray-100 p-4 rounded mb-8">
+          <h2 className="text-lg font-semibold mb-2">Mục lục bài viết</h2>
+          <ol className="list-decimal pl-5 space-y-1 text-blue-700">
+            <li><Link href="#gioi-thieu">Jeff là gì?</Link></li>
+            <li><Link href="#co-che">Cách thức hoạt động</Link></li>
+            <li><Link href="#uu-nhuoc">Ưu điểm & Nhược điểm</Link></li>
+            <li><Link href="#dieu-kien">Điều kiện vay tiền Jeff</Link></li>
+            <li><Link href="#quy-trinh">Hướng dẫn đăng ký vay</Link></li>
+            <li><Link href="#lai-phi">Lãi suất & Phí dịch vụ</Link></li>
+            <li><Link href="#co-tin-cay-khong">Jeff có đáng tin cậy không?</Link></li>
+            <li><Link href="#phan-hoi">Đánh giá người dùng</Link></li>
+            <li><Link href="#can-trong">Những điều cần lưu ý</Link></li>
+            <li><Link href="#loi-khuyen">Lời khuyên trước khi vay</Link></li>
+            <li><Link href="#ket-luan">Kết luận</Link></li>
+          </ol>
+        </nav>
 
-        <Image
-          src="/news/jeff-vay-tien-uy-tin.webp"
-          alt="Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút"
-          width={800}
-          height={450}
-          style={{ width: '100%', height: 'auto', margin: '20px 0' }}
-        />
+        <section id="gioi-thieu" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">1. Jeff là gì?</h2>
+          <p className="text-gray-700">
+            Jeff là nền tảng hỗ trợ tài chính kỹ thuật số, giúp kết nối người có nhu cầu vay tiền với các đối tác cho vay uy tín tại Việt Nam. Người dùng chỉ cần đăng ký thông tin một lần trên Jeff, hệ thống sẽ gợi ý khoản vay phù hợp với hồ sơ tín dụng và nhu cầu của bạn.
+          </p>
+        </section>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">Giới thiệu về ứng dụng vay tiền Jeff</h2>
-        <p>
-          Jeff là một nền tảng trung gian kết nối người vay với các đối tác tài chính đáng tin cậy. Với giao diện thân thiện, quy trình đăng ký đơn giản và thời gian giải ngân nhanh chóng, Jeff đã giúp hàng triệu người tiếp cận nguồn vốn ngắn hạn trong lúc cần thiết.
-        </p>
+        <section id="co-che" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">2. Cách thức hoạt động</h2>
+          <p className="text-gray-700">
+            Khác với các app cho vay trực tiếp, Jeff đóng vai trò là trung gian tài chính. Sau khi người dùng nhập thông tin, nền tảng sẽ sử dụng công nghệ chấm điểm tín dụng tự động để lựa chọn tổ chức cho vay tốt nhất. Quy trình hoàn toàn online, không yêu cầu gặp mặt hay hồ sơ giấy tờ phức tạp.
+          </p>
+        </section>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">Lợi ích khi vay tiền qua Jeff</h2>
-        <ul className="list-disc list-inside">
-          <li>Vay tiền online 100%, không cần gặp mặt</li>
-          <li>Đăng ký dễ dàng chỉ trong vài bước</li>
-          <li>Hỗ trợ khoản vay từ 500.000đ đến 10.000.000đ</li>
-          <li>Giải ngân nhanh trong vòng 15 phút sau khi duyệt</li>
-          <li>Lãi suất minh bạch, không phí ẩn</li>
-        </ul>
+        <section id="uu-nhuoc" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">3. Ưu điểm & Nhược điểm</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="font-semibold text-green-700 mb-2">Ưu điểm</h3>
+              <ul className="list-disc pl-5 text-gray-700">
+                <li>Thủ tục đăng ký đơn giản, không cần thế chấp</li>
+                <li>Xét duyệt tự động, tiết kiệm thời gian</li>
+                <li>Minh bạch thông tin khoản vay</li>
+                <li>Bảo mật dữ liệu cá nhân tốt</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-red-700 mb-2">Nhược điểm</h3>
+              <ul className="list-disc pl-5 text-gray-700">
+                <li>Lãi suất cao nếu không chọn đúng đối tác</li>
+                <li>Cần thận trọng với các đơn vị quảng cáo giả mạo Jeff</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">Điều kiện vay tại Jeff</h2>
-        <p>Người vay cần đáp ứng một số điều kiện cơ bản như:</p>
-        <ul className="list-disc list-inside">
-          <li>Công dân Việt Nam từ 18 đến 60 tuổi</li>
-          <li>Có CCCD/CMND còn hiệu lực</li>
-          <li>Có tài khoản ngân hàng chính chủ</li>
-          <li>Có thu nhập hoặc khả năng chi trả khoản vay</li>
-        </ul>
+        <section id="dieu-kien" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">4. Điều kiện vay tiền Jeff</h2>
+          <ul className="list-disc pl-5 text-gray-700 space-y-2">
+            <li>Công dân Việt Nam từ 18 đến 60 tuổi</li>
+            <li>Có CCCD/CMND hợp lệ</li>
+            <li>Có tài khoản ngân hàng chính chủ</li>
+            <li>Không có nợ xấu nghiêm trọng</li>
+          </ul>
+        </section>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">Cách đăng ký vay tiền qua Jeff</h2>
-        <ol className="list-decimal list-inside">
-          <li>Tải ứng dụng Jeff hoặc truy cập website chính thức</li>
-          <li>Điền thông tin cá nhân và khoản vay mong muốn</li>
-          <li>Chờ xét duyệt tự động</li>
-          <li>Nhận tiền giải ngân trực tiếp vào tài khoản</li>
-        </ol>
+        <section id="quy-trinh" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">5. Hướng dẫn đăng ký vay trên Jeff</h2>
+          <ol className="list-decimal pl-5 text-gray-700 space-y-2">
+            <li>Truy cập trang web chính thức của Jeff</li>
+            <li>Điền đầy đủ thông tin cá nhân và yêu cầu khoản vay</li>
+            <li>Chờ hệ thống xử lý và đề xuất đối tác phù hợp</li>
+            <li>Hoàn tất thủ tục tại đơn vị được giới thiệu và nhận tiền</li>
+          </ol>
+        </section>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">Jeff có lừa đảo không?</h2>
-        <p>
-          Jeff không phải là tổ chức tài chính trực tiếp cho vay mà là nền tảng kết nối. Jeff chỉ làm việc với các đối tác tài chính được cấp phép, do đó tính an toàn và minh bạch khá cao. Tuy nhiên, bạn nên đọc kỹ điều khoản và lãi suất của từng đơn vị cho vay trước khi đồng ý vay tiền.
-        </p>
+        <section id="lai-phi" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">6. Lãi suất & Phí dịch vụ</h2>
+          <p className="text-gray-700">
+            Jeff không trực tiếp tính lãi mà tùy thuộc vào đối tác cho vay. Lãi suất thường nằm trong khoảng 12% – 20%/năm. Một số tổ chức có thể tính thêm phí dịch vụ hoặc phí tư vấn, tuy nhiên sẽ được hiển thị rõ trước khi bạn xác nhận khoản vay.
+          </p>
+        </section>
 
-        <h2 className="text-xl font-semibold mt-6 mb-2">Kết luận</h2>
-        <p>
-          Nếu bạn đang tìm kiếm một giải pháp tài chính nhanh chóng, tiện lợi và minh bạch, thì <strong>Jeff</strong> là một lựa chọn đáng cân nhắc. Với quy trình đơn giản, giải ngân nhanh và mạng lưới đối tác rộng khắp, Jeff giúp bạn tiếp cận khoản vay dễ dàng chỉ trong vài phút.
-        </p>
+        <section id="co-tin-cay-khong" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">7. Jeff có đáng tin cậy không?</h2>
+          <p className="text-gray-700">
+            Jeff hiện đang hoạt động tại nhiều quốc gia và được đánh giá cao nhờ quy trình rõ ràng, minh bạch và bảo mật. Nền tảng này đã hỗ trợ hàng ngàn khách hàng tại Việt Nam tiếp cận vốn vay uy tín mà không bị lừa đảo hay chiêu trò “lãi 0%” không thực tế.
+          </p>
+        </section>
 
-        <p className="mt-4">
-          Xem thêm:{' '}
-          <Link href="/vay-tien-nhanh" className="text-blue-600 underline">
-            Top 10+ đơn vị cho vay tiền online uy tín
-          </Link>
-        </p>
+        <section id="phan-hoi" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">8. Đánh giá người dùng thực tế</h2>
+          <p className="text-gray-700">
+            Đa số người dùng phản hồi tốt về Jeff nhờ khả năng lọc và gợi ý đơn vị vay phù hợp. Giao diện thân thiện, dễ dùng, nhân viên hỗ trợ rõ ràng. Một số ý kiến mong muốn có thêm nhiều đối tác để tăng lựa chọn.
+          </p>
+        </section>
+
+        <section id="can-trong" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">9. Những điều cần lưu ý khi vay qua Jeff</h2>
+          <ul className="list-disc pl-5 text-gray-700">
+            <li>Chỉ cung cấp thông tin trên website chính thức</li>
+            <li>Không vay nếu chưa hiểu rõ khoản phí và thời hạn</li>
+            <li>Không chia sẻ mã OTP hay tài khoản ngân hàng với người lạ</li>
+          </ul>
+        </section>
+
+        <section id="loi-khuyen" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">10. Lời khuyên dành cho người vay mới</h2>
+          <p className="text-gray-700">
+            Luôn đọc kỹ điều khoản từ đơn vị cho vay mà Jeff giới thiệu. Ưu tiên chọn khoản vay nhỏ, ngắn hạn để kiểm tra dịch vụ. Đặc biệt không nên vay nhiều nơi cùng lúc, tránh vòng xoáy nợ chồng nợ.
+          </p>
+        </section>
+
+        <section id="ket-luan" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">11. Kết luận</h2>
+          <p className="text-gray-700 mb-4">
+            Jeff là một nền tảng tài chính hữu ích nếu bạn muốn vay tiền online minh bạch và nhanh chóng. Tuy nhiên, người vay cần trang bị kiến thức, đọc kỹ thông tin và chỉ chọn vay khi thực sự cần thiết. Việc chủ động tài chính sẽ giúp bạn kiểm soát được cuộc sống thay vì rơi vào bẫy nợ không lối thoát.
+          </p>
+          <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
+            <p className="text-blue-700 font-semibold">
+              Xem thêm: <Link href="/vay-tien-nhanh" className="underline">Top nền tảng vay online uy tín 2025</Link>
+            </p>
+          </div>
+        </section>
       </article>
-    </div>
     </>
   );
 }
