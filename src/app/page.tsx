@@ -2,6 +2,7 @@ import Accordion from "@/components/Accordion";
 import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
+const Accordion = dynamic(() => import('@/components/Accordion'), { ssr: false });
 
 // SEO Metadata cho trang chủ
 export const metadata: Metadata = {
@@ -91,6 +92,7 @@ export default function Home() {
               height={300}
               style={{ width: "100%", height: "auto", display: "block" }}
               priority
+              fetchPriority="high"
               itemProp="image"
             />
           </div>
