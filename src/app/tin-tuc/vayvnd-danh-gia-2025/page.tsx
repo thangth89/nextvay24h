@@ -1,182 +1,209 @@
-'use client'
+// app/tin-tuc/vayvnd-vay-tien-online/page.tsx
 
+import { Metadata } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const metadata: Metadata = {
+  title: 'VAYVND - Vay tiền online đơn giản, không cần gặp mặt',
+  description: 'VAYVND là nền tảng hỗ trợ vay tiền online nhanh từ 500.000đ đến 15 triệu đồng. Đăng ký dễ dàng, không thế chấp, giải ngân trong ngày.',
+  keywords: ['VAYVND', 'vay tiền VAYVND', 'vay tiền online', 'ứng dụng VAYVND', 'vay nhanh không gặp mặt'],
+  robots: 'index, follow',
+  openGraph: {
+    title: 'VAYVND - Vay tiền online đơn giản, không cần gặp mặt',
+    description: 'Tìm hiểu cách vay tiền online an toàn với VAYVND. Đăng ký nhanh chóng, xét duyệt tự động, hỗ trợ giải ngân trong 24 giờ.',
+    url: 'https://vay24h.pro.vn/tin-tuc/vayvnd-danh-gia-2025',
+    type: 'article',
+    images: [
+      {
+        url: 'https://vay24h.pro.vn/news/vayvnd-danh-gia-2025.webp',
+        width: 1200,
+        height: 630,
+        alt: 'VAYVND - Vay tiền online đơn giản, không cần gặp mặt',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'VAYVND - Vay tiền online đơn giản, không cần gặp mặt',
+    description: 'VAYVND hỗ trợ khoản vay linh hoạt, dễ đăng ký, phù hợp người cần tiền nhanh mà không có tài sản thế chấp.',
+    images: ['https://vay24h.pro.vn/news/vayvnd-danh-gia-2025.webp'],
+  },
+};
 
-export default function Page() {
+export default function VayVNDPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'VAYVND - Vay tiền online đơn giản, không cần gặp mặt',
+    description: 'Tìm hiểu cách vay tiền online an toàn với VAYVND. Đăng ký nhanh chóng, xét duyệt tự động, hỗ trợ giải ngân trong 24 giờ.',
+    image: 'https://vay24h.pro.vn/news/vayvnd-danh-gia-2025.webp',
+    author: {
+      '@type': 'Organization',
+      name: 'Vay24h Pro',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Vay24h Pro',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://vay24h.pro.vn/logovay.webp',
+      },
+    },
+    datePublished: new Date().toISOString(),
+    dateModified: new Date().toISOString(),
+  };
+
   return (
     <>
       <Head>
-        <title>VayVND là gì? Đánh giá chi tiết ứng dụng vay tiền online VayVND 2025</title>
-        <meta
-          name="description"
-          content="VayVND là ứng dụng vay tiền online nhanh, giải ngân trong ngày, thủ tục đơn giản. Cùng tìm hiểu chi tiết cách vay, lãi suất và độ uy tín của VayVND năm 2025."
-        />
-        <meta
-          name="keywords"
-          content="vayvnd, vay tiền online vayvnd, ứng dụng vayvnd, vay tiền nhanh VayVND, app vayvnd uy tín, đánh giá vayvnd"
-        />
-        <meta name="robots" content="index, follow" />
-
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content="VayVND là gì? Đánh giá chi tiết ứng dụng vay tiền online VayVND 2025" />
-        <meta property="og:description" content="VayVND là ứng dụng vay tiền online nhanh, giải ngân trong ngày, thủ tục đơn giản. Cùng tìm hiểu chi tiết cách vay, lãi suất và độ uy tín của VayVND năm 2025." />
-        <meta property="og:image" content="https://vay24h.pro.vn/news/vayvnd-danh-gia-2025.webp" />
-        <meta property="og:url" content="https://vay24h.pro.vn/tin-tuc/vayvnd-danh-gia-2025" />
-        <meta property="og:type" content="article" />
-        <meta property="og:site_name" content="Vay24h Pro" />
-
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "NewsArticle",
-              headline:
-                "VayVND là gì? Đánh giá chi tiết ứng dụng vay tiền online VayVND 2025",
-              description:
-                "VayVND là ứng dụng vay tiền online nhanh, giải ngân trong ngày, thủ tục đơn giản. Cùng tìm hiểu chi tiết cách vay, lãi suất và độ uy tín của VayVND năm 2025.",
-              keywords:
-                "vayvnd, vay tiền online vayvnd, ứng dụng vayvnd, vay tiền nhanh VayVND, app vayvnd uy tín, đánh giá vayvnd",
-              author: {
-                "@type": "Person",
-                name: "Admin",
-              },
-              publisher: {
-                "@type": "Organization",
-                name: "Vay24h Pro",
-                logo: {
-                  "@type": "ImageObject",
-                  url: "https://vay24h.pro.vn/logovay.webp",
-                },
-              },
-              datePublished: "2025-05-21",
-              dateModified: "2025-05-21",
-              mainEntityOfPage: {
-                "@type": "WebPage",
-                "@id": "https://vay24h.pro.vn/tin-tuc/vayvnd-danh-gia-2025",
-              },
-            }),
-          }}
-        />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </Head>
-      <div style={{ display: "flex", gap: "20px", maxWidth: "1200px", margin: "0 auto", padding: "20px",backgroundColor: "#fff", borderRadius: "8px" }}>
-      <article style={{ color: "#4a4a4a", lineHeight: 1.6, marginTop: 8 }}> 
-        <h1 style={{fontSize: "28px", marginBottom: "20px", color: "#0b2239" }}>
-        VayVND là gì? Đánh giá chi tiết ứng dụng vay tiền online VayVND 2025
-        </h1>
+      <article className="max-w-4xl mx-auto px-4 py-8">
+        <header className="mb-8">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+            VAYVND - Vay tiền online đơn giản, không cần gặp mặt
+          </h1>
+          <div className="text-gray-600 text-sm mb-4">
+            <time dateTime={new Date().toISOString()}>
+              Cập nhật: {new Date().toLocaleDateString('vi-VN')}
+            </time>
+          </div>
+          <Image
+            src="/news/vayvnd-danh-gia-2025.webp"
+            alt="VAYVND - Vay tiền online đơn giản, không cần gặp mặt"
+            width={800}
+            height={450}
+            className="w-full h-auto my-6"
+          />
+          <p className="text-gray-700">
+            Trong bối cảnh nhu cầu tài chính ngắn hạn ngày càng tăng, <strong>VAYVND</strong> nổi lên như một nền tảng hỗ trợ vay tiền online tiện lợi, nhanh chóng và phù hợp với nhiều đối tượng. Với quy trình đăng ký hoàn toàn trực tuyến và không yêu cầu thế chấp, VAYVND trở thành lựa chọn đáng tin cậy cho người cần vốn gấp.
+          </p>
+        </header>
 
-        <h2>1. VayVND là gì?</h2>
-        <p>
-          <strong>VayVND</strong> là một ứng dụng cho vay tiền online hoạt động tại
-          Việt Nam, hỗ trợ người dùng tiếp cận các khoản vay ngắn hạn từ
-          500.000 đến 15.000.000 VNĐ. Với quy trình đăng ký hoàn toàn trực tuyến,
-          người vay chỉ cần CMND/CCCD để thực hiện thủ tục vay nhanh chóng và đơn
-          giản.
-        </p>
+        <nav className="bg-gray-100 p-4 rounded mb-8">
+          <h2 className="text-lg font-semibold mb-2">Mục lục bài viết</h2>
+          <ol className="list-decimal pl-5 space-y-1 text-blue-700">
+            <li><Link href="#gioi-thieu">VAYVND là gì?</Link></li>
+            <li><Link href="#nguyen-ly">Nguyên lý hoạt động</Link></li>
+            <li><Link href="#uu-nhuoc">Ưu điểm và hạn chế</Link></li>
+            <li><Link href="#dieu-kien">Điều kiện vay vốn</Link></li>
+            <li><Link href="#quy-trinh">Hướng dẫn đăng ký vay</Link></li>
+            <li><Link href="#lai-phi">Lãi suất và phí dịch vụ</Link></li>
+            <li><Link href="#chat-luong">VAYVND có đáng tin không?</Link></li>
+            <li><Link href="#phan-hoi">Đánh giá người dùng</Link></li>
+            <li><Link href="#luu-y">Những điều cần lưu ý</Link></li>
+            <li><Link href="#loi-khuyen">Lời khuyên trước khi vay</Link></li>
+            <li><Link href="#ket-luan">Kết luận</Link></li>
+          </ol>
+        </nav>
 
-        <Image
-          src="/news/vayvnd-danh-gia-2025.webp"
-          alt="Thẻ Tín Dụng CAKE by VPBank – Tiện Lợi, Nhanh Chóng, Nhiều Ưu Đãi"
-          width={800}
-          height={450}
-          style={{ width: '100%', height: 'auto', margin: '20px 0' }}
-        />
+        <section id="gioi-thieu" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">1. VAYVND là gì?</h2>
+          <p className="text-gray-700">
+            VAYVND là nền tảng trung gian giúp kết nối người cần vay tiền với các đối tác tài chính uy tín tại Việt Nam. Hoạt động dựa trên hình thức vay online, VAYVND mang đến sự tiện lợi trong việc tiếp cận nguồn vốn ngắn hạn mà không cần tài sản đảm bảo hay hồ sơ phức tạp.
+          </p>
+        </section>
 
-        <h2>2. Ưu điểm nổi bật của VayVND</h2>
-        <ul className="list-disc list-inside">
-          <li>
-            ✅ <strong>Đăng ký 100% online</strong>: Không cần gặp mặt, không cần chứng minh thu nhập.
-          </li>
-          <li>
-            ✅ <strong>Giải ngân nhanh trong ngày</strong>: Sau khi được duyệt hồ sơ, tiền sẽ được chuyển về tài khoản trong vòng 15 – 30 phút.
-          </li>
-          <li>
-            ✅ <strong>Hỗ trợ người mới vay</strong>: Hạn mức vay linh hoạt, phù hợp cả với người có lịch sử tín dụng chưa tốt.
-          </li>
-          <li>
-            ✅ <strong>Bảo mật thông tin</strong>: Cam kết không tiết lộ thông tin khách hàng cho bên thứ ba.
-          </li>
-        </ul>
+        <section id="nguyen-ly" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">2. Nguyên lý hoạt động</h2>
+          <p className="text-gray-700">
+            Sau khi người dùng đăng ký thông tin vay, hệ thống của VAYVND sẽ tự động xử lý dữ liệu, phân tích điểm tín dụng, và gợi ý khoản vay phù hợp từ danh sách các đối tác cho vay. Người vay sau đó hoàn thiện hồ sơ trực tuyến với đơn vị được chỉ định và nhận tiền giải ngân vào tài khoản ngân hàng.
+          </p>
+        </section>
 
-        <h2>3. Điều kiện vay tại VayVND</h2>
-        <ul className="list-disc list-inside">
-          <li>Công dân Việt Nam từ 20 đến 60 tuổi.</li>
-          <li>Có CMND/CCCD còn hiệu lực.</li>
-          <li>Sở hữu tài khoản ngân hàng chính chủ.</li>
-          <li>Có thu nhập ổn định (tự khai báo).</li>
-        </ul>
+        <section id="uu-nhuoc" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">3. Ưu điểm và hạn chế</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="font-semibold text-green-700 mb-2">Ưu điểm</h3>
+              <ul className="list-disc pl-5 text-gray-700">
+                <li>Thủ tục nhanh gọn, không cần gặp mặt</li>
+                <li>Giải ngân trong ngày sau khi duyệt</li>
+                <li>Không yêu cầu chứng minh thu nhập</li>
+                <li>Phù hợp cả người có tín dụng yếu</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-red-700 mb-2">Hạn chế</h3>
+              <ul className="list-disc pl-5 text-gray-700">
+                <li>Lãi suất tương đối cao nếu hồ sơ rủi ro</li>
+                <li>Cần cảnh giác với link giả mạo VAYVND</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-        <h2>4. Hạn mức và lãi suất vay</h2>
-        <table className="table-auto border border-collapse border-gray-400 my-4">
-          <thead>
-            <tr>
-              <th className="border p-2">Thông tin</th>
-              <th className="border p-2">Chi tiết</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td className="border p-2">Hạn mức vay</td>
-              <td className="border p-2">Từ 500.000 – 15.000.000 VNĐ</td>
-            </tr>
-            <tr>
-              <td className="border p-2">Thời hạn vay</td>
-              <td className="border p-2">91 – 180 ngày</td>
-            </tr>
-            <tr>
-              <td className="border p-2">Lãi suất tham khảo</td>
-              <td className="border p-2">12% – 20%/năm (tuỳ hồ sơ)</td>
-            </tr>
-            <tr>
-              <td className="border p-2">Phí dịch vụ</td>
-              <td className="border p-2">Có thể có, tuỳ theo khoản vay</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-          💡 <strong>Lưu ý:</strong> Đối với khách hàng mới, một số ưu đãi có thể áp dụng như{' '}
-          <strong>vay 0% lãi suất trong 7 ngày</strong>.
-        </p>
+        <section id="dieu-kien" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">4. Điều kiện vay vốn tại VAYVND</h2>
+          <ul className="list-disc pl-5 text-gray-700 space-y-2">
+            <li>Công dân Việt Nam từ 20 đến 60 tuổi</li>
+            <li>Có CCCD hoặc CMND còn giá trị</li>
+            <li>Sở hữu tài khoản ngân hàng chính chủ</li>
+            <li>Không có nợ xấu nhóm 3 trở lên</li>
+          </ul>
+        </section>
 
-        <h2>5. Cách đăng ký vay trên VayVND</h2>
-        <ol className="list-decimal list-inside">
-          <li>Truy cập website hoặc tải app VayVND trên CH Play.</li>
-          <li>Đăng ký tài khoản bằng số điện thoại.</li>
-          <li>Điền thông tin cá nhân, tải ảnh CMND/CCCD 2 mặt.</li>
-          <li>Chờ xét duyệt hồ sơ từ 5 – 15 phút.</li>
-          <li>Ký hợp đồng điện tử và nhận tiền giải ngân.</li>
-        </ol>
+        <section id="quy-trinh" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">5. Hướng dẫn đăng ký vay trên VAYVND</h2>
+          <ol className="list-decimal pl-5 text-gray-700 space-y-2">
+            <li>Truy cập trang chính thức của VAYVND</li>
+            <li>Điền đầy đủ thông tin và nhu cầu vay</li>
+            <li>Chờ hệ thống chọn đối tác tài chính phù hợp</li>
+            <li>Xác nhận thông tin và chờ giải ngân</li>
+          </ol>
+        </section>
 
-        <h2>6. VayVND có uy tín không?</h2>
-        <p>
-          VayVND là ứng dụng đã hoạt động nhiều năm trên thị trường cho vay tài chính
-          online tại Việt Nam. Tuy nhiên, người dùng cần <strong>đọc kỹ hợp đồng</strong>,{' '}
-          <strong>hiểu rõ lãi suất và phí dịch vụ</strong>, và{' '}
-          <strong>thanh toán đúng hạn</strong> để tránh phát sinh phí phạt.
-        </p>
-        <p>
-          ⚠️ <strong>Lưu ý:</strong> Có nhiều phản ánh trên mạng về việc bị gọi làm
-          phiền nếu chậm thanh toán. Do đó, chỉ nên vay khi thực sự cần và có kế
-          hoạch trả nợ rõ ràng.
-        </p>
+        <section id="lai-phi" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">6. Lãi suất và phí dịch vụ</h2>
+          <p className="text-gray-700">
+            Lãi suất vay qua VAYVND dao động từ 12% đến 20%/năm tùy hồ sơ cá nhân và đối tác tài chính. Một số đơn vị có thể thu thêm phí dịch vụ hoặc phí tư vấn, tuy nhiên tất cả đều được hiển thị rõ ràng trước khi bạn xác nhận khoản vay.
+          </p>
+        </section>
 
-        <h2>7. Tổng kết</h2>
-        <p>
-          VayVND là lựa chọn phù hợp cho những ai cần <strong>vay tiền nhanh trong ngày</strong>{' '}
-          với thủ tục đơn giản. Tuy nhiên, người dùng nên cân nhắc kỹ lãi suất và
-          điều kiện vay trước khi đăng ký.
-        </p>
-        <ul className="list-disc list-inside">
-          <li>
-            <Link href="/vay-tien-nhanh"className="text-blue-600 underline">Top 10+ đơn vị cho vay tiền online uy tín 2025
-            </Link>
-          </li>
-        </ul>
+        <section id="chat-luong" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">7. VAYVND có đáng tin cậy không?</h2>
+          <p className="text-gray-700">
+            Với nhiều năm hoạt động tại thị trường Việt Nam, VAYVND đã kết nối hàng ngàn người vay với những tổ chức tài chính có pháp lý rõ ràng. Thông tin minh bạch và hỗ trợ khách hàng kịp thời là điểm mạnh giúp nền tảng này xây dựng uy tín vững chắc.
+          </p>
+        </section>
+
+        <section id="phan-hoi" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">8. Đánh giá từ người dùng</h2>
+          <p className="text-gray-700">
+            Người dùng đánh giá cao VAYVND nhờ tốc độ xử lý nhanh, không bị rườm rà về giấy tờ và có nhiều gợi ý khoản vay phù hợp. Tuy nhiên, cũng có một số phản ánh về việc chưa nắm rõ mức phí dẫn đến phát sinh chi phí cao. Do đó, việc đọc kỹ điều khoản là rất cần thiết.
+          </p>
+        </section>
+
+        <section id="luu-y" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">9. Những điều cần lưu ý</h2>
+          <ul className="list-disc pl-5 text-gray-700">
+            <li>Tránh đăng ký qua link quảng cáo không rõ nguồn gốc</li>
+            <li>Chụp lại hợp đồng vay để lưu trữ thông tin</li>
+            <li>Không vay quá khả năng chi trả</li>
+          </ul>
+        </section>
+
+        <section id="loi-khuyen" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">10. Lời khuyên trước khi vay</h2>
+          <p className="text-gray-700">
+            Vay online tiện lợi nhưng cũng đi kèm rủi ro. Hãy chắc chắn bạn hiểu rõ mọi điều khoản, chỉ vay khi cần thiết và không dùng vay tiêu dùng cho mục đích đầu cơ tài chính. Ưu tiên chọn khoản vay ngắn hạn với số tiền vừa đủ.
+          </p>
+        </section>
+
+        <section id="ket-luan" className="mb-10">
+          <h2 className="text-2xl font-bold mb-4">11. Kết luận</h2>
+          <p className="text-gray-700 mb-4">
+            VAYVND là giải pháp tài chính nhanh và tiện lợi cho người cần vay tiền online không thế chấp. Dù quy trình đơn giản, bạn vẫn cần cẩn trọng trong từng bước đăng ký, đặc biệt là đọc kỹ hợp đồng và đảm bảo khả năng trả nợ đúng hạn để tránh ảnh hưởng tín dụng cá nhân.
+          </p>
+          <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
+            <p className="text-blue-700 font-semibold">
+              Xem thêm: <Link href="/vay-tien-nhanh" className="underline">Tổng hợp nền tảng vay nhanh uy tín 2025</Link>
+            </p>
+          </div>
+        </section>
       </article>
-    </div>
     </>
   );
 }
