@@ -5,6 +5,11 @@ import Head from 'next/head'
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Cố định ngày xuất bản ban đầu của bài viết
+const PUBLISHED_DATE = "2025-06-05T10:00:00+07:00"; // Đặt ngày xuất bản thực tế của bạn
+// Cố định ngày sửa đổi cuối cùng. Cập nhật thủ công mỗi khi nội dung bài viết thay đổi đáng kể.
+const LAST_MODIFIED_DATE = "2025-06-12T21:30:00+07:00"; // Cập nhật ngày này khi bạn sửa nội dung
+
 export const metadata: Metadata = {
   title: 'CIC là gì? Cách kiểm tra CIC miễn phí và mẹo cải thiện điểm tín dụng 2025',
   description: 'Tìm hiểu CIC là gì, cách kiểm tra CIC miễn phí online, ý nghĩa các mức điểm CIC và mẹo cải thiện điểm tín dụng để vay vốn dễ dàng hơn.',
@@ -30,8 +35,9 @@ export default function CICArticlePage() {
       '@type': 'Organization',
       name: 'Vay24h.pro.vn'
     },
-    datePublished: new Date().toISOString(),
-    dateModified: new Date().toISOString(),
+    datePublished: PUBLISHED_DATE, // Sử dụng ngày cố định
+    dateModified: LAST_MODIFIED_DATE, // Sử dụng ngày cố định của lần sửa đổi cuối cùng
+    mainEntityOfPage: "https://vay24h.pro.vn/tin-tuc/CIC-la-gi",
   }
 
   return (
@@ -49,8 +55,8 @@ export default function CICArticlePage() {
             CIC là gì? Hướng dẫn chi tiết kiểm tra CIC miễn phí và cải thiện điểm tín dụng 2025
           </h1>
           <div className="text-gray-600 text-sm mb-4">
-            <time dateTime={new Date().toISOString()}>
-              Cập nhật: {new Date().toLocaleDateString('vi-VN')}
+            <time dateTime={LAST_MODIFIED_DATE}>
+              Cập nhật: {new Date(LAST_MODIFIED_DATE).toLocaleDateString('vi-VN')}
             </time>
           </div>
 
