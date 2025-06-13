@@ -220,8 +220,8 @@ export default function Top5VayUyTinPage() {
             <Image
               src="/vay/jeff.webp" // Assuming you have specific images for each app
               alt="Jeff - Ứng dụng kết nối vay tiền uy tín"
-              width={600}
-              height={337}
+              width={300}
+              height={200}
               className="w-full md:w-3/4 lg:w-2/3 h-auto mx-auto mb-4 rounded-lg"
             />
             <p className="mb-3">
@@ -251,10 +251,10 @@ export default function Top5VayUyTinPage() {
           <div id="vayvnd" className="mb-8 p-6 bg-white border border-gray-200 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-emerald-700 mb-3">2. VayVND</h3>
             <Image
-              src="/news/vayvnd-app.webp" // Assuming you have specific images for each app
+              src="/vay/vayvnd.webp" // Assuming you have specific images for each app
               alt="VayVND - Vay tiền online nhanh chóng, giải ngân trong giờ"
-              width={600}
-              height={337}
+              width={300}
+              height={200}
               className="w-full md:w-3/4 lg:w-2/3 h-auto mx-auto mb-4 rounded-lg"
             />
             <p className="mb-3">
@@ -285,10 +285,10 @@ export default function Top5VayUyTinPage() {
           <div id="moneycat" className="mb-8 p-6 bg-white border border-gray-200 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-purple-700 mb-3">3. MoneyCat</h3>
             <Image
-              src="/news/moneycat-app.webp" // Assuming you have specific images for each app
+              src="/vay/meocat.webp" // Assuming you have specific images for each app
               alt="MoneyCat - Vay tiền online không thẩm định người thân"
-              width={600}
-              height={337}
+              width={300}
+              height={200}
               className="w-full md:w-3/4 lg:w-2/3 h-auto mx-auto mb-4 rounded-lg"
             />
             <p className="mb-3">
@@ -318,10 +318,10 @@ export default function Top5VayUyTinPage() {
           <div id="cake-by-vpbank" className="mb-8 p-6 bg-white border border-gray-200 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-sky-700 mb-3">4. Cake by VPBank</h3>
             <Image
-              src="/news/cake-app.webp" // Assuming you have specific images for each app
+              src="/the/cake.webp" // Assuming you have specific images for each app
               alt="Cake by VPBank - Ngân hàng số an toàn và tiện lợi"
-              width={600}
-              height={337}
+              width={300}
+              height={200}
               className="w-full md:w-3/4 lg:w-2/3 h-auto mx-auto mb-4 rounded-lg"
             />
             <p className="mb-3">
@@ -351,7 +351,7 @@ export default function Top5VayUyTinPage() {
           <div id="finami" className="mb-8 p-6 bg-white border border-gray-200 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-orange-700 mb-3">5. Finami</h3>
             <Image
-              src="/news/finami-app.webp" // Assuming you have specific images for each app
+              src="/vay/finami.webp" // Assuming you have specific images for each app
               alt="Finami - Nền tảng kết nối vay tiền minh bạch"
               width={600}
               height={337}
