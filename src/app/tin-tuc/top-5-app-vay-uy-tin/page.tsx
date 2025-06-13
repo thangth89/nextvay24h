@@ -218,7 +218,7 @@ export default function Top5VayUyTinPage() {
           <div id="jeff" className="mb-8 p-6 bg-white border border-gray-200 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-indigo-700 mb-3">1. Jeff</h3>
             <Image
-              src="/news/jeff-app.webp" // Assuming you have specific images for each app
+              src="/vay/jeff.webp" // Assuming you have specific images for each app
               alt="Jeff - Ứng dụng kết nối vay tiền uy tín"
               width={600}
               height={337}
