@@ -5,6 +5,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Cố định ngày xuất bản ban đầu của bài viết
+const PUBLISHED_DATE = "2025-06-09T10:00:00+07:00"; // Đặt ngày xuất bản thực tế của bạn
+// Cố định ngày sửa đổi cuối cùng. Cập nhật thủ công mỗi khi nội dung bài viết thay đổi đáng kể.
+const LAST_MODIFIED_DATE = "2025-06-12T21:30:00+07:00"; // Cập nhật ngày này khi bạn sửa nội dung
+
 export const metadata: Metadata = {
   title: 'Cần tiền cấp? Đây là cách vay tiền online nhanh chóng, uy tín',
   description: 'Nếu bạn đang cần tiền cấp để giải quyết việc gấp, bài viết này sẽ giúp bạn biết cách vay tiền online an toàn, giải ngân nhanh trong ngày.',
@@ -54,8 +59,9 @@ export default function NewsPage() {
         url: 'https://vay24h.pro.vn/logovay.webp',
       },
     },
-    datePublished: new Date().toISOString(),
-    dateModified: new Date().toISOString(),
+    datePublished: PUBLISHED_DATE, // Sử dụng ngày cố định
+    dateModified: LAST_MODIFIED_DATE, // Sử dụng ngày cố định của lần sửa đổi cuối cùng
+    mainEntityOfPage: "https://vay24h.pro.vn/tin-tuc/cach-vay-tien-online-nhanh-chong",
   };
 
   return (
@@ -69,8 +75,8 @@ export default function NewsPage() {
             Cần tiền cấp? Đây là cách vay tiền online nhanh chóng, uy tín
           </h1>
           <div className="text-gray-600 text-sm mb-4">
-            <time dateTime={new Date().toISOString()}>
-              Cập nhật: {new Date().toLocaleDateString('vi-VN')}
+            <time dateTime={LAST_MODIFIED_DATE}>
+              Cập nhật: {new Date(LAST_MODIFIED_DATE).toLocaleDateString('vi-VN')}
             </time>
           </div>
           <Image
