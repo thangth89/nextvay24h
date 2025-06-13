@@ -140,7 +140,7 @@ export default function BiKipVayOnlinePage() {
               </ul>
             </li>
             <li><Link href="#loi-khuyen-tong-quat" className="hover:underline">Lời khuyên tổng quát để vay online an toàn và hiệu quả</Link></li>
-            <li><Link href="#cau-hoi-thuong-gap" className="hover="underline">Câu hỏi thường gặp (FAQs)</Link></li>
+            <li><Link href="#cau-hoi-thuong-gap" className="hover:underline">Câu hỏi thường gặp (FAQs)</Link></li>
             <li><Link href="#ket-luan" className="hover:underline">Kết Luận</Link></li>
           </ol>
         </nav>
