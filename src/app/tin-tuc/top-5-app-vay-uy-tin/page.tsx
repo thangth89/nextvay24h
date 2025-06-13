@@ -45,7 +45,7 @@ export default function Top5VayUyTinPage() {
       name: "Vay24h.pro.vn",
       logo: {
         "@type": "ImageObject",
-        url: "https://vay24h.pro.vn/images/logovay.webp",
+        url: "https://vay24h.pro.vn/logovay.webp",
       },
     },
     datePublished: PUBLISHED_DATE, // Sử dụng ngày cố định
