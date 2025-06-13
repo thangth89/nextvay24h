@@ -5,6 +5,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Cố định ngày xuất bản ban đầu của bài viết
+const PUBLISHED_DATE = "2025-06-08T10:00:00+07:00"; // Đặt ngày xuất bản thực tế của bạn
+// Cố định ngày sửa đổi cuối cùng. Cập nhật thủ công mỗi khi nội dung bài viết thay đổi đáng kể.
+const LAST_MODIFIED_DATE = "2025-06-13T21:30:00+07:00"; // Cập nhật ngày này khi bạn sửa nội dung
+
 export const metadata: Metadata = {
   title: 'Finami là gì? Đánh giá ứng dụng vay tiền online nhanh chóng và minh bạch [2025]',
   description: 'Finami là nền tảng kết nối người vay với các tổ chức tài chính uy tín. Bài viết đánh giá chi tiết Finami, cách hoạt động, ưu nhược điểm, điều kiện vay và các lưu ý quan trọng khi sử dụng.',
@@ -50,8 +55,9 @@ export default function Page() {
         url: 'https://vay24h.pro.vn/logovay.webp'
       }
     },
-    datePublished: new Date().toISOString(),
-    dateModified: new Date().toISOString(),
+    datePublished: PUBLISHED_DATE, // Sử dụng ngày cố định
+    dateModified: LAST_MODIFIED_DATE, // Sử dụng ngày cố định của lần sửa đổi cuối cùng
+    mainEntityOfPage: "https://vay24h.pro.vn/tin-tuc/finami-vay-tien-online",
   };
 
   return (
@@ -70,9 +76,10 @@ export default function Page() {
             Finami là gì? Đánh giá ứng dụng vay tiền online minh bạch và tiện lợi năm 2025
           </h1>
           <div className="text-gray-600 text-sm mb-4">
-            <time dateTime={new Date().toISOString()}>
-              Cập nhật: {new Date().toLocaleDateString('vi-VN')}
+            <time dateTime={LAST_MODIFIED_DATE}>
+              Cập nhật: {new Date(LAST_MODIFIED_DATE).toLocaleDateString('vi-VN')}
             </time>
+          </div>
          </div>
           <Image
             src="/news/finami-vay-tien-online.webp"
