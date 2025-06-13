@@ -76,7 +76,6 @@ export default function JeffPage() {
               Cập nhật: {new Date(LAST_MODIFIED_DATE).toLocaleDateString('vi-VN')}
             </time>
           </div>
-          </div>
           <Image
             src="/news/jeff-vay-tien-uy-tin.webp"
             alt="Jeff - Vay tiền online uy tín, minh bạch, xét duyệt nhanh"
