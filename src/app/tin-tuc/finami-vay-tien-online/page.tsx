@@ -80,7 +80,7 @@ export default function Page() {
               Cập nhật: {new Date(LAST_MODIFIED_DATE).toLocaleDateString('vi-VN')}
             </time>
           </div>
-         </div>
+          
           <Image
             src="/news/finami-vay-tien-online.webp"
             alt="Finami - Ứng dụng vay tiền online minh bạch"
