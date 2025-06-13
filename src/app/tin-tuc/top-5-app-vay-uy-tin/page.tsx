@@ -3,12 +3,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
-// Helper function to get current date in Vietnamese format
-const getCurrentDateVietnamese = () => {
-  const date = new Date();
-  const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
-  return date.toLocaleDateString('vi-VN', options);
-};
+
 
 // Cố định ngày xuất bản ban đầu của bài viết
 const PUBLISHED_DATE = "2025-06-09T10:00:00+07:00"; // Đặt ngày xuất bản thực tế của bạn
@@ -105,7 +100,7 @@ export default function Top5VayUyTinPage() {
           <h2 className="text-xl font-semibold mb-3 text-gray-800">Mục lục</h2>
           <ol className="list-decimal list-inside space-y-2 text-blue-600">
             <li><Link href="#gioi-thieu-tong-quan" className="hover:underline">Giới thiệu tổng quan về thị trường vay tiền online</Link></li>
-            <li><Link href="#hiem-hoa-app-den" className="hover:underline">Hiểm họa mang tên "App đen" và cách nhận biết</Link>
+            <li><Link href="#hiem-hoa-app-den" className="hover:underline">Hiểm họa mang tên &quot;App đen&quot; và cách nhận biết</Link>
               <ul className="list-disc list-inside ml-4">
                 <li><Link href="#app-den-la-gi" className="hover:underline">App đen là gì?</Link></li>
                 <li><Link href="#dau-hieu-nhan-biet-app-den" className="hover:underline">Dấu hiệu nhận biết App đen</Link></li>
@@ -468,7 +463,7 @@ export default function Top5VayUyTinPage() {
               Lãi suất vay online có cao không?
             </div>
             <div className="p-4 bg-white">
-              <p>Lãi suất vay online từ các app uy tín thường cao hơn so với ngân hàng truyền thống do rủi ro cao hơn và thủ tục đơn giản hơn. Tuy nhiên, các app uy tín sẽ công bố minh bạch và tuân thủ quy định của pháp luật về lãi suất (không vượt quá 20%/năm đối với lãi suất cơ bản, chưa kể phí dịch vụ). Các app đen thường áp dụng lãi suất cắt cổ, vượt xa mức này.</p>
+              <p>Lãi suất vay online từ các app uy tín thường cao hơn so với ngân hàng truyền thống do rủi ro cao hơn và thủ tục đơn giản hơn. Tuy nhiên, các app uy tín sẽ công bố minh bạch và tuân thủ quy định của pháp luật về lãi suất (không vượt quá 20%/năm đối với lãi suất cơ bản, chưa kể phí dịch vụ). Các &quot;app đen&quot; thường áp dụng lãi suất cắt cổ, vượt xa mức này.</p>
             </div>
           </div>
 
@@ -478,7 +473,7 @@ export default function Top5VayUyTinPage() {
             </div>
             <div className="p-4 bg-white">
               <p>
-                Nếu bạn vay từ các app uy tín (thuộc công ty tài chính có kết nối với CIC - Trung tâm Thông tin Tín dụng Quốc gia) và trả nợ không đúng hạn, bạn sẽ bị ghi nhận nợ xấu trên hệ thống CIC, ảnh hưởng đến khả năng vay mượn trong tương lai. Đối với các app đen, dù không ghi nhận nợ xấu trên CIC, nhưng chúng có các cách riêng để quấy rối và đòi nợ, gây ảnh hưởng nghiêm trọng đến đời sống cá nhân.
+                Nếu bạn vay từ các app uy tín (thuộc công ty tài chính có kết nối với CIC - Trung tâm Thông tin Tín dụng Quốc gia) và trả nợ không đúng hạn, bạn sẽ bị ghi nhận nợ xấu trên hệ thống CIC, ảnh hưởng đến khả năng vay mượn trong tương lai. Đối với các &quot;app đen&quot;, dù không ghi nhận nợ xấu trên CIC, nhưng chúng có các cách riêng để quấy rối và đòi nợ, gây ảnh hưởng nghiêm trọng đến đời sống cá nhân.
               </p>
             </div>
           </div>
