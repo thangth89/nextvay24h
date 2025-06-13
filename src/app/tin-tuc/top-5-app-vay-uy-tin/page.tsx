@@ -69,7 +69,7 @@ export default function Top5VayUyTinPage() {
       </Head>
 
       <article className="max-w-4xl mx-auto px-4 py-8 text-gray-700 leading-relaxed">
-        <header className="mb-8 text-center">
+        <header className="mb-8">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Top 5 Ứng Dụng Vay Tiền Uy Tín Tránh App Đen – Giải Pháp An Toàn Cho Người Dùng 2025
           </h1>
