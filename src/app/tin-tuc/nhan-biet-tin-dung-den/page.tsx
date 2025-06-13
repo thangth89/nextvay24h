@@ -5,6 +5,11 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 
+// Cố định ngày xuất bản ban đầu của bài viết
+const PUBLISHED_DATE = "2025-06-11T10:00:00+07:00"; // Đặt ngày xuất bản thực tế của bạn
+// Cố định ngày sửa đổi cuối cùng. Cập nhật thủ công mỗi khi nội dung bài viết thay đổi đáng kể.
+const LAST_MODIFIED_DATE = "2025-06-11T10:00:00+07:00"; // Cập nhật ngày này khi bạn sửa nội dung
+
 export const metadata: Metadata = {
   title: 'Cách nhận biết tín dụng đen và phòng tránh hiệu quả [2025]',
   description: 'Tín dụng đen là gì? Nhận biết các dấu hiệu vay nặng lãi, các hình thức tín dụng đen phổ biến và cách phòng tránh để bảo vệ tài chính cá nhân trong năm 2025.',
@@ -30,8 +35,9 @@ export default function NhanBietTinDungDenPage() {
       '@type': 'Organization',
       name: 'vay24h.pro.vn'
     },
-    datePublished: new Date().toISOString(),
-    dateModified: new Date().toISOString()
+    datePublished: PUBLISHED_DATE, // Sử dụng ngày cố định
+    dateModified: LAST_MODIFIED_DATE, // Sử dụng ngày cố định của lần sửa đổi cuối cùng
+    mainEntityOfPage: "https://vay24h.pro.vn/tin-tuc/nhan-biet-tin-dung-den",
   };
   return (
     <>
@@ -48,8 +54,8 @@ export default function NhanBietTinDungDenPage() {
           </h1>
 
           <div className="text-gray-600 text-sm mb-4">
-            <time dateTime={new Date().toISOString()}>
-              Cập nhật: {new Date().toLocaleDateString('vi-VN')}
+            <time dateTime={LAST_MODIFIED_DATE}>
+              Cập nhật: {new Date(LAST_MODIFIED_DATE).toLocaleDateString('vi-VN')}
             </time>
           </div>
           <Image 
