@@ -5,6 +5,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Cố định ngày xuất bản ban đầu của bài viết
+const PUBLISHED_DATE = "2025-06-09T21:00:00+07:00"; // Đặt ngày xuất bản thực tế của bạn
+// Cố định ngày sửa đổi cuối cùng. Cập nhật thủ công mỗi khi nội dung bài viết thay đổi đáng kể.
+const LAST_MODIFIED_DATE = "2025-06-09T21:00:00+07:00"; // Cập nhật ngày này khi bạn sửa nội dung
+
 export const metadata: Metadata = {
   title: 'Vay H5 là gì? Cách nhận biết và lưu ý quan trọng trước khi vay 2025',
   description: 'Tìm hiểu vay H5 là gì, đặc điểm của vay H5, danh sách nền tảng uy tín và những rủi ro thường gặp. Bài viết giúp bạn tránh bẫy tín dụng xấu năm 2025.',
@@ -30,8 +35,9 @@ export default function VayH5Page() {
       '@type': 'Organization',
       name: 'vay24h.pro.vn'
     },
-    datePublished: new Date().toISOString(),
-    dateModified: new Date().toISOString(),
+    datePublished: PUBLISHED_DATE, // Sử dụng ngày cố định
+    dateModified: LAST_MODIFIED_DATE, // Sử dụng ngày cố định của lần sửa đổi cuối cùng
+    mainEntityOfPage: "https://vay24h.pro.vn/tin-tuc/vay-h5-la-gi",
   };
 
   return (
@@ -47,11 +53,13 @@ export default function VayH5Page() {
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             Vay H5 là gì? Ưu nhược điểm và lưu ý quan trọng trước khi vay
           </h1>
-          <div className="text-gray-600 text-sm mb-4">
-            <time dateTime={new Date().toISOString()}>
-              Cập nhật: {new Date().toLocaleDateString('vi-VN')}
+          
+           <div className="text-gray-600 text-sm mb-4">
+            <time dateTime={LAST_MODIFIED_DATE}>
+              Cập nhật: {new Date(LAST_MODIFIED_DATE).toLocaleDateString('vi-VN')}
             </time>
           </div>
+
           <Image
             src="/news/vay-h5-la-gi.webp"
             alt="Vay H5 là gì? Tìm hiểu ưu nhược điểm và nền tảng uy tín"
