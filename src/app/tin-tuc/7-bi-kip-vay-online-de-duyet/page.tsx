@@ -56,7 +56,6 @@ export default function BiKipVayOnlinePage() {
       height: 450,
     },
   };
-
   return (
     <>
       <Head>
@@ -65,7 +64,6 @@ export default function BiKipVayOnlinePage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </Head>
-
       <article className="max-w-4xl mx-auto px-4 py-8 text-gray-700 leading-relaxed">
         <header className="mb-8">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
