@@ -1,4 +1,5 @@
 import { Analytics as VercelAnalytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import Sidebar from "../components/Sidebar";
 import { Roboto } from 'next/font/google';
 import NavHeader from '../components/NavHeader';
@@ -250,6 +251,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </footer>
         <VercelAnalytics />
+        <SpeedInsights />
       </body>
     </html>
   );
