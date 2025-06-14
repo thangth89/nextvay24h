@@ -342,7 +342,7 @@ export default function Top5VayUyTinPage() {
               <li>Yêu cầu về thu nhập và lịch sử tín dụng có thể cao hơn các app vay tư nhân.</li>
             </ul>
             <p className="mb-4">
-              <Link href="/vay-tien-nhanh" className="text-blue-600 hover:underline font-semibold">
+              <Link href="/the-tin-dung" className="text-blue-600 hover:underline font-semibold">
                 Tìm hiểu thêm và đăng ký Cake by VPBank tại đây
               </Link>
             </p>
