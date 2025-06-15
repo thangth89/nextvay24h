@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://vay24h.pro.vn
+Host: https://www.vay24h.pro.vn
 
 # Sitemaps
-Sitemap: https://vay24h.pro.vn/sitemap.xml
+Sitemap: https://www.vay24h.pro.vn/sitemap.xml
