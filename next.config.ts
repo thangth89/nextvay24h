@@ -8,26 +8,13 @@ const nextConfig = {
   
   async redirects() {
     return [
-      // Redirect từ www → non-www
+      // Chỉ redirect từ www → non-www
       {
         source: '/:path*',
         has: [
           {
             type: 'host',
             value: 'www.vay24h.pro.vn',
-          },
-        ],
-        destination: 'https://vay24h.pro.vn/:path*',
-        permanent: true,
-      },
-      // Redirect từ HTTP → HTTPS
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'header',
-            key: 'x-forwarded-proto',
-            value: 'http',
           },
         ],
         destination: 'https://vay24h.pro.vn/:path*',
