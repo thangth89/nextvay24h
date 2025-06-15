@@ -15,7 +15,7 @@ const PER_PAGE = 6;
 
 export default async function Page() {
   const filePath = path.join(process.cwd(), "src/data/news.json");
-   const raw = await fs.promises.readFile(filePath, "utf8");
+  const raw = fs.readFileSync(filePath, "utf8");
   const newsList: Article[] = JSON.parse(raw);
   const totalPages = Math.ceil(newsList.length / PER_PAGE);
   const articles = newsList.slice(0, PER_PAGE);
