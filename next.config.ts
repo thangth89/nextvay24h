@@ -20,9 +20,8 @@ const nextConfig = {
         destination: 'https://vay24h.pro.vn/:path*',
         permanent: true,
       },
-    ];
-  },
-   {
+      // Redirect từ HTTP → HTTPS
+      {
         source: '/:path*',
         has: [
           {
@@ -36,7 +35,7 @@ const nextConfig = {
       },
     ];
   },
-};
+
   // Cấu hình bảo mật headers
   async headers() {
     return [
