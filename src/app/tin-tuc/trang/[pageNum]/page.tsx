@@ -6,21 +6,22 @@ import DanhSachTin, { Article } from "@/components/DanhSachTin";
 
 const PER_PAGE = 6;
 
-type Params = {
-  pageNum: string;
-};
-
+// Tạo static params cho từng trang
 export async function generateStaticParams() {
   const filePath = path.join(process.cwd(), "src/data/news.json");
-  const raw = fs.readFileSync(filePath, "utf8");
+  const raw = await fs.promises.readFile(filePath, "utf8");
   const newsList: Article[] = JSON.parse(raw);
   const totalPages = Math.ceil(newsList.length / PER_PAGE);
+
   return Array.from({ length: totalPages }, (_, i) => ({
     pageNum: `${i + 1}`,
   }));
 }
 
-export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
+// Metadata động cho mỗi trang
+export async function generateMetadata(
+  { params }: { params: { pageNum: string } }
+): Promise<Metadata> {
   const page = parseInt(params.pageNum);
   return {
     title: `Tin tức vay tiền online - Trang ${page}`,
@@ -31,7 +32,10 @@ export async function generateMetadata({ params }: { params: Params }): Promise<
   };
 }
 
-export default async function Page({ params }: { params: Params }) {
+// Trang danh sách tin tức có phân trang
+export default async function Page(
+  { params }: { params: { pageNum: string } }
+) {
   const page = parseInt(params.pageNum);
   if (isNaN(page) || page < 1) return notFound();
 
@@ -45,5 +49,11 @@ export default async function Page({ params }: { params: Params }) {
   const start = (page - 1) * PER_PAGE;
   const articles = newsList.slice(start, start + PER_PAGE);
 
-  return <DanhSachTin articles={articles} currentPage={page} totalPages={totalPages} />;
+  return (
+    <DanhSachTin
+      articles={articles}
+      currentPage={page}
+      totalPages={totalPages}
+    />
+  );
 }
