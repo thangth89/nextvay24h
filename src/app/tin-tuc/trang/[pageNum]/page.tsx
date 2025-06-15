@@ -6,8 +6,8 @@ import DanhSachTin, { Article } from "@/components/DanhSachTin";
 
 const PER_PAGE = 6;
 
-type Props = {
-  params: { pageNum: string };
+type Params = {
+  pageNum: string;
 };
 
 export async function generateStaticParams() {
@@ -20,18 +20,18 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Params }): Promise<Metadata> {
   const page = parseInt(params.pageNum);
   return {
     title: `Tin tức vay tiền online - Trang ${page}`,
     description: `Danh sách bài viết vay tiền, tài chính - Trang ${page}`,
     alternates: {
       canonical: `https://vay24h.pro.vn/tin-tuc/trang/${page}`,
-    }
+    },
   };
 }
 
-export default async function Page({ params }: Props) {
+export default async function Page({ params }: { params: Params }) {
   const page = parseInt(params.pageNum);
   if (isNaN(page) || page < 1) return notFound();
 
