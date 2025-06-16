@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://www.vay24h.pro.vn/sitemap.xml
+Sitemap: https://vay24h.pro.vn/sitemap.xml
