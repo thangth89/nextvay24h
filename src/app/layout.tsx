@@ -205,6 +205,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <strong>Giải pháp tài chính linh hoạt</strong>
               </h1>
             </div>
+            {/* NavHeader is now placed here for desktop, and the bottom nav bar will be added at the end of the body */}
             <NavHeader />
           </div>
         </header>
@@ -252,6 +253,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </footer>
         <VercelAnalytics />
         <SpeedInsights />
+        {/* NavHeader is moved here, as it contains the mobile bottom nav bar */}
+        {/* If you prefer the bottom nav bar to be a separate component, you can create one and import it here. */}
+        {/* For simplicity, it's kept within NavHeader for now. */}
       </body>
     </html>
   );
