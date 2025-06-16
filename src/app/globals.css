@@ -1,3 +1,4 @@
+/* src/app/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,6 +19,8 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'Roboto', sans-serif;
+  /* Thêm padding-bottom cho body để tạo khoảng trống cho bottom nav bar trên mobile */
+  padding-bottom: 0; /* Mặc định là 0, sẽ được override trên mobile */
 }
 
 /* Header */
@@ -58,6 +61,8 @@ body {
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  /* Thêm padding-bottom mặc định cho desktop nếu cần, hoặc để 0 */
+  padding-bottom: 20px;
 }
 
 .content-area {
@@ -128,10 +133,16 @@ body {
 
 /* Responsive CSS */
 @media (max-width: 768px) {
+  .header {
+    /* Giảm padding hoặc chiều cao của header trên mobile */
+    padding: 5px 10px; /* Điều chỉnh padding tổng thể của header */
+    min-height: auto; /* Để chiều cao tự động theo nội dung */
+  }
+
   .header-container {
     flex-direction: column !important;
-    gap: 10px !important;
-    padding: 15px 10px !important;
+    gap: 5px !important; /* Giảm khoảng cách giữa logo và nav desktop (nếu vẫn hiển thị) */
+    padding: 10px 10px !important; /* Giảm padding cho container trong header */
   }
   
   .logo-section {
@@ -145,8 +156,14 @@ body {
   
   .main-content {
     flex-direction: column !important;
-    margin: 120px 10px 20px !important;
+    /* Điều chỉnh margin-top để giảm khoảng cách giữa đầu trang và nội dung chính */
+    /* Chiều cao của header trên mobile khoảng 70-80px. */
+    /* Hãy thử margin-top khoảng 70px để nội dung bắt đầu ngay dưới header */
+    margin: 70px 10px 20px !important; /* Đã điều chỉnh margin-top */
     gap: 20px !important;
+    
+    /* Thêm padding-bottom để tạo khoảng trống cho bottom nav bar */
+    padding-bottom: 70px !important; /* Khoảng 60-70px cho bottom nav bar */
   }
   
   .content-area {
@@ -164,11 +181,17 @@ body {
     flex: none !important;
     width: 100% !important;
   }
+
+  body {
+    /* Thêm padding-bottom cho body để đảm bảo Bottom Navigation Bar không che footer */
+    /* Chiều cao của Bottom NavBar khoảng 60px. Thêm 10px-15px gap nữa. */
+    padding-bottom: 75px; /* Chiều cao của bottom nav + một chút khoảng trống */
+  }
 }
 
 @media (max-width: 480px) {            
   .header-container {
-    padding: 10px 5px !important;
+    padding: 8px 5px !important; /* Giảm padding thêm cho màn hình nhỏ hơn */
   }
   
   .logo-section h1 {
@@ -176,7 +199,12 @@ body {
   }
   
   .main-content {
-    margin: 130px 5px 20px !important;
+    margin: 65px 5px 20px !important; /* Điều chỉnh margin-top thêm cho màn hình nhỏ hơn */
+    padding-bottom: 75px !important; /* Giữ nguyên hoặc điều chỉnh tùy ý */
+  }
+  
+  body {
+    padding-bottom: 75px;
   }
 }
 
