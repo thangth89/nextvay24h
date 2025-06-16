@@ -2,7 +2,6 @@
 
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import { useState } from 'react'; // isMenuOpen state is no longer needed for the mobile menu but keep for desktop if needed for other purposes.
 
 const navLink = {
   color: "#fff",
