@@ -80,7 +80,7 @@ export default function NavHeader() {
               borderBottom: pathname === '/vay-tien-nhanh' ? '2px solid #ffd700' : 'none',
             }}
           >
-            Vay tiền nhanh
+            Vay Online
           </Link>
           <Link
             href="/the-tin-dung"
