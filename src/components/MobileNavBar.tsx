@@ -83,8 +83,8 @@ export default function MobileNavBar() {
           Trang chủ
         </Link>
         <Link href="/vay-tien-nhanh" className={`bottom-nav-item ${pathname === '/vay-tien-nhanh' ? 'active' : ''}`}>
-         <svg className="bottom-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 4H3c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h18c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H3V6h18v12zm-2-7h-4V9h4v2zm-4 0h-4V9h4v2zm-4 0H5V9h4v2z"/></svg>
-          Vay tiền nhanh
+         <svg className="bottom-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+          Vay Online
         </Link>
         <Link href="/the-tin-dung" className={`bottom-nav-item ${pathname === '/the-tin-dung' ? 'active' : ''}`}>
           <svg className="bottom-nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
