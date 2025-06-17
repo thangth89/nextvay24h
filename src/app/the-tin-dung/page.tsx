@@ -182,7 +182,7 @@ export default function TheTinDungPage() {
             </div>
             <div className="card-footer">
               <a 
-                href="https://shorten.asia/2BsfXPMa" 
+                href="https://adpvn.top/MvxE" 
                 rel="nofollow sponsored" 
                 target="_blank" 
                 className="btn"
