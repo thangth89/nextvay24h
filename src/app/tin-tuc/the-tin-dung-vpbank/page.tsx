@@ -69,7 +69,7 @@ export default function VpbankCreditCardPage() {
       </Head>
 
       <article className="max-w-4xl mx-auto px-4 py-8 text-gray-700 leading-relaxed">
-        <header className="mb-8 text-center">
+        <header className="mb-8">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Thẻ Tín Dụng VPBank: Ưu Đãi Đỉnh Cao, Mở Thẻ Dễ Dàng – Giải Pháp Chi Tiêu Hiện Đại 2025
           </h1>
@@ -342,7 +342,7 @@ export default function VpbankCreditCardPage() {
           <ol className="list-decimal list-inside ml-4 space-y-3">
             <li>
               <strong className="font-semibold">Bước 1: Truy cập kênh đăng ký chính thức của VPBank</strong>
-              <p className="ml-4 mt-1">Truy cập website chính thức của VPBank hoặc tải ứng dụng VPBank NEO trên App Store/Google Play. Tìm đến mục &quot;Thẻ tín dụng&quot; và chọn &quot;Đăng ký ngay&quot;.</p>
+              <p className="ml-4 mt-1">Truy cập website chính thức của VPBank hoặc <Link href="/the-tin-dung" className="text-blue-600 hover:underline "> Đăng ký tại đây</Link>. </p>
             </li>
             <li>
               <strong className="font-semibold">Bước 2: Điền thông tin cá nhân cơ bản</strong>
@@ -366,7 +366,7 @@ export default function VpbankCreditCardPage() {
             </li>
           </ol>
           <p className="mt-4 text-center">
-            <Link href="https://www.vpbank.com.vn/ca-nhan/the/the-tin-dung" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300">
+            <Link href="https://adpvn.top/MvxE" target="_blank" rel="noopener noreferrer" className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300">
               Mở Thẻ Tín Dụng VPBank Online Ngay Hôm Nay!
             </Link>
           </p>
@@ -476,7 +476,7 @@ export default function VpbankCreditCardPage() {
               </div>
             </div>
             <p className="text-center text-gray-800 mt-6 text-base">
-              <Link href="#" className="text-blue-600 hover:underline font-semibold">Hãy mở thẻ tín dụng VPBank</Link> ngay hôm nay để trải nghiệm sự khác biệt!
+              <Link href="/the-tin-dung" className="text-blue-600 hover:underline font-semibold">Hãy mở thẻ tín dụng VPBank</Link> ngay hôm nay để trải nghiệm sự khác biệt!
             </p> 
           </div>
         </section>
