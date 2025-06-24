@@ -14,16 +14,7 @@ const nextConfig = {
   env: {
     SITE_URL: 'https://vay24h.pro.vn',
   },
-  async redirects() {
-    return [
-      {
-        source: '/(.*)',
-        has: [{ type: 'host', value: 'www.vay24h.pro.vn' }],
-        destination: 'https://vay24h.pro.vn/:path*',
-        permanent: true,
-      },
-    ];
-  },
+
 };
 
 module.exports = withMDX(nextConfig);
