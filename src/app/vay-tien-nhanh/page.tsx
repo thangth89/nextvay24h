@@ -124,15 +124,13 @@ export default function VayTienNhanhPage() {
             </ul>
           </div>
           <footer className="card-footer">
-            <a 
-              href="https://go.dinos.click/click?a=11826&o=161" 
-              rel="nofollow sponsored" 
-              target="_blank" 
-              className="btn"
-              aria-label="Vay tiền tại Jeff Web"
-            >
-              VAY ONLINE NGAY
-            </a>
+            <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=161" 
+                label="Jeff"
+                ariaLabel="Vay tiền tại Jeff Web"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
           </footer>
         </article>
 
