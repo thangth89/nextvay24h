@@ -95,6 +95,15 @@ export default function VayTienNhanhPage() {
               target="_blank" 
               className="btn"
               aria-label="Vay tiền tại CreditYes"
+              onClick={() => {
+              if (typeof window !== 'undefined' && window.gtag) {
+              window.gtag('event', 'click_affiliate', {
+              event_category: 'Affiliate',
+              event_label: 'CreditYes'
+                  });
+                }
+               }
+              }
             >
               VAY ONLINE NGAY
             </a>
