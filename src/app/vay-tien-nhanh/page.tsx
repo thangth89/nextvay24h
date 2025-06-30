@@ -157,16 +157,14 @@ export default function VayTienNhanhPage() {
               <li><strong>Xét duyệt: 15 phút</strong></li>
             </ul>
           </div>
-          <footer className="card-footer">
-            <a 
-              href="https://go.dinos.click/click?a=11826&o=277" 
-              rel="nofollow sponsored" 
-              target="_blank" 
-              className="btn"
-              aria-label="Vay tiền tại VayVND"
-            >
-              VAY ONLINE NGAY
-            </a>
+          <footer className="card-footer">             
+            <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=277"
+                label="VayVND"
+                ariaLabel="Vay tiền tại VayVND"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
           </footer>
         </article>
 
@@ -194,15 +192,13 @@ export default function VayTienNhanhPage() {
             </ul>
           </div>
           <footer className="card-footer">
-            <a 
-              href="https://go.dinos.click/click?a=11826&o=762" 
-              rel="nofollow sponsored" 
-              target="_blank" 
-              className="btn"
-              aria-label="Vay tiền tại MoneyCat"
-            >
-              VAY ONLINE NGAY
-            </a>
+            <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=762"
+                label="MoneyCat"
+                ariaLabel="Vay tiền tại MoneyCat"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
           </footer>
         </article>
 
@@ -230,15 +226,13 @@ export default function VayTienNhanhPage() {
             </ul>
           </div>
           <footer className="card-footer">
-            <a 
-              href="https://go.dinos.click/click?a=11826&o=663" 
-              rel="nofollow sponsored" 
-              target="_blank" 
-              className="btn"
-              aria-label="Vay tiền tại MoneyVeo"
-            >
-              VAY ONLINE NGAY
-            </a>
+             <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=663" 
+                label="MoneyVeo"
+                ariaLabel="Vay tiền tại MoneyVeo"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
           </footer>
         </article>
 
@@ -266,15 +260,13 @@ export default function VayTienNhanhPage() {
             </ul>
           </div>
           <footer className="card-footer">
-            <a 
-              href="https://go.dinos.click/click?a=11826&o=935" 
-              rel="nofollow sponsored" 
-              target="_blank" 
-              className="btn"
-              aria-label="Vay tiền tại Cây Vàng"
-            >
-              VAY ONLINE NGAY
-            </a>
+             <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=935"  
+                label="CayVang"
+                ariaLabel="Vay tiền tại Cây Vàng"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
           </footer>
         </article>
 
@@ -302,15 +294,13 @@ export default function VayTienNhanhPage() {
             </ul>
           </div>
           <footer className="card-footer">
-            <a 
-              href="https://dinos.scaletrk.com/click?a=11826&o=769" 
-              rel="nofollow sponsored" 
-              target="_blank" 
-              className="btn"
-              aria-label="Vay tiền tại TinVay"
-            >
-              VAY ONLINE NGAY
-            </a>
+            <AffiliateButton
+                href="https://dinos.scaletrk.com/click?a=11826&o=769"  
+                label="TinVay"
+                ariaLabel="Vay tiền tại TinVay"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
           </footer>
         </article>
 
@@ -338,15 +328,13 @@ export default function VayTienNhanhPage() {
             </ul>
           </div>
           <footer className="card-footer">
-            <a 
-              href="https://adpvn.top/7Xwi" 
-              rel="nofollow sponsored" 
-              target="_blank" 
-              className="btn"
-              aria-label="Vay tiền tại Ví May Mắn"
-            >
-              VAY ONLINE NGAY
-            </a>
+            <AffiliateButton
+                href="https://adpvn.top/7Xwi"
+                label="ViMayMan"
+                ariaLabel="Vay tiền tại Ví May Mắn"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
           </footer>
         </article>
 
@@ -374,15 +362,13 @@ export default function VayTienNhanhPage() {
             </ul>
           </div>
           <footer className="card-footer">
-            <a 
-              href="https://go.dinos.click/click?a=11826&o=302" 
-              rel="nofollow sponsored" 
-              target="_blank" 
-              className="btn"
-              aria-label="Vay tiền tại Dong247"
-            >
-              VAY ONLINE NGAY
-            </a>
+            <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=302" 
+                label="Dong247"
+                ariaLabel="Vay tiền tại Dong247"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
           </footer>
         </article>
 
@@ -410,15 +396,13 @@ export default function VayTienNhanhPage() {
             </ul>
           </div>
           <footer className="card-footer">
-            <a 
-              href="https://go.dinos.click/click?a=11826&o=821" 
-              rel="nofollow sponsored" 
-              target="_blank" 
-              className="btn"
-              aria-label="Vay tiền tại FinApps"
-            >
-              VAY ONLINE NGAY
-            </a>
+            <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=821" 
+                label="FinApps"
+                ariaLabel="Vay tiền tại FinApps"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
           </footer>
         </article>
 
@@ -446,15 +430,13 @@ export default function VayTienNhanhPage() {
             </ul>
           </div>
           <footer className="card-footer">
-            <a 
-              href="https://adpvn.top/pDUW" 
-              rel="nofollow sponsored" 
-              target="_blank" 
-              className="btn"
-              aria-label="Vay tiền tại ViSame"
-            >
-              VAY ONLINE NGAY
-            </a>
+            <AffiliateButton
+                href="https://adpvn.top/pDUW"
+                label="ViSame"
+                ariaLabel="Vay tiền tại ViSame"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
           </footer>
         </article>
 
@@ -482,15 +464,13 @@ export default function VayTienNhanhPage() {
             </ul>
           </div>
           <footer className="card-footer">
-            <a 
-              href="https://go.dinos.click/click?a=11826&o=683" 
-              rel="nofollow sponsored" 
-              target="_blank" 
-              className="btn"
-              aria-label="Vay tiền tại Finami"
-            >
-              VAY ONLINE NGAY
-            </a>
+             <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=683" 
+                label="Finami"
+                ariaLabel="Vay tiền tại Finami"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
           </footer>
         </article>
       </main>
