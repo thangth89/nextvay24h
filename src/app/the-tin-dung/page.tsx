@@ -2,6 +2,7 @@
 import './style.css';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import AffiliateButton from '@/components/AffiliateButton';
 
 // SEO Metadata
 export const metadata: Metadata = {
