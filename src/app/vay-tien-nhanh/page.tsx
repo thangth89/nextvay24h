@@ -2,6 +2,7 @@
 import './style.css';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import AffiliateButton from '@/components/AffiliateButton';
 
 // SEO Metadata nhẹ nhàng cho trang menu con
 export const metadata: Metadata = {
@@ -89,15 +90,13 @@ export default function VayTienNhanhPage() {
             </ul>
           </div>
           <footer className="card-footer">
-            <a 
-              href="https://go.dinos.click/click?a=11826&o=1085" 
-              rel="nofollow sponsored" 
-              target="_blank" 
-              className="btn"
-              aria-label="Vay tiền tại CreditYes"
-            >
-              VAY ONLINE NGAY
-            </a>
+             <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=1085"
+                label="CreditYes"
+                ariaLabel="Vay tiền tại CreditYes"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
           </footer>
         </article>
         
