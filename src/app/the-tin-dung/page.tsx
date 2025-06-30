@@ -110,15 +110,13 @@ export default function TheTinDungPage() {
               </ul>
             </div>
             <div className="card-footer">
-              <a 
+              <AffiliateButton
                 href="https://riofin.asia/Erk2010" 
-                rel="nofollow sponsored" 
-                target="_blank" 
-                className="btn"
-                aria-label="Mở thẻ tín dụng CAKE ngay"
+                label="CAKE"
+                ariaLabel="Mở thẻ tín dụng CAKE ngay"
               >
-                MỞ THẺ TÍN DỤNG NGAY
-              </a>
+                 MỞ THẺ TÍN DỤNG NGAY
+              </AffiliateButton>
             </div>
           </div>
 
@@ -146,15 +144,13 @@ export default function TheTinDungPage() {
               </ul>
             </div>
             <div className="card-footer">
-              <a 
+              <AffiliateButton
                 href="https://shorten.asia/eZMrBdpm" 
-                rel="nofollow sponsored" 
-                target="_blank" 
-                className="btn"
-                aria-label="Mở thẻ tín dụng VIB Bank ngay"
+                label="VIBBank"
+                ariaLabel="Mở thẻ tín dụng VIB Bank ngay"
               >
-                MỞ THẺ TÍN DỤNG NGAY
-              </a>
+                 MỞ THẺ TÍN DỤNG NGAY
+              </AffiliateButton>
             </div>
           </div>
 
@@ -182,15 +178,13 @@ export default function TheTinDungPage() {
               </ul>
             </div>
             <div className="card-footer">
-              <a 
+             <AffiliateButton
                 href="https://adpvn.top/MvxE" 
-                rel="nofollow sponsored" 
-                target="_blank" 
-                className="btn"
-                aria-label="Mở thẻ tín dụng VPBank ngay"
+                label="VPBank"
+                ariaLabel="Mở thẻ tín dụng VPBank ngay"
               >
-                MỞ THẺ TÍN DỤNG NGAY
-              </a>
+                 MỞ THẺ TÍN DỤNG NGAY
+              </AffiliateButton>
             </div>
           </div>
 
@@ -218,15 +212,13 @@ export default function TheTinDungPage() {
               </ul>
             </div>
             <div className="card-footer">
-              <a 
-                href="https://go.dinos.click/click?a=11826&o=1081" 
-                rel="nofollow sponsored" 
-                target="_blank" 
-                className="btn"
-                aria-label="Mở thẻ tín dụng TPBank ngay"
+               <AffiliateButton
+                 href="https://go.dinos.click/click?a=11826&o=1081" 
+                label="TPBank"
+                ariaLabel="Mở thẻ tín dụng TPBank ngay"
               >
-               MỞ THẺ TÍN DỤNG NGAY
-              </a>
+                 MỞ THẺ TÍN DỤNG NGAY
+              </AffiliateButton>
             </div>
           </div>
         </section>
