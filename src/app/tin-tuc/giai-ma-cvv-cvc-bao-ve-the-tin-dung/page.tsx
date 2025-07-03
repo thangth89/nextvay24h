@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     url: 'https://vay24h.pro.vn/tin-tuc/giai-ma-cvv-cvc-bao-ve-the-tin-dung', // Cập nhật URL chính xác
     images: [
       {
-        url: 'https://vay24h.pro.vn/news/cvv-cvc-secret.webp', // Thay thế bằng hình ảnh phù hợp
+        url: 'https://vay24h.pro.vn/news/giai-ma-cvv-cvc-bao-ve-the-tin-dung.webp', // Thay thế bằng hình ảnh phù hợp
         width: 800,
         height: 450,
         alt: 'Giải mã CVV CVC trên thẻ tín dụng',
@@ -44,7 +44,7 @@ export default function CvvCvcSecretPage() {
       name: "Vay24h.pro.vn",
       logo: {
         "@type": "ImageObject",
-        url: "https://vay24h.pro.vn/images/logovay.webp",
+        url: "https://vay24h.pro.vn/logovay.webp",
       },
     },
     datePublished: PUBLISHED_DATE,
@@ -52,7 +52,7 @@ export default function CvvCvcSecretPage() {
     mainEntityOfPage: "https://vay24h.pro.vn/tin-tuc/giai-ma-cvv-cvc-bao-ve-the-tin-dung", // Cập nhật URL chính xác
     image: {
       "@type": "ImageObject",
-      url: "https://vay24h.pro.vn/news/cvv-cvc-secret.webp", // Thay thế bằng hình ảnh phù hợp
+      url: "https://vay24h.pro.vn/news/giai-ma-cvv-cvc-bao-ve-the-tin-dung.webp", // Thay thế bằng hình ảnh phù hợp
       width: 800,
       height: 450,
     },
@@ -79,7 +79,7 @@ export default function CvvCvcSecretPage() {
           </div>
 
           <Image
-            src="/news/cvv-cvc-secret.webp" // Thay thế bằng hình ảnh phù hợp
+            src="/news/giai-ma-cvv-cvc-bao-ve-the-tin-dung.webp" // Thay thế bằng hình ảnh phù hợp
             alt="Giải mã mã số bí ẩn CVV CVC trên thẻ tín dụng"
             width={800}
             height={450}
@@ -142,7 +142,7 @@ export default function CvvCvcSecretPage() {
             Đối với hầu hết các loại thẻ (Visa, MasterCard, Discover), mã CVV/CVC là dãy **3 chữ số** được in ở mặt sau, thường nằm ở dải chữ ký. Riêng với thẻ American Express, mã CID là dãy **4 chữ số** và thường được in ở mặt trước, phía trên số thẻ.
           </p>
           <Image
-            src="/news/cvv-cvc-position.webp" // Thay thế bằng hình ảnh minh họa vị trí CVV/CVC
+            src="/news/giai-ma-cvv-cvc-bao-ve-the-tin-dung.webp" // Thay thế bằng hình ảnh minh họa vị trí CVV/CVC
             alt="Vị trí CVV CVC trên thẻ"
             width={700}
             height={400}
