@@ -85,7 +85,7 @@ export default function VayTienNhanhPage() {
               <li><strong>Không chứng minh thu nhập</strong></li>
               <li>Thời hạn vay: 1 – 365 ngày</li>
               <li><strong>Lãi suất: 0.01%/tháng</strong></li>
-              <li>Độ tuổi: 18 -70 tuổi</li>
+              <li>Độ tuổi: 22 -60 tuổi</li>
               <li>Hồ sơ chỉ cần CMND</li>
             </ul>
           </div>
@@ -221,7 +221,7 @@ export default function VayTienNhanhPage() {
               <li>Thời hạn vay: linh động gia hạn</li>
               <li><strong>Lãi suất thấp: 18.25%/năm</strong></li>
               <li>Hệ thống làm việc 24/7</li>
-              <li>Độ tuổi: 18-60 tuổi</li>
+              <li>Độ tuổi: 22-60 tuổi</li>
               <li>Hồ sơ: chỉ cần CMND</li>
             </ul>
           </div>
@@ -255,7 +255,7 @@ export default function VayTienNhanhPage() {
               <li>Thời hạn vay: theo từng gói vay</li>
               <li><strong>Lãi suất: 0% khoản vay đầu</strong></li>
               <li>Phí xử lý hồ sơ: 50.000-1.000.000</li>
-              <li>Độ tuổi: 18 tuổi trở lên</li>
+              <li>Độ tuổi: 22 tuổi trở lên</li>
               <li>Hồ sơ: chỉ cần CMND</li>
             </ul>
           </div>
@@ -289,7 +289,7 @@ export default function VayTienNhanhPage() {
               <li>Thời hạn vay: 3 – 36 tháng</li>
               <li><strong>Lãi suất: chỉ từ 1,67%</strong></li>
               <li>Xét duyệt nhanh chóng</li>
-              <li>Độ tuổi: 18 tuổi trở lên</li>
+              <li>Độ tuổi: 22-60 tuổi</li>
               <li>Hồ sơ: dùng Sim Viettel và CMND</li>
             </ul>
           </div>
@@ -357,7 +357,7 @@ export default function VayTienNhanhPage() {
               <li>Thời hạn vay: 91 – 120 ngày</li>
               <li><strong>Lãi suất: 0% - 15%/năm</strong></li>
               <li>Kết nối hơn 25 đối tác cho vay</li>
-              <li>Độ tuổi: 18 tuổi trở lên</li>
+              <li>Độ tuổi: 22 tuổi trở lên</li>
               <li>Hồ sơ chỉ cần CMND</li>
             </ul>
           </div>
@@ -425,7 +425,7 @@ export default function VayTienNhanhPage() {
               <li>Thời hạn vay: 3 – 24 tháng</li>
               <li><strong>Lãi suất: 0% - 20%/năm</strong></li>
               <li>Hoạt động 24/7</li>
-              <li>Độ tuổi: 18 tuổi trở lên</li>
+              <li>Độ tuổi: 22-60 tuổi</li>
               <li>Hồ sơ: chỉ cần CMND</li>
             </ul>
           </div>
@@ -459,7 +459,7 @@ export default function VayTienNhanhPage() {
               <li>Thời hạn vay: 1 – 12 tháng</li>
               <li><strong>Lãi suất: 0% nếu trả ngày đầu</strong></li>
               <li>Hoạt động 24/7</li>
-              <li>Độ tuổi: 18 - 70 tuổi</li>
+              <li>Độ tuổi: 22 - 60 tuổi</li>
               <li>Hồ sơ: chỉ cần CMND</li>
             </ul>
           </div>
