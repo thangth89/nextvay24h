@@ -9,6 +9,7 @@ import { useSearchParams } from 'next/navigation';
 function RedirectHandler() {
   const searchParams = useSearchParams();
   const to = searchParams.get('to');
+  const label = searchParams.get('label');
 
   useEffect(() => {
     if (to) {
@@ -16,7 +17,8 @@ function RedirectHandler() {
       if (typeof window !== 'undefined' && window.gtag) {
         window.gtag('event', 'click_affiliate', {
           event_category: 'Affiliate',
-          event_label: to,
+          event_label: label || to, // Sử dụng label nếu có, không thì dùng URL
+          custom_url: to, // Thêm URL riêng biệt nếu cần
         });
       }
 
@@ -25,7 +27,7 @@ function RedirectHandler() {
         window.location.href = to;
       }, 300);
     }
-  }, [to]);
+  }, [to, label]);
 
   return (
     <main style={{ padding: '50px', textAlign: 'center' }}>
