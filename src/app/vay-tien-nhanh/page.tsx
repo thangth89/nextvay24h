@@ -486,13 +486,13 @@ export default function VayTienNhanhPage() {
           </p>
         </section>
          <section className="nhom-zalo">
-          <p>Hãy tham gia nhóm zalo của vay24h.pro.vn để cập nhật những thông tin mới nhất về vay tiền online (cập nhật, hướng dẫn,mẹo ...)</p>
+          <p><strong>Hãy tham gia nhóm zalo của vay24h.pro.vn để cập nhật những thông tin mới nhất về vay tiền online (cập nhật, hướng dẫn,mẹo ...)</strong></p>
 	<Image
           src="/news/zalo.webp"
           alt="nhóm zalo vay tiền online"
           width={800}
           height={450}
-          style={{ width: "100%", height: "auto", margin: "20px 0" }}
+          className="w-full h-auto mx-auto rounded-lg shadow-md my-4"
         />
 	</section>
     </>
