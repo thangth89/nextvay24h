@@ -162,6 +162,10 @@
   text-decoration: underline;
 }
 
+.nhom-zalo {
+  color: #e74c3c;
+}
+
 /* Responsive cho 3 cột */
 @media (max-width: 768px) {
   .main-title {
