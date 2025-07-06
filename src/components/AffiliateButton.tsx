@@ -11,13 +11,13 @@ type Props = {
 export default function AffiliateButton({ href, label, ariaLabel, children }: Props) {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
-    const encoded = encodeURIComponent(href);
-    window.location.href = `/out/${encoded}`;
+    const redirectUrl = `/out?to=${encodeURIComponent(href)}`;
+    window.location.href = redirectUrl;
   };
 
   return (
     <a
-      href={`/out/${encodeURIComponent(href)}`}
+      href={`/out?to=${encodeURIComponent(href)}`}
       rel="nofollow sponsored"
       className="btn"
       onClick={handleClick}
