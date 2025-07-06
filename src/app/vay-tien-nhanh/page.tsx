@@ -152,7 +152,7 @@ export default function VayTienNhanhPage() {
             <ul className="info-list">
               <li>Thời hạn vay: 10 – 182 ngày</li>
               <li><strong>Lãi suất từ 0% – 18%/năm</strong></li>
-              <li>18 tuổi trở lên</li>
+              <li>Từ 22-60 tuổi trở lên</li>
               <li>Hồ sơ chỉ cần CMND</li>
               <li><strong>Xét duyệt: 15 phút</strong></li>
             </ul>
