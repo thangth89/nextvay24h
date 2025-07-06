@@ -485,6 +485,16 @@ export default function VayTienNhanhPage() {
             💡 <em>Lưu ý: Vay tiền cần cân nhắc khả năng trả nợ. Chỉ vay khi thật sự cần thiết.</em>
           </p>
         </section>
+         <section className="nhom-zalo">
+          <p>Hãy tham gia nhóm zalo của vay24h.pro.vn để cập nhật những thông tin mới nhất về vay tiền online (cập nhật, hướng dẫn,mẹo ...)</p>
+	<Image
+          src="/news/zalo.webp"
+          alt="nhóm zalo vay tiền online"
+          width={800}
+          height={450}
+          style={{ width: "100%", height: "auto", margin: "20px 0" }}
+        />
+	</section>
     </>
   );
 }
