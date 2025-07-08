@@ -94,6 +94,8 @@ export default function VayTienNhanhPage() {
                 href="https://go.dinos.click/click?a=11826&o=161" 
                 label="Jeff"
                 ariaLabel="Vay tiền tại Jeff Web"
+		position={1}
+                category="loan_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -128,6 +130,8 @@ export default function VayTienNhanhPage() {
                 href="https://go.dinos.click/click?a=11826&o=277"
                 label="VayVND"
                 ariaLabel="Vay tiền tại VayVND"
+		position={2}
+                category="loan_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -162,6 +166,8 @@ export default function VayTienNhanhPage() {
                 href="https://go.dinos.click/click?a=11826&o=762"
                 label="MoneyCat"
                 ariaLabel="Vay tiền tại MoneyCat"
+		position={3}
+                category="loan_apps"		       
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -196,6 +202,8 @@ export default function VayTienNhanhPage() {
                 href="https://go.dinos.click/click?a=11826&o=663" 
                 label="MoneyVeo"
                 ariaLabel="Vay tiền tại MoneyVeo"
+		position={4}
+                category="loan_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -230,6 +238,8 @@ export default function VayTienNhanhPage() {
                 href="https://go.dinos.click/click?a=11826&o=935"  
                 label="CayVang"
                 ariaLabel="Vay tiền tại Cây Vàng"
+		position={5}
+                category="loan_apps"		     
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -264,6 +274,8 @@ export default function VayTienNhanhPage() {
                 href="https://dinos.scaletrk.com/click?a=11826&o=769"  
                 label="TinVay"
                 ariaLabel="Vay tiền tại TinVay"
+		position={6}
+                category="loan_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -298,6 +310,8 @@ export default function VayTienNhanhPage() {
                 href="https://adpvn.top/7Xwi"
                 label="ViMayMan"
                 ariaLabel="Vay tiền tại Ví May Mắn"
+		position={7}
+                category="loan_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -332,6 +346,8 @@ export default function VayTienNhanhPage() {
                 href="https://go.dinos.click/click?a=11826&o=302" 
                 label="Dong247"
                 ariaLabel="Vay tiền tại Dong247"
+		position={8}
+                category="loan_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -366,6 +382,8 @@ export default function VayTienNhanhPage() {
                 href="https://go.dinos.click/click?a=11826&o=821" 
                 label="FinApps"
                 ariaLabel="Vay tiền tại FinApps"
+		position={9}
+                category="loan_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -400,6 +418,8 @@ export default function VayTienNhanhPage() {
                 href="https://adpvn.top/pDUW"
                 label="ViSame"
                 ariaLabel="Vay tiền tại ViSame"
+		position={10}
+                category="loan_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -434,6 +454,8 @@ export default function VayTienNhanhPage() {
                 href="https://go.dinos.click/click?a=11826&o=683" 
                 label="Finami"
                 ariaLabel="Vay tiền tại Finami"
+		position={11}
+                category="loan_apps"		     
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -468,6 +490,8 @@ export default function VayTienNhanhPage() {
                 href="https://go.dinos.click/click?a=11826&o=1085"
                 label="CreditYes"
                 ariaLabel="Vay tiền tại CreditYes"
+		position={12}
+                category="loan_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
