@@ -66,41 +66,7 @@ export default function VayTienNhanhPage() {
 
       <main className="loan-list">
 
-        <article className="loan-card">
-          <span className="top-label">HOT NEW</span>
-          <header className="card-header">
-            <Image 
-              src="/vay/credityes.webp" 
-              width={80} 
-              height={80} 
-              alt="CreditYes vay tiền nhanh" 
-              className="logo" 
-            />
-            <h3>CREDITYES</h3>
-            <p className="duyet">📌 DUYỆT VAY NHANH</p>
-            <p className="amount">100.000 – 20.000.000</p>
-          </header>
-          <div className="card-body">
-            <ul className="info-list">
-              <li><strong>Không chứng minh thu nhập</strong></li>
-              <li>Thời hạn vay: 1 – 365 ngày</li>
-              <li><strong>Lãi suất: 0.01%/tháng</strong></li>
-              <li>Độ tuổi: 22 -60 tuổi</li>
-              <li>Hồ sơ chỉ cần CMND</li>
-            </ul>
-          </div>
-          <footer className="card-footer">
-             <AffiliateButton
-                href="https://go.dinos.click/click?a=11826&o=1085"
-                label="CreditYes"
-                ariaLabel="Vay tiền tại CreditYes"
-              >
-                VAY ONLINE NGAY
-            </AffiliateButton>
-          </footer>
-        </article>
-        
-        <article className="loan-card">
+	<article className="loan-card">
           <span className="top-label">TOP #1</span>
           <header className="card-header">
             <Image 
@@ -468,6 +434,40 @@ export default function VayTienNhanhPage() {
                 href="https://go.dinos.click/click?a=11826&o=683" 
                 label="Finami"
                 ariaLabel="Vay tiền tại Finami"
+              >
+                VAY ONLINE NGAY
+            </AffiliateButton>
+          </footer>
+        </article>
+	      
+	<article className="loan-card">
+          <span className="top-label">NEW</span>
+          <header className="card-header">
+            <Image 
+              src="/vay/credityes.webp" 
+              width={80} 
+              height={80} 
+              alt="CreditYes vay tiền nhanh" 
+              className="logo" 
+            />
+            <h3>CREDITYES</h3>
+            <p className="duyet">📌 DUYỆT VAY NHANH</p>
+            <p className="amount">100.000 – 20.000.000</p>
+          </header>
+          <div className="card-body">
+            <ul className="info-list">
+              <li><strong>Không chứng minh thu nhập</strong></li>
+              <li>Thời hạn vay: 1 – 365 ngày</li>
+              <li><strong>Lãi suất: 0.01%/tháng</strong></li>
+              <li>Độ tuổi: 22 -60 tuổi</li>
+              <li>Hồ sơ chỉ cần CMND</li>
+            </ul>
+          </div>
+          <footer className="card-footer">
+             <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=1085"
+                label="CreditYes"
+                ariaLabel="Vay tiền tại CreditYes"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
