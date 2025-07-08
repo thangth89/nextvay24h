@@ -114,6 +114,8 @@ export default function TheTinDungPage() {
                 href="https://riofin.asia/Erk2010" 
                 label="CAKE"
                 ariaLabel="Mở thẻ tín dụng CAKE ngay"
+                position={13}
+                category="loan_apps"
               >
                  MỞ THẺ TÍN DỤNG NGAY
               </AffiliateButton>
@@ -148,6 +150,8 @@ export default function TheTinDungPage() {
                 href="https://shorten.asia/eZMrBdpm" 
                 label="VIBBank"
                 ariaLabel="Mở thẻ tín dụng VIB Bank ngay"
+                position={14}
+                category="loan_apps"
               >
                  MỞ THẺ TÍN DỤNG NGAY
               </AffiliateButton>
@@ -182,6 +186,8 @@ export default function TheTinDungPage() {
                 href="https://adpvn.top/MvxE" 
                 label="VPBank"
                 ariaLabel="Mở thẻ tín dụng VPBank ngay"
+               	position={15}
+                category="loan_apps"
               >
                  MỞ THẺ TÍN DỤNG NGAY
               </AffiliateButton>
@@ -216,6 +222,8 @@ export default function TheTinDungPage() {
                  href="https://go.dinos.click/click?a=11826&o=1081" 
                 label="TPBank"
                 ariaLabel="Mở thẻ tín dụng TPBank ngay"
+                position={16}
+                category="loan_apps"
               >
                  MỞ THẺ TÍN DỤNG NGAY
               </AffiliateButton>
