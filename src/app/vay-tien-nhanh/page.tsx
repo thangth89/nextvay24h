@@ -119,7 +119,7 @@ export default function VayTienNhanhPage() {
           <div className="card-body">
             <ul className="info-list">
               <li>Thời hạn vay: 10 – 182 ngày</li>
-              <li><strong>Lãi suất từ 0% – 18%/năm</strong></li>
+              <li><strong>Lãi suất từ 0% – 1,5%/tháng</strong></li>
               <li>Từ 22-60 tuổi trở lên</li>
               <li>Hồ sơ chỉ cần CMND</li>
               <li><strong>Xét duyệt: 15 phút</strong></li>
@@ -155,7 +155,7 @@ export default function VayTienNhanhPage() {
           <div className="card-body">
             <ul className="info-list">
               <li>Thời hạn vay: 91 – 182 ngày</li>
-              <li>Lãi suất: 12% - 18,25%/năm</li>
+              <li>Lãi suất: 1,0% - 1,52%/tháng</li>
               <li><strong>0% lãi suất cho khách mới</strong></li>
               <li>Độ tuổi: 22 - 60 tuổi</li>
               <li>Hồ sơ: chỉ cần CMND</li>
@@ -191,7 +191,7 @@ export default function VayTienNhanhPage() {
           <div className="card-body">
             <ul className="info-list">
               <li>Thời hạn vay: linh động gia hạn</li>
-              <li><strong>Lãi suất thấp: 18.25%/năm</strong></li>
+              <li><strong>Lãi suất chỉ từ 1,52%/tháng</strong></li>
               <li>Hệ thống làm việc 24/7</li>
               <li>Độ tuổi: 22-60 tuổi</li>
               <li>Hồ sơ: chỉ cần CMND</li>
@@ -263,7 +263,7 @@ export default function VayTienNhanhPage() {
           <div className="card-body">
             <ul className="info-list">
               <li>Thời hạn vay: 3 – 36 tháng</li>
-              <li><strong>Lãi suất: chỉ từ 1,67%</strong></li>
+              <li><strong>Lãi suất: chỉ từ 1,67%/tháng</strong></li>
               <li>Xét duyệt nhanh chóng</li>
               <li>Độ tuổi: 22-60 tuổi</li>
               <li>Hồ sơ: dùng Sim Viettel và CMND</li>
@@ -299,7 +299,7 @@ export default function VayTienNhanhPage() {
           <div className="card-body">
             <ul className="info-list">
               <li>Thời hạn vay: 91 - 180 ngày</li>
-              <li><strong>Lãi suất: từ 15%/năm</strong></li>
+              <li><strong>Lãi suất: từ 1,25%/tháng</strong></li>
               <li>Xét duyệt nhanh</li>
               <li>Độ tuổi: 22 - 60 tuổi</li>
               <li>Hồ sơ: chỉ cần CMND</li>
@@ -335,7 +335,7 @@ export default function VayTienNhanhPage() {
           <div className="card-body">
             <ul className="info-list">
               <li>Thời hạn vay: 91 – 120 ngày</li>
-              <li><strong>Lãi suất: 0% - 15%/năm</strong></li>
+              <li><strong>Lãi suất: 0% - 1,25%/tháng</strong></li>
               <li>Kết nối hơn 25 đối tác cho vay</li>
               <li>Độ tuổi: 22 tuổi trở lên</li>
               <li>Hồ sơ chỉ cần CMND</li>
@@ -407,7 +407,7 @@ export default function VayTienNhanhPage() {
           <div className="card-body">
             <ul className="info-list">
               <li>Thời hạn vay: 3 – 24 tháng</li>
-              <li><strong>Lãi suất: 0% - 20%/năm</strong></li>
+              <li><strong>Lãi suất: 0% - 1,67%/tháng</strong></li>
               <li>Hoạt động 24/7</li>
               <li>Độ tuổi: 22-60 tuổi</li>
               <li>Hồ sơ: chỉ cần CMND</li>
