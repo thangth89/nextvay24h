@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-
+import AffiliateButton from '@/components/AffiliateButton';
 
 // Cố định ngày xuất bản ban đầu của bài viết
 const PUBLISHED_DATE = "2025-07-09T14:00:00+07:00"; // Đặt ngày xuất bản thực tế
@@ -68,7 +68,7 @@ export default function UnsecuredLoanPage() {
       </Head>
 
       <article className="max-w-4xl mx-auto px-4 py-8 text-gray-700 leading-relaxed">
-        <header className="mb-8 text-center">
+        <header className="mb-8">
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Vay Tín Chấp Là Gì? Toàn Tập Về Hình Thức Vay Tiền Không Cần Thế Chấp 2025
           </h1>
@@ -331,6 +331,13 @@ export default function UnsecuredLoanPage() {
               <li>Quy trình đăng ký online đơn giản, nhanh chóng.</li>
               <li>Phù hợp với những người cần tìm kiếm các lựa chọn vay khác nhau.</li>
             </ul>
+            <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=161" 
+                label="Jeff"
+                ariaLabel="Vay tiền tại Jeff Web"
+              >
+                VAY ONLINE VỚI JEFF
+            </AffiliateButton>
           </div>
 
           <div id="vayvnd" className="mb-8 p-6 bg-white border border-gray-200 rounded-lg shadow-md">
