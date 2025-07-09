@@ -331,15 +331,15 @@ export default function UnsecuredLoanPage() {
               <li>Quy trình đăng ký online đơn giản, nhanh chóng.</li>
               <li>Phù hợp với những người cần tìm kiếm các lựa chọn vay khác nhau.</li>
             </ul>
-            <div>
             <AffiliateButton
                 href="https://go.dinos.click/click?a=11826&o=161" 
                 label="Jeff"
                 ariaLabel="Vay tiền tại Jeff Web"
               	position={17}
                 category="loan_apps"
+               className="text-indigo-700"
               >
-              <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>VAY ONLINE VỚI JEFF
+              VAY ONLINE VỚI JEFF
             </AffiliateButton>
               </div>
           </div>
