@@ -338,7 +338,6 @@ export default function UnsecuredLoanPage() {
                 ariaLabel="Vay tiền tại Jeff Web"
               	position={17}
                 category="loan_apps"
-               className="text-indigo-700"
               >
               VAY ONLINE VỚI JEFF
             </AffiliateButton>
