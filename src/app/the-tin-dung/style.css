@@ -119,25 +119,6 @@
   margin-bottom: 8px; /* Tăng khoảng cách giữa các dòng */
 }
 
-.btn {
-  background: #e74c3c;
-  color: white;
-  padding: 12px 24px; /* Tăng kích thước button */
-  border-radius: 6px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px; /* Tăng font size button */
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.btn:hover {
-  background: #229954;
-  transform: translateY(-1px);
-}
-
 /* Phần highlight posts */
 .highlight-posts {
   margin-top: 30px;
