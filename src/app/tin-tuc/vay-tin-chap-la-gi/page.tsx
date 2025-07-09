@@ -335,6 +335,8 @@ export default function UnsecuredLoanPage() {
                 href="https://go.dinos.click/click?a=11826&o=161" 
                 label="Jeff"
                 ariaLabel="Vay tiền tại Jeff Web"
+              	position={17}
+                category="loan_apps"
               >
                 VAY ONLINE VỚI JEFF
             </AffiliateButton>
@@ -351,6 +353,15 @@ export default function UnsecuredLoanPage() {
               <li>Giải ngân nhanh chóng, có thể trong ngày.</li>
               <li>Hạn mức vay linh hoạt từ vài triệu đồng.</li>
             </ul>
+            <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=277"
+                label="VayVND"
+                ariaLabel="Vay tiền tại VayVND"
+                position={18}
+                category="loan_apps"
+              >
+                VAY ONLINE VỚI VAYVND
+            </AffiliateButton>
           </div>
 
           <div id="moneycat" className="mb-8 p-6 bg-white border border-gray-200 rounded-lg shadow-md">
@@ -364,6 +375,15 @@ export default function UnsecuredLoanPage() {
               <li>Hồ sơ đơn giản, duyệt vay tự động.</li>
               <li>Phù hợp với các nhu cầu tài chính tức thời.</li>
             </ul>
+            <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=762"
+                label="MoneyCat"
+                ariaLabel="Vay tiền tại MoneyCat"
+                position={19}
+                category="loan_apps"
+              >
+                VAY ONLINE VỚI MONEYCAT
+            </AffiliateButton>
           </div>
 
           <div id="cayvang" className="mb-8 p-6 bg-white border border-gray-200 rounded-lg shadow-md">
@@ -377,6 +397,15 @@ export default function UnsecuredLoanPage() {
               <li>Tiết kiệm thời gian tìm kiếm thông tin.</li>
               <li>Hỗ trợ tìm kiếm các khoản vay phù hợp với hồ sơ cá nhân.</li>
             </ul>
+            <AffiliateButton
+                href="https://go.dinos.click/click?a=11826&o=935"  
+                label="CayVang"
+                ariaLabel="Vay tiền tại Cây Vàng"
+                position={20}
+                category="loan_apps"
+              >
+                VAY ONLINE VỚI CAYVANG
+            </AffiliateButton>
           </div>
 
           <div id="tinvay" className="mb-8 p-6 bg-white border border-gray-200 rounded-lg shadow-md">
@@ -390,6 +419,15 @@ export default function UnsecuredLoanPage() {
               <li>Quy trình trực tuyến tiện lợi.</li>
               <li>Đa dạng sản phẩm vay tín chấp từ các tổ chức uy tín.</li>
             </ul>
+            <AffiliateButton
+                href="https://dinos.scaletrk.com/click?a=11826&o=769"  
+                label="TinVay"
+                ariaLabel="Vay tiền tại TinVay"
+                position={21}
+                category="loan_apps"
+              >
+                VAY ONLINE VỚI TINVAY
+            </AffiliateButton>
           </div>
           <p className="mt-4 p-3 bg-blue-50 border-l-4 border-blue-400 rounded-lg">
             **Lưu ý quan trọng:** Mặc dù các đơn vị trên đều có danh tiếng trong lĩnh vực cho vay tín chấp, bạn vẫn cần tự tìm hiểu kỹ lưỡng về điều khoản, lãi suất, phí phạt và đọc các đánh giá từ người dùng khác trước khi quyết định vay. Luôn lựa chọn những đơn vị có giấy phép hoạt động rõ ràng từ Ngân hàng Nhà nước hoặc Bộ Kế hoạch và Đầu tư.
