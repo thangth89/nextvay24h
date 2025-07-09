@@ -319,7 +319,7 @@ export default function UnsecuredLoanPage() {
           <p className="mb-4">
             Thị trường vay tín chấp tại Việt Nam rất sôi động với sự góp mặt của nhiều ngân hàng và công ty tài chính. Đặc biệt, sự bùng nổ của các nền tảng cho vay online (Fintech) đã mang lại sự tiện lợi vượt trội. Dưới đây là một số đơn vị tiêu biểu, được nhiều người dùng tin tưởng:
           </p>
-          <article>
+  
           <div id="jeff" className="mb-8 p-6 bg-white border border-gray-200 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-indigo-700 mb-3">Jeff</h3>
             <p className="mb-3">
@@ -331,8 +331,7 @@ export default function UnsecuredLoanPage() {
               <li>Quy trình đăng ký online đơn giản, nhanh chóng.</li>
               <li>Phù hợp với những người cần tìm kiếm các lựa chọn vay khác nhau.</li>
             </ul>
-          </div>
-            <AffiliateButton
+              <AffiliateButton
                 href="https://go.dinos.click/click?a=11826&o=161" 
                 label="Jeff"
                 ariaLabel="Vay tiền tại Jeff Web"
@@ -341,7 +340,7 @@ export default function UnsecuredLoanPage() {
               >
               VAY ONLINE VỚI JEFF
             </AffiliateButton>
-          </article>
+          </div>
           
           <div id="vayvnd" className="mb-8 p-6 bg-white border border-gray-200 rounded-lg shadow-md">
             <h3 className="text-2xl font-bold text-emerald-700 mb-3">VayVND</h3>
