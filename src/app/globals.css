@@ -217,3 +217,20 @@ h3 {
   font-weight: 700;
   margin: 1em 0 0.5em 0;
 }
+.btn {
+  background: #e74c3c;
+  color: white;
+  padding: 12px 24px; /* Tăng kích thước button */
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Tăng font size button */
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.btn:hover {
+  background: #229954;
+  transform: translateY(-1px);
+}
