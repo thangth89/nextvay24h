@@ -1,0 +1,15 @@
+/* CSS với kích thước chữ chuẩn SEO */
+.btn {
+  background: #e74c3c;
+  color: white;
+  padding: 12px 24px; /* Tăng kích thước button */
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Tăng font size button */
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
