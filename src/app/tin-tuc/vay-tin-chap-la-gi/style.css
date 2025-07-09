@@ -12,4 +12,8 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+.btn:hover {
+  background: #229954;
+  transform: translateY(-1px);
+}
 
