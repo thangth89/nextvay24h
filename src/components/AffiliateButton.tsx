@@ -79,6 +79,20 @@ export default function AffiliateButton({
       window.location.href = href;
     }
   };
+  // FACEBOOK PIXEL TRACKING
+  if (typeof fbq !== 'undefined') {
+    fbq('trackCustom', 'ClickAffiliate', {
+      affiliate_name: label,
+      affiliate_url: href,
+      affiliate_position: position || 0,
+      affiliate_category: category,
+      page_location: window.location.href,
+      page_title: document.title
+    });
+
+    fbq('trackCustom', `Click_${label.replace(/\s+/g, '')}`);
+  }
+}
 
   return (
     <a
