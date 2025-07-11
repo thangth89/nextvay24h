@@ -68,18 +68,7 @@ export default function AffiliateButton({
       });
     }
 
-    // Chờ để đảm bảo events được gửi, nhưng không quá lâu
-    const redirectTimer = setTimeout(() => {
-      window.location.href = href;
-    }, 150);
-
-    // Fallback: redirect ngay lập tức nếu GA4 không có
-    if (!window.gtag) {
-      clearTimeout(redirectTimer);
-      window.location.href = href;
-    }
-  };
-  // FACEBOOK PIXEL TRACKING
+     // FACEBOOK PIXEL TRACKING
   if (typeof fbq !== 'undefined') {
     fbq('trackCustom', 'ClickAffiliate', {
       affiliate_name: label,
@@ -92,7 +81,17 @@ export default function AffiliateButton({
 
     fbq('trackCustom', `Click_${label.replace(/\s+/g, '')}`);
   }
-}
+    // Chờ để đảm bảo events được gửi, nhưng không quá lâu
+    const redirectTimer = setTimeout(() => {
+      window.location.href = href;
+    }, 150);
+
+    // Fallback: redirect ngay lập tức nếu GA4 không có
+    if (!window.gtag) {
+      clearTimeout(redirectTimer);
+      window.location.href = href;
+    }
+  };
 
   return (
     <a
