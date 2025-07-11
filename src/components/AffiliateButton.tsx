@@ -1,5 +1,5 @@
 'use client';
-declare const fbq: (...args: any[]) => void; 
+declare const fbq: (...args: unknown[]) => void;
 
 type Props = {
   href: string;
