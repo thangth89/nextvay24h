@@ -80,6 +80,7 @@ export default function AffiliateButton({
     });
 
     fbq('trackCustom', `Click_${label.replace(/\s+/g, '')}`);
+   }
   }
     // Chờ để đảm bảo events được gửi, nhưng không quá lâu
     const redirectTimer = setTimeout(() => {
