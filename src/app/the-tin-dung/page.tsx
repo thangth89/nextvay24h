@@ -115,7 +115,7 @@ export default function TheTinDungPage() {
                 label="CAKE"
                 ariaLabel="Mở thẻ tín dụng CAKE ngay"
                 position={13}
-                category="loan_apps"
+                category="referral_apps"
               >
                  MỞ THẺ TÍN DỤNG NGAY
               </AffiliateButton>
@@ -151,7 +151,7 @@ export default function TheTinDungPage() {
                 label="VIBBank"
                 ariaLabel="Mở thẻ tín dụng VIB Bank ngay"
                 position={14}
-                category="loan_apps"
+                category="referral_apps"
               >
                  MỞ THẺ TÍN DỤNG NGAY
               </AffiliateButton>
@@ -187,7 +187,7 @@ export default function TheTinDungPage() {
                 label="VPBank"
                 ariaLabel="Mở thẻ tín dụng VPBank ngay"
                	position={15}
-                category="loan_apps"
+                category="referral_apps"
               >
                  MỞ THẺ TÍN DỤNG NGAY
               </AffiliateButton>
@@ -223,7 +223,7 @@ export default function TheTinDungPage() {
                 label="TPBank"
                 ariaLabel="Mở thẻ tín dụng TPBank ngay"
                 position={16}
-                category="loan_apps"
+                category="referral_apps"
               >
                  MỞ THẺ TÍN DỤNG NGAY
               </AffiliateButton>
