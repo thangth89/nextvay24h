@@ -336,7 +336,7 @@ export default function UnsecuredLoanPage() {
                 label="Jeff"
                 ariaLabel="Vay tiền tại Jeff Web"
               	position={17}
-                category="loan_apps"
+                category="referral_apps"
               >
               VAY ONLINE VỚI JEFF
             </AffiliateButton>
@@ -358,7 +358,7 @@ export default function UnsecuredLoanPage() {
                 label="VayVND"
                 ariaLabel="Vay tiền tại VayVND"
                 position={18}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE VỚI VAYVND
             </AffiliateButton>
@@ -380,7 +380,7 @@ export default function UnsecuredLoanPage() {
                 label="MoneyCat"
                 ariaLabel="Vay tiền tại MoneyCat"
                 position={19}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE VỚI MONEYCAT
             </AffiliateButton>
@@ -402,7 +402,7 @@ export default function UnsecuredLoanPage() {
                 label="CayVang"
                 ariaLabel="Vay tiền tại Cây Vàng"
                 position={20}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE VỚI CAYVANG
             </AffiliateButton>
@@ -424,7 +424,7 @@ export default function UnsecuredLoanPage() {
                 label="TinVay"
                 ariaLabel="Vay tiền tại TinVay"
                 position={21}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE VỚI TINVAY
             </AffiliateButton>
