@@ -95,7 +95,7 @@ export default function VayTienNhanhPage() {
                 label="Jeff"
                 ariaLabel="Vay tiền tại Jeff Web"
 		position={1}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -131,7 +131,7 @@ export default function VayTienNhanhPage() {
                 label="VayVND"
                 ariaLabel="Vay tiền tại VayVND"
 		position={2}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -167,7 +167,7 @@ export default function VayTienNhanhPage() {
                 label="MoneyCat"
                 ariaLabel="Vay tiền tại MoneyCat"
 		position={3}
-                category="loan_apps"		       
+                category="referral_apps"		       
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -203,7 +203,7 @@ export default function VayTienNhanhPage() {
                 label="MoneyVeo"
                 ariaLabel="Vay tiền tại MoneyVeo"
 		position={4}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -239,7 +239,7 @@ export default function VayTienNhanhPage() {
                 label="CayVang"
                 ariaLabel="Vay tiền tại Cây Vàng"
 		position={5}
-                category="loan_apps"		     
+                category="referral_apps"		     
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -275,7 +275,7 @@ export default function VayTienNhanhPage() {
                 label="TinVay"
                 ariaLabel="Vay tiền tại TinVay"
 		position={6}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -311,7 +311,7 @@ export default function VayTienNhanhPage() {
                 label="ViMayMan"
                 ariaLabel="Vay tiền tại Ví May Mắn"
 		position={7}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -347,7 +347,7 @@ export default function VayTienNhanhPage() {
                 label="Dong247"
                 ariaLabel="Vay tiền tại Dong247"
 		position={8}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -383,7 +383,7 @@ export default function VayTienNhanhPage() {
                 label="FinApps"
                 ariaLabel="Vay tiền tại FinApps"
 		position={9}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -419,7 +419,7 @@ export default function VayTienNhanhPage() {
                 label="ViSame"
                 ariaLabel="Vay tiền tại ViSame"
 		position={10}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -455,7 +455,7 @@ export default function VayTienNhanhPage() {
                 label="Finami"
                 ariaLabel="Vay tiền tại Finami"
 		position={11}
-                category="loan_apps"		     
+                category="referral_apps"		     
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
@@ -491,7 +491,7 @@ export default function VayTienNhanhPage() {
                 label="CreditYes"
                 ariaLabel="Vay tiền tại CreditYes"
 		position={12}
-                category="loan_apps"
+                category="referral_apps"
               >
                 VAY ONLINE NGAY
             </AffiliateButton>
