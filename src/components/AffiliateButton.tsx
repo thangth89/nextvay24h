@@ -16,7 +16,7 @@ export default function AffiliateButton({
   ariaLabel,
   children,
   position,
-  category = 'loan_apps'
+  category = 'referral_apps'
 }: Props) {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
