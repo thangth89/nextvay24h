@@ -143,6 +143,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="vi" className={roboto.className}>
       <head>
+        <meta name="facebook-domain-verification" content="vquzyqlasiqtfdy8oivcro2yi1xowm" />
         {/* Structured Data */}
         <Script
           id="structured-data"
