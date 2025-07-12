@@ -108,7 +108,7 @@ const [notifications, setNotifications] = useState<Notification[]>([]);
               <div 
                 className="bg-green-500 h-1 rounded-full animate-progress"
                 style={{
-                  animation: 'progress 3s linear forwards'
+                  animation: 'progress 5s linear forwards'
                 }}
               />
             </div>
@@ -143,7 +143,7 @@ const [notifications, setNotifications] = useState<Notification[]>([]);
         }
         
         .animate-progress {
-          animation: progress 3s linear forwards;
+          animation: progress 5s linear forwards;
         }
       `}</style>
     </>
