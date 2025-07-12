@@ -5,12 +5,13 @@ import { Handshake, FileText, CheckCircle, Users } from 'lucide-react';
 
 const StatsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [animatedNumbers, setAnimatedNumbers] = useState({
+  const [animatedNumbers, setAnimatedNumbers] = useState<Record<StatKey, number>>({
     customers: 0,
     today: 0,
     approval: 0,
     satisfaction: 0
   });
+
   const sectionRef = useRef(null);
 
   const finalNumbers = {
@@ -20,7 +21,12 @@ const StatsSection = () => {
     satisfaction: 95
   };
 
-  const stats = [
+  const stats: {
+    icon: JSX.Element;
+    key: StatKey;
+    label: string;
+    suffix: string;
+  }[]= [
     {
       icon: <Handshake className="w-8 h-8 text-white" />,
       key: 'customers',
