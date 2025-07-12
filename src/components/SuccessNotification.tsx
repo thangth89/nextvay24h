@@ -3,7 +3,17 @@ import React, { useState, useEffect } from 'react';
 import { CheckCircle, X, User, Phone } from 'lucide-react';
 
 const SuccessNotification = () => {
-  const [notifications, setNotifications] = useState([]);
+  type Notification = {
+  id: number;
+  user: {
+    name: string;
+    phone: string;
+  };
+  timestamp: string;
+};
+
+const [notifications, setNotifications] = useState<Notification[]>([]);
+
 
   // Fake user data for demonstration
   const fakeUsers = [
