@@ -23,7 +23,7 @@ const StatsSection = () => {
   };
 
   const stats: {
-    icon: JSX.Element;
+    icon: React.ReactNode;
     key: StatKey;
     label: string;
     suffix: string;
