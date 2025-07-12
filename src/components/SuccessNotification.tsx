@@ -53,7 +53,7 @@ const [notifications, setNotifications] = useState<Notification[]>([]);
   useEffect(() => {
     const interval = setInterval(() => {
       showNotification();
-    }, 10000);
+    }, 15000);
 
     return () => clearInterval(interval);
   }, []);
