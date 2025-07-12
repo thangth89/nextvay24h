@@ -10,6 +10,7 @@ import Link from 'next/link';
 import './globals.css';
 import StatsComponent from '../components/StatsComponent';
 import TestimonialsSection from '../components/TestimonialsSection';
+import SuccessNotification from '../components/SuccessNotification';
 
 import Script from 'next/script';
 import Analytics from '../lib/Analytics';
@@ -287,6 +288,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </footer>
         <VercelAnalytics />
         <SpeedInsights />
+        <SuccessNotification />
         {/* MobileNavBar (bottom nav) được đặt ở cuối body */}
         <MobileNavBar />
       </body>
