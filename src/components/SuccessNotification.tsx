@@ -61,7 +61,7 @@ const [notifications, setNotifications] = useState<Notification[]>([]);
   return (
     <>
       {/* Notifications Container - Fixed at bottom right */}
-      <div className="fixed bottom-16 right-4 z-50 space-y-3 w-80 max-w-[calc(100vw-2rem)] sm:w-96">
+      <div className="fixed bottom-18 right-4 z-50 space-y-3 w-80 max-w-[calc(100vw-2rem)] sm:w-96">
         {notifications.map((notification) => (
           <div
             key={notification.id}
@@ -108,7 +108,7 @@ const [notifications, setNotifications] = useState<Notification[]>([]);
               <div 
                 className="bg-green-500 h-1 rounded-full animate-progress"
                 style={{
-                  animation: 'progress 5s linear forwards'
+                  animation: 'progress 3s linear forwards'
                 }}
               />
             </div>
