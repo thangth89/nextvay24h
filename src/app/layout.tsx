@@ -288,9 +288,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </footer>
         <VercelAnalytics />
         <SpeedInsights />
-        <SuccessNotification />
         {/* MobileNavBar (bottom nav) được đặt ở cuối body */}
         <MobileNavBar />
+        <SuccessNotification />
       </body>
     </html>
   );
