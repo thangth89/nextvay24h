@@ -68,8 +68,8 @@ const StatsSection = () => {
   // Animation đếm số
   useEffect(() => {
     if (!isVisible) return;
-
-    const animateNumber = (key, finalValue, duration = 2000) => {
+    type StatKey = 'customers' | 'today' | 'approval' | 'satisfaction';
+    const animateNumber = (key: StatKey, finalValue: number, duration = 2000) => {
       const steps = 60;
       const increment = finalValue / steps;
       let current = 0;
