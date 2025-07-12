@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { Handshake, FileText, CheckCircle, Users } from 'lucide-react';
+type StatKey = 'customers' | 'today' | 'approval' | 'satisfaction';
 
 const StatsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -74,7 +75,7 @@ const StatsSection = () => {
   // Animation đếm số
   useEffect(() => {
     if (!isVisible) return;
-    type StatKey = 'customers' | 'today' | 'approval' | 'satisfaction';
+    
     const animateNumber = (key: StatKey, finalValue: number, duration = 2000) => {
       const steps = 60;
       const increment = finalValue / steps;
