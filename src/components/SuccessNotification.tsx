@@ -42,7 +42,7 @@ const [notifications, setNotifications] = useState<Notification[]>([]);
     // Auto remove after 5 seconds
     setTimeout(() => {
       setNotifications(prev => prev.filter(notif => notif.id !== newNotification.id));
-    }, 5000);
+    }, 3000);
   };
 
   const removeNotification = (id: number) => {
@@ -61,7 +61,7 @@ const [notifications, setNotifications] = useState<Notification[]>([]);
   return (
     <>
       {/* Notifications Container - Fixed at bottom right */}
-      <div className="fixed bottom-12 right-4 z-50 space-y-3 w-80 max-w-[calc(100vw-2rem)] sm:w-96">
+      <div className="fixed bottom-16 right-4 z-50 space-y-3 w-80 max-w-[calc(100vw-2rem)] sm:w-96">
         {notifications.map((notification) => (
           <div
             key={notification.id}
