@@ -108,11 +108,11 @@ const TestimonialsSection = () => {
 
                 {/* Content */}
                 <div className="relative">
-                  <div className="text-4xl text-orange-200 absolute -top-2 -left-2">"</div>
+                  <div className="text-4xl text-orange-200 absolute -top-2 -left-2">&quot;</div>
                   <p className="text-gray-700 text-sm leading-relaxed italic pl-4">
                     {testimonial.content}
                   </p>
-                  <div className="text-4xl text-orange-200 absolute -bottom-2 -right-2 rotate-180">"</div>
+                  <div className="text-4xl text-orange-200 absolute -bottom-2 -right-2 rotate-180">&quot;</div>
                 </div>
               </div>
             </div>
