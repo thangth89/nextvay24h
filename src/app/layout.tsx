@@ -8,6 +8,8 @@ import MobileNavBar from '../components/MobileNavBar'; // Import MobileNavBar má
 import Image from 'next/image';
 import Link from 'next/link';
 import './globals.css';
+import StatsComponent from '../components/StatsComponent';
+import TestimonialsSection from '../components/TestimonialsSection';
 
 import Script from 'next/script';
 import Analytics from '../lib/Analytics';
@@ -241,6 +243,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
           <Sidebar />
         </main>
+
+    <div className="StatsComponent">
+      <StatsComponent />
+    </div>
+    <div className="TestimonialsSection">
+      <TestimonialsSection />
+    </div>
 
         <footer className="footer" role="contentinfo">
           <div className="footer-content">
