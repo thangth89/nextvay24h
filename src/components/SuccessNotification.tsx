@@ -143,7 +143,7 @@ const [notifications, setNotifications] = useState<Notification[]>([]);
         }
         
         .animate-progress {
-          animation: progress 5s linear forwards;
+          animation: progress 3s linear forwards;
         }
       `}</style>
     </>
