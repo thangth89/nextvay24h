@@ -83,11 +83,14 @@ const TestimonialsSection = () => {
                       src={testimonial.avatar} 
                       alt={testimonial.name}
                       className="w-full h-full object-cover"
-                      onError={(e) => {
-                        // Fallback nếu ảnh không tải được
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'flex';
-                      }}
+onError={(e) => {
+  const target = e.target as HTMLImageElement;
+  target.style.display = 'none';
+  if (target.nextSibling instanceof HTMLElement) {
+    target.nextSibling.style.display = 'flex';
+  }
+}}
+
                     />
                     <div className="w-full h-full bg-gradient-to-br from-orange-400 to-orange-500 rounded-full flex items-center justify-center text-white text-2xl font-bold" style={{display: 'none'}}>
                       {testimonial.name.split(' ')[1]?.charAt(0) || testimonial.name.charAt(0)}
