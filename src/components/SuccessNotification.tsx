@@ -45,7 +45,7 @@ const [notifications, setNotifications] = useState<Notification[]>([]);
     }, 5000);
   };
 
-  const removeNotification = (id) => {
+  const removeNotification = (id: number) => {
     setNotifications(prev => prev.filter(notif => notif.id !== id));
   };
 
