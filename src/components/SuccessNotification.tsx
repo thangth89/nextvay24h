@@ -139,7 +139,7 @@ const [notifications, setNotifications] = useState<Notification[]>([]);
         }
         
         .animate-slide-in {
-          animation: slideIn 0.3s ease-out forwards;
+          animation: slideIn 3s ease-out forwards;
         }
         
         .animate-progress {
