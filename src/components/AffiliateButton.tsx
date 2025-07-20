@@ -84,7 +84,7 @@ export default function AffiliateButton({
 
         fbq('trackCustom', `Click_${label.replace(/\s+/g, '')}`);
       }
-    } catch (_) {
+    } catch () {
       // fail silently
     }
 
