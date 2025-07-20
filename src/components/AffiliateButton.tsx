@@ -1,4 +1,7 @@
 'use client';
+
+import React from 'react';
+
 declare const fbq: (...args: unknown[]) => void;
 
 type Props = {
@@ -16,77 +19,83 @@ export default function AffiliateButton({
   ariaLabel,
   children,
   position,
-  category = 'referral_apps'
+  category = 'referral_apps',
 }: Props) {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
 
-    if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('event', 'click_affiliate', {
-        event_category: 'Affiliate',
-        event_label: label,
-        affiliate_name: label,
-        affiliate_url: href,
-        affiliate_position: position || 0,
-        affiliate_category: category,
-        page_location: window.location.href,
-        page_title: document.title,
-        custom_parameter_1: `${category}_${label}`,
-        value: 1
-      });
+    const win = window.open(href, '_blank');
 
-      window.gtag('event', `click_${label.toLowerCase().replace(/\s+/g, '_')}`, {
-        event_category: 'Affiliate_Products',
-        event_label: label,
-        affiliate_name: label,
-        affiliate_position: position,
-        value: 1
-      });
+    try {
+      // Google Analytics tracking
+      if (typeof window !== 'undefined' && window.gtag) {
+        const safeLabel = label.toLowerCase().replace(/\s+/g, '_');
 
-      window.gtag('event', 'affiliate_conversion', {
-        event_category: 'Conversions',
-        event_label: label,
-        affiliate_name: label,
-        conversion_type: 'click',
-        value: 1
-      });
+        window.gtag('event', 'click_affiliate', {
+          event_category: 'Affiliate',
+          event_label: label,
+          affiliate_name: label,
+          affiliate_url: href,
+          affiliate_position: position || 0,
+          affiliate_category: category,
+          page_location: window.location.href,
+          page_title: document.title,
+          custom_parameter_1: `${category}_${label}`,
+          value: 1
+        });
 
-      window.gtag('event', 'select_item', {
-        event_category: 'Affiliate',
-        item_id: label.toLowerCase().replace(/\s+/g, '_'),
-        item_name: label,
-        item_category: category,
-        item_list_name: 'loan_apps_list',
-        index: position || 0,
-        value: 1
-      });
+        window.gtag('event', `click_${safeLabel}`, {
+          event_category: 'Affiliate_Products',
+          event_label: label,
+          affiliate_name: label,
+          affiliate_position: position,
+          value: 1
+        });
+
+        window.gtag('event', 'affiliate_conversion', {
+          event_category: 'Conversions',
+          event_label: label,
+          affiliate_name: label,
+          conversion_type: 'click',
+          value: 1
+        });
+
+        window.gtag('event', 'select_item', {
+          event_category: 'Affiliate',
+          item_id: safeLabel,
+          item_name: label,
+          item_category: category,
+          item_list_name: 'loan_apps_list',
+          index: position || 0,
+          value: 1
+        });
+      }
+
+      // Facebook Pixel tracking
+      if (typeof fbq !== 'undefined') {
+        fbq('trackCustom', 'ClickAffiliate', {
+          affiliate_name: label,
+          affiliate_url: href,
+          affiliate_position: position || 0,
+          affiliate_category: category,
+          page_location: window.location.href,
+          page_title: document.title
+        });
+
+        fbq('trackCustom', `Click_${label.replace(/\s+/g, '')}`);
+      }
+    } catch (_) {
+      // fail silently
     }
 
-    // Facebook Pixel Tracking
-    if (typeof fbq !== 'undefined') {
-      fbq('trackCustom', 'ClickAffiliate', {
-        affiliate_name: label,
-        affiliate_url: href,
-        affiliate_position: position || 0,
-        affiliate_category: category,
-        page_location: window.location.href,
-        page_title: document.title
-      });
-
-      fbq('trackCustom', `Click_${label.replace(/\s+/g, '')}`);
-    }
-
-    const redirectTimer = setTimeout(() => {
-      window.location.href = href;
-    }, 150);
-
-    if (!window.gtag) {
-      clearTimeout(redirectTimer);
-      window.location.href = href;
+    // Fallback: nếu popup bị chặn
+    if (!win || win.closed || typeof win.closed === 'undefined') {
+      setTimeout(() => {
+        window.location.href = href;
+      }, 250); // tăng timeout để tracking kịp gửi
     }
   };
 
-  // ✅ Đặt return bên trong function AffiliateButton
   return (
     <a
       href={href}
