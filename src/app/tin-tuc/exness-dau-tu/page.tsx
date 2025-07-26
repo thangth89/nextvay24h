@@ -263,7 +263,7 @@ export default function ExnessInvestmentPage() {
           <div id="buoc-2-xac-minh" className="bg-purple-50 border-l-4 border-purple-400 p-4 mb-6 rounded-lg shadow-sm">
             <h3 className="text-2xl font-semibold text-purple-800 mb-3">Bước 2: Xác minh tài khoản</h3>
             <p className="mb-3">
-              Để đảm bảo an toàn và tuân thủ quy định, bạn cần xác minh danh tính và địa chỉ. Chuẩn bị CMND/CCCD hoặc hộ chiếu và một tài liệu chứng minh địa chỉ (ví dụ: hóa đơn điện nước, sao kê ngân hàng) để tải lên. Quá trình này thường diễn ra nhanh chóng.
+              Để đảm bảo an toàn và tuân thủ quy định, bạn cần xác minh danh tính và địa chỉ. Chuẩn bị CMND/CCCD hoặc hộ chiếu để tải lên. Quá trình này thường diễn ra nhanh chóng.
             </p>
           </div>
 
