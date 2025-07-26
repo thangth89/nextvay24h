@@ -253,7 +253,7 @@ export default function ExnessInvestmentPage() {
               Truy cập trang web chính thức của Exness và nhấp vào nút &quot;Mở tài khoản&quot; hoặc &quot;Đăng ký&quot;. Điền các thông tin cá nhân cơ bản như quốc gia cư trú, địa chỉ email, và mật khẩu.
             </p>
             <div className="mt-4 text-center">
-              <a href="https://go.dinos.click/click?a=11826&o=728" target="_blank" rel="nofollow noreferrer" className="inline-flex items-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-7 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+              <a href="https://adpvn.top/Gdav" target="_blank" rel="nofollow noreferrer" className="inline-flex items-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-7 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
                 <svg className="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
                 Mở Tài Khoản Exness Ngay!
               </a>
@@ -377,7 +377,7 @@ export default function ExnessInvestmentPage() {
               Đừng bỏ lỡ cơ hội đầu tư hiệu quả cùng Exness!
             </p>
             <div className="mt-8 text-center">
-              <a href="https://go.dinos.click/click?a=11826&o=728" target="_blank" rel="nofollow noreferrer" className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-full text-xl shadow-xl transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-75 animate-bounce">
+              <a href="https://adpvn.top/Gdav" target="_blank" rel="nofollow noreferrer" className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-full text-xl shadow-xl transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-75 animate-bounce">
                 <svg className="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 ĐĂNG KÝ EXNESS VÀ ĐẦU TƯ NGAY!
               </a>
