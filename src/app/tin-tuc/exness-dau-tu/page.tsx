@@ -250,7 +250,7 @@ export default function ExnessInvestmentPage() {
           <div id="buoc-1-dang-ky" className="bg-purple-50 border-l-4 border-purple-400 p-4 mb-6 rounded-lg shadow-sm">
             <h3 className="text-2xl font-semibold text-purple-800 mb-3">Bước 1: Đăng ký tài khoản Exness</h3>
             <p className="mb-3">
-              Truy cập trang web chính thức của Exness và nhấp vào nút "Mở tài khoản" hoặc "Đăng ký". Điền các thông tin cá nhân cơ bản như quốc gia cư trú, địa chỉ email, và mật khẩu.
+              Truy cập trang web chính thức của Exness và nhấp vào nút &quot;Mở tài khoản&quot; hoặc &quot;Đăng ký&quot;. Điền các thông tin cá nhân cơ bản như quốc gia cư trú, địa chỉ email, và mật khẩu.
             </p>
             <div className="mt-4 text-center">
               <a href="https://go.dinos.click/click?a=11826&o=728" target="_blank" rel="nofollow noreferrer" className="inline-flex items-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-7 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
