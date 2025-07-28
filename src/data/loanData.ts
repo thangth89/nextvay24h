@@ -32,7 +32,7 @@ export const loanApps = [
       "Độ tuổi: 22 tuổi trở lên",
       "Hồ sơ chỉ cần CMND"
     ],
-    affiliateLink: "https://click.adpia.vn/tracking.php?m=jeffapp&a=A100144616&l=9999",
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=161",
     label: "Jeff"
   },
   {
@@ -49,7 +49,7 @@ export const loanApps = [
       "Từ 22-60 tuổi",
       "Hồ sơ: chỉ cần CMND",
     ],
-    affiliateLink: "https://click.adpia.vn/tracking.php?m=dong247&a=A100144616&l=9999",
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=302",
     label: "Dong247"
   },
   {
