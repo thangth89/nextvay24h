@@ -1,29 +1,29 @@
 // app/data/loanData.ts
 
 export const loanApps = [
-  {
+ {
     topLabel: "TOP #1",
-    imageSrc: "/vay/tinvay.webp",
-    altText: "TinVay ứng dụng vay tiền",
-    title: "TINVAY",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "5.000.000– 90.000.000",
+    imageSrc: "/vay/cayvang.webp",
+    altText: "Cây Vàng vay tiền",
+    title: "CAYVANG",
+    duyetText: "📌 KHÔNG KIỂM TRA CIC",
+    amount: "500.000 – 10.000.000",
     features: [
-      "Thời hạn vay: 3 – 36 tháng",
-      "<strong>Lãi suất: chỉ từ 1,67%/tháng</strong>",
-      "Xét duyệt nhanh chóng",
+      "Thời hạn vay: theo từng gói vay",
+      "<strong>Lãi suất: 0% khoản vay đầu</strong>",
+      "Không cần chứng minh thu nhập",
       "Từ 22-60 tuổi",
-      "Hồ sơ: dùng Sim Viettel và CMND",
+      "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://dinos.scaletrk.com/click?a=11826&o=769",
-    label: "TinVay"
-  },
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=935",
+    label: "CayVang"
+  }, 
   {
     topLabel: "TOP #2",
     imageSrc: "/vay/jeff.webp",
     altText: "Jeff Web app vay tiền",
     title: "Jeff Web",
-    duyetText: "📌 DUYỆT VAY NHANH",
+    duyetText: "📌 GIẢI NGÂN SAU 10 PHÚT",
     amount: "1.000.000 – 30.000.000",
     features: [
       "<strong>Kết nối hơn 25 đối tác</strong> cho vay",
@@ -37,22 +37,22 @@ export const loanApps = [
   },
   {
     topLabel: "TOP #3",
-    imageSrc: "/vay/dong247.webp",
-    altText: "Dong247 vay tiền nhanh",
-    title: "dong247",
+    imageSrc: "/vay/meocat.webp",
+    altText: "MoneyCat vay tiền online",
+    title: "MONEYCAT",
     duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "500.000 – 30.000.000",
+    amount: "500.000 – 10.000.000",
     features: [
-      "Thời hạn vay: 91 – 120 ngày",
-      "<strong>Lãi suất: 0% - 1,25%/tháng</strong>",
-      "Kết nối hơn 25 đối tác cho vay",
+      "Thời hạn vay: 91 – 182 ngày",
+      "<strong>Lãi suất từ 1,0% - 1,52%/tháng</strong>",
+      "<strong>0% lãi suất cho khách mới</strong>",
       "Từ 22-60 tuổi",
-      "Hồ sơ: chỉ cần CMND",
+      "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=302",
-    label: "Dong247"
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=762",
+    label: "MoneyCat"
   },
-  {
+ {
     topLabel: "TOP #4",
     imageSrc: "/vay/vayvnd.webp",
     altText: "VayVND ứng dụng vay tiền",
@@ -69,25 +69,9 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=277",
     label: "VayVND"
   },  
+
   {
     topLabel: "TOP #5",
-    imageSrc: "/vay/meocat.webp",
-    altText: "MoneyCat vay tiền online",
-    title: "MONEYCAT",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "500.000 – 10.000.000",
-    features: [
-      "Thời hạn vay: 91 – 182 ngày",
-      "<strong>Lãi suất từ 1,0% - 1,52%/tháng</strong>",
-      "<strong>0% lãi suất cho khách mới</strong>",
-      "Từ 22-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=762",
-    label: "MoneyCat"
-  },
-  {
-    topLabel: "TOP #6",
     imageSrc: "/vay/moneyveo.webp",
     altText: "MoneyVeo app vay",
     title: "MONEYVEO",
@@ -103,23 +87,43 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=663",
     label: "MoneyVeo"
   },
+
+ {
+    topLabel: "TOP #6",
+    imageSrc: "/vay/tinvay.webp",
+    altText: "TinVay ứng dụng vay tiền",
+    title: "TINVAY",
+    duyetText: "📌 DUYỆT VAY NHANH",
+    amount: "5.000.000– 90.000.000",
+    features: [
+      "Thời hạn vay: 3 – 36 tháng",
+      "<strong>Lãi suất: chỉ từ 1,67%/tháng</strong>",
+      "Xét duyệt nhanh chóng",
+      "Từ 22-60 tuổi",
+      "Hồ sơ: dùng Sim Viettel và CMND",
+    ],
+    affiliateLink: "https://dinos.scaletrk.com/click?a=11826&o=769",
+    label: "TinVay"
+  },
+
   {
     topLabel: "TOP #7",
-    imageSrc: "/vay/cayvang.webp",
-    altText: "Cây Vàng vay tiền",
-    title: "CAYVANG",
+    imageSrc: "/vay/dong247.webp",
+    altText: "Dong247 vay tiền nhanh",
+    title: "dong247",
     duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "500.000 – 10.000.000",
+    amount: "500.000 – 30.000.000",
     features: [
-      "Thời hạn vay: theo từng gói vay",
-      "<strong>Lãi suất: 0% khoản vay đầu</strong>",
-      "Phí xử lý hồ sơ: 50.000-1.000.000",
+      "Thời hạn vay: 91 – 120 ngày",
+      "<strong>Lãi suất: 0% - 1,25%/tháng</strong>",
+      "Kết nối hơn 25 đối tác cho vay",
       "Từ 22-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
+      "Hồ sơ: chỉ cần CMND",
     ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=935",
-    label: "CayVang"
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=302",
+    label: "Dong247"
   },
+ 
 
   {
     topLabel: "TOP #8",
