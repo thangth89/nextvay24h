@@ -20,6 +20,23 @@ export const loanApps = [
   }, 
   {
     topLabel: "TOP #2",
+    imageSrc: "/vay/tinvay.webp",
+    altText: "TinVay ứng dụng vay tiền",
+    title: "TINVAY",
+    duyetText: "📌 DUYỆT VAY NHANH",
+    amount: "5.000.000– 90.000.000",
+    features: [
+      "Thời hạn vay: 3 – 36 tháng",
+      "<strong>Lãi suất: chỉ từ 1,67%/tháng</strong>",
+      "Xét duyệt nhanh chóng",
+      "Từ 22-60 tuổi",
+      "Hồ sơ: dùng Sim Viettel và CMND",
+    ],
+    affiliateLink: "https://dinos.scaletrk.com/click?a=11826&o=769",
+    label: "TinVay"
+  },
+  {
+    topLabel: "TOP #3",
     imageSrc: "/vay/jeff.webp",
     altText: "Jeff Web app vay tiền",
     title: "Jeff Web",
@@ -36,7 +53,7 @@ export const loanApps = [
     label: "Jeff"
   },
   {
-    topLabel: "TOP #3",
+    topLabel: "TOP #4",
     imageSrc: "/vay/meocat.webp",
     altText: "MoneyCat vay tiền online",
     title: "MONEYCAT",
@@ -53,7 +70,7 @@ export const loanApps = [
     label: "MoneyCat"
   },
  {
-    topLabel: "TOP #4",
+    topLabel: "TOP #5",
     imageSrc: "/vay/vayvnd.webp",
     altText: "VayVND ứng dụng vay tiền",
     title: "VAYVND",
@@ -69,9 +86,8 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=277",
     label: "VayVND"
   },  
-
   {
-    topLabel: "TOP #5",
+    topLabel: "TOP #6",
     imageSrc: "/vay/moneyveo.webp",
     altText: "MoneyVeo app vay",
     title: "MONEYVEO",
@@ -87,25 +103,6 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=663",
     label: "MoneyVeo"
   },
-
- {
-    topLabel: "TOP #6",
-    imageSrc: "/vay/tinvay.webp",
-    altText: "TinVay ứng dụng vay tiền",
-    title: "TINVAY",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "5.000.000– 90.000.000",
-    features: [
-      "Thời hạn vay: 3 – 36 tháng",
-      "<strong>Lãi suất: chỉ từ 1,67%/tháng</strong>",
-      "Xét duyệt nhanh chóng",
-      "Từ 22-60 tuổi",
-      "Hồ sơ: dùng Sim Viettel và CMND",
-    ],
-    affiliateLink: "https://dinos.scaletrk.com/click?a=11826&o=769",
-    label: "TinVay"
-  },
-
   {
     topLabel: "TOP #7",
     imageSrc: "/vay/dong247.webp",
@@ -123,8 +120,6 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=302",
     label: "Dong247"
   },
- 
-
   {
     topLabel: "TOP #8",
     imageSrc: "/vay/Binixo.webp",
@@ -211,3 +206,4 @@ export const loanApps = [
     label: "CreditYes"
   },
 ];
+
