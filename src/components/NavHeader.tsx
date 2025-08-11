@@ -83,6 +83,16 @@ export default function NavHeader() {
             Vay Online
           </Link>
           <Link
+            href="/vay-the-chap"
+            style={{
+              ...navLink,
+              color: pathname === '/vay-the-chap' ? '#ffd700' : navLink.color,
+              borderBottom: pathname === '/vay-the-chap' ? '2px solid #ffd700' : 'none',
+            }}
+          >
+            Vay Thế Chấp
+          </Link>
+          <Link
             href="/the-tin-dung"
             style={{
               ...navLink,
