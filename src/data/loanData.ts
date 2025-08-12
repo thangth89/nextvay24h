@@ -172,7 +172,7 @@ export const loanApps = [
     label: "ViSame"
   },
   {
-    topLabel: "NEW",
+    topLabel: "TOP #11",
     imageSrc: "/vay/finami.webp",
     altText: "Finami vay tiền bao nợ xấu",
     title: "Finami",
@@ -189,14 +189,14 @@ export const loanApps = [
     label: "Finami"
   },
   {
-    topLabel: "NEW",
+    topLabel: "TOP #12",
     imageSrc: "/vay/credityes.webp",
     altText: "CreditYes vay tiền nhanh",
     title: "CREDITYES",
     duyetText: "📌 BAO NỢ XẤU",
     amount: "500.000 – 10.000.000",
     features: [
-      "Thời hạn vay: 1 – 365 ngày",
+      "Thời hạn vay: 1 – 12 tháng",
       "<strong>Lãi suất:Lãi suất: 0.01%/tháng</strong>",
       "<strong>Không chứng minh thu nhập</strong>",
       "Từ 22-60 tuổi",
@@ -204,6 +204,40 @@ export const loanApps = [
     ],
     affiliateLink: "https://go.dinos.click/click?a=11826&o=1085",
     label: "CreditYes"
+  },
+  {
+    topLabel: "NEW HOT",
+    imageSrc: "/vay/Cashspace.webp",
+    altText: "Cashspace vay tiền nhanh 24/7",
+    title: "CASH_SPACE",
+    duyetText: "📌 BAO NỢ XẤU ",
+    amount: "500.000 – 20.000.000",
+    features: [
+      "Thời hạn vay: 2-3 tháng ",
+      "<strong>Lãi suất:tối đa 3.65%/Năm</strong>",
+      "<strong>Không chứng minh thu nhập</strong>",
+      "Từ 23-70 tuổi",
+      "Hồ sơ: chỉ cần CMND",
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=496",
+    label: "Cashspace"
+  },
+  {
+    topLabel: "NEW",
+    imageSrc: "/vay/Finloo.webp",
+    altText: "Finloo vay tiền online nhanh 24/7",
+    title: "Finloo",
+    duyetText: "📌 GIẢI NGÂN 10 PHÚT",
+    amount: "300.000 – 20.000.000",
+    features: [
+      "Thời hạn vay:thường không quá 2 tháng",
+      "<strong>Lãi suất:</strong>",
+      "<strong>Bao Nợ Xấu</strong>",
+      "Từ 18-60 tuổi",
+      "Hồ sơ: chỉ cần CMND",
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=471",
+    label: "Finloo"
   },
 ];
 
