@@ -230,7 +230,7 @@ export const loanApps = [
     duyetText: "📌 GIẢI NGÂN 10 PHÚT",
     amount: "300.000 – 20.000.000",
     features: [
-      "Thời hạn vay:thường không quá 2 tháng",
+      "Thời hạn vay: 2 tháng",
       "<strong>Lãi suất:</strong>",
       "<strong>Bao Nợ Xấu</strong>",
       "Từ 18-60 tuổi",
@@ -240,5 +240,6 @@ export const loanApps = [
     label: "Finloo"
   },
 ];
+
 
 
