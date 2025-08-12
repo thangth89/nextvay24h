@@ -83,7 +83,7 @@ export const loanApps = [
       "Hồ sơ chỉ cần CMND",
       "<strong>Xét duyệt: 15 phút</strong>"
     ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=277",
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=927",
     label: "VayVND"
   },  
   {
@@ -206,4 +206,5 @@ export const loanApps = [
     label: "CreditYes"
   },
 ];
+
 
