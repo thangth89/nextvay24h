@@ -20,23 +20,6 @@ export const loanApps = [
   }, 
   {
     topLabel: "TOP #2",
-    imageSrc: "/vay/tinvay.webp",
-    altText: "TinVay ứng dụng vay tiền",
-    title: "TINVAY",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "5.000.000– 90.000.000",
-    features: [
-      "Thời hạn vay: 3 – 36 tháng",
-      "<strong>Lãi suất: chỉ từ 1,67%/tháng</strong>",
-      "Xét duyệt nhanh chóng",
-      "Từ 22-60 tuổi",
-      "Hồ sơ: dùng Sim Viettel và CMND",
-    ],
-    affiliateLink: "https://dinos.scaletrk.com/click?a=11826&o=769",
-    label: "TinVay"
-  },
-  {
-    topLabel: "TOP #3",
     imageSrc: "/vay/jeff.webp",
     altText: "Jeff Web app vay tiền",
     title: "Jeff Web",
@@ -52,6 +35,23 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=161",
     label: "Jeff"
   },
+  {
+    topLabel: "TOP #3",
+    imageSrc: "/vay/vayvnd.webp",
+    altText: "VayVND ứng dụng vay tiền",
+    title: "VAYVND",
+    duyetText: "📌 DUYỆT VAY NHANH",
+    amount: "500.000 – 15.000.000",
+    features: [
+      "Thời hạn vay: 10 – 182 ngày",
+      "<strong>Lãi suất từ 0% – 1,5%/tháng</strong>",
+      "Từ 22-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
+      "<strong>Xét duyệt: 15 phút</strong>"
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=927",
+    label: "VayVND"
+  },  
   {
     topLabel: "TOP #4",
     imageSrc: "/vay/meocat.webp",
@@ -69,25 +69,8 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=762",
     label: "MoneyCat"
   },
- {
-    topLabel: "TOP #5",
-    imageSrc: "/vay/vayvnd.webp",
-    altText: "VayVND ứng dụng vay tiền",
-    title: "VAYVND",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "500.000 – 15.000.000",
-    features: [
-      "Thời hạn vay: 10 – 182 ngày",
-      "<strong>Lãi suất từ 0% – 1,5%/tháng</strong>",
-      "Từ 22-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
-      "<strong>Xét duyệt: 15 phút</strong>"
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=927",
-    label: "VayVND"
-  },  
   {
-    topLabel: "TOP #6",
+    topLabel: "TOP #5",
     imageSrc: "/vay/moneyveo.webp",
     altText: "MoneyVeo app vay",
     title: "MONEYVEO",
@@ -104,24 +87,7 @@ export const loanApps = [
     label: "MoneyVeo"
   },
   {
-    topLabel: "TOP #7",
-    imageSrc: "/vay/dong247.webp",
-    altText: "Dong247 vay tiền nhanh",
-    title: "dong247",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "500.000 – 30.000.000",
-    features: [
-      "Thời hạn vay: 91 – 120 ngày",
-      "<strong>Lãi suất: 0% - 1,25%/tháng</strong>",
-      "Kết nối hơn 25 đối tác cho vay",
-      "Từ 22-60 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=302",
-    label: "Dong247"
-  },
-  {
-    topLabel: "TOP #8",
+    topLabel: "TOP #6",
     imageSrc: "/vay/Binixo.webp",
     altText: "Binixo app vay tiền",
     title: "Binixo",
@@ -138,7 +104,7 @@ export const loanApps = [
     label: "Binixo"
   },
   {
-    topLabel: "TOP #9",
+    topLabel: "TOP #7",
     imageSrc: "/vay/finapps.webp",
     altText: "FinApps ứng dụng vay tiền",
     title: "FinApps",
@@ -155,24 +121,7 @@ export const loanApps = [
     label: "FinApps"
   },
   {
-    topLabel: "TOP #10",
-    imageSrc: "/vay/visame.webp",
-    altText: "ViSame app vay tiền online",
-    title: "VISAME",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "1.000.000 – 15.000.000",
-    features: [
-      "Thời hạn vay: 3 – 24 tháng",
-      "<strong>Lãi suất: 0% - 1,67%/tháng</strong>",
-      "Hoạt động 24/7",
-      "Từ 22-60 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://adpvn.top/pDUW",
-    label: "ViSame"
-  },
-  {
-    topLabel: "TOP #11",
+    topLabel: "TOP #8",
     imageSrc: "/vay/finami.webp",
     altText: "Finami vay tiền bao nợ xấu",
     title: "Finami",
@@ -189,7 +138,7 @@ export const loanApps = [
     label: "Finami"
   },
   {
-    topLabel: "TOP #12",
+    topLabel: "TOP #9",
     imageSrc: "/vay/credityes.webp",
     altText: "CreditYes vay tiền nhanh",
     title: "CREDITYES",
@@ -204,6 +153,57 @@ export const loanApps = [
     ],
     affiliateLink: "https://go.dinos.click/click?a=11826&o=1085",
     label: "CreditYes"
+  },
+   {
+    topLabel: "TOP #10",
+    imageSrc: "/vay/tinvay.webp",
+    altText: "TinVay ứng dụng vay tiền",
+    title: "TINVAY",
+    duyetText: "📌 DUYỆT VAY NHANH",
+    amount: "5.000.000– 90.000.000",
+    features: [
+      "Thời hạn vay: 3 – 36 tháng",
+      "<strong>Lãi suất: chỉ từ 1,67%/tháng</strong>",
+      "Xét duyệt nhanh chóng",
+      "Từ 22-60 tuổi",
+      "Hồ sơ: dùng Sim Viettel và CMND",
+    ],
+    affiliateLink: "https://dinos.scaletrk.com/click?a=11826&o=769",
+    label: "TinVay"
+  },
+   {
+    topLabel: "TOP #11",
+    imageSrc: "/vay/dong247.webp",
+    altText: "Dong247 vay tiền nhanh",
+    title: "dong247",
+    duyetText: "📌 DUYỆT VAY NHANH",
+    amount: "500.000 – 30.000.000",
+    features: [
+      "Thời hạn vay: 91 – 120 ngày",
+      "<strong>Lãi suất: 0% - 1,25%/tháng</strong>",
+      "Kết nối hơn 25 đối tác cho vay",
+      "Từ 22-60 tuổi",
+      "Hồ sơ: chỉ cần CMND",
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=302",
+    label: "Dong247"
+  },
+   {
+    topLabel: "TOP #12",
+    imageSrc: "/vay/visame.webp",
+    altText: "ViSame app vay tiền online",
+    title: "VISAME",
+    duyetText: "📌 DUYỆT VAY NHANH",
+    amount: "1.000.000 – 15.000.000",
+    features: [
+      "Thời hạn vay: 3 – 24 tháng",
+      "<strong>Lãi suất: 0% - 1,67%/tháng</strong>",
+      "Hoạt động 24/7",
+      "Từ 22-60 tuổi",
+      "Hồ sơ: chỉ cần CMND",
+    ],
+    affiliateLink: "https://adpvn.top/pDUW",
+    label: "ViSame"
   },
   {
     topLabel: "NEW HOT",
@@ -240,6 +240,7 @@ export const loanApps = [
     label: "Finloo"
   },
 ];
+
 
 
 
