@@ -223,6 +223,23 @@ export const loanApps = [
     label: "SOSCredit"
   }, 
   {
+    topLabel: "NEW HOT",
+    imageSrc: "/vay/vaymeo.webp",
+    altText: "VayMeo vay tiền online 24/7",
+    title: "VayMeo",
+    duyetText: "📌 NHẬN TIỀN 15 PHÚT",
+    amount: "500.000 – 30.000.000",
+    features: [
+      "Thời hạn vay: 3-6 tháng",
+      "<strong>Lãi suất:0% - 20%/Năm</strong>",
+      "Hoạt động 24/7",
+      "Từ 18-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=1185",
+    label: "VayMeo"
+  }, 
+  {
     topLabel: "NEW",
     imageSrc: "/vay/Cashspace.webp",
     altText: "Cashspace vay tiền nhanh 24/7",
@@ -257,6 +274,7 @@ export const loanApps = [
     label: "Finloo"
   },
 ];
+
 
 
 
