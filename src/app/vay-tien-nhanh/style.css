@@ -244,11 +244,15 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6,
 .page-header {
   margin-bottom: 2rem; /* hoặc 32px */
 }
+.section-divider{
+  margin-bottom: 2rem; /* hoặc 32px */
+  margin-top: 2rem;
+}
 .page-cta {
    margin-top: 2rem; /* hoặc 32px */
 }
 .breadcrumb-nav {
-   margin-bottom: 15px 
+   margin-bottom: 15px;
 }
 /* Hiển thị dấu chấm cho danh sách */
 .info-list {

@@ -3,7 +3,9 @@ import './style.css';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { loanApps } from '@/data/loanData';
+import { additionalLoanApps} from '@/data/additionalLoanData';
 import LoanCard from '@/components/LoanCard';
+import AdditionalLoanCard from '@/components/AdditionalLoanCard';
 
 
 // SEO Metadata nhẹ nhàng cho trang menu con
@@ -83,6 +85,32 @@ export default function VayTienNhanhPage() {
     />
   ))}
 </main>
+      {/* Section divider */}
+      <section className="section-divider">
+        <h2 className="main-title">🔥 CÁC ỨNG DỤNG/ WEB CHỈ CHẤP NHẬN ĐĂNG KÍ BẰNG ĐIỆN THOẠI</h2>
+        <p className="intro-text">
+          Bên dưới là các đơn vị chỉ chấp nhận đăng kí bằng điện thoại, nếu truy cập từ máy tính sẽ không đăng kí được. Chú ý đối với các đơn vị này sẽ bị <strong>mất phí dịch vụ</strong> khi vay. Cụ thể phí khi vay sẽ thông báo cho bạn biết.
+        </p>
+      </section>
+
+      {/* Additional loan products */}
+      <section className="loan-list">
+        {additionalLoanApps.map((app, index) => (
+          <AdditionalLoanCard
+ 	    key={index}
+      	    topLabel={app.topLabel}
+            imageSrc={app.imageSrc}
+            altText={app.altText}
+            title={app.title}
+            duyetText={app.duyetText}
+            amount={app.amount}
+            features={app.features}
+            affiliateLink={app.affiliateLink}
+            position={index + 1}
+            label={app.label}
+            />
+         ))}
+      </section>
 
         {/* Call-to-action cuối trang */}
         <section className="page-cta">
