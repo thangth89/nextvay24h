@@ -205,8 +205,25 @@ export const loanApps = [
     affiliateLink: "https://adpvn.top/pDUW",
     label: "ViSame"
   },
-  {
+ {
     topLabel: "NEW HOT",
+    imageSrc: "/vay/soscredit.webp",
+    altText: "SOS Credit vay tiền",
+    title: "SOS Credit",
+    duyetText: "📌 NHẬN TIỀN 15 PHÚT",
+    amount: "500.000 – 20.000.000",
+    features: [
+      "Thời hạn vay: 3-12 tháng",
+      "<strong>Lãi suất:0% - 20%/Năm</strong>",
+      "<strong>Không cần người tham chiếu</strong>",
+      "Từ 18-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
+    ],
+    affiliateLink: "https://adpvn.top/t8jS",
+    label: "SOSCredit"
+  }, 
+  {
+    topLabel: "NEW",
     imageSrc: "/vay/Cashspace.webp",
     altText: "Cashspace vay tiền nhanh 24/7",
     title: "CASH_SPACE",
