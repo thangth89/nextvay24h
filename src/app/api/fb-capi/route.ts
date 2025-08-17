@@ -6,7 +6,6 @@ export async function POST(req: NextRequest) {
 
     const accessToken = process.env.FB_ACCESS_TOKEN;
     const pixelId = process.env.FB_PIXEL_ID;
-    const testEventCode = process.env.FB_TEST_EVENT_CODE; // lấy từ .env.local
 
     const url = `https://graph.facebook.com/v19.0/${pixelId}/events?access_token=${accessToken}`;
 
