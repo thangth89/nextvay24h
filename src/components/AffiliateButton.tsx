@@ -84,6 +84,23 @@ export default function AffiliateButton({
 
         fbq('trackCustom', `Click_${label.replace(/\s+/g, '')}`);
       }
+      // Facebook Conversion API (server-side)
+      fetch('/api/fb-capi', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          affiliate_name: label,
+          affiliate_url: href,
+          affiliate_position: position || 0,
+          affiliate_category: category,
+          page_location: window.location.href,
+          user_agent: navigator.userAgent,
+          fbp: document.cookie.match(/_fbp=([^;]+)/)?.[1],
+          fbc: new URLSearchParams(window.location.search).get("fbclid")
+            ? `fb.1.${Date.now()}.${new URLSearchParams(window.location.search).get("fbclid")}`
+            : undefined,
+        }),
+      });
     } catch {
       // fail silently
     }
