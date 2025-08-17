@@ -37,7 +37,6 @@ export async function POST(req: NextRequest) {
           },
         },
       ],
-      test_event_code: testEventCode || undefined, // chỉ gửi khi có test code
     };
 
     const response = await fetch(url, {
