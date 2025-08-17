@@ -6,8 +6,15 @@ export async function POST(req: NextRequest) {
 
     const accessToken = process.env.FB_ACCESS_TOKEN;
     const pixelId = process.env.FB_PIXEL_ID;
+    const testEventCode = process.env.FB_TEST_EVENT_CODE; // lấy từ .env.local
 
     const url = `https://graph.facebook.com/v19.0/${pixelId}/events?access_token=${accessToken}`;
+
+    const ip =
+      req.headers.get("x-forwarded-for")?.split(",")[0] ||
+      req.headers.get("x-real-ip") ||
+      body.ip ||
+      "0.0.0.0";
 
     const eventData = {
       data: [
@@ -17,8 +24,9 @@ export async function POST(req: NextRequest) {
           action_source: "website",
           event_source_url: body.page_location,
           user_data: {
-            client_ip_address: req.ip ?? body.ip,
-            client_user_agent: req.headers.get("user-agent") ?? body.user_agent,
+            client_ip_address: ip,
+            client_user_agent:
+              req.headers.get("user-agent") ?? body.user_agent,
             fbp: body.fbp,
             fbc: body.fbc,
           },
@@ -30,6 +38,7 @@ export async function POST(req: NextRequest) {
           },
         },
       ],
+      test_event_code: testEventCode || undefined, // chỉ gửi khi có test code
     };
 
     const response = await fetch(url, {
@@ -39,6 +48,11 @@ export async function POST(req: NextRequest) {
     });
 
     const result = await response.json();
+
+    // Debug log (chỉ để kiểm tra khi dev)
+    console.log("CAPI Event Sent:", JSON.stringify(eventData, null, 2));
+    console.log("Facebook Response:", result);
+
     return NextResponse.json(result);
   } catch (err) {
     console.error("Error sending CAPI event:", err);
