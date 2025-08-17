@@ -177,7 +177,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '850947108943962');
             fbq('init', '773319391878744');
             fbq('track', 'PageView');
           `}
@@ -342,3 +341,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
