@@ -19,11 +19,9 @@ export const metadata: Metadata = {
       }
     ],
   },
-  alternates: {
-    canonical: "https://vay24h.pro.vn",
-  },
 };
 
 export default function Home() {
   return <HomeClient />;
+
 }
