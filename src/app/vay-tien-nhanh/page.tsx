@@ -19,9 +19,6 @@ export const metadata: Metadata = {
     url: 'https://vay24h.pro.vn/vay-tien-nhanh',
     siteName: 'Vay24h.pro.vn',
   },
-  alternates: {
-    canonical: 'https://vay24h.pro.vn/vay-tien-nhanh',
-  },
   robots: {
     index: true,
     follow: true,
