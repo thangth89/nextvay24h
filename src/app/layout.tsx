@@ -64,9 +64,6 @@ export const metadata: Metadata = {
     description: 'Vay tiền online nhanh 24/7 chỉ cần CMND. Lãi suất 0% khoản đầu, hạn mức 1-500 triệu.',
     images: ['https://vay24h.pro.vn/vay.webp'],
   },
-  alternates: {
-    canonical: 'https://vay24h.pro.vn',
-  },
 
   icons: {
     icon: [
@@ -346,4 +343,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
 
