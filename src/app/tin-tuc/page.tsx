@@ -6,9 +6,6 @@ import DanhSachTin from "@/components/DanhSachTin";
 export const metadata = {
   title: "Tin tức vay tiền online",
   description: "Danh sách bài viết tài chính, vay online, thẻ tín dụng",
-  alternates: {
-    canonical: "https://vay24h.pro.vn/tin-tuc",
-  },
 };
 
 const PER_PAGE = 6;
