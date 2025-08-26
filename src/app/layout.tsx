@@ -11,12 +11,17 @@ import './globals.css';
 import StatsComponent from '../components/StatsComponent';
 import TestimonialsSection from '../components/TestimonialsSection';
 import SuccessNotification from '../components/SuccessNotification';
+import { Metadata } from 'next';
 
 import Script from 'next/script';
 import Analytics from '../lib/Analytics';
 import { GA_TRACKING_ID } from '../lib/gtag';
 
-export const metadata = {
+export const metadata: Metadata = {
+  metadataBase: new URL('https://vay24h.pro.vn'), // thêm dòng này
+  alternates: {
+    canonical: '/', // canonical gốc, Next.js sẽ tự ghép với metadataBase
+  },
   title: {
     default: "Vay Tiền Online 24/7 - Lãi Suất 0% Khoản Đầu | vay24h.pro.vn",
     template: "%s | vay24h.pro.vn"
