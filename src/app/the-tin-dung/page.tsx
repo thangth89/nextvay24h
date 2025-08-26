@@ -19,9 +19,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  alternates: {
-    canonical: 'https://vay24h.pro.vn/the-tin-dung'
-  }
 };
 
 // Structured Data Schema
@@ -304,3 +301,4 @@ export default function TheTinDungPage() {
     </>
   );
 }
+
