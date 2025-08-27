@@ -202,7 +202,7 @@ export const loanApps = [
       "Từ 22-60 tuổi",
       "Hồ sơ: chỉ cần CMND",
     ],
-    affiliateLink: "https://adpvn.top/pDUW",
+    affiliateLink: "https://adpvn.top/s/Vdn64",
     label: "ViSame"
   },
  {
@@ -219,7 +219,7 @@ export const loanApps = [
       "Từ 18-60 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://adpvn.top/t8jS",
+    affiliateLink: "https://adpvn.top/s/4aJye",
     label: "SOSCredit"
   }, 
   {
@@ -274,6 +274,7 @@ export const loanApps = [
     label: "Finloo"
   },
 ];
+
 
 
 
