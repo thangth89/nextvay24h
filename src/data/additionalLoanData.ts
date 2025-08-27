@@ -15,7 +15,7 @@ export const additionalLoanApps = [
       "Độ tuổi: 20-60 trở lên",
       "Hồ sơ chỉ cần CMND"
     ],
-    affiliateLink: "https://adpvn.top/ZJG2",
+    affiliateLink: "https://adpvn.top/s/VJAve",
     label: "Agovay"
   },
   {
@@ -32,7 +32,7 @@ export const additionalLoanApps = [
       "Từ 20-60 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://adpvn.top/7gXm",
+    affiliateLink: "https://adpvn.top/s/V9X0e",
     label: "BinCredit"
   },  
   {
@@ -49,7 +49,7 @@ export const additionalLoanApps = [
       "Từ 20-60 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://adpvn.top/gXW1",
+    affiliateLink: "https://adpvn.top/s/4yk1V",
     label: "Bobavay"
   },
   {
@@ -66,7 +66,7 @@ export const additionalLoanApps = [
       "Từ 20-60 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://adpvn.top/V7ns",
+    affiliateLink: "https://adpvn.top/s/4xk6N",
     label: "Fagocredit"
   },
   {
@@ -83,10 +83,11 @@ export const additionalLoanApps = [
       "Từ 20-60 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://adpvn.top/eqtv",
+    affiliateLink: "https://adpvn.top/s/VMRvN",
     label: "Kavay"
   },
 ];
+
 
 
 
