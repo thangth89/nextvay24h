@@ -180,7 +180,7 @@ export default function TheTinDungPage() {
             </div>
             <div className="card-footer">
              <AffiliateButton
-                href="https://adpvn.top/MvxE" 
+                href="https://adpvn.top/s/VmJ9N" 
                 label="VPBank"
                 ariaLabel="Mở thẻ tín dụng VPBank ngay"
                	position={15}
@@ -301,4 +301,5 @@ export default function TheTinDungPage() {
     </>
   );
 }
+
 
