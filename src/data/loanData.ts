@@ -103,8 +103,42 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=683",
     label: "Finami"
   },
-  {
+     {
     topLabel: "TOP #7",
+    imageSrc: "/vay/vaymeo.webp",
+    altText: "VayMeo vay tiền online 24/7",
+    title: "VayMeo",
+    duyetText: "📌 NHẬN TIỀN 15 PHÚT",
+    amount: "500.000 – 30.000.000",
+    features: [
+      "Thời hạn vay: 3-6 tháng",
+      "<strong>Lãi suất:0% - 20%/Năm</strong>",
+      "Hoạt động 24/7",
+      "Từ 18-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=1185",
+    label: "VayMeo"
+  }, 
+  {
+    topLabel: "TOP #8",
+    imageSrc: "/vay/Cashspace.webp",
+    altText: "Cashspace vay tiền nhanh 24/7",
+    title: "CASH_SPACE",
+    duyetText: "📌 BAO NỢ XẤU ",
+    amount: "500.000 – 20.000.000",
+    features: [
+      "Thời hạn vay: 2-3 tháng ",
+      "<strong>Lãi suất:tối đa 3.65%/Năm</strong>",
+      "<strong>Không chứng minh thu nhập</strong>",
+      "Từ 23-70 tuổi",
+      "Hồ sơ: chỉ cần CMND",
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=496",
+    label: "Cashspace"
+  },
+  {
+    topLabel: "TOP #9",
     imageSrc: "/vay/meocat.webp",
     altText: "MoneyCat vay tiền online",
     title: "MONEYCAT",
@@ -121,7 +155,7 @@ export const loanApps = [
     label: "MoneyCat"
   },
   {
-    topLabel: "TOP #8",
+    topLabel: "TOP #10",
     imageSrc: "/vay/moneyveo.webp",
     altText: "MoneyVeo app vay",
     title: "MONEYVEO",
@@ -138,7 +172,7 @@ export const loanApps = [
     label: "MoneyVeo"
   },
   {
-    topLabel: "TOP #9",
+    topLabel: "TOP #11",
     imageSrc: "/vay/credityes.webp",
     altText: "CreditYes vay tiền nhanh",
     title: "CREDITYES",
@@ -155,7 +189,7 @@ export const loanApps = [
     label: "CreditYes"
   },
    {
-    topLabel: "TOP #10",
+    topLabel: "TOP #12",
     imageSrc: "/vay/tinvay.webp",
     altText: "TinVay ứng dụng vay tiền",
     title: "TINVAY",
@@ -172,7 +206,7 @@ export const loanApps = [
     label: "TinVay"
   },
    {
-    topLabel: "TOP #11",
+    topLabel: "TOP #13",
     imageSrc: "/vay/dong247.webp",
     altText: "Dong247 vay tiền nhanh",
     title: "dong247",
@@ -189,7 +223,7 @@ export const loanApps = [
     label: "Dong247"
   },
    {
-    topLabel: "TOP #12",
+    topLabel: "TOP #14",
     imageSrc: "/vay/visame.webp",
     altText: "ViSame app vay tiền online",
     title: "VISAME",
@@ -223,40 +257,6 @@ export const loanApps = [
     label: "SOSCredit"
   }, 
   {
-    topLabel: "NEW HOT",
-    imageSrc: "/vay/vaymeo.webp",
-    altText: "VayMeo vay tiền online 24/7",
-    title: "VayMeo",
-    duyetText: "📌 NHẬN TIỀN 15 PHÚT",
-    amount: "500.000 – 30.000.000",
-    features: [
-      "Thời hạn vay: 3-6 tháng",
-      "<strong>Lãi suất:0% - 20%/Năm</strong>",
-      "Hoạt động 24/7",
-      "Từ 18-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=1185",
-    label: "VayMeo"
-  }, 
-  {
-    topLabel: "NEW",
-    imageSrc: "/vay/Cashspace.webp",
-    altText: "Cashspace vay tiền nhanh 24/7",
-    title: "CASH_SPACE",
-    duyetText: "📌 BAO NỢ XẤU ",
-    amount: "500.000 – 20.000.000",
-    features: [
-      "Thời hạn vay: 2-3 tháng ",
-      "<strong>Lãi suất:tối đa 3.65%/Năm</strong>",
-      "<strong>Không chứng minh thu nhập</strong>",
-      "Từ 23-70 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=496",
-    label: "Cashspace"
-  },
-  {
     topLabel: "NEW",
     imageSrc: "/vay/Finloo.webp",
     altText: "Finloo vay tiền online nhanh 24/7",
@@ -274,6 +274,7 @@ export const loanApps = [
     label: "Finloo"
   },
 ];
+
 
 
 
