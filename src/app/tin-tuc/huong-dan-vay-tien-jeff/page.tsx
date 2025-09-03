@@ -68,10 +68,10 @@ export default function JeffGuidePage() {
 
       <article className="max-w-4xl mx-auto px-4 py-8 text-gray-700 leading-relaxed">
         <header className="mb-8">
-          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4 text-center">
+          <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Hướng dẫn sử dụng Jeff.vn để tìm khoản vay phù hợp
           </h1>
-          <div className="text-gray-600 text-sm mb-4 text-center">
+          <div className="text-gray-600 text-sm mb-4">
             <time dateTime={LAST_MODIFIED_DATE}>
               Cập nhật: {new Date(LAST_MODIFIED_DATE).toLocaleDateString('vi-VN')}
             </time>
