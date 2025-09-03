@@ -83,7 +83,13 @@ export default function JeffGuidePage() {
             </p>
           </div>
         </header>
-
+          <Image
+            src="/news/jeff-banner.webp"
+            alt="Hướng dẫn sử dụng Jeff.vn để tìm khoản vay phù hợp"
+            width={800}
+            height={450}
+            className="w-full h-auto my-6"
+          />
         <nav className="bg-gray-50 p-4 rounded-lg mb-8 shadow-sm">
           <h2 className="text-xl font-semibold mb-3 text-gray-800">Mục lục</h2>
           <ol className="list-decimal list-inside space-y-2 text-blue-600">
