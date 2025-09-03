@@ -15,7 +15,7 @@ export const loanApps = [
       "Độ tuổi: 22 tuổi trở lên",
       "Hồ sơ chỉ cần CMND"
     ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=161",
+    affiliateLink: "https://riofin.asia/moVpO20",
     label: "Jeff"
   },
  {
@@ -142,16 +142,16 @@ export const loanApps = [
     imageSrc: "/vay/meocat.webp",
     altText: "MoneyCat vay tiền online",
     title: "MONEYCAT",
-    duyetText: "📌 DUYỆT VAY NHANH",
+    duyetText: "📌 BAO NỢ XẤU",
     amount: "500.000 – 10.000.000",
     features: [
-      "Thời hạn vay: 91 – 182 ngày",
+      "Thời hạn vay: 91 - 182 ngày.",
       "<strong>Lãi suất từ 1,0% - 1,52%/tháng</strong>",
       "<strong>0% lãi suất cho khách mới</strong>",
-      "Từ 22-60 tuổi",
+      "Từ 23-59 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=762",
+    affiliateLink: "https://riofin.asia/nG0yL30",
     label: "MoneyCat"
   },
   {
@@ -274,6 +274,7 @@ export const loanApps = [
     label: "Finloo"
   },
 ];
+
 
 
 
