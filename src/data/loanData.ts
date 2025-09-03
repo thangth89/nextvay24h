@@ -100,7 +100,7 @@ export const loanApps = [
       "Từ 22-60 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=663",
+    affiliateLink: "https://riofin.asia/s2YjR00",
     label: "MoneyVeo"
   },
   {
@@ -274,6 +274,7 @@ export const loanApps = [
     label: "Finloo"
   },
 ];
+
 
 
 
