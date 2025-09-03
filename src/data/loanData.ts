@@ -66,79 +66,11 @@ export const loanApps = [
       "Hồ sơ chỉ cần CMND",
       "<strong>Xét duyệt: 15 phút</strong>"
     ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=927",
+    affiliateLink: "https://riofin.asia/WG8pT30",
     label: "VayVND"
   }, 
   {
     topLabel: "TOP #5",
-    imageSrc: "/vay/finapps.webp",
-    altText: "FinApps ứng dụng vay tiền",
-    title: "FinApps",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "300.000 – 20.000.000",
-    features: [
-      "Thời hạn vay: 3 – 12 tháng",
-      "<strong>Lãi suất: 0% khoản vay đầu</strong>",
-      "Xử lý hồ sơ 24/7",
-      "Từ 22-60 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=821",
-    label: "FinApps"
-  },
-  {
-    topLabel: "TOP #6",
-    imageSrc: "/vay/finami.webp",
-    altText: "Finami vay tiền bao nợ xấu",
-    title: "Finami",
-    duyetText: "📌 BAO NỢ XẤU",
-    amount: "500.000 – 10.000.000",
-    features: [
-      "Thời hạn vay: 1 – 12 tháng",
-      "<strong>Lãi suất: 0% nếu trả ngày đầu</strong>",
-      "Hoạt động 24/7",
-      "Từ 22-60 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=683",
-    label: "Finami"
-  },
-     {
-    topLabel: "TOP #7",
-    imageSrc: "/vay/vaymeo.webp",
-    altText: "VayMeo vay tiền online 24/7",
-    title: "VayMeo",
-    duyetText: "📌 NHẬN TIỀN 15 PHÚT",
-    amount: "500.000 – 30.000.000",
-    features: [
-      "Thời hạn vay: 3-6 tháng",
-      "<strong>Lãi suất:0% - 20%/Năm</strong>",
-      "Hoạt động 24/7",
-      "Từ 18-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=1185",
-    label: "VayMeo"
-  }, 
-  {
-    topLabel: "TOP #8",
-    imageSrc: "/vay/Cashspace.webp",
-    altText: "Cashspace vay tiền nhanh 24/7",
-    title: "CASH_SPACE",
-    duyetText: "📌 BAO NỢ XẤU ",
-    amount: "500.000 – 20.000.000",
-    features: [
-      "Thời hạn vay: 2-3 tháng ",
-      "<strong>Lãi suất:tối đa 3.65%/Năm</strong>",
-      "<strong>Không chứng minh thu nhập</strong>",
-      "Từ 23-70 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=496",
-    label: "Cashspace"
-  },
-  {
-    topLabel: "TOP #9",
     imageSrc: "/vay/meocat.webp",
     altText: "MoneyCat vay tiền online",
     title: "MONEYCAT",
@@ -155,7 +87,7 @@ export const loanApps = [
     label: "MoneyCat"
   },
   {
-    topLabel: "TOP #10",
+    topLabel: "TOP #6",
     imageSrc: "/vay/moneyveo.webp",
     altText: "MoneyVeo app vay",
     title: "MONEYVEO",
@@ -170,6 +102,74 @@ export const loanApps = [
     ],
     affiliateLink: "https://go.dinos.click/click?a=11826&o=663",
     label: "MoneyVeo"
+  },
+  {
+    topLabel: "TOP #7",
+    imageSrc: "/vay/finapps.webp",
+    altText: "FinApps ứng dụng vay tiền",
+    title: "FinApps",
+    duyetText: "📌 DUYỆT VAY NHANH",
+    amount: "300.000 – 20.000.000",
+    features: [
+      "Thời hạn vay: 3 – 12 tháng",
+      "<strong>Lãi suất: 0% khoản vay đầu</strong>",
+      "Xử lý hồ sơ 24/7",
+      "Từ 22-60 tuổi",
+      "Hồ sơ: chỉ cần CMND",
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=821",
+    label: "FinApps"
+  },
+  {
+    topLabel: "TOP #8",
+    imageSrc: "/vay/finami.webp",
+    altText: "Finami vay tiền bao nợ xấu",
+    title: "Finami",
+    duyetText: "📌 BAO NỢ XẤU",
+    amount: "500.000 – 10.000.000",
+    features: [
+      "Thời hạn vay: 1 – 12 tháng",
+      "<strong>Lãi suất: 0% nếu trả ngày đầu</strong>",
+      "Hoạt động 24/7",
+      "Từ 22-60 tuổi",
+      "Hồ sơ: chỉ cần CMND",
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=683",
+    label: "Finami"
+  },
+     {
+    topLabel: "TOP #9",
+    imageSrc: "/vay/vaymeo.webp",
+    altText: "VayMeo vay tiền online 24/7",
+    title: "VayMeo",
+    duyetText: "📌 NHẬN TIỀN 15 PHÚT",
+    amount: "500.000 – 30.000.000",
+    features: [
+      "Thời hạn vay: 3-6 tháng",
+      "<strong>Lãi suất:0% - 20%/Năm</strong>",
+      "Hoạt động 24/7",
+      "Từ 18-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
+    ],
+    affiliateLink: "https://riofin.asia/s2YjR00",
+    label: "VayMeo"
+  }, 
+  {
+    topLabel: "TOP #10",
+    imageSrc: "/vay/Cashspace.webp",
+    altText: "Cashspace vay tiền nhanh 24/7",
+    title: "CASH_SPACE",
+    duyetText: "📌 BAO NỢ XẤU ",
+    amount: "500.000 – 20.000.000",
+    features: [
+      "Thời hạn vay: 2-3 tháng ",
+      "<strong>Lãi suất:tối đa 3.65%/Năm</strong>",
+      "<strong>Không chứng minh thu nhập</strong>",
+      "Từ 23-70 tuổi",
+      "Hồ sơ: chỉ cần CMND",
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=496",
+    label: "Cashspace"
   },
   {
     topLabel: "TOP #11",
@@ -274,6 +274,7 @@ export const loanApps = [
     label: "Finloo"
   },
 ];
+
 
 
 
