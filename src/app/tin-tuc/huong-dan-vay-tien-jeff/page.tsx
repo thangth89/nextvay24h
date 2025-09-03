@@ -104,7 +104,7 @@ export default function JeffGuidePage() {
           
           <h3 id="buoc1" className="text-2xl font-semibold text-gray-800 mb-2">Bước 1: Chọn khoản vay và thời hạn</h3>
           <p className="mb-4">
-            Đầu tiên, chọn khoản vay và thời hạn vay phù hợp với nhu cầu của mình, sau đó bấm vào nút <strong className="text-purple-700">"So sánh ngay"</strong>.
+            Đầu tiên, chọn khoản vay và thời hạn vay phù hợp với nhu cầu của mình, sau đó bấm vào nút <strong className="text-purple-700">So sánh ngay</strong>.
           </p>
           <div className="mt-4 text-center">
             {/* Vui lòng chèn ảnh minh họa cho bước 1 */}
@@ -142,7 +142,7 @@ export default function JeffGuidePage() {
           <p className="mb-4">
             Đây là bước quan trọng để Jeff tìm kiếm các đối tác phù hợp. Hãy nhập chính xác thông tin công việc hiện tại.
             <br />
-            <strong className="text-red-700">Lời khuyên:</strong> Nếu bạn chưa có công việc ổn định, có thể tạm điền là <strong className="text-purple-700">"công nhân"</strong> hoặc <strong className="text-purple-700">"nhân viên văn phòng"</strong>, mức lương từ 8-9 triệu đồng, đảm bảo trong khả năng trả nợ của bạn.
+            <strong className="text-red-700">Lời khuyên:</strong> Nếu bạn chưa có công việc ổn định, có thể tạm điền là <strong className="text-purple-700">công nhân</strong> hoặc <strong className="text-purple-700">nhân viên văn phòng</strong>, mức lương từ 8-9 triệu đồng, đảm bảo trong khả năng trả nợ của bạn.
           </p>
           <div className="mt-4 text-center">
             {/* Vui lòng chèn ảnh minh họa cho bước 5 */}
