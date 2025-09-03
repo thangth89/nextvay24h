@@ -4,10 +4,10 @@ import { FeaturedArticle } from '../types/article';
 export const featuredArticles: FeaturedArticle[] = [
   {
     id: '1',
-    title: 'CIC là gì? Hướng dẫn chi tiết kiểm tra CIC miễn phí và cải thiện điểm tín dụng 2025',
-    slug: '/tin-tuc/CIC-la-gi',
-    thumbnail: '/news/CIC-la-gi.webp',
-    alt: 'CIC là gì? Hướng dẫn chi tiết kiểm tra CIC miễn phí và cải thiện điểm tín dụng 2025'
+    title: 'Hướng dẫn sử dụng Jeff.vn để tăng tỉ lệ duyệt hồ sơ 2025',
+    slug: '/tin-tuc/huong-dan-vay-tien-jeff',
+    thumbnail: '/news/jeff-banner.webp',
+    alt: 'Hướng dẫn sử dụng Jeff.vn để tăng tỉ lệ duyệt hồ sơ 2025'
   },
   {
     id: '2',
