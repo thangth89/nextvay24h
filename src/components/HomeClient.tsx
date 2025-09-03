@@ -110,7 +110,7 @@ export default function HomeClient() {
               <p><em><strong>Mẹo:</strong> Hãy chọn thông tin trông hợp lý và có logic để hồ sơ không bị nghi ngờ.</em></p>
               
               <h3><strong>✅ 3. Sử dụng email chính thức, còn hoạt động</strong></h3>
-              <p>Một số công ty tài chính yêu cầu mail khi đăng ký vay để gửi thông tin hợp đồng và xác nhận khoản vay. Vì vậy hãy nhập chính xác mail của bạn đang sử dụng, :</p>
+              <p>Một số công ty tài chính yêu cầu mail khi đăng ký vay để gửi thông tin hợp đồng và xác nhận khoản vay. Vì vậy hãy nhập thật chính xác mail của bạn đang sử dụng.</p>
               <h3><strong>✅ 4. Khai báo mức thu nhập hợp lý</strong></h3>
               <p>Dù thu nhập thực tế thấp, bạn vẫn có thể khai từ <strong>8 – 10 triệu đồng/tháng</strong>. Hầu hết vay tiền online hiện nay <strong>vay tiền không cần chứng minh thu nhập</strong>.</p>
               
@@ -360,4 +360,5 @@ export default function HomeClient() {
     </div>
   );
 }
+
 
