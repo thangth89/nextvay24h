@@ -76,15 +76,16 @@ export default function JeffGuidePage() {
               Cập nhật: {new Date(LAST_MODIFIED_DATE).toLocaleDateString('vi-VN')}
             </time>
           </div>
-          <div className="mt-4 text-center">
+  
           <Image
             src="/news/jeff-banner.webp"
             alt="Hướng dẫn sử dụng Jeff.vn để tìm khoản vay phù hợp"
             width={800}
             height={450}
-            className="w-full h-auto my-6"
+            className="w-full h-auto mx-auto rounded-lg shadow-md"
+            priority
           />
-        </div>
+
           <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mt-6 text-left rounded-lg shadow-sm">
             <p className="text-lg font-semibold text-blue-800 mb-2">Lời giới thiệu:</p>
             <p>
