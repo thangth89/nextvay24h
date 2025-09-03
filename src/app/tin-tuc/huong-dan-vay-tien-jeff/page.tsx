@@ -76,13 +76,7 @@ export default function JeffGuidePage() {
               Cập nhật: {new Date(LAST_MODIFIED_DATE).toLocaleDateString('vi-VN')}
             </time>
           </div>
-          <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mt-6 text-left rounded-lg shadow-sm">
-            <p className="text-lg font-semibold text-blue-800 mb-2">Lời giới thiệu:</p>
-            <p>
-              Jeff.vn là một nền tảng công nghệ tài chính, hoạt động như một <strong className="text-blue-700">đơn vị trung gian</strong>, kết nối người có nhu cầu vay với các tổ chức cho vay uy tín. Điều đặc biệt là <strong className="text-red-700">Jeff không trực tiếp cho vay</strong>, mà chỉ giúp bạn tìm ra đơn vị phù hợp với hồ sơ của mình, tiết kiệm thời gian và tăng tỷ lệ duyệt hồ sơ.
-            </p>
-          </div>
-        </header>
+          <div className="mt-4 text-center">
           <Image
             src="/news/jeff-banner.webp"
             alt="Hướng dẫn sử dụng Jeff.vn để tìm khoản vay phù hợp"
@@ -90,6 +84,14 @@ export default function JeffGuidePage() {
             height={450}
             className="w-full h-auto my-6"
           />
+        </div>
+          <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mt-6 text-left rounded-lg shadow-sm">
+            <p className="text-lg font-semibold text-blue-800 mb-2">Lời giới thiệu:</p>
+            <p>
+              Jeff.vn là một nền tảng công nghệ tài chính, hoạt động như một <strong className="text-blue-700">đơn vị trung gian</strong>, kết nối người có nhu cầu vay với các tổ chức cho vay uy tín. Điều đặc biệt là <strong className="text-red-700">Jeff không trực tiếp cho vay</strong>, mà chỉ giúp bạn tìm ra đơn vị phù hợp với hồ sơ của mình, tiết kiệm thời gian và tăng tỷ lệ duyệt hồ sơ.
+            </p>
+          </div>
+        </header>
         <nav className="bg-gray-50 p-4 rounded-lg mb-8 shadow-sm">
           <h2 className="text-xl font-semibold mb-3 text-gray-800">Mục lục</h2>
           <ol className="list-decimal list-inside space-y-2 text-blue-600">
