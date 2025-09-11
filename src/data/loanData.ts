@@ -18,23 +18,23 @@ export const loanApps = [
     affiliateLink: "https://riofin.asia/moVpO20",
     label: "Jeff"
   },
-  {
+ {
     topLabel: "TOP #2",
-    imageSrc: "/vay/Binixo.webp",
-    altText: "Binixo app vay tiền",
-    title: "Binixo",
-    duyetText: "📌 DUYỆT NHANH 15 PHÚT",
-    amount: "500.000– 10.000.000",
+    imageSrc: "/vay/cayvang.webp",
+    altText: "Cây Vàng vay tiền",
+    title: "CAYVANG",
+    duyetText: "📌 KHÔNG KIỂM TRA CIC",
+    amount: "500.000 – 10.000.000",
     features: [
-      "Thời hạn vay: 91 - 180 ngày",
-      "<strong>Lãi suất: chỉ từ 0,01%/tháng</strong>",
-      "Duyệt nhanh 15 Phút",
-      "Từ 18 tuổi trở lên",
-      "Hồ sơ: chỉ cần CMND",
+      "Thời hạn vay: theo từng gói vay",
+      "<strong>Lãi suất: 0% khoản vay đầu</strong>",
+      "Không cần chứng minh thu nhập",
+      "Từ 22-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=456",
-    label: "Binixo"
-  },
+    affiliateLink: "https://riofin.asia/O65Qk30",
+    label: "CayVang"
+  }, 
   {
     topLabel: "TOP #3",
     imageSrc: "/vay/Cashspace.webp",
@@ -240,6 +240,7 @@ export const loanApps = [
     label: "Finloo"
   },
 ];
+
 
 
 
