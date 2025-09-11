@@ -15,7 +15,7 @@ export const additionalLoanApps = [
       "Độ tuổi: 20-60 trở lên",
       "Hồ sơ chỉ cần CMND"
     ],
-    affiliateLink: "https://adpvn.top/s/VJAve",
+    affiliateLink: "https://riofin.asia/kFOfx30",
     label: "Agovay"
   },
   {
@@ -32,7 +32,7 @@ export const additionalLoanApps = [
       "Từ 20-60 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://adpvn.top/s/V9X0e",
+    affiliateLink: "https://riofin.asia/ecc2X00",
     label: "BinCredit"
   },  
   {
@@ -49,7 +49,7 @@ export const additionalLoanApps = [
       "Từ 20-60 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://adpvn.top/s/4yk1V",
+    affiliateLink: "https://riofin.asia/d9K9f00",
     label: "Bobavay"
   },
   {
@@ -66,14 +66,14 @@ export const additionalLoanApps = [
       "Từ 20-60 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://adpvn.top/s/4xk6N",
+    affiliateLink: "https://riofin.asia/7B4IK30",
     label: "Fagocredit"
   },
   {
     topLabel: "TOP #5",
     imageSrc: "/vay/kavay.webp",
     altText: "Kavay app vay tiền",
-    title: "Kinixo",
+    title: "Kavay",
     duyetText: "📌 DUYỆT NHANH 15 PHÚT",
     amount: "500.000– 10.000.000",
     features: [
@@ -83,10 +83,11 @@ export const additionalLoanApps = [
       "Từ 20-60 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://adpvn.top/s/VMRvN",
+    affiliateLink: "https://riofin.asia/9INxH10",
     label: "Kavay"
   },
 ];
+
 
 
 
