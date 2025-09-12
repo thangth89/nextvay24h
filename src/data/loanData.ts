@@ -18,25 +18,8 @@ export const loanApps = [
     affiliateLink: "https://riofin.asia/moVpO20",
     label: "Jeff"
   },
- {
-    topLabel: "TOP #2",
-    imageSrc: "/vay/cayvang.webp",
-    altText: "Cây Vàng vay tiền",
-    title: "CAYVANG",
-    duyetText: "📌 KHÔNG KIỂM TRA CIC",
-    amount: "500.000 – 10.000.000",
-    features: [
-      "Thời hạn vay: theo từng gói vay",
-      "<strong>Lãi suất: 0% khoản vay đầu</strong>",
-      "Không cần chứng minh thu nhập",
-      "Từ 22-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
-    ],
-    affiliateLink: "https://riofin.asia/O65Qk30",
-    label: "CayVang"
-  }, 
   {
-    topLabel: "TOP #3",
+    topLabel: "TOP #2",
     imageSrc: "/vay/Binixo.webp",
     altText: "Binixo app vay tiền",
     title: "Binixo",
@@ -52,6 +35,24 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=456",
     label: "Binixo"
   },
+  {
+    topLabel: "TOP #3",
+    imageSrc: "/vay/vaymeo.webp",
+    altText: "VayMeo vay tiền online 24/7",
+    title: "VayMeo",
+    duyetText: "📌 NHẬN TIỀN 15 PHÚT",
+    amount: "500.000 – 30.000.000",
+    features: [
+      "Thời hạn vay: 3-6 tháng",
+      "<strong>Lãi suất:0% - 20%/Năm</strong>",
+      "Hoạt động 24/7",
+      "Từ 18-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
+    ],
+    affiliateLink: "https://riofin.asia/NmcaT10",
+    label: "VayMeo"
+  }, 
+
   {
     topLabel: "TOP #4",
     imageSrc: "/vay/vayvnd.webp",
@@ -258,6 +259,7 @@ export const loanApps = [
     label: "Finloo"
   },
 ];
+
 
 
 
