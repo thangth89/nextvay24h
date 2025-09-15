@@ -201,7 +201,7 @@ export default function JeffGuidePage() {
           <div className="mt-8 text-center">
             <a href="https://riofin.asia/moVpO20" target="_blank" rel="nofollow noreferrer" className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-full text-xl shadow-xl transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-75 animate-bounce">
               <svg className="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-              Bắt đầu so sánh khoản vay trên Jeff.vn
+              Đăng Ký Vay Ngay
             </a>
           </div>
         </section>
