@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 import { loanApps } from '@/data/loanData';
 import { additionalLoanApps} from '@/data/additionalLoanData';
-import LoanCard from '@/components/LoanCard';
+{/* import LoanCard from '@/components/LoanCard'; */}
 {/* import AdditionalLoanCard from '@/components/AdditionalLoanCard'; */}
 
 
