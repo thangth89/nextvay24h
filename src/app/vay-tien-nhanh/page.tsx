@@ -82,16 +82,14 @@ export default function VayTienNhanhPage() {
     />
   ))}
 </main>
-{/* 
-  {/* Section divider */}
+  {/* Section divider 
       <section className="section-divider">
         <h2 className="main-title">🔥 CÁC ỨNG DỤNG/ WEB CHỈ CHẤP NHẬN ĐĂNG KÍ BẰNG ĐIỆN THOẠI</h2>
         <p className="intro-text">
           Bên dưới là các đơn vị chỉ chấp nhận đăng kí bằng điện thoại, nếu truy cập từ máy tính sẽ không đăng kí được. Chú ý đối với các đơn vị này sẽ bị <strong>mất phí dịch vụ</strong> khi vay. Cụ thể phí khi vay sẽ thông báo cho bạn biết.
         </p>
       </section>
-
-      {/* Additional loan products */}
+	  
       <section className="loan-list">
         {additionalLoanApps.map((app, index) => (
           <AdditionalLoanCard
