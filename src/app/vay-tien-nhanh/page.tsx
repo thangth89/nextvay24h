@@ -82,7 +82,7 @@ export default function VayTienNhanhPage() {
     />
   ))}
 </main>
-      {/* Section divider */}
+     /* {/* Section divider */}
       <section className="section-divider">
         <h2 className="main-title">🔥 CÁC ỨNG DỤNG/ WEB CHỈ CHẤP NHẬN ĐĂNG KÍ BẰNG ĐIỆN THOẠI</h2>
         <p className="intro-text">
@@ -107,7 +107,7 @@ export default function VayTienNhanhPage() {
             label={app.label}
             />
          ))}
-      </section>
+      </section> */
 
         {/* Call-to-action cuối trang */}
         <section className="page-cta">
