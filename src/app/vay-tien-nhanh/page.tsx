@@ -3,9 +3,9 @@ import './style.css';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { loanApps } from '@/data/loanData';
-import { additionalLoanApps} from '@/data/additionalLoanData';
-import LoanCard from '@/components/LoanCard';
-import AdditionalLoanCard from '@/components/AdditionalLoanCard';
+{/* import { additionalLoanApps} from '@/data/additionalLoanData';*/}
+ import LoanCard from '@/components/LoanCard';
+{/* import AdditionalLoanCard from '@/components/AdditionalLoanCard';*/}
 
 
 // SEO Metadata nhẹ nhàng cho trang menu con
@@ -82,7 +82,7 @@ export default function VayTienNhanhPage() {
     />
   ))}
 </main>
-  {/* Section divider */}
+  {/* 
       <section className="section-divider">
         <h2 className="main-title">🔥 CÁC ỨNG DỤNG/ WEB CHỈ CHẤP NHẬN ĐĂNG KÍ BẰNG ĐIỆN THOẠI</h2>
         <p className="intro-text">
@@ -107,7 +107,7 @@ export default function VayTienNhanhPage() {
             />
          ))}
       </section> 
-	
+	*/}
 
         {/* Call-to-action cuối trang */}
         <section className="page-cta">
