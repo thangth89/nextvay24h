@@ -14,7 +14,11 @@ export const metadata: Metadata = {
   title: 'Cách nhận biết tín dụng đen và phòng tránh hiệu quả [2025]',
   description: 'Tín dụng đen là gì? Nhận biết các dấu hiệu vay nặng lãi, các hình thức tín dụng đen phổ biến và cách phòng tránh để bảo vệ tài chính cá nhân trong năm 2025.',
   keywords: 'tín dụng đen, vay nặng lãi, dấu hiệu tín dụng đen, tín dụng đen là gì, phòng tránh tín dụng đen, nhận biết tín dụng đen, vay tiền không giấy tờ',
-  openGraph: {
+  robots: 'index, follow',
+  alternates: {
+    canonical: "https://vay24h.pro.vn/tin-tuc/nhan-biet-tin-dung-den",
+  },
+	openGraph: {
     title: 'Cách nhận biết tín dụng đen và phòng tránh hiệu quả [2025]',
     description: 'Cảnh báo tín dụng đen: Cách nhận biết, ví dụ thực tế và những lưu ý cần thiết để tránh rơi vào bẫy vay nặng lãi trong năm 2025.',
     type: 'article'
@@ -181,3 +185,4 @@ export default function NhanBietTinDungDenPage() {
     </>
   );
 }
+
