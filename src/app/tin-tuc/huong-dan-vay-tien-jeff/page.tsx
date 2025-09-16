@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   title: 'Hướng dẫn vay tiền Jeff.vn: Đơn vị trung gian, so sánh khoản vay',
   description: 'Hướng dẫn chi tiết cách sử dụng Jeff.vn để so sánh và tìm kiếm khoản vay phù hợp với nhu cầu. Jeff.vn là đơn vị trung gian, giúp bạn tiết kiệm thời gian và tăng tỷ lệ duyệt hồ sơ.',
   keywords: 'Jeff.vn, vay tiền Jeff, so sánh khoản vay, vay tiền online, đơn vị trung gian tài chính, hướng dẫn vay tiền, Jeff.vn là gì',
-    alternates: {
+  robots: 'index, follow',
+  alternates: {
     canonical: "https://vay24h.pro.vn/tin-tuc/huong-dan-vay-tien-jeff",
   },
   openGraph: {
