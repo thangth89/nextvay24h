@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   description: 'Jeff là nền tảng kết nối người vay và các tổ chức tài chính đáng tin cậy. Đăng ký đơn giản, không thế chấp, nhận tiền trong 24 giờ.',
   keywords: ['Jeff', 'vay tiền Jeff', 'ứng dụng Jeff', 'vay tiền online', 'vay nhanh không thế chấp'],
   robots: 'index, follow',
+  alternates: {
+  canonical: "https://vay24h.pro.vn/tin-tuc/jeff-vay-tien-uy-tin",
+  },
   openGraph: {
     title: 'Jeff - Vay tiền online uy tín, minh bạch, xét duyệt nhanh',
     description: 'Tìm hiểu cách vay tiền online an toàn qua Jeff. Hỗ trợ vay tiền minh bạch, bảo mật và không cần gặp mặt trực tiếp.',
