@@ -135,6 +135,8 @@ export default function Page() {
         <meta name="twitter:title" content="Thẻ Tín Dụng CAKE by VPBank – Mở Online, Hoàn Tiền 20%, Không Cần CM Thu Nhập" />
         <meta name="twitter:description" content="Thẻ tín dụng CAKE by VPBank - Mở thẻ online 100% không cần chứng minh thu nhập, nhận hạn mức lên đến 100 triệu, hoàn tiền tới 20% cùng nhiều ưu đãi hấp dẫn. Đăng ký ngay để trải nghiệm tiện ích vượt trội và quản lý tài chính thông minh." />
         <meta name="twitter:image" content="https://vay24h.pro.vn/news/the-tin-dung-CAKE-by-VPBank.webp" />
+        
+        <link rel="canonical" href="https://vay24h.pro.vn/tin-tuc/the-tin-dung-CAKE-by-VPBank" />
 
         {/* Schema JSON-LD */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{
