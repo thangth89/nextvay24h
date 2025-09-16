@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   title: 'Vay không lãi suất – Sự thật và những điều cần biết',
   description: 'Vay không lãi suất là gì? Có thật sự miễn phí hay chỉ là chiêu trò quảng cáo? Bài viết sẽ phân tích chi tiết cách nhận biết, rủi ro và cách lựa chọn đơn vị vay uy tín.',
   keywords: ['vay không lãi suất', 'vay 0%', 'vay miễn lãi lần đầu', 'vay tiền online không lãi suất'],
+  robots: 'index, follow',
+  alternates: {
+    canonical: "https://vay24h.pro.vn/tin-tuc/vay-khong-lai-suat",
+  },
   openGraph: {
     title: 'Vay không lãi suất – Sự thật và những điều cần biết',
     description: 'Tìm hiểu khái niệm vay không lãi suất, hình thức hoạt động, ưu nhược điểm và cách nhận diện đơn vị uy tín để tránh bẫy tài chính.',
@@ -207,3 +211,4 @@ export default function VayKhongLaiSuatPage() {
     </>
   );
 }
+
