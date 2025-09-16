@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: 'Cần tiền cấp? Đây là cách vay tiền online nhanh chóng, uy tín',
   description: 'Nếu bạn đang cần tiền cấp để giải quyết việc gấp, bài viết này sẽ giúp bạn biết cách vay tiền online an toàn, giải ngân nhanh trong ngày.',
   keywords: ['cần tiền cấp', 'vay tiền online', 'vay gấp', 'vay tiền nhanh', 'vay tiền uy tín'],
+  alternates: {
+  canonical: "https://vay24h.pro.vn/tin-tuc/cach-vay-tien-online-nhanh-chong",
+  },
   openGraph: {
     title: 'Cần tiền cấp? Đây là cách vay tiền online nhanh chóng, uy tín',
     description: 'Nếu bạn đang cần tiền cấp để giải quyết việc gấp, bài viết này sẽ giúp bạn biết cách vay tiền online an toàn, giải ngân nhanh trong ngày.',
