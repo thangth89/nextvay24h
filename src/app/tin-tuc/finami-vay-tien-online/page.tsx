@@ -14,6 +14,10 @@ export const metadata: Metadata = {
   title: 'Finami là gì? Đánh giá ứng dụng vay tiền online nhanh chóng và minh bạch [2025]',
   description: 'Finami là nền tảng kết nối người vay với các tổ chức tài chính uy tín. Bài viết đánh giá chi tiết Finami, cách hoạt động, ưu nhược điểm, điều kiện vay và các lưu ý quan trọng khi sử dụng.',
   keywords: ['Finami', 'vay tiền Finami', 'ứng dụng Finami', 'vay tiền online', 'vay nhanh', 'vay tiện lợi'],
+  robots: 'index, follow',
+  alternates: {
+  canonical: "https://vay24h.pro.vn/tin-tuc/finami-vay-tien-online",
+},
   openGraph: {
     title: 'Finami là gì? Đánh giá ứng dụng vay tiền online nhanh chóng và minh bạch [2025]',
     description: 'Tìm hiểu chi tiết về Finami - nền tảng kết nối tài chính hỗ trợ vay tiền online an toàn và tiện lợi tại Việt Nam.',
@@ -209,3 +213,4 @@ export default function Page() {
  </>
  );
 }
+
