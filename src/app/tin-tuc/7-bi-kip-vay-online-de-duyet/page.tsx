@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: '7 Bí Kíp Vay Online Dễ Duyệt 2025 – Tăng Tỷ Lệ Thành Công Khi Vay Tiền Nhanh',
   description: 'Khám phá 7 bí kíp vàng giúp bạn tăng tỷ lệ phê duyệt hồ sơ vay tiền online năm 2025. Hướng dẫn chi tiết từ cách chuẩn bị hồ sơ hoàn hảo, lựa chọn ứng dụng uy tín, xây dựng lịch sử tín dụng đến tối ưu hóa quy trình vay để được giải ngân nhanh chóng và dễ dàng.',
   keywords: 'bí kíp vay online dễ duyệt, vay tiền online dễ duyệt, tăng tỷ lệ duyệt vay, kinh nghiệm vay online, vay nhanh online, hồ sơ vay tiền, lịch sử tín dụng, chọn app vay uy tín, cách vay online thành công, vay tiền cấp tốc',
+ alternates: {
+  canonical: "https://vay24h.pro.vn/tin-tuc/7-bi-kip-vay-online-de-duyet",
+}, 
   openGraph: {
     title: '7 Bí Kíp Vay Online Dễ Duyệt 2025 – Tăng Tỷ Lệ Thành Công Khi Vay Tiền Nhanh',
     description: 'Nắm vững 7 chiến lược hiệu quả để tối đa hóa cơ hội được duyệt khoản vay online của bạn. Từ chuẩn bị thông tin đến quản lý tài chính, mọi bí quyết để vay tiền dễ dàng hơn đều có tại đây.',
