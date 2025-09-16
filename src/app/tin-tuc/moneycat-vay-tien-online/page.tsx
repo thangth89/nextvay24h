@@ -15,6 +15,9 @@ export const metadata: Metadata = {
   description: 'MoneyCat là nền tảng hỗ trợ vay tiền online từ 500.000đ đến 10 triệu đồng, xét duyệt tự động, không cần gặp mặt và giải ngân nhanh trong ngày.',
   keywords: ['MoneyCat', 'vay tiền MoneyCat', 'ứng dụng MoneyCat', 'vay tiền online', 'vay nhanh không thế chấp'],
   robots: 'index, follow',
+  alternates: {
+    canonical: "https://vay24h.pro.vn/tin-tuc/moneycat-vay-tien-online",
+  },
   openGraph: {
     title: 'MoneyCat - Vay tiền online nhanh chóng, không thế chấp',
     description: 'Giải pháp tài chính nhanh với MoneyCat. Hỗ trợ khoản vay linh hoạt, lãi suất minh bạch, giải ngân siêu tốc.',
