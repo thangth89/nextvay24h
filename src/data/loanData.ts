@@ -69,60 +69,8 @@ export const loanApps = [
     affiliateLink: "https://riofin.asia/NmcaT10",
     label: "VayMeo"
   }, 
-
-  {
+ {
     topLabel: "TOP #5",
-    imageSrc: "/vay/vayvnd.webp",
-    altText: "VayVND ứng dụng vay tiền",
-    title: "VAYVND",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "500.000 – 15.000.000",
-    features: [
-      "Thời hạn vay: 10 – 182 ngày",
-      "<strong>Lãi suất từ 0% – 1,5%/tháng</strong>",
-      "Từ 22-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
-      "<strong>Xét duyệt: 15 phút</strong>"
-    ],
-    affiliateLink: "https://riofin.asia/WG8pT30",
-    label: "VayVND"
-  }, 
-  {
-    topLabel: "TOP #6",
-    imageSrc: "/vay/meocat.webp",
-    altText: "MoneyCat vay tiền online",
-    title: "MONEYCAT",
-    duyetText: "📌 BAO NỢ XẤU",
-    amount: "500.000 – 10.000.000",
-    features: [
-      "Thời hạn vay: 91 - 182 ngày.",
-      "<strong>Lãi suất từ 1,0% - 1,52%/tháng</strong>",
-      "<strong>0% lãi suất cho khách mới</strong>",
-      "Từ 23-59 tuổi",
-      "Hồ sơ chỉ cần CMND",
-    ],
-    affiliateLink: "https://riofin.asia/nG0yL30",
-    label: "MoneyCat"
-  },
-  {
-    topLabel: "TOP #7",
-    imageSrc: "/vay/moneyveo.webp",
-    altText: "MoneyVeo app vay",
-    title: "MONEYVEO",
-    duyetText: "📌 TỰ ĐỘNG XÉT DUYỆT",
-    amount: "500.000 – 25.000.000",
-    features: [
-      "Thời hạn vay: linh động gia hạn",
-      "<strong>Lãi suất chỉ từ 1,52%/tháng</strong>",
-      "Hệ thống làm việc 24/7",
-      "Từ 22-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
-    ],
-    affiliateLink: "https://riofin.asia/s2YjR00",
-    label: "MoneyVeo"
-  },
-  {
-    topLabel: "TOP #8",
     imageSrc: "/vay/finapps.webp",
     altText: "FinApps ứng dụng vay tiền",
     title: "FinApps",
@@ -139,7 +87,7 @@ export const loanApps = [
     label: "FinApps"
   },
   {
-    topLabel: "TOP #9",
+    topLabel: "TOP #6",
     imageSrc: "/vay/finami.webp",
     altText: "Finami vay tiền bao nợ xấu",
     title: "Finami",
@@ -156,7 +104,7 @@ export const loanApps = [
     label: "Finami"
   },
    {
-    topLabel: "Top #10",
+    topLabel: "Top #7",
     imageSrc: "/vay/Finloo.webp",
     altText: "Finloo vay tiền online nhanh 24/7",
     title: "Finloo",
@@ -172,6 +120,58 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=471",
     label: "Finloo"
   },
+  {
+    topLabel: "TOP #8",
+    imageSrc: "/vay/vayvnd.webp",
+    altText: "VayVND ứng dụng vay tiền",
+    title: "VAYVND",
+    duyetText: "📌 DUYỆT VAY NHANH",
+    amount: "500.000 – 15.000.000",
+    features: [
+      "Thời hạn vay: 10 – 182 ngày",
+      "<strong>Lãi suất từ 0% – 1,5%/tháng</strong>",
+      "Từ 22-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
+      "<strong>Xét duyệt: 15 phút</strong>"
+    ],
+    affiliateLink: "https://riofin.asia/WG8pT30",
+    label: "VayVND"
+  }, 
+  {
+    topLabel: "TOP #9",
+    imageSrc: "/vay/meocat.webp",
+    altText: "MoneyCat vay tiền online",
+    title: "MONEYCAT",
+    duyetText: "📌 BAO NỢ XẤU",
+    amount: "500.000 – 10.000.000",
+    features: [
+      "Thời hạn vay: 91 - 182 ngày.",
+      "<strong>Lãi suất từ 1,0% - 1,52%/tháng</strong>",
+      "<strong>0% lãi suất cho khách mới</strong>",
+      "Từ 23-59 tuổi",
+      "Hồ sơ chỉ cần CMND",
+    ],
+    affiliateLink: "https://riofin.asia/nG0yL30",
+    label: "MoneyCat"
+  },
+  {
+    topLabel: "TOP #10",
+    imageSrc: "/vay/moneyveo.webp",
+    altText: "MoneyVeo app vay",
+    title: "MONEYVEO",
+    duyetText: "📌 TỰ ĐỘNG XÉT DUYỆT",
+    amount: "500.000 – 25.000.000",
+    features: [
+      "Thời hạn vay: linh động gia hạn",
+      "<strong>Lãi suất chỉ từ 1,52%/tháng</strong>",
+      "Hệ thống làm việc 24/7",
+      "Từ 22-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
+    ],
+    affiliateLink: "https://riofin.asia/s2YjR00",
+    label: "MoneyVeo"
+  },
+
   {
     topLabel: "TOP #11",
     imageSrc: "/vay/credityes.webp",
@@ -242,6 +242,7 @@ export const loanApps = [
     label: "SOSCredit"
   }, 
 ];
+
 
 
 
