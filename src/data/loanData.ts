@@ -155,8 +155,25 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=683",
     label: "Finami"
   },
+   {
+    topLabel: "Top #10",
+    imageSrc: "/vay/Finloo.webp",
+    altText: "Finloo vay tiền online nhanh 24/7",
+    title: "Finloo",
+    duyetText: "📌 GIẢI NGÂN 10 PHÚT",
+    amount: "300.000 – 20.000.000",
+    features: [
+      "Thời hạn vay: 2 tháng",
+      "<strong>Lãi suất:</strong>",
+      "<strong>Bao Nợ Xấu</strong>",
+      "Từ 18-60 tuổi",
+      "Hồ sơ: chỉ cần CMND",
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=471",
+    label: "Finloo"
+  },
   {
-    topLabel: "TOP #10",
+    topLabel: "TOP #11",
     imageSrc: "/vay/credityes.webp",
     altText: "CreditYes vay tiền nhanh",
     title: "CREDITYES",
@@ -174,7 +191,7 @@ export const loanApps = [
   },
    
   {
-    topLabel: "TOP #11",
+    topLabel: "TOP #12",
     imageSrc: "/vay/Cashspace.webp",
     altText: "Cashspace vay tiền nhanh 24/7",
     title: "CASH_SPACE",
@@ -191,41 +208,7 @@ export const loanApps = [
     label: "Cashspace"
   },
    {
-    topLabel: "TOP #12",
-    imageSrc: "/vay/tinvay.webp",
-    altText: "TinVay ứng dụng vay tiền",
-    title: "TINVAY",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "5.000.000– 90.000.000",
-    features: [
-      "Thời hạn vay: 3 – 36 tháng",
-      "<strong>Lãi suất: chỉ từ 1,67%/tháng</strong>",
-      "Xét duyệt nhanh chóng",
-      "Từ 22-60 tuổi",
-      "Hồ sơ: dùng Sim Viettel và CMND",
-    ],
-    affiliateLink: "https://dinos.scaletrk.com/click?a=11826&o=769",
-    label: "TinVay"
-  },
-   {
     topLabel: "TOP #13",
-    imageSrc: "/vay/dong247.webp",
-    altText: "Dong247 vay tiền nhanh",
-    title: "dong247",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "500.000 – 30.000.000",
-    features: [
-      "Thời hạn vay: 91 – 120 ngày",
-      "<strong>Lãi suất: 0% - 1,25%/tháng</strong>",
-      "Kết nối hơn 25 đối tác cho vay",
-      "Từ 22-60 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=302",
-    label: "Dong247"
-  },
-   {
-    topLabel: "TOP #14",
     imageSrc: "/vay/visame.webp",
     altText: "ViSame app vay tiền online",
     title: "VISAME",
@@ -242,7 +225,7 @@ export const loanApps = [
     label: "ViSame"
   },
  {
-    topLabel: "NEW HOT",
+    topLabel: "NEW",
     imageSrc: "/vay/soscredit.webp",
     altText: "SOS Credit vay tiền",
     title: "SOS Credit",
@@ -276,6 +259,7 @@ export const loanApps = [
     label: "Finloo"
   },
 ];
+
 
 
 
