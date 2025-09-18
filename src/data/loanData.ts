@@ -241,24 +241,8 @@ export const loanApps = [
     affiliateLink: "https://adpvn.top/s/4aJye",
     label: "SOSCredit"
   }, 
-  {
-    topLabel: "NEW",
-    imageSrc: "/vay/Finloo.webp",
-    altText: "Finloo vay tiền online nhanh 24/7",
-    title: "Finloo",
-    duyetText: "📌 GIẢI NGÂN 10 PHÚT",
-    amount: "300.000 – 20.000.000",
-    features: [
-      "Thời hạn vay: 2 tháng",
-      "<strong>Lãi suất:</strong>",
-      "<strong>Bao Nợ Xấu</strong>",
-      "Từ 18-60 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=471",
-    label: "Finloo"
-  },
 ];
+
 
 
 
