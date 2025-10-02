@@ -15,7 +15,7 @@ export const loanApps = [
       "Độ tuổi: 22 tuổi trở lên",
       "Hồ sơ chỉ cần CMND"
     ],
-    affiliateLink: "https://riofin.asia/moVpO20",
+    affiliateLink: "https://riofin.asia/K4tHM30",
     label: "Jeff"
   },
  {
@@ -242,6 +242,7 @@ export const loanApps = [
     label: "SOSCredit"
   }, 
 ];
+
 
 
 
