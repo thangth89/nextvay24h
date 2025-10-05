@@ -3,9 +3,6 @@
 import React from 'react';
 
 declare const fbq: (...args: unknown[]) => void;
-declare const ttq: {
-  track: (event: string, properties?: Record<string, unknown>) => void;
-};
 
 type Props = {
   href: string;
@@ -30,11 +27,10 @@ export default function AffiliateButton({
     const win = window.open(href, '_blank');
 
     try {
-      const safeLabel = label.toLowerCase().replace(/\s+/g, '_');
-      const pageLocation = window.location.href;
-
-      // ============ Google Analytics ============
+      // Google Analytics tracking
       if (typeof window !== 'undefined' && window.gtag) {
+        const safeLabel = label.toLowerCase().replace(/\s+/g, '_');
+
         window.gtag('event', 'click_affiliate', {
           event_category: 'Affiliate',
           event_label: label,
@@ -42,7 +38,7 @@ export default function AffiliateButton({
           affiliate_url: href,
           affiliate_position: position || 0,
           affiliate_category: category,
-          page_location: pageLocation,
+          page_location: window.location.href,
           page_title: document.title,
           custom_parameter_1: `${category}_${label}`,
           value: 1
@@ -75,21 +71,20 @@ export default function AffiliateButton({
         });
       }
 
-      // ============ Facebook Pixel (Client-side) ============
+      // Facebook Pixel tracking
       if (typeof fbq !== 'undefined') {
         fbq('trackCustom', 'ClickAffiliate', {
           affiliate_name: label,
           affiliate_url: href,
           affiliate_position: position || 0,
           affiliate_category: category,
-          page_location: pageLocation,
+          page_location: window.location.href,
           page_title: document.title
         });
 
         fbq('trackCustom', `Click_${label.replace(/\s+/g, '')}`);
       }
-
-      // ============ Facebook CAPI (Server-side) ============
+      // Facebook Conversion API (server-side)
       fetch('/api/fb-capi', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -98,63 +93,30 @@ export default function AffiliateButton({
           affiliate_url: href,
           affiliate_position: position || 0,
           affiliate_category: category,
-          page_location: pageLocation,
+          page_location: window.location.href,
           user_agent: navigator.userAgent,
           fbp: document.cookie.match(/_fbp=([^;]+)/)?.[1],
           fbc: new URLSearchParams(window.location.search).get("fbclid")
             ? `fb.1.${Date.now()}.${new URLSearchParams(window.location.search).get("fbclid")}`
             : undefined,
         }),
-      }).catch(() => {
-        // fail silently
       });
 
-      // ============ TikTok Pixel (Client-side) ============
-      if (typeof ttq !== 'undefined') {
-        ttq.track('ClickButton', {
-          content_type: 'product',
-          content_name: label,
-          content_category: category,
-          contents: [
-            {
-              content_id: safeLabel,
-              content_name: label,
-            }
-          ],
-          value: 1,
-          currency: 'VND',
-        });
-      }
-
-      // ============ TikTok Events API (Server-side) ============
-      const urlParams = new URLSearchParams(window.location.search);
-      const ttclid = urlParams.get('ttclid'); // TikTok click ID
-
-      fetch('/api/tiktok-capi', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          affiliate_name: label,
-          affiliate_url: href,
-          affiliate_position: position || 0,
-          affiliate_category: category,
-          page_location: pageLocation,
-          referrer: document.referrer,
-          user_agent: navigator.userAgent,
-          ttp: document.cookie.match(/_ttp=([^;]+)/)?.[1], // TikTok cookie
-          ttclid: ttclid,
-        }),
-      })
-      .then(res => res.json())
-      .then(data => {
-        console.log('✅ TikTok CAPI Response:', data);
-        if (data.error) {
-          console.error('❌ TikTok CAPI Error Details:', data);
-        }
-      })
-      .catch(err => {
-        console.error('❌ TikTok CAPI Request Failed:', err);
-      });
+// TikTok Conversion API (server-side)
+fetch('/api/tiktok-capi', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    event_name: 'ClickAffiliate',
+    affiliate_name: label,
+    affiliate_url: href,
+    affiliate_position: position || 0,
+    affiliate_category: category,
+    page_location: window.location.href,
+    referrer: document.referrer,
+    user_agent: navigator.userAgent,
+  }),
+});
 
     } catch {
       // fail silently
@@ -164,7 +126,7 @@ export default function AffiliateButton({
     if (!win || win.closed || typeof win.closed === 'undefined') {
       setTimeout(() => {
         window.location.href = href;
-      }, 250);
+      }, 250); // tăng timeout để tracking kịp gửi
     }
   };
 
