@@ -13,38 +13,40 @@ export async function POST(req: NextRequest) {
 
     const url = `https://business-api.tiktok.com/open_api/v1.3/event/track/`;
 
-    // Get user IP
-    const ipAddress = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
-                     req.headers.get("x-real-ip") ||
-                     "";
-    
+    // Get user info
+    const ipAddress = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "";
     const userAgent = req.headers.get("user-agent") || "";
 
-    // CORRECT format với event_source và event_source_id
-    const eventData = {
+    // TikTok API yêu cầu wrap events trong array "data"
+    const payload = {
       pixel_code: pixelId,
-      event: "ViewContent", // Standard TikTok event
-      event_id: `evt_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
-      timestamp: new Date().toISOString(),
-      event_source: "web", // REQUIRED: web, app, or offline
-      event_source_id: pixelId, // REQUIRED: pixel_code
-      context: {
-        page: {
-          url: body.page_location || "",
-        },
-        user_agent: userAgent,
-        ip: ipAddress,
-      },
-      properties: {
-        content_type: "product",
-        content_name: body.affiliate_name || "Affiliate Click",
-      },
+      data: [  // ← QUAN TRỌNG: phải wrap trong array "data"
+        {
+          event: "ViewContent",
+          event_id: `evt_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+          timestamp: new Date().toISOString(),
+          event_source: "web",
+          event_source_id: pixelId,
+          context: {
+            page: {
+              url: body.page_location || "",
+            },
+            user_agent: userAgent,
+            ip: ipAddress,
+          },
+          properties: {
+            content_type: "product",
+            content_name: body.affiliate_name || "Affiliate Click",
+            content_category: body.affiliate_category || "",
+          },
+        }
+      ]
     };
 
     console.log("📤 Sending to TikTok:");
     console.log("Endpoint:", url);
     console.log("Pixel:", pixelId);
-    console.log("Payload:", JSON.stringify(eventData, null, 2));
+    console.log("Payload:", JSON.stringify(payload, null, 2));
 
     const response = await fetch(url, {
       method: "POST",
@@ -52,7 +54,7 @@ export async function POST(req: NextRequest) {
         "Content-Type": "application/json",
         "Access-Token": accessToken,
       },
-      body: JSON.stringify(eventData),
+      body: JSON.stringify(payload),
     });
 
     const result = await response.json();
