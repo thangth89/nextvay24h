@@ -144,8 +144,16 @@ export default function AffiliateButton({
           ttp: document.cookie.match(/_ttp=([^;]+)/)?.[1], // TikTok cookie
           ttclid: ttclid,
         }),
-      }).catch(() => {
-        // fail silently
+      })
+      .then(res => res.json())
+      .then(data => {
+        console.log('✅ TikTok CAPI Response:', data);
+        if (data.error) {
+          console.error('❌ TikTok CAPI Error Details:', data);
+        }
+      })
+      .catch(err => {
+        console.error('❌ TikTok CAPI Request Failed:', err);
       });
 
     } catch {
