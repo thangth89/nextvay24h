@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import crypto from "crypto";
 
 export async function POST(req: NextRequest) {
   try {
@@ -17,7 +18,20 @@ export async function POST(req: NextRequest) {
     const ipAddress = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "";
     const userAgent = req.headers.get("user-agent") || "";
 
-    // Format đúng theo TikTok Events API v1.3
+    // Hash email nếu có (để làm external_id)
+    const hashEmail = (email: string) => {
+      return crypto.createHash('sha256').update(email.toLowerCase().trim()).digest('hex');
+    };
+
+    // event_source_id phải là external_id (hashed user identifier) HOẶC test_event_code
+    // Vì không có user login, dùng combination của IP + timestamp làm unique ID
+    const eventSourceId = crypto
+      .createHash('sha256')
+      .update(`${ipAddress}_${Date.now()}`)
+      .digest('hex')
+      .substring(0, 32); // Giới hạn 32 ký tự
+
+    // Format CHÍNH XÁC theo TikTok Events API v1.3
     const payload = {
       pixel_code: pixelId,
       data: [
@@ -30,8 +44,9 @@ export async function POST(req: NextRequest) {
               url: body.page_location || "",
             },
             user: {
-              user_agent: userAgent,
-              ip: ipAddress,
+              external_id: eventSourceId, // Hashed user identifier
+              ...(ipAddress && { ip: ipAddress }),
+              ...(userAgent && { user_agent: userAgent }),
             },
           },
           properties: {
@@ -39,13 +54,14 @@ export async function POST(req: NextRequest) {
             content_name: body.affiliate_name || "Affiliate Click",
           },
         }
-      ]
+      ],
+      event_source_id: eventSourceId, // QUAN TRỌNG: phải match với external_id
     };
 
     console.log("📤 Sending to TikTok:");
     console.log("Endpoint:", url);
     console.log("Pixel:", pixelId);
-    console.log("Token (first 10):", accessToken.substring(0, 10) + "...");
+    console.log("Event Source ID:", eventSourceId);
     console.log("Payload:", JSON.stringify(payload, null, 2));
 
     const response = await fetch(url, {
