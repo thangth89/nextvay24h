@@ -1,11 +1,6 @@
 // src/lib/gtag.ts
 
-// Khai báo window.gtag cho TypeScript (không dùng any)
-declare global {
-  interface Window {
-    gtag: (...args: [string, string, Record<string, unknown>?]) => void;
-  }
-}
+
 
 export const GA_TRACKING_ID = 'G-0K7KQX479V';
 
@@ -38,3 +33,4 @@ export const event = ({
     });
   }
 };
+
