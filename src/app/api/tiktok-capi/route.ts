@@ -8,33 +8,21 @@ export async function POST(req: NextRequest) {
     const pixelId = process.env.TIKTOK_PIXEL_ID;
 
     if (!accessToken || !pixelId) {
-      return NextResponse.json(
-        { error: "Missing credentials" },
-        { status: 500 }
-      );
+      return NextResponse.json({ error: "Missing credentials" }, { status: 500 });
     }
 
     const url = `https://business-api.tiktok.com/open_api/v1.3/event/track/`;
 
-    // Minimal required fields
+    // MINIMAL format - chỉ những field bắt buộc
     const eventData = {
       pixel_code: pixelId,
-      event: "ClickButton",
+      event: "ViewContent", // Standard event
       timestamp: new Date().toISOString(),
-      context: {
-        page: {
-          url: body.page_location || window.location?.href || "",
-        },
-        user_agent: req.headers.get("user-agent") || "",
-      },
-      properties: {
-        content_name: body.affiliate_name || "Click",
-      },
     };
 
-    console.log("=== TikTok Request ===");
-    console.log("URL:", url);
-    console.log("Pixel ID:", pixelId);
+    console.log("📤 Sending to TikTok:");
+    console.log("Endpoint:", url);
+    console.log("Pixel:", pixelId);
     console.log("Payload:", JSON.stringify(eventData, null, 2));
 
     const response = await fetch(url, {
@@ -48,27 +36,36 @@ export async function POST(req: NextRequest) {
 
     const result = await response.json();
     
-    console.log("=== TikTok Response ===");
+    console.log("📥 TikTok Response:");
     console.log("Status:", response.status);
-    console.log("Result:", JSON.stringify(result, null, 2));
+    console.log("Body:", JSON.stringify(result, null, 2));
 
     if (!response.ok) {
+      // Log chi tiết để debug
+      console.error("❌ Error Details:");
+      console.error("- Code:", result.code);
+      console.error("- Message:", result.message);
+      console.error("- Request ID:", result.request_id);
+      
       return NextResponse.json(
         { 
           error: "TikTok API failed", 
           status: response.status,
-          details: result 
+          code: result.code,
+          message: result.message,
+          request_id: result.request_id,
+          full_response: result 
         },
-        { status: 200 } // Trả 200 để không break client
+        { status: 200 }
       );
     }
 
     return NextResponse.json({ success: true, data: result });
   } catch (err) {
-    console.error("TikTok CAPI Error:", err);
+    console.error("💥 Exception:", err);
     return NextResponse.json(
-      { error: String(err) },
-      { status: 200 } // Trả 200 để không break client
+      { error: "Exception", message: String(err) },
+      { status: 200 }
     );
   }
 }
