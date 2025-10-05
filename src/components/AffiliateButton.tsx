@@ -3,9 +3,14 @@
 import React from 'react';
 
 declare const fbq: (...args: unknown[]) => void;
-declare const ttq: {
-  track: (event: string, properties?: Record<string, unknown>) => void;
-};
+declare global {
+  interface Window {
+    ttq?: {
+      track: (event: string, properties?: Record<string, unknown>) => void;
+    };
+    gtag?: (...args: any[]) => void;
+  }
+}
 
 type Props = {
   href: string;
@@ -31,6 +36,7 @@ export default function AffiliateButton({
 
     try {
       const safeLabel = label.toLowerCase().replace(/\s+/g, '_');
+      const eventName = `Click_${label.replace(/\s+/g, '')}`; // 🔑 đồng bộ event name
       const pageLocation = window.location.href;
 
       // ============ Google Analytics ============
@@ -45,15 +51,15 @@ export default function AffiliateButton({
           page_location: pageLocation,
           page_title: document.title,
           custom_parameter_1: `${category}_${label}`,
-          value: 1
+          value: 1,
         });
 
-        window.gtag('event', `click_${safeLabel}`, {
+        window.gtag('event', eventName.toLowerCase(), {
           event_category: 'Affiliate_Products',
           event_label: label,
           affiliate_name: label,
           affiliate_position: position,
-          value: 1
+          value: 1,
         });
 
         window.gtag('event', 'affiliate_conversion', {
@@ -61,7 +67,7 @@ export default function AffiliateButton({
           event_label: label,
           affiliate_name: label,
           conversion_type: 'click',
-          value: 1
+          value: 1,
         });
 
         window.gtag('event', 'select_item', {
@@ -71,7 +77,7 @@ export default function AffiliateButton({
           item_category: category,
           item_list_name: 'loan_apps_list',
           index: position || 0,
-          value: 1
+          value: 1,
         });
       }
 
@@ -83,10 +89,10 @@ export default function AffiliateButton({
           affiliate_position: position || 0,
           affiliate_category: category,
           page_location: pageLocation,
-          page_title: document.title
+          page_title: document.title,
         });
 
-        fbq('trackCustom', `Click_${label.replace(/\s+/g, '')}`);
+        fbq('trackCustom', eventName);
       }
 
       // ============ Facebook CAPI (Server-side) ============
@@ -94,6 +100,7 @@ export default function AffiliateButton({
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          event_name: eventName,
           affiliate_name: label,
           affiliate_url: href,
           affiliate_position: position || 0,
@@ -101,8 +108,8 @@ export default function AffiliateButton({
           page_location: pageLocation,
           user_agent: navigator.userAgent,
           fbp: document.cookie.match(/_fbp=([^;]+)/)?.[1],
-          fbc: new URLSearchParams(window.location.search).get("fbclid")
-            ? `fb.1.${Date.now()}.${new URLSearchParams(window.location.search).get("fbclid")}`
+          fbc: new URLSearchParams(window.location.search).get('fbclid')
+            ? `fb.1.${Date.now()}.${new URLSearchParams(window.location.search).get('fbclid')}`
             : undefined,
         }),
       }).catch(() => {
@@ -110,8 +117,8 @@ export default function AffiliateButton({
       });
 
       // ============ TikTok Pixel (Client-side) ============
-      if (typeof ttq !== 'undefined') {
-        ttq.track('ClickButton', {
+      if (typeof window !== 'undefined' && window.ttq) {
+        window.ttq.track(eventName, {
           content_type: 'product',
           content_name: label,
           content_category: category,
@@ -119,7 +126,7 @@ export default function AffiliateButton({
             {
               content_id: safeLabel,
               content_name: label,
-            }
+            },
           ],
           value: 1,
           currency: 'VND',
@@ -134,6 +141,7 @@ export default function AffiliateButton({
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          event_name: eventName,
           affiliate_name: label,
           affiliate_url: href,
           affiliate_position: position || 0,
@@ -141,21 +149,21 @@ export default function AffiliateButton({
           page_location: pageLocation,
           referrer: document.referrer,
           user_agent: navigator.userAgent,
-          ttp: document.cookie.match(/_ttp=([^;]+)/)?.[1], // TikTok cookie
+          ttp: document.cookie.match(/_ttp=([^;]+)/)?.[1],
           ttclid: ttclid,
         }),
       })
-      .then(res => res.json())
-      .then(data => {
-        console.log('✅ TikTok CAPI Response:', data);
-        if (data.error) {
-          console.error('❌ TikTok CAPI Error Details:', data);
-        }
-      })
-      .catch(err => {
-        console.error('❌ TikTok CAPI Request Failed:', err);
-      });
-
+        .then((res) => res.json())
+        .then((data) => {
+          if (process.env.NODE_ENV === 'development') {
+            console.log('✅ TikTok CAPI Response:', data);
+          }
+        })
+        .catch((err) => {
+          if (process.env.NODE_ENV === 'development') {
+            console.error('❌ TikTok CAPI Request Failed:', err);
+          }
+        });
     } catch {
       // fail silently
     }
