@@ -188,7 +188,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             height="1"
             width="1"
             style={{ display: 'none' }}
-            src="https://www.facebook.com/tr?id=850947108943962&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=773319391878744&ev=PageView&noscript=1"
           />
         </noscript>
 
@@ -357,6 +357,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
 
 
 
