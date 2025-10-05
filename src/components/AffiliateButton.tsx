@@ -8,7 +8,7 @@ declare global {
     ttq?: {
       track: (event: string, properties?: Record<string, unknown>) => void;
     };
-    gtag?: (...args: any[]) => void;
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
@@ -190,3 +190,4 @@ export default function AffiliateButton({
     </a>
   );
 }
+
