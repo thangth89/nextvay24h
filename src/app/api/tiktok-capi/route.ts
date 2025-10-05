@@ -13,11 +13,32 @@ export async function POST(req: NextRequest) {
 
     const url = `https://business-api.tiktok.com/open_api/v1.3/event/track/`;
 
-    // MINIMAL format - chỉ những field bắt buộc
+    // Get user IP
+    const ipAddress = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
+                     req.headers.get("x-real-ip") ||
+                     "";
+    
+    const userAgent = req.headers.get("user-agent") || "";
+
+    // CORRECT format với event_source_id
     const eventData = {
       pixel_code: pixelId,
-      event: "ViewContent", // Standard event
+      event: "ViewContent", // Standard TikTok event
+      event_id: `evt_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
       timestamp: new Date().toISOString(),
+      context: {
+        page: {
+          url: body.page_location || "",
+        },
+        user_agent: userAgent,
+        ip: ipAddress,
+      },
+      properties: {
+        content_type: "product",
+        content_name: body.affiliate_name || "Affiliate Click",
+      },
+      // QUAN TRỌNG: event_source_id là bắt buộc
+      event_source_id: pixelId, // Dùng pixel_code làm event_source_id
     };
 
     console.log("📤 Sending to TikTok:");
@@ -41,7 +62,6 @@ export async function POST(req: NextRequest) {
     console.log("Body:", JSON.stringify(result, null, 2));
 
     if (!response.ok) {
-      // Log chi tiết để debug
       console.error("❌ Error Details:");
       console.error("- Code:", result.code);
       console.error("- Message:", result.message);
@@ -60,6 +80,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    console.log("✅ TikTok event sent successfully!");
     return NextResponse.json({ success: true, data: result });
   } catch (err) {
     console.error("💥 Exception:", err);
