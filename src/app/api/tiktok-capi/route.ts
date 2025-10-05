@@ -18,12 +18,7 @@ export async function POST(req: NextRequest) {
     const ipAddress = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "";
     const userAgent = req.headers.get("user-agent") || "";
 
-    // Hash email nếu có (để làm external_id)
-    const hashEmail = (email: string) => {
-      return crypto.createHash('sha256').update(email.toLowerCase().trim()).digest('hex');
-    };
-
-    // event_source_id phải là external_id (hashed user identifier) HOẶC test_event_code
+    // event_source_id phải là external_id (hashed user identifier)
     // Vì không có user login, dùng combination của IP + timestamp làm unique ID
     const eventSourceId = crypto
       .createHash('sha256')
