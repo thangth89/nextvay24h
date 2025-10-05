@@ -3,6 +3,7 @@
 import React from 'react';
 
 declare const fbq: (...args: unknown[]) => void;
+
 declare global {
   interface Window {
     ttq?: {
@@ -36,7 +37,7 @@ export default function AffiliateButton({
 
     try {
       const safeLabel = label.toLowerCase().replace(/\s+/g, '_');
-      const eventName = `Click_${label.replace(/\s+/g, '')}`; // 🔑 đồng bộ event name
+      const eventName = `Click_${label.replace(/\s+/g, '')}`; // đồng bộ event name
       const pageLocation = window.location.href;
 
       // ============ Google Analytics ============
@@ -190,4 +191,3 @@ export default function AffiliateButton({
     </a>
   );
 }
-
