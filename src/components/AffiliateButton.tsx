@@ -4,15 +4,6 @@ import React from 'react';
 
 declare const fbq: (...args: unknown[]) => void;
 
-declare global {
-  interface Window {
-    ttq?: {
-      track: (event: string, properties?: Record<string, unknown>) => void;
-    };
-    gtag?: (...args: unknown[]) => void;
-  }
-}
-
 type Props = {
   href: string;
   label: string;
@@ -37,7 +28,7 @@ export default function AffiliateButton({
 
     try {
       const safeLabel = label.toLowerCase().replace(/\s+/g, '_');
-      const eventName = `Click_${label.replace(/\s+/g, '')}`; // đồng bộ event name
+      const eventName = `Click_${label.replace(/\s+/g, '')}`;
       const pageLocation = window.location.href;
 
       // ============ Google Analytics ============
