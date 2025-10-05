@@ -203,7 +203,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           ttq.page();
           }(window, document, 'ttq');
         `}
-      </script>
+      </Script>
 
       </head>
       
@@ -357,6 +357,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
 
 
 
