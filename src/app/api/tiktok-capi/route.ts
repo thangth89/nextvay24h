@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
           event_id: `evt_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
           timestamp: new Date().toISOString(),
           event_source: "web",
-          event_source_id: pixelId,
+          event_source_id: "vay24h.pro.vn", // ← Website domain, KHÔNG phải pixel_code
           context: {
             page: {
               url: body.page_location || "",
