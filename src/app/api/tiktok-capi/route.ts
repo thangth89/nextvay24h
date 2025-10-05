@@ -34,6 +34,7 @@ export async function POST(req: NextRequest) {
           event: "ViewContent",
           event_id: `evt_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
           timestamp: new Date().toISOString(),
+          event_source: "web", // BẮT BUỘC: web, app, hoặc offline
           context: {
             page: {
               url: body.page_location || "",
