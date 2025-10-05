@@ -20,12 +20,14 @@ export async function POST(req: NextRequest) {
     
     const userAgent = req.headers.get("user-agent") || "";
 
-    // CORRECT format với event_source_id
+    // CORRECT format với event_source và event_source_id
     const eventData = {
       pixel_code: pixelId,
       event: "ViewContent", // Standard TikTok event
       event_id: `evt_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
       timestamp: new Date().toISOString(),
+      event_source: "web", // REQUIRED: web, app, or offline
+      event_source_id: pixelId, // REQUIRED: pixel_code
       context: {
         page: {
           url: body.page_location || "",
@@ -37,8 +39,6 @@ export async function POST(req: NextRequest) {
         content_type: "product",
         content_name: body.affiliate_name || "Affiliate Click",
       },
-      // QUAN TRỌNG: event_source_id là bắt buộc
-      event_source_id: pixelId, // Dùng pixel_code làm event_source_id
     };
 
     console.log("📤 Sending to TikTok:");
