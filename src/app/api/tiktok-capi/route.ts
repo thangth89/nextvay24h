@@ -60,7 +60,7 @@ export async function POST(req: Request) {
     const text = await response.text(); // để xem raw TikTok trả về
     console.log("📤 TikTok Response:", response.status, text);
 
-    let data: any = {};
+    let data: unknown = {};
     try {
       data = JSON.parse(text);
     } catch {
@@ -68,7 +68,7 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({ success: true, status: response.status, data });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("❌ TikTok CAPI error:", error);
     return NextResponse.json({ success: false, error: error.message || error }, { status: 500 });
   }
