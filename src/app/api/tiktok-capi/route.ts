@@ -30,7 +30,7 @@ export async function POST(req: Request) {
       pixel_code: TIKTOK_PIXEL_ID,
       event: body.event_name || "ClickAffiliate",
       event_id: `${Date.now()}_${Math.random().toString(36).substring(2, 10)}`,
-      timestamp: Math.floor(Date.now() / 1000),
+      timestamp: new Date().toISOString(),
       context: {
         user: {
           user_agent: body.user_agent || req.headers.get("user-agent"),
