@@ -65,7 +65,7 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({ success: true, data });
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error("❌ TikTok CAPI error:", error?.message || error);
     return NextResponse.json(
       { success: false, error: error?.message || "Unknown error" },
