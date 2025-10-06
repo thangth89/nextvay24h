@@ -66,10 +66,18 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ success: true, data });
   } catch (error: unknown) {
-    console.error("❌ TikTok CAPI error:", error?.message || error);
-    return NextResponse.json(
-      { success: false, error: error?.message || "Unknown error" },
-      { status: 500 }
-    );
+  let errMsg = "Unknown error";
+  if (error instanceof Error) {
+    errMsg = error.message;
+  } else if (typeof error === "string") {
+    errMsg = error;
   }
+
+  console.error("❌ TikTok CAPI error:", errMsg);
+
+  return NextResponse.json(
+    { success: false, error: errMsg },
+    { status: 500 }
+  );
+}
 }
