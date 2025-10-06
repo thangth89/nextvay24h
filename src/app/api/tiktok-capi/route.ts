@@ -8,6 +8,7 @@ export async function POST(req: Request) {
     const TIKTOK_ACCESS_TOKEN = process.env.TIKTOK_ACCESS_TOKEN;
 
     if (!TIKTOK_PIXEL_ID || !TIKTOK_ACCESS_TOKEN) {
+      console.error("❌ Missing TikTok credentials");
       return NextResponse.json(
         { error: "Missing TikTok credentials (PIXEL_ID / ACCESS_TOKEN)" },
         { status: 500 }
@@ -38,6 +39,9 @@ export async function POST(req: Request) {
       },
     };
 
+    // 🔍 Log payload gửi sang TikTok
+    console.log("➡️ Payload gửi sang TikTok:", JSON.stringify(payload, null, 2));
+
     const response = await fetch(
       "https://business-api.tiktokglobalplatform.com/open_api/v1.3/event/track/",
       {
@@ -52,14 +56,20 @@ export async function POST(req: Request) {
 
     const data = await response.json();
 
+    // 🔍 Log kết quả TikTok trả về
+    console.log("➡️ TikTok Response status:", response.status);
+    console.log("➡️ TikTok Response body:", JSON.stringify(data, null, 2));
+
     if (!response.ok) {
-      console.error("TikTok API Error:", data);
       return NextResponse.json({ success: false, data }, { status: 500 });
     }
 
     return NextResponse.json({ success: true, data });
-  } catch (error) {
-    console.error("TikTok CAPI error:", error);
-    return NextResponse.json({ success: false, error: String(error) }, { status: 500 });
+  } catch (error: any) {
+    console.error("❌ TikTok CAPI error:", error?.message || error);
+    return NextResponse.json(
+      { success: false, error: error?.message || "Unknown error" },
+      { status: 500 }
+    );
   }
 }
