@@ -6,7 +6,7 @@ export const loanApps = [
     imageSrc: "/vay/jeff.webp",
     altText: "Jeff Web app vay tiền",
     title: "Jeff Web",
-    duyetText: "📌 GIẢI NGÂN SAU 10 PHÚT",
+    duyetText: "📌 TOP 1 ỨNG DỤNG",
     amount: "1.000.000 – 30.000.000",
     features: [
       "<strong>Kết nối hơn 25 đối tác</strong> cho vay",
@@ -23,7 +23,7 @@ export const loanApps = [
     imageSrc: "/vay/cayvang.webp",
     altText: "Cây Vàng vay tiền",
     title: "CAYVANG",
-    duyetText: "📌 KHÔNG KIỂM TRA CIC",
+    duyetText: "📌 XÉT DUYỆT NHANH",
     amount: "500.000 – 10.000.000",
     features: [
       "Thời hạn vay: theo từng gói vay",
@@ -40,7 +40,7 @@ export const loanApps = [
     imageSrc: "/vay/Binixo.webp",
     altText: "Binixo app vay tiền",
     title: "Binixo",
-    duyetText: "📌 DUYỆT NHANH 15 PHÚT",
+    duyetText: "📌 XÉT DUYỆT NHANH",
     amount: "500.000– 10.000.000",
     features: [
       "Thời hạn vay: 91 - 180 ngày",
@@ -57,7 +57,7 @@ export const loanApps = [
     imageSrc: "/vay/vaymeo.webp",
     altText: "VayMeo vay tiền online 24/7",
     title: "VayMeo",
-    duyetText: "📌 NHẬN TIỀN 15 PHÚT",
+    duyetText: "📌 XÉT DUYỆT TỰ ĐỘNG",
     amount: "500.000 – 30.000.000",
     features: [
       "Thời hạn vay: 3-6 tháng",
@@ -91,7 +91,7 @@ export const loanApps = [
     imageSrc: "/vay/finami.webp",
     altText: "Finami vay tiền bao nợ xấu",
     title: "Finami",
-    duyetText: "📌 BAO NỢ XẤU",
+    duyetText: "📌 XÉT DUYỆT NHANH",
     amount: "500.000 – 10.000.000",
     features: [
       "Thời hạn vay: 1 – 12 tháng",
@@ -108,7 +108,7 @@ export const loanApps = [
     imageSrc: "/vay/Finloo.webp",
     altText: "Finloo vay tiền online nhanh 24/7",
     title: "Finloo",
-    duyetText: "📌 GIẢI NGÂN 10 PHÚT",
+    duyetText: "📌 GIẢI NGÂN NHANH",
     amount: "300.000 – 20.000.000",
     features: [
       "Thời hạn vay: 2 tháng",
@@ -142,7 +142,7 @@ export const loanApps = [
     imageSrc: "/vay/meocat.webp",
     altText: "MoneyCat vay tiền online",
     title: "MONEYCAT",
-    duyetText: "📌 BAO NỢ XẤU",
+    duyetText: "📌 XÉT DUYỆT NHANH",
     amount: "500.000 – 10.000.000",
     features: [
       "Thời hạn vay: 91 - 182 ngày.",
@@ -177,7 +177,7 @@ export const loanApps = [
     imageSrc: "/vay/credityes.webp",
     altText: "CreditYes vay tiền nhanh",
     title: "CREDITYES",
-    duyetText: "📌 BAO NỢ XẤU",
+    duyetText: "📌 XÉT DUYỆT NHANH",
     amount: "500.000 – 10.000.000",
     features: [
       "Thời hạn vay: 1 – 12 tháng",
@@ -195,7 +195,7 @@ export const loanApps = [
     imageSrc: "/vay/Cashspace.webp",
     altText: "Cashspace vay tiền nhanh 24/7",
     title: "CASH_SPACE",
-    duyetText: "📌 BAO NỢ XẤU ",
+    duyetText: "📌 XÉT DUYỆT NHANH ",
     amount: "500.000 – 20.000.000",
     features: [
       "Thời hạn vay: 2-3 tháng ",
@@ -229,7 +229,7 @@ export const loanApps = [
     imageSrc: "/vay/soscredit.webp",
     altText: "SOS Credit vay tiền",
     title: "SOS Credit",
-    duyetText: "📌 NHẬN TIỀN 15 PHÚT",
+    duyetText: "📌 NHẬN TIỀN NHANH",
     amount: "500.000 – 20.000.000",
     features: [
       "Thời hạn vay: 3-12 tháng",
@@ -242,6 +242,7 @@ export const loanApps = [
     label: "SOSCredit"
   }, 
 ];
+
 
 
 
