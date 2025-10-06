@@ -77,7 +77,7 @@ export default function HomeClient() {
           </div>
         </section>
 
-        {/* Main Content Section */}
+        {/* Main Content Section 
         <section style={{ marginTop: 30 }}>
           <h2 style={{ textAlign: "center", color: "#007000", fontSize: "24px" }}>
             MẸO HƯỚNG DẪN VAY TIỀN ONLINE NHANH VÀ MỞ THẺ TÍN DỤNG ONLINE MIỄN PHÍ
@@ -236,7 +236,7 @@ export default function HomeClient() {
             </Accordion>
           </article>
         </section>
-       
+       */}
         {/* FAQ Section */}
 <section style={{ marginTop: 30 }}>
   <h2 style={{ textAlign: "center", color: "#007000", fontSize: "24px" }}>
@@ -360,5 +360,6 @@ export default function HomeClient() {
     </div>
   );
 }
+
 
 
