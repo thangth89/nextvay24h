@@ -1,4 +1,12 @@
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
+
+interface TikTokResponse {
+  code?: number;
+  message?: string;
+  request_id?: string;
+  data?: unknown;
+  [key: string]: unknown;
+}
 
 export async function POST(req: Request) {
   try {
@@ -27,8 +35,8 @@ export async function POST(req: Request) {
         user: {
           user_agent: body.user_agent || req.headers.get("user-agent"),
           ip: req.headers.get("x-forwarded-for")?.split(",")[0] || "127.0.0.1",
-          external_id: body.ttp || undefined, // TikTok _ttp cookie
-          ttclid: body.ttclid || undefined,   // TikTok Click ID
+          external_id: body.ttp || undefined,
+          ttclid: body.ttclid || undefined,
         },
         page: {
           url: body.page_location,
@@ -46,7 +54,7 @@ export async function POST(req: Request) {
     console.log("📩 Payload gửi TikTok:", JSON.stringify(payload, null, 2));
 
     const response = await fetch(
-      "https://business-api.tiktokglobalshop.com/open_api/v1.3/pixel/track/",
+      "https://business-api.tiktok.com/open_api/v1.3/pixel/track/",
       {
         method: "POST",
         headers: {
@@ -57,19 +65,23 @@ export async function POST(req: Request) {
       }
     );
 
-    const text = await response.text(); // để xem raw TikTok trả về
+    const text = await response.text();
     console.log("📤 TikTok Response:", response.status, text);
 
-    let data: unknown = {};
+    let data: TikTokResponse | { raw: string };
     try {
-      data = JSON.parse(text);
+      data = JSON.parse(text) as TikTokResponse;
     } catch {
       data = { raw: text };
     }
 
     return NextResponse.json({ success: true, status: response.status, data });
-  } catch (error: unknown) {
+  } catch (err) {
+    const error = err as Error;
     console.error("❌ TikTok CAPI error:", error);
-    return NextResponse.json({ success: false, error: error.message || error }, { status: 500 });
+    return NextResponse.json(
+      { success: false, error: error.message || String(error) },
+      { status: 500 }
+    );
   }
 }
