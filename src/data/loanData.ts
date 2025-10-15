@@ -35,8 +35,25 @@ export const loanApps = [
     affiliateLink: "https://riofin.asia/NmcaT10",
     label: "VayMeo"
   }, 
-  {
+     {
     topLabel: "TOP #3",
+    imageSrc: "/vay/meocat.webp",
+    altText: "MoneyCat vay tiền online",
+    title: "MONEYCAT",
+    duyetText: "📌 XÉT DUYỆT NHANH",
+    amount: "500.000 – 10.000.000",
+    features: [
+      "Thời hạn vay: 91 - 182 ngày.",
+      "<strong>Lãi suất từ 1,0% - 1,52%/tháng</strong>",
+      "<strong>0% lãi suất cho khách mới</strong>",
+      "Từ 23-59 tuổi",
+      "Hồ sơ chỉ cần CMND",
+    ],
+    affiliateLink: "https://riofin.asia/nG0yL30",
+    label: "MoneyCat"
+  },
+  {
+    topLabel: "TOP #4",
     imageSrc: "/vay/Binixo.webp",
     altText: "Binixo app vay tiền",
     title: "Binixo",
@@ -53,7 +70,7 @@ export const loanApps = [
     label: "Binixo"
   },
  {
-    topLabel: "TOP #4",
+    topLabel: "TOP #5",
     imageSrc: "/vay/finapps.webp",
     altText: "FinApps ứng dụng vay tiền",
     title: "FinApps",
@@ -68,23 +85,6 @@ export const loanApps = [
     ],
     affiliateLink: "https://go.dinos.click/click?a=11826&o=821",
     label: "FinApps"
-  },
-  {
-    topLabel: "TOP #5",
-    imageSrc: "/vay/finami.webp",
-    altText: "Finami vay tiền bao nợ xấu",
-    title: "Finami",
-    duyetText: "📌 XÉT DUYỆT NHANH",
-    amount: "500.000 – 10.000.000",
-    features: [
-      "Thời hạn vay: 1 – 12 tháng",
-      "<strong>Lãi suất: 0% nếu trả ngày đầu</strong>",
-      "Hoạt động 24/7",
-      "Từ 22-60 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=683",
-    label: "Finami"
   },
    {
     topLabel: "Top #6",
@@ -103,8 +103,25 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=471",
     label: "Finloo"
   },
-  {
+     {
     topLabel: "TOP #7",
+    imageSrc: "/vay/finami.webp",
+    altText: "Finami vay tiền bao nợ xấu",
+    title: "Finami",
+    duyetText: "📌 XÉT DUYỆT NHANH",
+    amount: "500.000 – 10.000.000",
+    features: [
+      "Thời hạn vay: 1 – 12 tháng",
+      "<strong>Lãi suất: 0% nếu trả ngày đầu</strong>",
+      "Hoạt động 24/7",
+      "Từ 22-60 tuổi",
+      "Hồ sơ: chỉ cần CMND",
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=683",
+    label: "Finami"
+  },
+  {
+    topLabel: "TOP #8",
     imageSrc: "/vay/vayvnd.webp",
     altText: "VayVND ứng dụng vay tiền",
     title: "VAYVND",
@@ -120,23 +137,7 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=927",
     label: "VayVND"
   }, 
-  {
-    topLabel: "TOP #8",
-    imageSrc: "/vay/meocat.webp",
-    altText: "MoneyCat vay tiền online",
-    title: "MONEYCAT",
-    duyetText: "📌 XÉT DUYỆT NHANH",
-    amount: "500.000 – 10.000.000",
-    features: [
-      "Thời hạn vay: 91 - 182 ngày.",
-      "<strong>Lãi suất từ 1,0% - 1,52%/tháng</strong>",
-      "<strong>0% lãi suất cho khách mới</strong>",
-      "Từ 23-59 tuổi",
-      "Hồ sơ chỉ cần CMND",
-    ],
-    affiliateLink: "https://riofin.asia/nG0yL30",
-    label: "MoneyCat"
-  },
+
   {
     topLabel: "TOP #9",
     imageSrc: "/vay/moneyveo.webp",
@@ -225,6 +226,7 @@ export const loanApps = [
     label: "SOSCredit"
   }, 
 ];
+
 
 
 
