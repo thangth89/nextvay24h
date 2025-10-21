@@ -18,8 +18,26 @@ export const loanApps = [
     affiliateLink: "https://riofin.asia/K4tHM30",
     label: "Jeff"
   },
-     {
+    {
     topLabel: "TOP #2",
+    imageSrc: "/vay/cayvang.webp",
+    altText: "Cây Vàng vay tiền",
+    title: "CAYVANG",
+    duyetText: "📌 XÉT DUYỆT NHANH",
+    amount: "500.000 – 10.000.000",
+    features: [
+      "Thời hạn vay: theo từng gói vay",
+      "<strong>Lãi suất: 0% khoản vay đầu</strong>",
+      "Không cần chứng minh thu nhập",
+      "Từ 22-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
+    ],
+    affiliateLink: "https://riofin.asia/O65Qk30",
+    label: "CayVang"
+  }, 
+
+     {
+    topLabel: "TOP #3",
     imageSrc: "/vay/vaymeo.webp",
     altText: "VayMeo vay tiền online 24/7",
     title: "VayMeo",
@@ -36,7 +54,7 @@ export const loanApps = [
     label: "VayMeo"
   }, 
      {
-    topLabel: "TOP #3",
+    topLabel: "TOP #4",
     imageSrc: "/vay/meocat.webp",
     altText: "MoneyCat vay tiền online",
     title: "MONEYCAT",
@@ -53,7 +71,7 @@ export const loanApps = [
     label: "MoneyCat"
   },
   {
-    topLabel: "TOP #4",
+    topLabel: "TOP #5",
     imageSrc: "/vay/Binixo.webp",
     altText: "Binixo app vay tiền",
     title: "Binixo",
@@ -70,7 +88,7 @@ export const loanApps = [
     label: "Binixo"
   },
  {
-    topLabel: "TOP #5",
+    topLabel: "TOP #6",
     imageSrc: "/vay/finapps.webp",
     altText: "FinApps ứng dụng vay tiền",
     title: "FinApps",
@@ -87,7 +105,7 @@ export const loanApps = [
     label: "FinApps"
   },
    {
-    topLabel: "Top #6",
+    topLabel: "Top #7",
     imageSrc: "/vay/Finloo.webp",
     altText: "Finloo vay tiền online nhanh 24/7",
     title: "Finloo",
@@ -104,7 +122,7 @@ export const loanApps = [
     label: "Finloo"
   },
      {
-    topLabel: "TOP #7",
+    topLabel: "TOP #8",
     imageSrc: "/vay/finami.webp",
     altText: "Finami vay tiền bao nợ xấu",
     title: "Finami",
@@ -121,7 +139,7 @@ export const loanApps = [
     label: "Finami"
   },
   {
-    topLabel: "TOP #8",
+    topLabel: "TOP #9",
     imageSrc: "/vay/vayvnd.webp",
     altText: "VayVND ứng dụng vay tiền",
     title: "VAYVND",
@@ -139,7 +157,7 @@ export const loanApps = [
   }, 
 
   {
-    topLabel: "TOP #9",
+    topLabel: "TOP #10",
     imageSrc: "/vay/moneyveo.webp",
     altText: "MoneyVeo app vay",
     title: "MONEYVEO",
@@ -157,7 +175,7 @@ export const loanApps = [
   },
 
   {
-    topLabel: "TOP #10",
+    topLabel: "TOP #11",
     imageSrc: "/vay/credityes.webp",
     altText: "CreditYes vay tiền nhanh",
     title: "CREDITYES",
@@ -175,7 +193,7 @@ export const loanApps = [
   },
    
   {
-    topLabel: "TOP #11",
+    topLabel: "TOP #12",
     imageSrc: "/vay/Cashspace.webp",
     altText: "Cashspace vay tiền nhanh 24/7",
     title: "CASH_SPACE",
@@ -192,7 +210,7 @@ export const loanApps = [
     label: "Cashspace"
   },
    {
-    topLabel: "TOP #12",
+    topLabel: "TOP #13",
     imageSrc: "/vay/visame.webp",
     altText: "ViSame app vay tiền online",
     title: "VISAME",
@@ -226,6 +244,7 @@ export const loanApps = [
     label: "SOSCredit"
   }, 
 ];
+
 
 
 
