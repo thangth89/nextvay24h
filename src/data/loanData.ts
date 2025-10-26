@@ -50,7 +50,7 @@ export const loanApps = [
       "Từ 18-60 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://riofin.asia/NmcaT10",
+    affiliateLink: "https://clearpmf.com/ql?pm_cid=0cb40feef08f420984ea",
     label: "VayMeo"
   }, 
      {
@@ -244,6 +244,7 @@ export const loanApps = [
     label: "SOSCredit"
   }, 
 ];
+
 
 
 
