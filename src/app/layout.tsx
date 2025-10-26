@@ -150,6 +150,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="vi" className={roboto.className}>
       <head>
+        {/* https://partner.permate.com/ */}
+        <meta name="p-verification-token" content="7a367ad2-f41d-45a8-b">
+          
         {/* Structured Data */}
         <Script
           id="structured-data"
@@ -356,6 +359,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
 
 
 
