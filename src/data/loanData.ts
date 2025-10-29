@@ -206,7 +206,7 @@ export const loanApps = [
       "Từ 23-70 tuổi",
       "Hồ sơ: chỉ cần CMND",
     ],
-    affiliateLink: "https://riofin.asia/GdJHu00",
+    affiliateLink: "https://clearpmf.com/ql?pm_cid=462558e4f36c43e69bc5",
     label: "Cashspace"
   },
    {
@@ -244,6 +244,7 @@ export const loanApps = [
     label: "SOSCredit"
   }, 
 ];
+
 
 
 
