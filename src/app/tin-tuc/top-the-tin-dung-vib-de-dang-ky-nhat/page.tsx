@@ -223,7 +223,7 @@ export default function MoTheTinDungVIBGenZPage() {
               Bạn là <strong className="text-blue-700">GenZ, sinh viên năm 3, 4</strong> muốn xây dựng lịch sử tín dụng sớm? Hay bạn là <strong className="text-blue-700">người mới đi làm</strong> với mức lương khởi điểm 7-10 triệu? Thẻ tín dụng VIB có những dòng thẻ chuyên biệt, dễ đăng ký 100% online để đáp ứng mọi nhu cầu này.
             </p>
             <p className="text-lg mt-2">
-              Bài viết này sẽ review 8 dòng thẻ VIB phổ biến và sắp xếp chúng theo thứ tự <strong className="text-red-700">từ dễ đăng ký nhất đến khó nhất</strong> (bắt đầu từ thẻ không cần thu nhập cho sinh viên), giúp bạn tìm được chiếc thẻ "chân ái" đầu đời.
+              Bài viết này sẽ review 8 dòng thẻ VIB phổ biến và sắp xếp chúng theo thứ tự <strong className="text-red-700">từ dễ đăng ký nhất đến khó nhất</strong> (bắt đầu từ thẻ không cần thu nhập cho sinh viên), giúp bạn tìm được chiếc thẻ &quot;chân ái&quot; đầu đời.
             </p>
           </div>
         </header>
@@ -231,7 +231,7 @@ export default function MoTheTinDungVIBGenZPage() {
         <section id="loi-ich-chung" className="mb-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Vì sao GenZ nên sở hữu thẻ tín dụng càng sớm càng tốt?</h2>
           <p className="mb-4">
-            Nhiều bạn trẻ e ngại "nợ nần", nhưng nếu dùng đúng cách, thẻ tín dụng (credit card) là một công cụ tài chính cực kỳ thông minh:
+            Nhiều bạn trẻ e ngại &quot;nợ nần&quot;, nhưng nếu dùng đúng cách, thẻ tín dụng (credit card) là một công cụ tài chính cực kỳ thông minh:
           </p>
           <ul className="list-disc list-inside space-y-2 mb-4 pl-4">
             <li><strong className="text-green-700">Xây dựng lịch sử tín dụng (CIC):</strong> Đây là lợi ích VÀNG. Chi tiêu và trả nợ đúng hạn giúp bạn có điểm tín dụng tốt, là chìa khóa cho các khoản vay lớn (mua nhà, mua xe) trong tương lai với lãi suất ưu đãi.</li>
@@ -326,10 +326,10 @@ export default function MoTheTinDungVIBGenZPage() {
 
         <section id="luu-y" className="mb-8 mt-12 p-6 bg-red-50 border-l-4 border-red-400 rounded-lg">
           <h2 className="text-3xl font-bold text-red-800 mb-4">Lưu ý vàng khi dùng thẻ tín dụng (Tránh nợ xấu)</h2>
-          <p className="mb-3 text-lg">Thẻ tín dụng là một công cụ tài chính tuyệt vời, nhưng cũng là con dao hai lưỡi. Để tối ưu lợi ích và tránh "sập bẫy" nợ nần, bạn PHẢI nhớ:</p>
+          <p className="mb-3 text-lg">Thẻ tín dụng là một công cụ tài chính tuyệt vời, nhưng cũng là con dao hai lưỡi. Để tối ưu lợi ích và tránh &quot;sập bẫy&quot; nợ nần, bạn PHẢI nhớ:</p>
           <ul className="list-decimal list-inside space-y-2 text-red-900">
             <li><strong className="font-semibold">Luôn trả nợ đúng hạn:</strong> Chỉ cần trễ 1 ngày, bạn sẽ bị phạt phí trả chậm VÀ toàn bộ số tiền đã chi tiêu sẽ bị tính lãi (khoảng 30-40%/năm).</li>
-            <li><strong className="font-semibold">Trả đủ 100% sao kê:</strong> Đừng bao giờ chỉ trả "số tiền tối thiểu". Nếu chỉ trả tối thiểu, bạn vẫn bị tính lãi trên số tiền còn nợ.</li>
+            <li><strong className="font-semibold">Trả đủ 100% sao kê:</strong> Đừng bao giờ chỉ trả &quot;số tiền tối thiểu&quot;. Nếu chỉ trả tối thiểu, bạn vẫn bị tính lãi trên số tiền còn nợ.</li>
             <li><strong className="font-semibold">Không rút tiền mặt (trừ VIB Financial Free):</strong> Phí rút tiền mặt rất cao (khoảng 4%) và bị tính lãi ngay lập tức từ thời điểm rút.</li>
             <li><strong className="font-semibold">Bảo mật thẻ:</strong> Tuyệt đối không đưa số thẻ, ngày hết hạn và 3 số CVV/CVC (mặt sau thẻ) cho bất kỳ ai.</li>
           </ul>
@@ -340,7 +340,7 @@ export default function MoTheTinDungVIBGenZPage() {
           <div className="space-y-4">
             <div className="border-b pb-4">
               <h3 className="text-xl font-semibold text-gray-900">1. Mở thẻ VIB Ivy Card (sinh viên) có khó không?</h3>
-              <p className="mt-2 text-lg">Không khó nếu bạn đáp ứng đủ 3 điều kiện: Là sinh viên năm 3 hoặc 4, có GPA (điểm trung bình) từ 7.0 trở lên, và có giấy tờ xe máy chính chủ. Đây là cách VIB "thẩm định" uy tín của bạn thay vì xem xét thu nhập.</p>
+              <p className="mt-2 text-lg">Không khó nếu bạn đáp ứng đủ 3 điều kiện: Là sinh viên năm 3 hoặc 4, có GPA (điểm trung bình) từ 7.0 trở lên, và có giấy tờ xe máy chính chủ. Đây là cách VIB &quot;thẩm định&quot; uy tín của bạn thay vì xem xét thu nhập.</p>
             </div>
             <div className="border-b pb-4">
               <h3 className="text-xl font-semibold text-gray-900">2. Thu nhập 7 triệu/tháng mở thẻ nào dễ nhất?</h3>
@@ -348,7 +348,7 @@ export default function MoTheTinDungVIBGenZPage() {
             </div>
             <div className="border-b pb-4">
               <h3 className="text-xl font-semibold text-gray-900">3. Mở thẻ tín dụng VIB online mất bao lâu?</h3>
-              <p className="mt-2 text-lg">Rất nhanh. Nếu hồ sơ của bạn đầy đủ và rõ ràng, VIB áp dụng công nghệ "Big Data" và "AI" để duyệt hồ sơ. Nhiều trường hợp thẻ được duyệt và cấp hạn mức chỉ sau 15-30 phút.</p>
+              <p className="mt-2 text-lg">Rất nhanh. Nếu hồ sơ của bạn đầy đủ và rõ ràng, VIB áp dụng công nghệ &quot;Big Data&quot; và &quot;AI&quot; để duyệt hồ sơ. Nhiều trường hợp thẻ được duyệt và cấp hạn mức chỉ sau 15-30 phút.</p>
             </div>
             <div className="border-b pb-4">
               <h3 className="text-xl font-semibold text-gray-900">4. "GPA 7.0" nghĩa là gì?</h3>
@@ -387,3 +387,4 @@ export default function MoTheTinDungVIBGenZPage() {
   );
 
 }
+
