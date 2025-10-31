@@ -351,7 +351,7 @@ export default function MoTheTinDungVIBGenZPage() {
               <p className="mt-2 text-lg">Rất nhanh. Nếu hồ sơ của bạn đầy đủ và rõ ràng, VIB áp dụng công nghệ &quot;Big Data&quot; và &quot;AI&quot; để duyệt hồ sơ. Nhiều trường hợp thẻ được duyệt và cấp hạn mức chỉ sau 15-30 phút.</p>
             </div>
             <div className="border-b pb-4">
-              <h3 className="text-xl font-semibold text-gray-900">4. "GPA 7.0" nghĩa là gì?</h3>
+              <h3 className="text-xl font-semibold text-gray-900">4. &quot;GPA 7.0&quot; nghĩa là gì?</h3>
               <p className="mt-2 text-lg">GPA là điểm trung bình tích lũy của bạn tại trường đại học (theo thang điểm 10). Mức 7.0 tương đương với học lực Khá. Bạn cần xin bảng điểm có xác nhận của trường để chứng minh điều này khi đăng ký VIB Ivy Card.</p>
             </div>
           </div>
@@ -387,4 +387,5 @@ export default function MoTheTinDungVIBGenZPage() {
   );
 
 }
+
 
