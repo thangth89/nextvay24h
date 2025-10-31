@@ -11,13 +11,20 @@ export const featuredArticles: FeaturedArticle[] = [
   },
   {
     id: '2',
+    title: 'So sánh 8 thẻ VIB dễ duyệt nhất. Đăng ký online ngay!',
+    slug: '/tin-tuc/top-the-tin-dung-vib-de-dang-ky-nhat',
+    thumbnail: '/vib/vib-genz-banner.webp',
+    alt: 'So sánh 8 thẻ VIB dễ duyệt nhất. Đăng ký online ngay!'
+  },
+  {
+    id: '3',
     title: 'Top 5 App Vay Uy Tín Không App Đen',
     slug: '/tin-tuc/top-5-app-vay-uy-tin',
     thumbnail: '/news/top-5-vay-uy-tin.webp',
     alt: 'Top 5 App Vay Uy Tín'
   },
   {
-    id: '3',
+    id: '4',
     title: '7 Bí Kíp Vay Online Dễ Duyệt 2025',
     slug: '/tin-tuc/7-bi-kip-vay-online-de-duyet',
     thumbnail: '/news/7-bi-kip-vay-online-de-duyet.webp',
@@ -25,14 +32,14 @@ export const featuredArticles: FeaturedArticle[] = [
   },
   // Thêm bài viết mới ở đây
   {
-    id: '4',
+    id: '5',
     title: 'VayVND là gì? Đánh giá chi tiết ứng dụng vay tiền online VayVND 2025',
     slug: '/tin-tuc/vayvnd-danh-gia-2025',
     thumbnail: '/news/vayvnd-danh-gia-2025.webp',
     alt: 'Vay Tiền Không Thế Chấp'
   },
   {
-    id: '5',
+    id: '6',
     title: 'Jeff - Ứng dụng vay tiền nhanh uy tín, giải ngân trong vài phút',
     slug: '/tin-tuc/jeff-vay-tien-uy-tin',
     thumbnail: '/news/jeff-vay-tien-uy-tin.webp',
