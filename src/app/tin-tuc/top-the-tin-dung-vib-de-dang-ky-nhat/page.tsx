@@ -12,8 +12,7 @@ import Link from 'next/link';
 const PUBLISHED_DATE = "2025-10-31T11:30:00+7:00"; 
 const LAST_MODIFIED_DATE = "2025-10-31T11:30:00+07:00";
 // <-- THAY URL CỦA BẠN (Rất quan trọng cho SEO)
-const CANONICAL_URL = "https://vay24h.pro.vn/tin-tuc/top-the-tin-dung-vib-de-dang-ky-nhat
-"; 
+const CANONICAL_URL = "https://vay24h.pro.vn/tin-tuc/top-the-tin-dung-vib-de-dang-ky-nhat"; 
 
 export const metadata: Metadata = {
   // Title tối ưu cho cả GenZ (sinh viên) và người mới đi làm
@@ -386,4 +385,5 @@ export default function MoTheTinDungVIBGenZPage() {
       </article>
     </>
   );
+
 }
