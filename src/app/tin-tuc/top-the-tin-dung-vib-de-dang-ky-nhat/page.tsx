@@ -246,7 +246,7 @@ export default function MoTheTinDungVIBGenZPage() {
               Bạn là Sinh Viên hay Người Mới Đi Làm?
             </p>
             <p className="text-yellow-900 mt-1">
-              Hãy bắt đầu với 3 dòng thẻ dễ duyệt nhất của VIB. Chọn thẻ phù hợp với bạn dưới đây:
+              Hãy bắt đầu với 2 dòng thẻ dễ duyệt nhất của VIB. Chọn thẻ phù hợp với bạn dưới đây:
             </p>
             <div className="mt-4 flex flex-col sm:flex-row gap-4">
               <a href="https://clearpmf.com/ql?pm_cid=0255249e328041bd81e3" // <-- THAY LINK AFFILIATE
@@ -387,5 +387,6 @@ export default function MoTheTinDungVIBGenZPage() {
   );
 
 }
+
 
 
