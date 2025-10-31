@@ -263,7 +263,7 @@ export default function MoTheTinDungVIBGenZPage() {
           </div>
         </section>
 
-        <nav className="bg-gray-50 p-4 rounded-lg mb-8 shadow-sm sticky top-0 z-10">
+        <nav className="bg-gray-50 p-4 rounded-lg mb-8 shadow-sm">
           <h2 className="text-xl font-semibold mb-3 text-gray-800">Mục lục (Top 8 thẻ VIB từ dễ đến khó)</h2>
           <ol className="list-decimal list-inside space-y-2 text-blue-600">
             {vibCards.map((card) => (
@@ -387,6 +387,7 @@ export default function MoTheTinDungVIBGenZPage() {
   );
 
 }
+
 
 
 
