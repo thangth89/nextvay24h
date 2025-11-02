@@ -73,16 +73,17 @@ export default function TheTinDungPage() {
 
         <header className="page-header">
           <h1 className="main-title">
-            Top 4 Mở Thẻ Tín Dụng Online Miễn Phí 2025 - Duyệt Nhanh, Hoàn Tiền Cao
+            Top 3 Mở Thẻ Tín Dụng Online Miễn Phí 2025 - Duyệt Nhanh, Hoàn Tiền Cao
           </h1>
           <p className="intro-text">
-            Tổng hợp <strong>4 ngân hàng mở thẻ tín dụng online miễn phí</strong> uy tín nhất hiện nay. 
+            Tổng hợp <strong>3 ngân hàng mở thẻ tín dụng online miễn phí</strong> uy tín nhất hiện nay. 
             Duyệt nhanh chỉ 2 phút, hoàn tiền lên đến 20%, miễn phí thường niên. 
             So sánh chi tiết để chọn thẻ phù hợp nhất với nhu cầu của bạn.
           </p>
         </header>
 
         <section className="loan-list" aria-label="Danh sách thẻ tín dụng">
+          {/*
           <div className="loan-card" itemScope itemType="https://schema.org/FinancialProduct">
             <span className="top-label" aria-label="Xếp hạng số 1">TOP #1</span>
             <div className="card-header">
@@ -118,7 +119,44 @@ export default function TheTinDungPage() {
               </AffiliateButton>
             </div>
           </div>
+          */}
+          <div className="loan-card" itemScope itemType="https://schema.org/FinancialProduct">
+            <span className="top-label" aria-label="Xếp hạng số 1">TOP #1</span>
+            <div className="card-header">
+              <Image  
+                src="/the/vp.webp" 
+                width={80} 
+                height={80} 
+                alt="Logo thẻ tín dụng VPBank - Thu nhập 4.5 triệu" 
+                className="logo" 
+              />
+              <h2 itemProp="name" style={{ color: "#000000"}}>Thẻ Tín Dụng VPBank</h2>
+              <p className="duyet">📌 KHÔNG CẦN BẢNG LƯƠNG</p>
+            </div>
+            <div className="card-body">
+              <h3 style={{ color: "#000000"}}>Ưu đãi nổi bật:</h3>
+              <ul className="info-list" itemProp="description">
+                <li><strong>Hoàn tiền đến 5%</strong> mọi giao dịch</li>
+                <li><strong>Miễn phí phát hành thẻ</strong></li>
+                <li>Ưu đãi <strong>trả góp 0% lãi suất</strong></li>
+                <li>Độ tuổi: <strong>22 - 60 tuổi</strong></li>
+                <li><strong>Không cần bảng lương</strong>, thủ tục đơn giản</li>
+              </ul>
+            </div>
+            <div className="card-footer">
+             <AffiliateButton
+                href="https://clearpmf.com/ql?pm_cid=96d2c1c1f6c745228ac3" 
+                label="VPBank"
+                ariaLabel="Mở thẻ tín dụng VPBank ngay"
+               	position={15}
+                category="referral_apps"
+              >
+                 MỞ THẺ TÍN DỤNG NGAY
+              </AffiliateButton>
+            </div>
+          </div>
 
+          
           <div className="loan-card" itemScope itemType="https://schema.org/FinancialProduct">
             <span className="top-label" aria-label="Xếp hạng số 2">TOP #2</span>
             <div className="card-header">
@@ -156,43 +194,7 @@ export default function TheTinDungPage() {
           </div>
 
           <div className="loan-card" itemScope itemType="https://schema.org/FinancialProduct">
-            <span className="top-label" aria-label="Xếp hạng số 3">TOP #3</span>
-            <div className="card-header">
-              <Image  
-                src="/the/vp.webp" 
-                width={80} 
-                height={80} 
-                alt="Logo thẻ tín dụng VPBank - Thu nhập 4.5 triệu" 
-                className="logo" 
-              />
-              <h2 itemProp="name" style={{ color: "#000000"}}>Thẻ Tín Dụng VPBank</h2>
-              <p className="duyet">📌 THU NHẬP THẤP NHẤT - 4.5 TRIỆU</p>
-            </div>
-            <div className="card-body">
-              <h3 style={{ color: "#000000"}}>Ưu đãi nổi bật:</h3>
-              <ul className="info-list" itemProp="description">
-                <li><strong>Hoàn tiền đến 5%</strong> mọi giao dịch</li>
-                <li><strong>Miễn phí phát hành thẻ</strong></li>
-                <li>Ưu đãi <strong>trả góp 0% lãi suất</strong></li>
-                <li>Độ tuổi: <strong>22 - 60 tuổi</strong></li>
-                <li>Thu nhập tối thiểu chỉ: <strong>≥ 4.5 triệu VNĐ/tháng</strong></li>
-              </ul>
-            </div>
-            <div className="card-footer">
-             <AffiliateButton
-                href="https://adpvn.top/s/VmJ9N" 
-                label="VPBank"
-                ariaLabel="Mở thẻ tín dụng VPBank ngay"
-               	position={15}
-                category="referral_apps"
-              >
-                 MỞ THẺ TÍN DỤNG NGAY
-              </AffiliateButton>
-            </div>
-          </div>
-
-          <div className="loan-card" itemScope itemType="https://schema.org/FinancialProduct">
-            <span className="top-label" aria-label="Xếp hạng số 4">TOP #4</span>
+            <span className="top-label" aria-label="Xếp hạng số 4">TOP #3</span>
             <div className="card-header">
               <Image 
                 src="/the/tp.webp" 
@@ -242,12 +244,20 @@ export default function TheTinDungPage() {
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                  {/* <tr>
                   <td><strong>CAKE</strong></td>
                   <td>20%</td>
                   <td>Không yêu cầu</td>
                   <td>18-60</td>
                   <td>Mở nhanh nhất, không cần bảng lương</td>
+                </tr>
+                  */}
+                 <tr>
+                  <td><strong>VPBank</strong></td>
+                  <td>5%</td>
+                  <td>Không yêu cầu</td>
+                  <td>22-60</td>
+                  <td>10 phút có thẻ online</td>
                 </tr>
                 <tr>
                   <td><strong>VIB Bank</strong></td>
@@ -255,13 +265,6 @@ export default function TheTinDungPage() {
                   <td>7 triệu VNĐ</td>
                   <td>22-65</td>
                   <td>Miễn phí thường niên trọn đời</td>
-                </tr>
-                <tr>
-                  <td><strong>VPBank</strong></td>
-                  <td>5%</td>
-                  <td>4.5 triệu VNĐ</td>
-                  <td>22-60</td>
-                  <td>Thu nhập yêu cầu thấp nhất</td>
                 </tr>
                 <tr>
                   <td><strong>TPBank</strong></td>
@@ -281,7 +284,7 @@ export default function TheTinDungPage() {
             <h3 itemProp="name">Mở thẻ tín dụng online có an toàn không?</h3>
             <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
               <p itemProp="text">
-                Hoàn toàn an toàn khi bạn mở thẻ tại các ngân hàng uy tín như CAKE, VIB, VPBank, TPBank. 
+                Hoàn toàn an toàn khi bạn mở thẻ tại các ngân hàng uy tín như VPBank, VIB, TPBank. 
                 Các ngân hàng này đã được Ngân hàng Nhà nước cấp phép và áp dụng công nghệ bảo mật cao.
               </p>
             </div>
@@ -291,7 +294,7 @@ export default function TheTinDungPage() {
             <h3 itemProp="name">Mất bao lâu để có thẻ tín dụng sau khi đăng ký?</h3>
             <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
               <p itemProp="text">
-                CAKE nhanh nhất với thẻ ảo sau 2 phút, thẻ vật lý 3-5 ngày. 
+                VPBank nhanh nhất với thẻ ảo sau 10 phút, thẻ vật lý 3-5 ngày. 
                 Các ngân hàng khác thường mất 5-7 ngày làm việc để giao thẻ vật lý.
               </p>
             </div>
@@ -301,5 +304,6 @@ export default function TheTinDungPage() {
     </>
   );
 }
+
 
 
