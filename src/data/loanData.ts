@@ -190,26 +190,8 @@ export const loanApps = [
     affiliateLink: "https://riofin.asia/s2YjR00",
     label: "MoneyVeo"
   },
-
-  {
-    topLabel: "TOP #12",
-    imageSrc: "/vay/credityes.webp",
-    altText: "CreditYes vay tiền nhanh",
-    title: "CREDITYES",
-    duyetText: "📌 XÉT DUYỆT NHANH",
-    amount: "500.000 – 10.000.000",
-    features: [
-      "Thời hạn vay: 1 – 12 tháng",
-      "<strong>Lãi suất:Lãi suất: 0.01%/tháng</strong>",
-      "<strong>Không chứng minh thu nhập</strong>",
-      "Từ 22-60 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=1085",
-    label: "CreditYes"
-  },
    {
-    topLabel: "TOP #13",
+    topLabel: "TOP #12",
     imageSrc: "/vay/visame.webp",
     altText: "ViSame app vay tiền online",
     title: "VISAME",
@@ -243,6 +225,7 @@ export const loanApps = [
     label: "SOSCredit"
   }, 
 ];
+
 
 
 
