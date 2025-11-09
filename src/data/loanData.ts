@@ -121,25 +121,8 @@ export const loanApps = [
     affiliateLink: "https://clearpmf.com/ql?pm_cid=462558e4f36c43e69bc5",
     label: "Cashspace"
   },
-  {
-    topLabel: "TOP #8",
-    imageSrc: "/vay/Binixo.webp",
-    altText: "Binixo app vay tiền",
-    title: "Binixo",
-    duyetText: "📌 XÉT DUYỆT NHANH",
-    amount: "500.000– 10.000.000",
-    features: [
-      "Thời hạn vay: 91 - 180 ngày",
-      "<strong>Lãi suất: chỉ từ 0,01%/tháng</strong>",
-      "Duyệt nhanh 15 Phút",
-      "Từ 18 tuổi trở lên",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=456",
-    label: "Binixo"
-  },
      {
-    topLabel: "TOP #9",
+    topLabel: "TOP #8",
     imageSrc: "/vay/finami.webp",
     altText: "Finami vay tiền bao nợ xấu",
     title: "Finami",
@@ -156,7 +139,7 @@ export const loanApps = [
     label: "Finami"
   },
   {
-    topLabel: "TOP #10",
+    topLabel: "TOP #9",
     imageSrc: "/vay/vayvnd.webp",
     altText: "VayVND ứng dụng vay tiền",
     title: "VAYVND",
@@ -174,7 +157,7 @@ export const loanApps = [
   }, 
 
   {
-    topLabel: "TOP #11",
+    topLabel: "TOP #10",
     imageSrc: "/vay/moneyveo.webp",
     altText: "MoneyVeo app vay",
     title: "MONEYVEO",
@@ -190,41 +173,8 @@ export const loanApps = [
     affiliateLink: "https://riofin.asia/s2YjR00",
     label: "MoneyVeo"
   },
-   {
-    topLabel: "TOP #12",
-    imageSrc: "/vay/visame.webp",
-    altText: "ViSame app vay tiền online",
-    title: "VISAME",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "1.000.000 – 15.000.000",
-    features: [
-      "Thời hạn vay: 3 – 24 tháng",
-      "<strong>Lãi suất: 0% - 1,67%/tháng</strong>",
-      "Hoạt động 24/7",
-      "Từ 22-60 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://adpvn.top/s/Vdn64",
-    label: "ViSame"
-  },
- {
-    topLabel: "NEW",
-    imageSrc: "/vay/soscredit.webp",
-    altText: "SOS Credit vay tiền",
-    title: "SOS Credit",
-    duyetText: "📌 NHẬN TIỀN NHANH",
-    amount: "500.000 – 20.000.000",
-    features: [
-      "Thời hạn vay: 3-12 tháng",
-      "<strong>Lãi suất:0% - 20%/Năm</strong>",
-      "<strong>Không cần người tham chiếu</strong>",
-      "Từ 18-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
-    ],
-    affiliateLink: "https://adpvn.top/s/4aJye",
-    label: "SOSCredit"
-  }, 
 ];
+
 
 
 
