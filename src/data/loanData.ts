@@ -139,6 +139,23 @@ export const loanApps = [
   },
      {
     topLabel: "TOP #9",
+    imageSrc: "/vay/moneyveo.webp",
+    altText: "MoneyVeo app vay",
+    title: "MONEYVEO",
+    duyetText: "📌 TỰ ĐỘNG XÉT DUYỆT",
+    amount: "500.000 – 25.000.000",
+    features: [
+      "Thời hạn vay: linh động gia hạn",
+      "<strong>Lãi suất chỉ từ 1,52%/tháng</strong>",
+      "Hệ thống làm việc 24/7",
+      "Từ 22-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
+    ],
+    affiliateLink: "https://clearpmf.com/ql?pm_cid=5d737d73fa8748448501",
+    label: "MoneyVeo"
+  },
+     {
+    topLabel: "TOP #10",
     imageSrc: "/vay/finami.webp",
     altText: "Finami vay tiền bao nợ xấu",
     title: "Finami",
@@ -154,24 +171,9 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=683",
     label: "Finami"
   },
-  {
-    topLabel: "TOP #10",
-    imageSrc: "/vay/moneyveo.webp",
-    altText: "MoneyVeo app vay",
-    title: "MONEYVEO",
-    duyetText: "📌 TỰ ĐỘNG XÉT DUYỆT",
-    amount: "500.000 – 25.000.000",
-    features: [
-      "Thời hạn vay: linh động gia hạn",
-      "<strong>Lãi suất chỉ từ 1,52%/tháng</strong>",
-      "Hệ thống làm việc 24/7",
-      "Từ 22-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
-    ],
-    affiliateLink: "https://riofin.asia/s2YjR00",
-    label: "MoneyVeo"
-  },
+
 ];
+
 
 
 
