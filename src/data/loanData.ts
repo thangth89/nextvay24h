@@ -35,9 +35,25 @@ export const loanApps = [
     affiliateLink: "https://riofin.asia/O65Qk30",
     label: "CayVang"
   }, 
-
-     {
+  {
     topLabel: "TOP #3",
+    imageSrc: "/vay/vayvnd.webp",
+    altText: "VayVND ứng dụng vay tiền",
+    title: "VAYVND",
+    duyetText: "📌 DUYỆT VAY NHANH",
+    amount: "500.000 – 15.000.000",
+    features: [
+      "Thời hạn vay: 10 – 182 ngày",
+      "<strong>Lãi suất từ 0% – 1,5%/tháng</strong>",
+      "Từ 22-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
+      "<strong>Xét duyệt: 15 phút</strong>"
+    ],
+    affiliateLink: "https://clearpmf.com/ql?pm_cid=1b180f6294be459ba9df",
+    label: "VayVND"
+  }, 
+     {
+    topLabel: "TOP #4",
     imageSrc: "/vay/vaymeo.webp",
     altText: "VayMeo vay tiền online 24/7",
     title: "VayMeo",
@@ -54,7 +70,7 @@ export const loanApps = [
     label: "VayMeo"
   }, 
  {
-    topLabel: "TOP #4",
+    topLabel: "TOP #5",
     imageSrc: "/vay/finapps.webp",
     altText: "FinApps ứng dụng vay tiền",
     title: "FinApps",
@@ -71,7 +87,7 @@ export const loanApps = [
     label: "FinApps"
   },
    {
-    topLabel: "Top #5",
+    topLabel: "Top #6",
     imageSrc: "/vay/Finloo.webp",
     altText: "Finloo vay tiền online nhanh 24/7",
     title: "Finloo",
@@ -88,7 +104,7 @@ export const loanApps = [
     label: "Finloo"
   },
         {
-    topLabel: "TOP #6",
+    topLabel: "TOP #7",
     imageSrc: "/vay/meocat.webp",
     altText: "MoneyCat vay tiền online",
     title: "MONEYCAT",
@@ -105,7 +121,7 @@ export const loanApps = [
     label: "MoneyCat"
   },
      {
-    topLabel: "TOP #7",
+    topLabel: "TOP #8",
     imageSrc: "/vay/Cashspace.webp",
     altText: "Cashspace vay tiền nhanh 24/7",
     title: "CASH_SPACE",
@@ -122,7 +138,7 @@ export const loanApps = [
     label: "Cashspace"
   },
      {
-    topLabel: "TOP #8",
+    topLabel: "TOP #9",
     imageSrc: "/vay/finami.webp",
     altText: "Finami vay tiền bao nợ xấu",
     title: "Finami",
@@ -138,24 +154,6 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=683",
     label: "Finami"
   },
-  {
-    topLabel: "TOP #9",
-    imageSrc: "/vay/vayvnd.webp",
-    altText: "VayVND ứng dụng vay tiền",
-    title: "VAYVND",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "500.000 – 15.000.000",
-    features: [
-      "Thời hạn vay: 10 – 182 ngày",
-      "<strong>Lãi suất từ 0% – 1,5%/tháng</strong>",
-      "Từ 22-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
-      "<strong>Xét duyệt: 15 phút</strong>"
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=927",
-    label: "VayVND"
-  }, 
-
   {
     topLabel: "TOP #10",
     imageSrc: "/vay/moneyveo.webp",
@@ -174,6 +172,7 @@ export const loanApps = [
     label: "MoneyVeo"
   },
 ];
+
 
 
 
