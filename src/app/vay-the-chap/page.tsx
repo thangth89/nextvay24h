@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Có nợ xấu, vay tiền ở đâu? Giải pháp vay thế chấp giấy tờ xe tại Tima',
   description: 'Bạn đang lo lắng vì nợ xấu và cần vay tiền? Khám phá giải pháp vay thế chấp bằng đăng ký xe máy/ô tô tại Tima. Thủ tục đơn giản, giải ngân nhanh và an toàn.',
   keywords: 'vay tiền nợ xấu, vay tín chấp, vay thế chấp, Tima, vay tiền Tima, vay bằng đăng ký xe, vay tiền nhanh, giải pháp tài chính, nợ xấu vay được không',
+  alternates: {
+    canonical: 'https://vay24h.pro.vn/vay-the-chap', // 👈 THÊM DÒNG NÀY
+  },
   openGraph: {
     title: 'Có nợ xấu, vay tiền ở đâu? Giải pháp vay thế chấp giấy tờ xe tại Tima',
     description: 'Tìm hiểu về Tima - Sàn kết nối tài chính hàng đầu Việt Nam, cung cấp cơ hội vay tiền nhanh chóng, an toàn, thủ tục đơn giản cho mọi người, kể cả khi có nợ xấu.',
@@ -202,4 +205,5 @@ export default function TimaBadDebtSolutionPage() {
       </article>
     </>
   );
+
 }
