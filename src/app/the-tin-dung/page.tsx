@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: 'Mở Thẻ Tín Dụng Online Miễn Phí 2025 | Top 4 Ngân Hàng Uy Tín',
   description: 'Mở thẻ tín dụng online miễn phí 2025 tại CAKE, VIB, VPBank, TPBank. Hoàn tiền đến 20%, miễn phí thường niên, duyệt nhanh 2 phút. Đăng ký ngay!',
   keywords: 'mở thẻ tín dụng online, thẻ tín dụng miễn phí, mở thẻ tín dụng nhanh, thẻ tín dụng 2025, CAKE, VIB, VPBank, TPBank',
+  alternates: {
+    canonical: 'https://vay24h.pro.vn/the-tin-dung', // 👈 THÊM DÒNG NÀY
+  },
   openGraph: {
     title: 'Top 4 Mở Thẻ Tín Dụng Online Miễn Phí 2025',
     description: 'Mở thẻ tín dụng online miễn phí tại các ngân hàng uy tín. Hoàn tiền cao, duyệt nhanh, không cần bảng lương.',
@@ -304,6 +307,7 @@ export default function TheTinDungPage() {
     </>
   );
 }
+
 
 
 
