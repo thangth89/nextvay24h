@@ -25,7 +25,7 @@ function getNewsData(): NewsArticle[] {
 }
 
 /* ============================================================
-   1. generateStaticParams – giúp Next.js build đúng từng bài
+   1. generateStaticParams – build sẵn từng bài
    ============================================================ */
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const articles = getNewsData();
@@ -39,17 +39,23 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
 /* ============================================================
    2. Metadata cho từng bài – Canonical chuẩn SEO
    ============================================================ */
-type PageParams = {
-  params: {
+
+/**
+ * Lưu ý: với Next 15, PageProps/params là Promise
+ * nên ta định nghĩa kiểu như sau:
+ */
+type RouteProps = {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 export async function generateMetadata(
-  { params }: PageParams
+  { params }: RouteProps
 ): Promise<Metadata> {
+  const { slug } = await params;
+
   const articles = getNewsData();
-  const slug = params.slug;
 
   const article = articles.find(
     (item) => item.slug.replace("/tin-tuc/", "").replace(/^\//, "") === slug
@@ -85,9 +91,10 @@ export async function generateMetadata(
 /* ============================================================
    3. Page Component – Render nội dung bài viết
    ============================================================ */
-export default async function Page({ params }: PageParams) {
+export default async function Page({ params }: RouteProps) {
+  const { slug } = await params;
+
   const articles = getNewsData();
-  const slug = params.slug;
 
   const article = articles.find(
     (item) => item.slug.replace("/tin-tuc/", "").replace(/^\//, "") === slug
@@ -126,7 +133,6 @@ export default async function Page({ params }: PageParams) {
       {/* JSON-LD */}
       <script
         type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
@@ -147,7 +153,6 @@ export default async function Page({ params }: PageParams) {
       {article.content ? (
         <div
           className="prose prose-lg max-w-none"
-          // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: article.content }}
         />
       ) : (
