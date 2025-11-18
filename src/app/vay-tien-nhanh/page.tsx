@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: 'Vay Tiền Nhanh Online | Top 10 App Uy Tín - Vay24h.pro.vn',
   description: 'Danh sách 10+ app vay tiền nhanh online uy tín. Duyệt vay 15 phút, lãi suất từ 0%, chỉ cần CMND. So sánh điều kiện tốt nhất.',
   keywords: 'vay tiền nhanh, app vay tiền, vay online nhanh, vay tiền chỉ cần cmnd',
+  alternates: {
+    canonical: 'https://vay24h.pro.vn/vay-tien-nhanh', // 👈 THÊM DÒNG NÀY
+  },
   openGraph: {
     title: 'Vay Tiền Nhanh Online - Top App Uy Tín',
     description: 'So sánh top app vay tiền nhanh, lãi suất ưu đãi, duyệt nhanh.',
