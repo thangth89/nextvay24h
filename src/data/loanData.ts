@@ -1,25 +1,8 @@
 // app/data/loanData.ts
 
 export const loanApps = [
-   {
+ {
     topLabel: "TOP #1",
-    imageSrc: "/vay/jeff.webp",
-    altText: "Jeff Web app vay tiền",
-    title: "Jeff Web",
-    duyetText: "📌 TOP 1 ỨNG DỤNG",
-    amount: "1.000.000 – 30.000.000",
-    features: [
-      "<strong>Kết nối hơn 25 đối tác</strong> cho vay",
-      "Thời hạn vay: 3 – 12 tháng",
-      "<strong>Lãi suất: 0% khoản vay đầu</strong>",
-      "Độ tuổi: 22 tuổi trở lên",
-      "Hồ sơ chỉ cần CMND"
-    ],
-    affiliateLink: "https://riofin.asia/K4tHM30",
-    label: "Jeff"
-  },
-    {
-    topLabel: "TOP #2",
     imageSrc: "/vay/cayvang.webp",
     altText: "Cây Vàng vay tiền",
     title: "CAYVANG",
@@ -35,6 +18,24 @@ export const loanApps = [
     affiliateLink: "https://riofin.asia/O65Qk30",
     label: "CayVang"
   }, 
+   {
+    topLabel: "TOP #2",
+    imageSrc: "/vay/jeff.webp",
+    altText: "Jeff Web app vay tiền",
+    title: "Jeff Web",
+    duyetText: "📌 TOP 1 ỨNG DỤNG",
+    amount: "1.000.000 – 30.000.000",
+    features: [
+      "<strong>Kết nối hơn 25 đối tác</strong> cho vay",
+      "Thời hạn vay: 3 – 12 tháng",
+      "<strong>Lãi suất: 0% khoản vay đầu</strong>",
+      "Độ tuổi: 22 tuổi trở lên",
+      "Hồ sơ chỉ cần CMND"
+    ],
+    affiliateLink: "https://riofin.asia/K4tHM30",
+    label: "Jeff"
+  },
+
   {
     topLabel: "TOP #3",
     imageSrc: "/vay/vayvnd.webp",
@@ -155,6 +156,7 @@ export const loanApps = [
     label: "MoneyVeo"
   },
 ];
+
 
 
 
