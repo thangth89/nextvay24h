@@ -95,7 +95,7 @@ export const loanApps = [
     amount: "300.000 – 20.000.000",
     features: [
       "Thời hạn vay: 2 tháng",
-      "<strong>Lãi suất:</strong>",
+      "<strong>Lãi suất:0% - 20%/Năm</strong>",
       "<strong>Bao Nợ Xấu</strong>",
       "Từ 18-60 tuổi",
       "Hồ sơ: chỉ cần CMND",
@@ -154,25 +154,8 @@ export const loanApps = [
     affiliateLink: "https://clearpmf.com/ql?pm_cid=5d737d73fa8748448501",
     label: "MoneyVeo"
   },
-     {
-    topLabel: "TOP #10",
-    imageSrc: "/vay/finami.webp",
-    altText: "Finami vay tiền bao nợ xấu",
-    title: "Finami",
-    duyetText: "📌 XÉT DUYỆT NHANH",
-    amount: "500.000 – 10.000.000",
-    features: [
-      "Thời hạn vay: 1 – 12 tháng",
-      "<strong>Lãi suất: 0% nếu trả ngày đầu</strong>",
-      "Hoạt động 24/7",
-      "Từ 22-60 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=683",
-    label: "Finami"
-  },
-
 ];
+
 
 
 
