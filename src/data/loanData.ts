@@ -52,7 +52,6 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=161",
     label: "Jeff"
   },
-
   {
     topLabel: "TOP #4",
     imageSrc: "/vay/vayvnd.webp",
@@ -156,6 +155,7 @@ export const loanApps = [
     label: "MoneyVeo"
   },
 ];
+
 
 
 
