@@ -20,41 +20,6 @@ export const loanApps = [
   }, 
    {
     topLabel: "TOP #2",
-    imageSrc: "/vay/jeff.webp",
-    altText: "Jeff Web app vay tiền",
-    title: "Jeff Web",
-    duyetText: "📌 TOP 1 ỨNG DỤNG",
-    amount: "1.000.000 – 30.000.000",
-    features: [
-      "<strong>Kết nối hơn 25 đối tác</strong> cho vay",
-      "Thời hạn vay: 3 – 12 tháng",
-      "<strong>Lãi suất: 0% khoản vay đầu</strong>",
-      "Độ tuổi: 22 tuổi trở lên",
-      "Hồ sơ chỉ cần CMND"
-    ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=161",
-    label: "Jeff"
-  },
-
-  {
-    topLabel: "TOP #3",
-    imageSrc: "/vay/vayvnd.webp",
-    altText: "VayVND ứng dụng vay tiền",
-    title: "VAYVND",
-    duyetText: "📌 DUYỆT VAY NHANH",
-    amount: "500.000 – 15.000.000",
-    features: [
-      "Thời hạn vay: 10 – 182 ngày",
-      "<strong>Lãi suất từ 0% – 1,5%/tháng</strong>",
-      "Từ 22-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
-      "<strong>Xét duyệt: 15 phút</strong>"
-    ],
-    affiliateLink: "https://clearpmf.com/ql?pm_cid=1b180f6294be459ba9df",
-    label: "VayVND"
-  }, 
-     {
-    topLabel: "TOP #4",
     imageSrc: "/vay/vaymeo.webp",
     altText: "VayMeo vay tiền online 24/7",
     title: "VayMeo",
@@ -69,6 +34,41 @@ export const loanApps = [
     ],
     affiliateLink: "https://clearpmf.com/ql?pm_cid=b485bbd8ab2b47a0b633",
     label: "VayMeo"
+  }, 
+   {
+    topLabel: "TOP #3",
+    imageSrc: "/vay/jeff.webp",
+    altText: "Jeff Web app vay tiền",
+    title: "Jeff Web",
+    duyetText: "📌 LINH HOẠT",
+    amount: "1.000.000 – 30.000.000",
+    features: [
+      "<strong>Kết nối hơn 25 đối tác</strong> cho vay",
+      "Thời hạn vay: 3 – 12 tháng",
+      "<strong>Lãi suất: 0% khoản vay đầu</strong>",
+      "Độ tuổi: 22 tuổi trở lên",
+      "Hồ sơ chỉ cần CMND"
+    ],
+    affiliateLink: "https://go.dinos.click/click?a=11826&o=161",
+    label: "Jeff"
+  },
+
+  {
+    topLabel: "TOP #4",
+    imageSrc: "/vay/vayvnd.webp",
+    altText: "VayVND ứng dụng vay tiền",
+    title: "VAYVND",
+    duyetText: "📌 DUYỆT VAY NHANH",
+    amount: "500.000 – 15.000.000",
+    features: [
+      "Thời hạn vay: 10 – 182 ngày",
+      "<strong>Lãi suất từ 0% – 1,5%/tháng</strong>",
+      "Từ 22-60 tuổi",
+      "Hồ sơ chỉ cần CMND",
+      "<strong>Xét duyệt: 15 phút</strong>"
+    ],
+    affiliateLink: "https://clearpmf.com/ql?pm_cid=1b180f6294be459ba9df",
+    label: "VayVND"
   }, 
  {
     topLabel: "TOP #5",
@@ -156,6 +156,7 @@ export const loanApps = [
     label: "MoneyVeo"
   },
 ];
+
 
 
 
