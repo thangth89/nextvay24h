@@ -49,7 +49,7 @@ export const loanApps = [
       "Độ tuổi: 22 tuổi trở lên",
       "Hồ sơ chỉ cần CMND"
     ],
-    affiliateLink: "https://go.dinos.click/click?a=11826&o=161",
+    affiliateLink: "https://tracking.mobivision.vn/click?a=532&o=79",
     label: "Jeff"
   },
   {
@@ -117,7 +117,7 @@ export const loanApps = [
       "Từ 23-59 tuổi",
       "Hồ sơ chỉ cần CMND",
     ],
-    affiliateLink: "https://riofin.asia/nG0yL30",
+    affiliateLink: "https://tracking.mobivision.vn/click?a=532&o=37",
     label: "MoneyCat"
   },
      {
@@ -155,6 +155,7 @@ export const loanApps = [
     label: "MoneyVeo"
   },
 ];
+
 
 
 
