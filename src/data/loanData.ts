@@ -69,8 +69,43 @@ export const loanApps = [
     affiliateLink: "https://go.dinos.click/click?a=11826&o=821",
     label: "FinApps"
   },
-   {
+ {
     topLabel: "TOP #5",
+    imageSrc: "/vay/Binixo.webp",
+    altText: "Binixo app vay tiền",
+    title: "Binixo",
+    duyetText: "📌 DUYỆT NHANH 15 PHÚT",
+    amount: "500.000– 10.000.000",
+    features: [
+      "Thời hạn vay: 91 - 180 ngày",
+      "<strong>Lãi suất: chỉ từ 0,01%/tháng</strong>",
+      "Duyệt nhanh 15 Phút",
+      "Từ 18 tuổi trở lên",
+      "Hồ sơ: chỉ cần CMND",
+    ],
+    affiliateLink: "https://tracking.mobivision.vn/click?a=532&o=105",
+    label: "Binixo"
+  },
+  {
+    topLabel: "TOP #6",
+    imageSrc: "/vay/finami.webp",
+    altText: "Finami vay tiền bao nợ xấu",
+    title: "Finami",
+    duyetText: "📌 BAO NỢ XẤU",
+    amount: "500.000 – 10.000.000",
+    features: [
+      "Thời hạn vay: 1 – 12 tháng",
+      "<strong>Lãi suất: 0% nếu trả ngày đầu</strong>",
+      "Hoạt động 24/7",
+      "Từ 22-60 tuổi",
+      "Hồ sơ: chỉ cần CMND",
+    ],
+    affiliateLink: "https://tracking.mobivision.vn/click?a=532&o=102",
+    label: "Finami"
+  },
+
+   {
+    topLabel: "TOP #7",
     imageSrc: "/vay/vaymeo.webp",
     altText: "VayMeo vay tiền online 24/7",
     title: "VayMeo",
@@ -87,7 +122,7 @@ export const loanApps = [
     label: "VayMeo"
   }, 
   {
-    topLabel: "TOP #6",
+    topLabel: "TOP #8",
     imageSrc: "/vay/vayvnd.webp",
     altText: "VayVND ứng dụng vay tiền",
     title: "VAYVND",
@@ -104,7 +139,7 @@ export const loanApps = [
     label: "VayVND"
   }, 
   {
-    topLabel: "TOP #7",
+    topLabel: "TOP #9",
     imageSrc: "/vay/meocat.webp",
     altText: "MoneyCat vay tiền online",
     title: "MONEYCAT",
@@ -120,41 +155,8 @@ export const loanApps = [
     affiliateLink: "https://tracking.mobivision.vn/click?a=532&o=719",
     label: "MoneyCat"
   },
-     {
-    topLabel: "TOP #8",
-    imageSrc: "/vay/Cashspace.webp",
-    altText: "Cashspace vay tiền nhanh 24/7",
-    title: "CASH_SPACE",
-    duyetText: "📌 XÉT DUYỆT NHANH ",
-    amount: "500.000 – 20.000.000",
-    features: [
-      "Thời hạn vay: 2-3 tháng ",
-      "<strong>Lãi suất:tối đa 3.65%/Năm</strong>",
-      "<strong>Không chứng minh thu nhập</strong>",
-      "Từ 23-70 tuổi",
-      "Hồ sơ: chỉ cần CMND",
-    ],
-    affiliateLink: "https://clearpmf.com/ql?pm_cid=462558e4f36c43e69bc5",
-    label: "Cashspace"
-  },
-     {
-    topLabel: "TOP #9",
-    imageSrc: "/vay/moneyveo.webp",
-    altText: "MoneyVeo app vay",
-    title: "MONEYVEO",
-    duyetText: "📌 TỰ ĐỘNG XÉT DUYỆT",
-    amount: "500.000 – 25.000.000",
-    features: [
-      "Thời hạn vay: linh động gia hạn",
-      "<strong>Lãi suất chỉ từ 1,52%/tháng</strong>",
-      "Hệ thống làm việc 24/7",
-      "Từ 22-60 tuổi",
-      "Hồ sơ chỉ cần CMND",
-    ],
-    affiliateLink: "https://clearpmf.com/ql?pm_cid=5d737d73fa8748448501",
-    label: "MoneyVeo"
-  },
 ];
+
 
 
 
