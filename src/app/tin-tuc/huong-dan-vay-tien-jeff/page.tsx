@@ -203,7 +203,7 @@ export default function JeffGuidePage() {
             Theo kinh nghiệm, bạn nên <strong className="text-teal-700">đăng ký tất cả các gợi ý mà Jeff đưa ra</strong>. Điều này sẽ giúp bạn tăng tỷ lệ duyệt hồ sơ lên mức cao nhất, vì mỗi đơn vị có thể có các tiêu chí xét duyệt khác nhau.
           </p>
           <div className="mt-8 text-center">
-            <a href="https://go.dinos.click/click?a=11826&o=161" target="_blank" rel="nofollow noreferrer" className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-full text-xl shadow-xl transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-75 animate-bounce">
+            <a href="https://tracking.mobivision.vn/click?a=532&o=79" target="_blank" rel="nofollow noreferrer" className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-full text-xl shadow-xl transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-500 focus:ring-opacity-75 animate-bounce">
               <svg className="w-8 h-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
               Đăng Ký Vay Ngay
             </a>
