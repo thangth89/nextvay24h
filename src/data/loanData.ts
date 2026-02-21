@@ -6,7 +6,7 @@ export const loanApps = [
     imageSrc: "/vay/jeff.webp",
     altText: "Jeff Web app vay tiền",
     title: "Jeff Web",
-    duyetText: "📌 LINH HOẠT",
+    duyetText: "📌BAO NỢ XẤU",
     amount: "1.000.000 – 30.000.000",
     features: [
       "<strong>Kết nối hơn 25 đối tác</strong> cho vay",
@@ -156,6 +156,7 @@ export const loanApps = [
     label: "MoneyCat"
   },
 ];
+
 
 
 
