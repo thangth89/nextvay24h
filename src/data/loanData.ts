@@ -135,7 +135,7 @@ export const loanApps = [
       "Hồ sơ chỉ cần CMND",
       "<strong>Xét duyệt: 15 phút</strong>"
     ],
-    affiliateLink: "https://tracking.mobivision.vn/click?a=532&o=38",
+    affiliateLink: "https://tracking.mobivision.vn/click?a=532&o=739",
     label: "VayVND"
   }, 
   {
@@ -156,6 +156,7 @@ export const loanApps = [
     label: "MoneyCat"
   },
 ];
+
 
 
 
