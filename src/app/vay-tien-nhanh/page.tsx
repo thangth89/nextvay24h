@@ -123,6 +123,7 @@ export default function VayTienNhanhPage() {
             💡 <em>Lưu ý: Vay tiền cần cân nhắc khả năng trả nợ. Chỉ vay khi thật sự cần thiết.</em>
           </p>
         </section>
+	  {/*
          <section className="nhom-zalo">
           <p><strong>Hãy tham gia nhóm zalo của vay24h.pro.vn để cập nhật những thông tin mới nhất về vay tiền online (cập nhật, hướng dẫn,mẹo ...)</strong></p>
 	<Image
@@ -133,6 +134,7 @@ export default function VayTienNhanhPage() {
           className="w-full h-auto mx-auto rounded-lg shadow-md my-4"
         />
 	</section>
+	*/}
     </>
   );
 }
